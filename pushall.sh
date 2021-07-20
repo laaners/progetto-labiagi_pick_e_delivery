@@ -1,6 +1,9 @@
 #!/bin/bash
-echo Il tuo push: 
-read commit_msg
-git add -A
-git commit -m "$commit_msg"
-git push
+if [ $# -eq 0 ]; then 
+	echo "No argomenti"
+else
+	echo $1	
+	git add -A
+	git commit -m $1
+	git push
+fi
