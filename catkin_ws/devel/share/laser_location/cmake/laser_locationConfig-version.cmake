@@ -1,0 +1,1 @@
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/laser_location/share/laser_location/cmake/laser_locationConfig-version.cmake

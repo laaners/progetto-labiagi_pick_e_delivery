@@ -1,0 +1,8 @@
+prefix=/home/alessio/Desktop/progetto-labiagi/catkin_ws/install
+
+Name: laser_location
+Description: Description of laser_location
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -7,7 +7,6 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/catkin_tools_prebuild:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH='/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib:/opt/ros/melodic/lib:/home/alessio/catkin_ws/devel/lib'
+export PKG_CONFIG_PATH='/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig:/home/alessio/catkin_ws/devel/lib/pkgconfig'
 export PWD='/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/catkin_tools_prebuild'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/catkin_tools_prebuild/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/catkin_tools_prebuild:$ROS_PACKAGE_PATH"

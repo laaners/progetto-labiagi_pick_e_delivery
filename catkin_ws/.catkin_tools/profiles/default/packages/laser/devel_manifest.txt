@@ -1,0 +1,6 @@
+laser_location
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/laser/cmake.lock /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/./cmake.lock
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/laser/lib/laser/LaserLocation /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/lib/laser/LaserLocation
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/laser/lib/pkgconfig/laser.pc /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/lib/pkgconfig/laser.pc
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/laser/share/laser/cmake/laserConfig-version.cmake /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/share/laser/cmake/laserConfig-version.cmake
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/laser/share/laser/cmake/laserConfig.cmake /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/share/laser/cmake/laserConfig.cmake

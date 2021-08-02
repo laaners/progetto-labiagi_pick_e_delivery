@@ -1,0 +1,17 @@
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/laser_location/src/LaserLocation.cpp:3:38:[m[K [01;31m[Kerror: [m[K‘[01m[KString[m[K’ in namespace ‘[01m[Kstd_msgs[m[K’ does not name a type
+ void chatterCallback(const std_msgs::[01;31m[KString[m[K::ConstPtr& msg) {
+                                      [01;31m[K^~~~~~[m[K
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/laser_location/src/LaserLocation.cpp:3:54:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+ void chatterCallback(const std_msgs::String::ConstPtr[01;31m[K&[m[K msg) {
+                                                      [01;31m[K^[m[K
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/laser_location/src/LaserLocation.cpp:3:54:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/laser_location/src/LaserLocation.cpp:3:56:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kmsg[m[K’
+ void chatterCallback(const std_msgs::String::ConstPtr& [01;31m[Kmsg[m[K) {
+                                                        [01;31m[K^~~[m[K
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/laser_location/src/LaserLocation.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/laser_location/src/LaserLocation.cpp:11:58:[m[K [01;31m[Kerror: [m[K‘[01m[KchatterCallback[m[K’ was not declared in this scope
+     ros::Subscriber sub = n.subscribe("base_scan", 1000, [01;31m[KchatterCallback[m[K);
+                                                          [01;31m[K^~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/laser_location.dir/src/LaserLocation.cpp.o] Error 1
+make[1]: *** [CMakeFiles/laser_location.dir/all] Error 2
+make: *** [all] Error 2
