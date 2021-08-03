@@ -1,4 +1,0 @@
-[35m[1mScanning dependencies of target laser_location[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/laser_location.dir/src/LaserLocation.cpp.o[0m
-[100%] [32m[1mLinking CXX executable /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/laser_location/lib/laser_location/laser_location[0m
-[100%] Built target laser_location

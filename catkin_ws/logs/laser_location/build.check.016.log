@@ -1,0 +1,11 @@
+[31m[1mCMake Error[0m at /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/laser_location/CMakeLists.txt:54:
+  Parse error.  Expected "(", got newline with text "
+
+  ".
+
+
+[36m--[0m Configuring incomplete, errors occurred!
+See also "/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/laser_location/CMakeFiles/CMakeOutput.log".
+See also "/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/laser_location/CMakeFiles/CMakeError.log".
+Makefile:574: recipe for target 'cmake_check_build_system' failed
+make: *** [cmake_check_build_system] Error 1
