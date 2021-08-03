@@ -1,0 +1,13 @@
+CMakeFiles/LaserLocation.dir/src/LaserLocation.cpp.o: In function `laserCallback(boost::shared_ptr<sensor_msgs::LaserScan_<std::allocator<void> > const> const&)':
+LaserLocation.cpp:(.text+0x1ce): undefined reference to `tf2::BufferCore::canTransform(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, ros::Time const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*) const'
+LaserLocation.cpp:(.text+0x3e6): undefined reference to `tf2::BufferCore::lookupTransform(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, ros::Time const&) const'
+CMakeFiles/LaserLocation.dir/src/LaserLocation.cpp.o: In function `__static_initialization_and_destruction_0(int, int)':
+LaserLocation.cpp:(.text+0xec8): undefined reference to `tf2_ros::Buffer::Buffer(ros::Duration, bool)'
+CMakeFiles/LaserLocation.dir/src/LaserLocation.cpp.o: In function `tf2_ros::Buffer::~Buffer()':
+LaserLocation.cpp:(.text._ZN7tf2_ros6BufferD2Ev[_ZN7tf2_ros6BufferD5Ev]+0xf): undefined reference to `vtable for tf2_ros::Buffer'
+LaserLocation.cpp:(.text._ZN7tf2_ros6BufferD2Ev[_ZN7tf2_ros6BufferD5Ev]+0x1d): undefined reference to `vtable for tf2_ros::Buffer'
+LaserLocation.cpp:(.text._ZN7tf2_ros6BufferD2Ev[_ZN7tf2_ros6BufferD5Ev]+0x47): undefined reference to `tf2::BufferCore::~BufferCore()'
+collect2: error: ld returned 1 exit status
+make[2]: *** [/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/laser_location/lib/laser_location/LaserLocation] Error 1
+make[1]: *** [CMakeFiles/LaserLocation.dir/all] Error 2
+make: *** [all] Error 2

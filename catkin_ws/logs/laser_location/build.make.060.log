@@ -1,0 +1,16 @@
+[35m[1mScanning dependencies of target LaserLocation[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/LaserLocation.dir/src/LaserLocation.cpp.o[0m
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/laser_location/src/LaserLocation.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/laser_location/src/LaserLocation.cpp:63:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub[m[K’ was not declared in this scope
+         [01;31m[Kpub[m[K.publish(msg);
+         [01;31m[K^~~[m[K
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/laser_location/src/LaserLocation.cpp:63:9:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Ksub[m[K’
+         [01;36m[Kpub[m[K.publish(msg);
+         [01;36m[K^~~[m[K
+         [32m[Ksub[m[K
+CMakeFiles/LaserLocation.dir/build.make:62: recipe for target 'CMakeFiles/LaserLocation.dir/src/LaserLocation.cpp.o' failed
+make[2]: *** [CMakeFiles/LaserLocation.dir/src/LaserLocation.cpp.o] Error 1
+CMakeFiles/Makefile2:419: recipe for target 'CMakeFiles/LaserLocation.dir/all' failed
+make[1]: *** [CMakeFiles/LaserLocation.dir/all] Error 2
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2
