@@ -1,0 +1,285 @@
+--CAMERA (VM NON FUNZIONA)----------------------------------------------------------------------------------------------------------------------
+
+sudo apt install ros-melodic-usb-cam
+roslaunch usb_cam usb_cam-test.launch
+rostopic list
+rosrun image_view image_view image:=/usb-cam/image_raw
+
+--SIMULATORE, STAGEROS------------------------------------------------------------------------------------------------------------------------
+
+roscore
+roscd stage
+rosrun stage_ros stageros worlds/<nome file .world>
+
+
+roscd srrg2_navigation_2d
+    //andare nella cartella config dove ci sono i .world
+rosrun stage_ros stageros cappero_laser...world
+    //Il simulatore offre dei dati, faccio rostopic list
+rostopic list
+    //Di interesse sono cmd_vel, base_scan, odom e tf
+rosmsg topic /cmd_vel
+    //Faccio un test pubblicando un comando
+rostopic pub /cmd_vel geometry_msgs/Twist -- '[2.0, 0.0, 0.0]' '[0.0, 0.0, 1.8]'
+    //oppure, sapendo i campi di geometry_msgs/Twist:
+rostopic pub /cmd_vel geometry_msgs/Twist "linear:
+    x: 2.0
+    y: 0.0
+    z: 0.0
+angular:
+    x: 0.0
+    y: 0.0
+    z: 1.8"
+
+    //Con stageros ho anche il laser scan
+    //le trasformate stanno nel topic tf
+    //faccio partire stageros come prima con un file .world e poi:
+rostopic echo /tf
+    //ho le trasformate dei link che esprimono frame di partenza e di destinazione
+    //e ho dei dati che mi dicono dove si trova il figlio rispetto al padre
+    //posso usare view_frames per visione migliore
+rosrun tf view_frames
+    //Ho un pdf
+    //Come pubblico una trasformata, cioè la posizione di un link rispetto a un altro link?
+    //Pubblico un messaggio sul topic tf del tipo giusto (tipo del messaggio da rostopic info /tf)
+    //Per pubblicare posso usare
+rosrun tf static_transform_publisher -h
+rosrun tf static_transform_publisher x y z yaw pitch roll frame_id child_frame_id period(mills)
+    //Per esempio:
+rosrun tf static_transform_publisher 1 0 0 3.14 0 0 base_link mio_nuovo_frame 100
+    //Si può ora lanciare rviz per visualizzare, faccio add by topic laser_scan, fixed frame in odom (devo scegliere un frame origine dall'albero)
+    //e sotto le opzioni di laser scan metto style points
+rviz
+    //muovendo il robot, cambiano i punti (la finestra di .world cambia così come rviz), posso anche muoverlo con mouse
+rostopic pub /cmd_vel geometry_msgs/Twist -- '[2.0, 0.0, 0.0]' '[0.0, 0.0, 1.8]'
+
+    //caricare la mappa, file yaml
+rosrun srrg2_map_server map_server cappero_laser_odom_diag_2020-05-06-16-26-03.yaml
+    //su rviz add by topic map
+
+--REGISTRARE UN DATASET------------------------------------------------------------------------------------------------------------------------
+
+    //un dataset sono tutti le info registrate dai sensori
+rosbag record /odom /base_scan -o borsa
+rosbag info borsa...bag
+    //se faccio partire bag con play, in rviz vedrò i dati
+rosbag play borsa...bag
+    //su rviz faccio add by topic scan e scelgo come frame fisso odom
+    //posso fissare base_link se voglio prospettiva ruote
+    //posso anche fare add display time tf per vare l'albero delle trasformate
+
+--TF------------------------------------------------------------------------------------------------------------------------
+
+FARE 
+rosbag play --clock ...
+rosrun tf view_frames
+
+#include "ros/ros.h"
+#include <tf2_ros/transform_listener.h>
+#include <geometry_msgs/TransformStamped.h>
+#include "std_msgs/String.h"
+#include "geometry_msgs/Twist.h"
+#include "sensor_msgs/LaserScan.h"
+
+tf2_ros::Buffer tfBuffer;
+
+
+//void laserCallback(const sensor_msgs::LaserScan::ConstPtr& msg) {
+void laserCallback(const sensor_msgs::LaserScan& msg) {
+    ROS_INFO("I read laser_scan");
+
+    //check if transform odom->laser_frame possible
+    int transform_ok;
+    transform_ok = tfBuffer.canTransform("odom", "laser_frame", ros::Time(0));
+    ROS_INFO("Transform possible, [%i]", transform_ok);
+
+    if(transform_ok != 0) {
+        geometry_msgs::TransformStamped transformStamped;
+        transformStamped = tfBuffer.lookupTransform("odom", "laser_frame", ros::Time(0));
+        double yaw = 2*acos(transformStamped.transform.rotation.w);
+        ROS_INFO("x: %f, y: %f, yaw: %f", transformStamped.transform.translation.x, transformStamped.transform.translation.y, yaw);
+    }
+}
+
+int main(int argc, char* argv[]) {
+    ros::init(argc, argv, "LaserLocationNode");
+    ros::NodeHandle n;
+    ros::Rate loop_rate(100);
+
+    //tf tutorial
+    tf2_ros::TransformListener tfListener(tfBuffer);
+    ros::Rate rate(10.0);
+
+    //scan è un topic, sensor_msgs/LaserScan è il tipo del messaggio
+    ros::Subscriber sub = n.subscribe("scan", 1000, laserCallback);
+
+    int count = 0;
+    while(ros::ok()) {
+        ros::spinOnce();
+        loop_rate.sleep();
+        ++count;
+    }
+
+    return 0;
+}
+
+--WEBCTL------------------------------------------------------------------------------------------------------------------------
+
+    //Nella cartella fare
+cd configs
+../proc_webctl test_config.txt
+
+--SRRG------------------------------------------------------------------------------------------------------------------------
+
+rosrun srrg2_executor auto_dl_finder
+rosrun srrg2_executor srrg2_shell
+    > types
+        //vedo tutti gli oggetti che posso creare
+    > create Sol..
+        //tab completion, decidere quale libreria caricare
+    > instances
+        //lista oggetti creati, con puntatori
+    > set 0x321421... mio_nome
+        //cambio nome del puntatore
+    > show mio_nome
+        //vedo cosa c'è, prende nome o puntatore
+    > set mio_nome campo valore
+        //setta il campo dell'oggetto al valore, set my_solver max_iterations 10
+    > write myconf.json
+        //salva configurazione
+
+    > instances
+    > exec name_instance help
+        //mi mostra i comandi dell'istanza
+    > exec name_instance command
+    > exec source open
+    > exec sink open
+    > exec requestor requestMap
+    > CTRL c
+        //pause
+    > fg
+        //unpause
+
+rosrun srrg2_config_visualizer app_node_editor myconfig.json
+    //apre il file di config
+rosrun srrg2_config_visualizer app_node_editor -c myconfig.json
+
+/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_navigation_2d/config
+rosrun srrg2_config_visualizer app_node_editor -c localizer_live_ms.conf
+    //posso aggiungere un nodo al source così che leggo dati da una bag
+    //il localizer prende i dati, li oridina, è in attesa della mappa, poi manda in rete i dati
+
+rosrun srrg2_config_visualizer app_node_editor -c planner_live_ms.con
+    //il planner è simile
+
+../../../../../srrg2_webctl/proc_webctl run_navigation.webctl
+    //poi localhost:9001
+    //alternativamente facevo partire uno ad uno con rosrun, vedi sezione seguente!
+
+--NAVIGAZIONE, LOCALIZER E PATH PLANNER------------------------------------------------------------------------------------------------------------------------
+
+0) ROSCORE
+roscore
+
+    //sempre dalla cartella di prima
+1) LEGGERE LA MAPPA
+rosrun stage_ros stageros cappero_laser...world
+
+2) MAP SERVER, LO YAML CONTIENE L'IMMAGINE, RISOLUZIONE, SOGLIA DI OCCUPAZIONE...
+rosrun srrg2_map_server map_server cappero_laser_odom_diag_2020-05-06-16-26-03.yaml
+
+3)
+rviz
+    //caricare config sempre in srrg2_navigation... config
+    //il map server mi ha dato la mappa
+
+4) PER FAR PARTIRE IL NODO CHE FA LOCALIZZAZIONE
+rosrun srrg2_executor srrg2_shell run_localizer_live_ms.srrg
+    //che fa i seguenti comandi:
+    > instances
+    > exec name_instance help
+        //mi mostra i comandi dell'istanza
+    > exec name_instance command
+    > exec source open
+    > exec sink open
+    > exec requestor requestMap
+
+    //così parte sistema di localizzazione, ora do una posa al robot
+    //da rviz con 2D Pose Estimate
+
+    //Muovo un po' il robot e lui riesce a localizzarsi
+    //Posso anche usare un joystick
+
+rosrun srrg_joystick_teleop joy_teleop_node
+
+    //AVERE IL LOCALIZER ATTIVO, QUINDI PASSAGGI 1)-4) DI PRIMA
+    //sempre dalla cartella di prima
+
+5) IL ROBOT FA PATH PLANNER
+rosrun srrg2_executor srrg2_shell run_planner_live_ms_nogui.srrg
+    //da rviz fare 2D Nav Goal
+    //Non vengono prodotti comandi di velocità, non si muove, la path viene solo calcolata ma non percorsa
+    //Un altro nodo si occupa di percorrere il path
+
+6) IL ROBOT PERCORRE LA PATH
+rosrun srrg2_navigation_2d_ros path_follower_app
+
+--NAVIGAZIONE, LOCALIZER E PATH PLANNER CON WEB CONTROL------------------------------------------------------------------------------------------------------------------------
+
+    //Sempre nella cartella di prima
+~/Desktop/labiagi/srrg2_webctl/proc_webctl run_navigation.webctl
+
+01_roscore   /opt/ros/<ROS_DISTRO>/bin/roscore
+02_stage     /opt/ros/<ROS_DISTRO>/lib/stage_ros/stageros cappero_laser_odom_diag_obstacle_2020-05-06-16-26-03.world
+03_mapserver /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/srrg2_map_server/map_server cappero_laser_odom_diag_2020-05-06-16-26-03.yaml
+04_rviz     /opt/ros/<ROS_DISTRO>/bin/rviz
+05_localize /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/srrg2_executor/srrg2_shell run_localizer_live_ms.srrg
+06_planner  /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/srrg2_executor/srrg2_shell run_planner_live_ms_nogui.srrg
+07a_follower(static)  /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/srrg2_navigation_2d_ros/path_follower_app _path_topic:=/path
+07b_follower(dynamic)  /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/srrg2_navigation_2d_ros/path_follower_app _path_topic:=/local_path
+07_joy      /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/srrg_joystick_teleop/joy_teleop_node
+08_slam_offline(real) /usr/bin/xterm -e /bin/bash --init-file run_cappero_diag_slam.sh
+09_slam_online(simulated)  /usr/bin/xterm -e /bin/bash --init-file run_cappero_diag_slam_stage.sh
+
+01_roscore   /opt/ros/<ROS_DISTRO>/bin/roscore
+02_stage     /opt/ros/<ROS_DISTRO>/lib/stage_ros/stageros cappero_laser_odom_diag_obstacle_2020-05-06-16-26-03.world
+03_mapserver <ROSLISP_PACKAGE_DIRECTORIES>/../../lib/srrg2_map_server/map_server cappero_laser_odom_diag_2020-05-06-16-26-03.yaml
+04_rviz     /opt/ros/<ROS_DISTRO>/bin/rviz
+05_localize <ROSLISP_PACKAGE_DIRECTORIES>/../../lib/srrg2_executor/srrg2_shell -ns run_localizer_live_ms.srrg
+06_planner  <ROSLISP_PACKAGE_DIRECTORIES>/../../lib/srrg2_executor/srrg2_shell -ns run_planner_live_ms_nogui.srrg
+07a_follower(static)  <ROSLISP_PACKAGE_DIRECTORIES>/../../lib/srrg2_navigation_2d_ros/path_follower_app _path_topic:=/path
+07b_follower(dynamic)  <ROSLISP_PACKAGE_DIRECTORIES>/../../lib/srrg2_navigation_2d_ros/path_follower_app _path_topic:=/local_path
+07_joy      <ROSLISP_PACKAGE_DIRECTORIES>/../../lib/srrg_joystick_teleop/joy_teleop_node
+08_slam_offline(real) /usr/bin/xterm -e /bin/bash --init-file run_cappero_diag_slam.sh
+09_slam_online(simulated)  /usr/bin/xterm -e /bin/bash --init-file run_cappero_diag_slam_stage.sh
+
+
+--MAPPA------------------------------------------------------------------------------------------------------------------------
+
+    //Devo registrare una bag, che contiene /odom /tf e /base_scan
+    //Passo poi la bag a un programma che fa SLAM
+    //Sempre nella stessa cartella
+rosrun srrg2_config_visualizer app_node_editor -c cappero_diag_slam.conf
+rosrun srrg2_executor srrg2_shell -vt shared -c cappero_diag_slam.conf
+    //carica config, -vt fa partire un visualizzatore
+    > instances
+    > open cappero_diag_slam.conf
+    > add_canvas slam slam
+    > run runner
+        //fa partire slam
+        //oppure facevo prima con un srrg
+        //Dopo che fatto slam, per salvare:
+    > exec mapper saveMap mia_mapp
+        //produrrà png, yaml e inc
+        //per girare mappa:
+gimp mia_mappa.png
+    //per misurare l'angolo
+    > show mapper
+    > set mapper global_map_orientation radianti_valore
+
+    //se voglio fare mappa live:
+~/Desktop/labiagi/srrg2_webctl/proc_webctl run_navigation.webctl
+    //slam online simulated, si aprirà il terminale
+    //dal quale potrò salvare la mappa
+
+rostopic info /move_base_simple/goal
