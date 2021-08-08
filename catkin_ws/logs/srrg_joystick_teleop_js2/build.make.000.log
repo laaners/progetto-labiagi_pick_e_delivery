@@ -1,0 +1,8 @@
+[35m[1mScanning dependencies of target joy_event_scanner[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/joy_event_scanner.dir/src/joy_event_scanner.cpp.o[0m
+[ 50%] [32m[1mLinking CXX executable /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg_joystick_teleop_js2/lib/srrg_joystick_teleop_js2/joy_event_scanner[0m
+[ 50%] Built target joy_event_scanner
+[35m[1mScanning dependencies of target joy_teleop_node[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/joy_teleop_node.dir/src/joy_teleop_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg_joystick_teleop_js2/lib/srrg_joystick_teleop_js2/joy_teleop_node[0m
+[100%] Built target joy_teleop_node

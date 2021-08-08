@@ -1,7 +1,0 @@
-[31m[1mCMake Error[0m at /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/laser_location/CMakeLists.txt:54:
-  Parse error.  Expected "(", got newline with text "
-
-  ".
-
-
-make: *** [cmake_check_build_system] Error 1

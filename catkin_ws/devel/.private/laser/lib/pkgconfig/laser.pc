@@ -1,8 +1,0 @@
-prefix=/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/laser
-
-Name: laser
-Description: Description of laser
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

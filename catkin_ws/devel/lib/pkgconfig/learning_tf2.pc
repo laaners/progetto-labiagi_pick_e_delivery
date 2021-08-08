@@ -1,1 +1,0 @@
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/learning_tf2/lib/pkgconfig/learning_tf2.pc

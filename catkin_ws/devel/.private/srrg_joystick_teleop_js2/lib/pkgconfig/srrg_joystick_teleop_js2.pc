@@ -1,0 +1,8 @@
+prefix=/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg_joystick_teleop_js2
+
+Name: srrg_joystick_teleop_js2
+Description: Description of srrg_joystick_teleop_js2
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: nav_msgs roscpp

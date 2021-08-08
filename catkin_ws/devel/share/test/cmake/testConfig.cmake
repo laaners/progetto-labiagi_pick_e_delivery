@@ -1,1 +1,0 @@
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/test/share/test/cmake/testConfig.cmake

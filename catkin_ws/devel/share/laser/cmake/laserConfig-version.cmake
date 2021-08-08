@@ -1,1 +1,0 @@
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/laser/share/laser/cmake/laserConfig-version.cmake
