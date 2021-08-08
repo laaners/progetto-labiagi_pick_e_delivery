@@ -1,0 +1,11 @@
+(cl:defpackage srrg2_navigation_2d_msgs-msg
+  (:use )
+  (:export
+   "<COLLISIONAVOIDERSTATUS>"
+   "COLLISIONAVOIDERSTATUS"
+   "<LOCALPATHPLANNERSTATUS>"
+   "LOCALPATHPLANNERSTATUS"
+   "<PATHFOLLOWERSTATUS>"
+   "PATHFOLLOWERSTATUS"
+  ))
+

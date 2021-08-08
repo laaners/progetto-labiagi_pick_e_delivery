@@ -1,0 +1,8 @@
+prefix=/home/alessio/Desktop/progetto-labiagi/catkin_ws/install
+
+Name: srrg2_navigation_2d
+Description: Description of srrg2_navigation_2d
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lsrrg2_navigation_2d_library
+Requires: srrg_cmake_modules srrg2_core

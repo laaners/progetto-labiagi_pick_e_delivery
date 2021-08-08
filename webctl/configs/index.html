@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+ <html>
+ <head> <title>SRRG Web Controller</title>
+ <script src="./srrg.js" type="text/javascript"></script>
+ </head> <body><p>    <table border="3">
+       <tr>
+         <td valign="top"> Label </td> 
+         <td valign="top"> Status </td> 
+         <td valign="top" colspan="4">  </td> 
+         <td valign="top"> <button type="button" onclick="sendPacket('dump null')" /> hide </td> 
+      </tr>
+    <tr>
+      <td valign="top"> s1</td>
+      <td valign="top"> <button type="button" onclick="sendPacket('start s1')" /> start</td> 
+      <td valign="top"> <button type="button" onclick="sendPacket('interrupt s1')" />  ctrl-c</td> 
+     <td valign="top"> <button type="button" onclick="sendPacket('pause s1')" />  ctrl-z</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('resume s1')" /> resume</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('terminate s1')" /> terminate</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('dump s1')" /> show</td>
+    <tr>
+      <td valign="top"> s2</td>
+      <td valign="top"> <button type="button" onclick="sendPacket('start s2')" /> start</td> 
+      <td valign="top"> <button type="button" onclick="sendPacket('interrupt s2')" />  ctrl-c</td> 
+     <td valign="top"> <button type="button" onclick="sendPacket('pause s2')" />  ctrl-z</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('resume s2')" /> resume</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('terminate s2')" /> terminate</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('dump s2')" /> show</td>
+    <tr>
+      <td valign="top"> s3</td>
+      <td valign="top"> <button type="button" onclick="sendPacket('start s3')" /> start</td> 
+      <td valign="top"> <button type="button" onclick="sendPacket('interrupt s3')" />  ctrl-c</td> 
+     <td valign="top"> <button type="button" onclick="sendPacket('pause s3')" />  ctrl-z</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('resume s3')" /> resume</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('terminate s3')" /> terminate</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('dump s3')" /> show</td>
+    <tr>
+      <td valign="top"> s4</td>
+      <td valign="top"> <button type="button" onclick="sendPacket('start s4')" /> start</td> 
+      <td valign="top"> <button type="button" onclick="sendPacket('interrupt s4')" />  ctrl-c</td> 
+     <td valign="top"> <button type="button" onclick="sendPacket('pause s4')" />  ctrl-z</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('resume s4')" /> resume</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('terminate s4')" /> terminate</td>
+     <td valign="top"> <button type="button" onclick="sendPacket('dump s4')" /> show</td>
+     </table> </p> 
+<p>    <div id='msgBox'>Nothing sent yet!</div>  </p>
+ </body>

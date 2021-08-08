@@ -1,0 +1,1 @@
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_executor/share/srrg2_executor/cmake/srrg2_executorConfig-version.cmake

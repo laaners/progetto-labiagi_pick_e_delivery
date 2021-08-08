@@ -1,0 +1,6 @@
+Symlinking /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/lib/libmap_server_image_loader.so
+Symlinking /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/lib/srrg2_map_server/map_server
+Symlinking /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/lib/srrg2_map_server/map_saver
+Symlinking /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/lib/pkgconfig/srrg2_map_server.pc
+Symlinking /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/share/srrg2_map_server/cmake/srrg2_map_serverConfig-version.cmake
+Symlinking /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/share/srrg2_map_server/cmake/srrg2_map_serverConfig.cmake

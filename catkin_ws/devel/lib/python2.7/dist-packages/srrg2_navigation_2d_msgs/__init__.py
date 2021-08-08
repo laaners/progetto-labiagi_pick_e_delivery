@@ -1,0 +1,1 @@
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_msgs/lib/python2.7/dist-packages/srrg2_navigation_2d_msgs/__init__.py

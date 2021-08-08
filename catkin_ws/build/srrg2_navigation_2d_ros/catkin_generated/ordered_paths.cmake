@@ -1,0 +1,1 @@
+set(ORDERED_PATHS "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d/lib;/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib;/opt/ros/melodic/lib")
