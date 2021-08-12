@@ -1,0 +1,16 @@
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target _set_goal_generate_messages_check_deps_NewGoal
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_cpp
+[ 11%] Built target set_goal_generate_messages_nodejs
+[ 33%] Built target set_goal_generate_messages_py
+[ 44%] Built target set_goal_generate_messages_lisp
+[ 66%] Built target set_goal_generate_messages_eus
+[ 77%] Built target set_goal_generate_messages_cpp
+[35m[1mScanning dependencies of target SetGoal[0m
+[ 77%] Built target set_goal_generate_messages
+[ 88%] [32mBuilding CXX object CMakeFiles/SetGoal.dir/src/SetGoal.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/set_goal/lib/set_goal/SetGoal[0m
+[100%] Built target SetGoal

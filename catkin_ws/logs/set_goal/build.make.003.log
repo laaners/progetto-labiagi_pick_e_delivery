@@ -1,0 +1,35 @@
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[  0%] Built target std_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target _set_goal_generate_messages_check_deps_NewGoal[0m
+[  0%] Built target _set_goal_generate_messages_check_deps_NewGoal
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[  0%] Built target std_msgs_generate_messages_py
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[  0%] Built target std_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[  0%] Built target std_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[  0%] Built target std_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target set_goal_generate_messages_nodejs[0m
+[ 11%] [34m[1mGenerating Javascript code from set_goal/NewGoal.msg[0m
+[ 11%] Built target set_goal_generate_messages_nodejs
+[35m[1mScanning dependencies of target set_goal_generate_messages_py[0m
+[ 22%] [34m[1mGenerating Python from MSG set_goal/NewGoal[0m
+[ 33%] [34m[1mGenerating Python msg __init__.py for set_goal[0m
+[35m[1mScanning dependencies of target set_goal_generate_messages_lisp[0m
+[ 33%] Built target set_goal_generate_messages_py
+[ 44%] [34m[1mGenerating Lisp code from set_goal/NewGoal.msg[0m
+[35m[1mScanning dependencies of target set_goal_generate_messages_eus[0m
+[ 55%] [34m[1mGenerating EusLisp code from set_goal/NewGoal.msg[0m
+[ 55%] Built target set_goal_generate_messages_lisp
+[35m[1mScanning dependencies of target set_goal_generate_messages_cpp[0m
+[ 66%] [34m[1mGenerating C++ code from set_goal/NewGoal.msg[0m
+[ 77%] [34m[1mGenerating EusLisp manifest code for set_goal[0m
+[ 77%] Built target set_goal_generate_messages_cpp
+[35m[1mScanning dependencies of target SetGoal[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/SetGoal.dir/src/SetGoal.cpp.o[0m
+[ 88%] Built target set_goal_generate_messages_eus
+[35m[1mScanning dependencies of target set_goal_generate_messages[0m
+[ 88%] Built target set_goal_generate_messages
+[100%] [32m[1mLinking CXX executable /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/set_goal/lib/set_goal/SetGoal[0m
+[100%] Built target SetGoal

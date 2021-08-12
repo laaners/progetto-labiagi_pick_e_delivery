@@ -8,14 +8,24 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   tf2
   tf2_ros
+  std_msgs
+  message_generation
 )
 
+add_message_files(
+  FILES
+  NewGoal.msg
+)
+
+generate_messages(
+  DEPENDENCIES
+  std_msgs  # Or other packages containing msgs
+)
 
 catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES set_goal
-#  CATKIN_DEPENDS roscpp tf2 tf2_ros
-#  DEPENDS system_lib
+  INCLUDE_DIRS include
+  LIBRARIES set_goal
+  CATKIN_DEPENDS roscpp tf2 tf2_ros
 )
 
 include_directories(
@@ -24,3 +34,4 @@ include_directories(
 
 add_executable(SetGoal src/SetGoal.cpp)
 target_link_libraries(SetGoal ${catkin_LIBRARIES})
+add_dependencies(SetGoal set_goal_generate_messages_cpp)

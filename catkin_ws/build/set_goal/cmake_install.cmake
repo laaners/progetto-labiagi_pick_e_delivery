@@ -129,7 +129,43 @@ file(INSTALL DESTINATION "/home/alessio/Desktop/progetto-labiagi/catkin_ws/insta
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/set_goal/msg" TYPE FILE FILES "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/set_goal/msg/NewGoal.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/set_goal/cmake" TYPE FILE FILES "/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/set_goal/catkin_generated/installspace/set_goal-msg-paths.cmake")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/set_goal/include/set_goal")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/set_goal/share/roseus/ros/set_goal")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/set_goal/share/common-lisp/ros/set_goal")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/set_goal/share/gennodejs/ros/set_goal")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/set_goal/lib/python2.7/dist-packages/set_goal")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/set_goal/lib/python2.7/dist-packages/set_goal")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/set_goal/catkin_generated/installspace/set_goal.pc")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/set_goal/cmake" TYPE FILE FILES "/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/set_goal/catkin_generated/installspace/set_goal-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

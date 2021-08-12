@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(set_goal_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT " " STREQUAL " ")
+if(NOT "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/set_goal/include;/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/set_goal/include " STREQUAL " ")
   set(set_goal_INCLUDE_DIRS "")
-  set(_include_dirs "")
+  set(_include_dirs "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/set_goal/include;/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/set_goal/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -116,7 +116,7 @@ if(NOT " " STREQUAL " ")
   endforeach()
 endif()
 
-set(libraries "")
+set(libraries "set_goal")
 foreach(library ${libraries})
   # keep build configuration keywords, target names and absolute libraries as-is
   if("${library}" MATCHES "^(debug|optimized|general)$")
@@ -177,7 +177,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(set_goal_EXPORTED_TARGETS "")
+set(set_goal_EXPORTED_TARGETS "set_goal_generate_messages_cpp;set_goal_generate_messages_eus;set_goal_generate_messages_lisp;set_goal_generate_messages_nodejs;set_goal_generate_messages_py")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${set_goal_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -185,7 +185,7 @@ foreach(t ${set_goal_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "")
+set(depends "roscpp;tf2;tf2_ros")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls
@@ -214,7 +214,7 @@ foreach(depend ${depends})
   list(APPEND set_goal_EXPORTED_TARGETS ${${set_goal_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "")
+set(pkg_cfg_extras "set_goal-msg-extras.cmake")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${set_goal_DIR}/${extra})

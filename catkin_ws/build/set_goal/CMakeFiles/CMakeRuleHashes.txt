@@ -1,2 +1,15 @@
 # Hashes of file build rules.
+10cdc84ba4b223ec76809a83ce534f53 /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/set_goal/include/set_goal/NewGoal.h
+89d4806d895cd906051f89286ba3621d /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/set_goal/lib/python2.7/dist-packages/set_goal/msg/_NewGoal.py
+c54609d33ae813e0cb9bc149eb3a9cee /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/set_goal/lib/python2.7/dist-packages/set_goal/msg/__init__.py
+961c2ad3e1ca6c157d47c90ea0824d5e /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/set_goal/share/common-lisp/ros/set_goal/msg/NewGoal.lisp
+b8d9c895f5633f7c9852ae28ab026b81 /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/set_goal/share/gennodejs/ros/set_goal/msg/NewGoal.js
+6e7427ccbe70f51fcc3fceb4e651b83f /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/set_goal/share/roseus/ros/set_goal/manifest.l
+6682f87d25a62171c3a80f4c0cecb59f /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/set_goal/share/roseus/ros/set_goal/msg/NewGoal.l
+6f8645465955952f7a26b009756af9f7 CMakeFiles/_set_goal_generate_messages_check_deps_NewGoal
 29ee0c11174b171ad5e1ab1147edbe64 CMakeFiles/clean_test_results
+0d36e91dacae12f1426b89202c53e5d3 CMakeFiles/set_goal_generate_messages_cpp
+0d36e91dacae12f1426b89202c53e5d3 CMakeFiles/set_goal_generate_messages_eus
+0d36e91dacae12f1426b89202c53e5d3 CMakeFiles/set_goal_generate_messages_lisp
+0d36e91dacae12f1426b89202c53e5d3 CMakeFiles/set_goal_generate_messages_nodejs
+0d36e91dacae12f1426b89202c53e5d3 CMakeFiles/set_goal_generate_messages_py
