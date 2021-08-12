@@ -1,0 +1,3 @@
+open april_tag_slam.conf
+add_canvas slam slam
+run runner
