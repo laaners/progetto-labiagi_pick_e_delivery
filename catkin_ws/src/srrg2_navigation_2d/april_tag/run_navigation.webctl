@@ -1,7 +1,7 @@
 01_roscore   /opt/ros/<ROS_DISTRO>/bin/roscore
 02_stage     /opt/ros/<ROS_DISTRO>/lib/stage_ros/stageros april_tag.world
 03_mapserver /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/lib/srrg2_map_server/map_server april_tag.yaml
-04_rviz     /opt/ros/<ROS_DISTRO>/bin/rviz
+04_rviz     /opt/ros/<ROS_DISTRO>/bin/rviz -d rviz_navigation2d.rviz
 05_localize /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/lib/srrg2_executor/srrg2_shell run_localizer_live_ms.srrg
 06_planner  /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/lib/srrg2_executor/srrg2_shell run_planner_live_ms_nogui.srrg
 07a_follower(static)  /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/lib/srrg2_navigation_2d_ros/path_follower_app _path_topic:=/path

@@ -1,4 +1,4 @@
-image:           april_tag.png
+image:           april_tag_scale.png
 resolution:      0.05
 origin:          [ 0.0,  0.0, 0.0 ]
 occupied_thresh: 0.85

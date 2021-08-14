@@ -1,0 +1,22 @@
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp:27:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_goal[m[K’ does not name a type; did you mean ‘[01m[Kstrcoll[m[K’?
+ void setGoalCallBack(const [01;31m[Kset_goal[m[K::NewGoal& new_goal) {
+                            [01;31m[K^~~~~~~~[m[K
+                            [32m[Kstrcoll[m[K
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp:27:45:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+ void setGoalCallBack(const set_goal::NewGoal[01;31m[K&[m[K new_goal) {
+                                             [01;31m[K^[m[K
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp:27:45:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp:27:47:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Knew_goal[m[K’
+ void setGoalCallBack(const set_goal::NewGoal& [01;31m[Knew_goal[m[K) {
+                                               [01;31m[K^~~~~~~~[m[K
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp:109:57:[m[K [01;31m[Kerror: [m[K‘[01m[KsetGoalCallBack[m[K’ was not declared in this scope
+     ros::Subscriber sub = n.subscribe("New_Goal", 1000, [01;31m[KsetGoalCallBack[m[K);
+                                                         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp:109:57:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KpositionCallBack[m[K’
+     ros::Subscriber sub = n.subscribe("New_Goal", 1000, [01;36m[KsetGoalCallBack[m[K);
+                                                         [01;36m[K^~~~~~~~~~~~~~~[m[K
+                                                         [32m[KpositionCallBack[m[K
+make[2]: *** [CMakeFiles/SetGoal.dir/src/SetGoal.cpp.o] Error 1
+make[1]: *** [CMakeFiles/SetGoal.dir/all] Error 2
+make: *** [all] Error 2

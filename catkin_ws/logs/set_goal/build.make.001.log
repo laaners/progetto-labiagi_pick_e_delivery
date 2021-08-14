@@ -1,4 +1,0 @@
-[35m[1mScanning dependencies of target SetGoal[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/SetGoal.dir/src/SetGoal.cpp.o[0m
-[100%] [32m[1mLinking CXX executable /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/set_goal/lib/set_goal/SetGoal[0m
-[100%] Built target SetGoal

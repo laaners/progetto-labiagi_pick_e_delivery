@@ -1,0 +1,8 @@
+prefix=/home/alessio/Desktop/progetto-labiagi/catkin_ws/install
+
+Name: pick_e_delivery
+Description: Description of pick_e_delivery
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

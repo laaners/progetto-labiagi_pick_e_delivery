@@ -1,0 +1,5 @@
+[31m[1mCMake Error[0m at /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/CMakeLists.txt:36 (add_dependencies):
+  The dependency target "set_goal_generate_messages_cpp" of target "SetGoal"
+  does not exist.
+
+

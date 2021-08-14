@@ -1,0 +1,5 @@
+rosnodejs_examples
+/home/alessio/Desktop/progetto-labiagi/rosnodejs_ws/devel/.private/rosnodejs_examples/cmake.lock /home/alessio/Desktop/progetto-labiagi/rosnodejs_ws/devel/./cmake.lock
+/home/alessio/Desktop/progetto-labiagi/rosnodejs_ws/devel/.private/rosnodejs_examples/lib/pkgconfig/rosnodejs_examples.pc /home/alessio/Desktop/progetto-labiagi/rosnodejs_ws/devel/lib/pkgconfig/rosnodejs_examples.pc
+/home/alessio/Desktop/progetto-labiagi/rosnodejs_ws/devel/.private/rosnodejs_examples/share/rosnodejs_examples/cmake/rosnodejs_examplesConfig.cmake /home/alessio/Desktop/progetto-labiagi/rosnodejs_ws/devel/share/rosnodejs_examples/cmake/rosnodejs_examplesConfig.cmake
+/home/alessio/Desktop/progetto-labiagi/rosnodejs_ws/devel/.private/rosnodejs_examples/share/rosnodejs_examples/cmake/rosnodejs_examplesConfig-version.cmake /home/alessio/Desktop/progetto-labiagi/rosnodejs_ws/devel/share/rosnodejs_examples/cmake/rosnodejs_examplesConfig-version.cmake

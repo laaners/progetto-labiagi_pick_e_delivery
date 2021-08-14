@@ -1,0 +1,58 @@
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[  0%] Built target std_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target _pick_e_delivery_generate_messages_check_deps_NewGoal[0m
+[  0%] Built target _pick_e_delivery_generate_messages_check_deps_NewGoal
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[  0%] Built target std_msgs_generate_messages_py
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[  0%] Built target std_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[  0%] Built target std_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[  0%] Built target std_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target pick_e_delivery_generate_messages_cpp[0m
+[ 11%] [34m[1mGenerating C++ code from pick_e_delivery/NewGoal.msg[0m
+[ 11%] Built target pick_e_delivery_generate_messages_cpp
+[35m[1mScanning dependencies of target pick_e_delivery_generate_messages_py[0m
+[ 22%] [34m[1mGenerating Python from MSG pick_e_delivery/NewGoal[0m
+[ 33%] [34m[1mGenerating Python msg __init__.py for pick_e_delivery[0m
+[ 33%] Built target pick_e_delivery_generate_messages_py
+[35m[1mScanning dependencies of target pick_e_delivery_generate_messages_nodejs[0m
+[ 44%] [34m[1mGenerating Javascript code from pick_e_delivery/NewGoal.msg[0m
+[ 44%] Built target pick_e_delivery_generate_messages_nodejs
+[35m[1mScanning dependencies of target pick_e_delivery_generate_messages_lisp[0m
+[ 55%] [34m[1mGenerating Lisp code from pick_e_delivery/NewGoal.msg[0m
+[ 55%] Built target pick_e_delivery_generate_messages_lisp
+[35m[1mScanning dependencies of target pick_e_delivery_generate_messages_eus[0m
+[ 66%] [34m[1mGenerating EusLisp code from pick_e_delivery/NewGoal.msg[0m
+[ 77%] [34m[1mGenerating EusLisp manifest code for pick_e_delivery[0m
+[35m[1mScanning dependencies of target SetGoal[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/SetGoal.dir/src/SetGoal.cpp.o[0m
+[ 88%] Built target pick_e_delivery_generate_messages_eus
+[35m[1mScanning dependencies of target pick_e_delivery_generate_messages[0m
+[ 88%] Built target pick_e_delivery_generate_messages
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp:27:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_goal[m[K’ does not name a type; did you mean ‘[01m[Kstrcoll[m[K’?
+ void setGoalCallBack(const [01;31m[Kset_goal[m[K::NewGoal& new_goal) {
+                            [01;31m[K^~~~~~~~[m[K
+                            [32m[Kstrcoll[m[K
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp:27:45:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+ void setGoalCallBack(const set_goal::NewGoal[01;31m[K&[m[K new_goal) {
+                                             [01;31m[K^[m[K
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp:27:45:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp:27:47:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Knew_goal[m[K’
+ void setGoalCallBack(const set_goal::NewGoal& [01;31m[Knew_goal[m[K) {
+                                               [01;31m[K^~~~~~~~[m[K
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp:109:57:[m[K [01;31m[Kerror: [m[K‘[01m[KsetGoalCallBack[m[K’ was not declared in this scope
+     ros::Subscriber sub = n.subscribe("New_Goal", 1000, [01;31m[KsetGoalCallBack[m[K);
+                                                         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp:109:57:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KpositionCallBack[m[K’
+     ros::Subscriber sub = n.subscribe("New_Goal", 1000, [01;36m[KsetGoalCallBack[m[K);
+                                                         [01;36m[K^~~~~~~~~~~~~~~[m[K
+                                                         [32m[KpositionCallBack[m[K
+CMakeFiles/SetGoal.dir/build.make:62: recipe for target 'CMakeFiles/SetGoal.dir/src/SetGoal.cpp.o' failed
+CMakeFiles/Makefile2:688: recipe for target 'CMakeFiles/SetGoal.dir/all' failed
+Makefile:140: recipe for target 'all' failed
+make[2]: *** [CMakeFiles/SetGoal.dir/src/SetGoal.cpp.o] Error 1
+make[1]: *** [CMakeFiles/SetGoal.dir/all] Error 2
+make: *** [all] Error 2

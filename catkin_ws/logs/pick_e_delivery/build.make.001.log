@@ -1,0 +1,16 @@
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target _pick_e_delivery_generate_messages_check_deps_NewGoal
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_eus
+[ 11%] Built target pick_e_delivery_generate_messages_cpp
+[ 33%] Built target pick_e_delivery_generate_messages_py
+[ 44%] Built target pick_e_delivery_generate_messages_nodejs
+[ 55%] Built target pick_e_delivery_generate_messages_lisp
+[ 77%] Built target pick_e_delivery_generate_messages_eus
+[35m[1mScanning dependencies of target SetGoal[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/SetGoal.dir/src/SetGoal.cpp.o[0m
+[ 88%] Built target pick_e_delivery_generate_messages
+[100%] [32m[1mLinking CXX executable /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/pick_e_delivery/SetGoal[0m
+[100%] Built target SetGoal
