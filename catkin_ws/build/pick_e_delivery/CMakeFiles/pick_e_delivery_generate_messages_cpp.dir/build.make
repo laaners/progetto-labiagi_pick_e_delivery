@@ -53,16 +53,24 @@ CMAKE_BINARY_DIR = /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e
 # Include the progress variables for this target.
 include CMakeFiles/pick_e_delivery_generate_messages_cpp.dir/progress.make
 
+CMakeFiles/pick_e_delivery_generate_messages_cpp: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/include/pick_e_delivery/Pose.h
 CMakeFiles/pick_e_delivery_generate_messages_cpp: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/include/pick_e_delivery/NewGoal.h
 
+
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/include/pick_e_delivery/Pose.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/include/pick_e_delivery/Pose.h: /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Pose.msg
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/include/pick_e_delivery/Pose.h: /opt/ros/melodic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from pick_e_delivery/Pose.msg"
+	cd /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery && /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Pose.msg -Ipick_e_delivery:/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p pick_e_delivery -o /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/include/pick_e_delivery -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/include/pick_e_delivery/NewGoal.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/include/pick_e_delivery/NewGoal.h: /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/NewGoal.msg
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/include/pick_e_delivery/NewGoal.h: /opt/ros/melodic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from pick_e_delivery/NewGoal.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from pick_e_delivery/NewGoal.msg"
 	cd /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery && /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/NewGoal.msg -Ipick_e_delivery:/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p pick_e_delivery -o /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/include/pick_e_delivery -e /opt/ros/melodic/share/gencpp/cmake/..
 
 pick_e_delivery_generate_messages_cpp: CMakeFiles/pick_e_delivery_generate_messages_cpp
+pick_e_delivery_generate_messages_cpp: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/include/pick_e_delivery/Pose.h
 pick_e_delivery_generate_messages_cpp: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/include/pick_e_delivery/NewGoal.h
 pick_e_delivery_generate_messages_cpp: CMakeFiles/pick_e_delivery_generate_messages_cpp.dir/build.make
 

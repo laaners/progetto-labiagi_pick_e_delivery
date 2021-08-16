@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+
+    <!--JQUERY-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+    <!--BOOSTRAP-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <h1>Simple Map Example</h1>
+
+    <canvas id="myCanvas" width=421 height=574>
+      Your browser does not support the canvas element.
+    </canvas>
+
+    <button>cliccami</button>
+
+    <script type="text/javascript" type="text/javascript">
+      var ws = new WebSocket("ws://localhost:3000/");
+      var canvas = document.getElementById("myCanvas");
+      var ctx = canvas.getContext("2d");
+      var base_image = new Image();
+      base_image.src = 'http://localhost:3000/map';
+
+
+      window.onload = function() {
+        base_image.onload = function(){
+          ctx.drawImage(base_image, 0, 0);
+        }
+      }
+
+      $("button").click(function() {
+        ws.send("ciaooo");
+      });
+      
+      ws.onmessage = function(event) {
+        ctx.fillStyle = "#FF0000";
+
+        let x = JSON.parse(event.data).x/0.05-3.5;
+        let y = 574-3.5-JSON.parse(event.data).y/0.05;
+
+        //x/0.05, y/0.05, inizia a disegnare in alto a sinistra
+        /*
+        'april_tag.png': 281x547
+        'april_tag_scale.png': 421x574
+        */
+
+        ctx.drawImage(base_image, 0, 0);
+        ctx.fillRect(x,y,7,7);
+
+      }
+    </script>
+  </body>
+</html>

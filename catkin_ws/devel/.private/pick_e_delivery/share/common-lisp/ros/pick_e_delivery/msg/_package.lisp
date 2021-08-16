@@ -3,5 +3,7 @@
   (:export
    "<NEWGOAL>"
    "NEWGOAL"
+   "<POSE>"
+   "POSE"
   ))
 

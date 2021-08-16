@@ -1,0 +1,17 @@
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target _pick_e_delivery_generate_messages_check_deps_NewGoal
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_eus
+[  9%] Built target pick_e_delivery_generate_messages_cpp
+[ 27%] Built target pick_e_delivery_generate_messages_py
+[ 36%] Built target pick_e_delivery_generate_messages_nodejs
+[ 45%] Built target pick_e_delivery_generate_messages_lisp
+[ 63%] Built target pick_e_delivery_generate_messages_eus
+[35m[1mScanning dependencies of target Position[0m
+[ 81%] Built target SetGoal
+[ 90%] [32mBuilding CXX object CMakeFiles/Position.dir/src/Position.cpp.o[0m
+[ 90%] Built target pick_e_delivery_generate_messages
+[100%] [32m[1mLinking CXX executable /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/pick_e_delivery/Position[0m
+[100%] Built target Position

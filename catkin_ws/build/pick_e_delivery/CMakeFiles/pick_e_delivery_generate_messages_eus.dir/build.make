@@ -53,20 +53,27 @@ CMAKE_BINARY_DIR = /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e
 # Include the progress variables for this target.
 include CMakeFiles/pick_e_delivery_generate_messages_eus.dir/progress.make
 
+CMakeFiles/pick_e_delivery_generate_messages_eus: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/roseus/ros/pick_e_delivery/msg/Pose.l
 CMakeFiles/pick_e_delivery_generate_messages_eus: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/roseus/ros/pick_e_delivery/msg/NewGoal.l
 CMakeFiles/pick_e_delivery_generate_messages_eus: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/roseus/ros/pick_e_delivery/manifest.l
 
 
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/roseus/ros/pick_e_delivery/msg/Pose.l: /opt/ros/melodic/lib/geneus/gen_eus.py
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/roseus/ros/pick_e_delivery/msg/Pose.l: /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Pose.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from pick_e_delivery/Pose.msg"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Pose.msg -Ipick_e_delivery:/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p pick_e_delivery -o /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/roseus/ros/pick_e_delivery/msg
+
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/roseus/ros/pick_e_delivery/msg/NewGoal.l: /opt/ros/melodic/lib/geneus/gen_eus.py
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/roseus/ros/pick_e_delivery/msg/NewGoal.l: /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/NewGoal.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from pick_e_delivery/NewGoal.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from pick_e_delivery/NewGoal.msg"
 	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/NewGoal.msg -Ipick_e_delivery:/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p pick_e_delivery -o /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/roseus/ros/pick_e_delivery/msg
 
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/roseus/ros/pick_e_delivery/manifest.l: /opt/ros/melodic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp manifest code for pick_e_delivery"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp manifest code for pick_e_delivery"
 	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/roseus/ros/pick_e_delivery pick_e_delivery std_msgs
 
 pick_e_delivery_generate_messages_eus: CMakeFiles/pick_e_delivery_generate_messages_eus
+pick_e_delivery_generate_messages_eus: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/roseus/ros/pick_e_delivery/msg/Pose.l
 pick_e_delivery_generate_messages_eus: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/roseus/ros/pick_e_delivery/msg/NewGoal.l
 pick_e_delivery_generate_messages_eus: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/roseus/ros/pick_e_delivery/manifest.l
 pick_e_delivery_generate_messages_eus: CMakeFiles/pick_e_delivery_generate_messages_eus.dir/build.make

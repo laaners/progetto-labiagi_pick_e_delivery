@@ -1,0 +1,8 @@
+[  8%] Built target tf_helpers
+[ 17%] Built target path_provider
+[ 56%] Built target srrg2_navigation_2d_ros_library
+[ 65%] Built target cinema_dumper
+[ 73%] Built target path_follower_app
+[ 82%] Built target planning_robot
+[ 91%] Built target collision_avoider_class
+[100%] Built target collision_avoider

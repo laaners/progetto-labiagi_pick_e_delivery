@@ -8,6 +8,7 @@
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles/pick_e_delivery_gencpp.dir
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles/install.dir
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles/_pick_e_delivery_generate_messages_check_deps_NewGoal.dir
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles/Position.dir
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles/pick_e_delivery_geneus.dir
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles/pick_e_delivery_generate_messages.dir
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles/actionlib_generate_messages_py.dir
@@ -48,6 +49,7 @@
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles/std_msgs_generate_messages_lisp.dir
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles/std_msgs_generate_messages_nodejs.dir
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles/pick_e_delivery_genlisp.dir
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles/_pick_e_delivery_generate_messages_check_deps_Pose.dir
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles/geometry_msgs_generate_messages_cpp.dir
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles/geometry_msgs_generate_messages_lisp.dir
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles/geometry_msgs_generate_messages_py.dir

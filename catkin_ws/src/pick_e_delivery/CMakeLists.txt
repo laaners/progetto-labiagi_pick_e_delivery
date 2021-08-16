@@ -13,6 +13,7 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
   FILES
   NewGoal.msg
+  Pose.msg
 )
 
 generate_messages(
@@ -34,3 +35,7 @@ include_directories(
 add_executable(SetGoal src/SetGoal.cpp)
 target_link_libraries(SetGoal ${catkin_LIBRARIES})
 add_dependencies(SetGoal pick_e_delivery_generate_messages_cpp)
+
+add_executable(Position src/Position.cpp)
+target_link_libraries(Position ${catkin_LIBRARIES})
+add_dependencies(Position pick_e_delivery_generate_messages_cpp)

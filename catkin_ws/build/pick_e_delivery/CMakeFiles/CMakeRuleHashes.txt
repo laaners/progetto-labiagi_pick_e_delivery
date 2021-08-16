@@ -1,12 +1,18 @@
 # Hashes of file build rules.
 b10fada85f81defe1b63f0f4d7159ae8 /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/include/pick_e_delivery/NewGoal.h
+93e9c38c0830a3433a480e1f3a30c8cc /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/include/pick_e_delivery/Pose.h
 05313f0e34f1ad474a1ceb19f0b1efad /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/_NewGoal.py
+33a8af7d59ad6ec591f7daee7fea4def /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/_Pose.py
 ebee98ed47ac1c54e8903a92b203ca7c /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/__init__.py
 4dcf863374976be1f693a67026544caf /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/common-lisp/ros/pick_e_delivery/msg/NewGoal.lisp
+340e5bdef8c81390fbde8bcb08d3102e /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/common-lisp/ros/pick_e_delivery/msg/Pose.lisp
 3ebed8e174198e6ac32045aa489edad6 /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/gennodejs/ros/pick_e_delivery/msg/NewGoal.js
+c2d5460d4120a3048aec5872844459b5 /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/gennodejs/ros/pick_e_delivery/msg/Pose.js
 95841b8306a3cd0fa94ff214f1857afc /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/roseus/ros/pick_e_delivery/manifest.l
 e2288d8de659931893a8bafcfd92f60c /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/roseus/ros/pick_e_delivery/msg/NewGoal.l
+ead417c9b8776898a8e61c3a294d9fd9 /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/roseus/ros/pick_e_delivery/msg/Pose.l
 fa92fb4dc6ae6c67b528cd7db4875270 CMakeFiles/_pick_e_delivery_generate_messages_check_deps_NewGoal
+c06e5477594e9035eb901baafb5a4334 CMakeFiles/_pick_e_delivery_generate_messages_check_deps_Pose
 d6e1402687a0917951b185347b9085d1 CMakeFiles/clean_test_results
 6e611d5688dd032e08d33579f392ad23 CMakeFiles/pick_e_delivery_generate_messages_cpp
 6e611d5688dd032e08d33579f392ad23 CMakeFiles/pick_e_delivery_generate_messages_eus
