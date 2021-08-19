@@ -21,6 +21,7 @@ class NewGoal {
       this.x = null;
       this.y = null;
       this.theta = null;
+      this.status = null;
     }
     else {
       if (initObj.hasOwnProperty('x')) {
@@ -41,6 +42,12 @@ class NewGoal {
       else {
         this.theta = 0.0;
       }
+      if (initObj.hasOwnProperty('status')) {
+        this.status = initObj.status
+      }
+      else {
+        this.status = 0;
+      }
     }
   }
 
@@ -52,6 +59,8 @@ class NewGoal {
     bufferOffset = _serializer.float32(obj.y, buffer, bufferOffset);
     // Serialize message field [theta]
     bufferOffset = _serializer.float32(obj.theta, buffer, bufferOffset);
+    // Serialize message field [status]
+    bufferOffset = _serializer.int32(obj.status, buffer, bufferOffset);
     return bufferOffset;
   }
 
@@ -65,11 +74,13 @@ class NewGoal {
     data.y = _deserializer.float32(buffer, bufferOffset);
     // Deserialize message field [theta]
     data.theta = _deserializer.float32(buffer, bufferOffset);
+    // Deserialize message field [status]
+    data.status = _deserializer.int32(buffer, bufferOffset);
     return data;
   }
 
   static getMessageSize(object) {
-    return 12;
+    return 16;
   }
 
   static datatype() {
@@ -79,7 +90,7 @@ class NewGoal {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return 'a130bc60ee6513855dc62ea83fcc5b20';
+    return '79af765d251f55a6fa90d1dce04ea1a9';
   }
 
   static messageDefinition() {
@@ -88,6 +99,7 @@ class NewGoal {
     float32 x
     float32 y
     float32 theta
+    int32 status
     `;
   }
 
@@ -116,6 +128,13 @@ class NewGoal {
     }
     else {
       resolved.theta = 0.0
+    }
+
+    if (msg.status !== undefined) {
+      resolved.status = msg.status;
+    }
+    else {
+      resolved.status = 0
     }
 
     return resolved;

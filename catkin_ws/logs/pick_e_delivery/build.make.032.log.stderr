@@ -1,0 +1,38 @@
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp:31:17:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kros::NodeHandle n[m[K’
+ ros::NodeHandle [01;31m[Kn[m[K;
+                 [01;31m[K^[m[K
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp:24:8:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Ksize_t n[m[K’
+ size_t [01;36m[Kn[m[K = 10;
+        [01;36m[K^[m[K
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp:[m[K In function ‘[01m[Kvoid check1_CallBack(const ros::TimerEvent&)[m[K’:
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp:138:50:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KcreateTimer[m[K’ in ‘[01m[Kn[m[K’, which is of non-class type ‘[01m[Ksize_t {aka long unsigned int}[m[K’
+                     ros::Timer waitPackTimer = n.[01;31m[KcreateTimer[m[K(ros::Duration(5.0), waitPackCallBack, true);
+                                                  [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp:166:18:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kadvertise[m[K’ in ‘[01m[Kn[m[K’, which is of non-class type ‘[01m[Ksize_t {aka long unsigned int}[m[K’
+     pub_goal = n.[01;31m[Kadvertise[m[K<geometry_msgs::PoseStamped>("/move_base_simple/goal", 1000);
+                  [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp:166:54:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+     pub_goal = n.advertise<geometry_msgs::PoseStamped[01;31m[K>[m[K("/move_base_simple/goal", 1000);
+                                                      [01;31m[K^[m[K
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp:167:17:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kadvertise[m[K’ in ‘[01m[Kn[m[K’, which is of non-class type ‘[01m[Ksize_t {aka long unsigned int}[m[K’
+     pub_pos = n.[01;31m[Kadvertise[m[K<pick_e_delivery::Pose>("/pick_e_delivery/Pose", 1000);
+                 [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp:167:48:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+     pub_pos = n.advertise<pick_e_delivery::Pose[01;31m[K>[m[K("/pick_e_delivery/Pose", 1000);
+                                                [01;31m[K^[m[K
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp:172:29:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksubscribe[m[K’ in ‘[01m[Kn[m[K’, which is of non-class type ‘[01m[Ksize_t {aka long unsigned int}[m[K’
+     ros::Subscriber sub = n.[01;31m[Ksubscribe[m[K("New_Goal", 1000, setGoalCallBack);
+                             [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp:175:32:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksubscribe[m[K’ in ‘[01m[Kn[m[K’, which is of non-class type ‘[01m[Ksize_t {aka long unsigned int}[m[K’
+     ros::Subscriber sub_tf = n.[01;31m[Ksubscribe[m[K("tf", 1000, positionCallBack);
+                                [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp:177:27:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KcreateTimer[m[K’ in ‘[01m[Kn[m[K’, which is of non-class type ‘[01m[Ksize_t {aka long unsigned int}[m[K’
+     ros::Timer timer1 = n.[01;31m[KcreateTimer[m[K(ros::Duration(0.5),check1_CallBack);
+                           [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp:178:27:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KcreateTimer[m[K’ in ‘[01m[Kn[m[K’, which is of non-class type ‘[01m[Ksize_t {aka long unsigned int}[m[K’
+     ros::Timer timer2 = n.[01;31m[KcreateTimer[m[K(ros::Duration(50),check2_CallBack);
+                           [01;31m[K^~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/SetGoal.dir/src/SetGoal.cpp.o] Error 1
+make[1]: *** [CMakeFiles/SetGoal.dir/all] Error 2
+make: *** [all] Error 2

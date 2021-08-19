@@ -21,6 +21,8 @@ class Pose {
       this.x = null;
       this.y = null;
       this.yaw = null;
+      this.status = null;
+      this.status_msg = null;
     }
     else {
       if (initObj.hasOwnProperty('x')) {
@@ -41,6 +43,18 @@ class Pose {
       else {
         this.yaw = 0.0;
       }
+      if (initObj.hasOwnProperty('status')) {
+        this.status = initObj.status
+      }
+      else {
+        this.status = 0;
+      }
+      if (initObj.hasOwnProperty('status_msg')) {
+        this.status_msg = initObj.status_msg
+      }
+      else {
+        this.status_msg = '';
+      }
     }
   }
 
@@ -52,6 +66,10 @@ class Pose {
     bufferOffset = _serializer.float32(obj.y, buffer, bufferOffset);
     // Serialize message field [yaw]
     bufferOffset = _serializer.float32(obj.yaw, buffer, bufferOffset);
+    // Serialize message field [status]
+    bufferOffset = _serializer.int32(obj.status, buffer, bufferOffset);
+    // Serialize message field [status_msg]
+    bufferOffset = _serializer.string(obj.status_msg, buffer, bufferOffset);
     return bufferOffset;
   }
 
@@ -65,11 +83,17 @@ class Pose {
     data.y = _deserializer.float32(buffer, bufferOffset);
     // Deserialize message field [yaw]
     data.yaw = _deserializer.float32(buffer, bufferOffset);
+    // Deserialize message field [status]
+    data.status = _deserializer.int32(buffer, bufferOffset);
+    // Deserialize message field [status_msg]
+    data.status_msg = _deserializer.string(buffer, bufferOffset);
     return data;
   }
 
   static getMessageSize(object) {
-    return 12;
+    let length = 0;
+    length += object.status_msg.length;
+    return length + 20;
   }
 
   static datatype() {
@@ -79,7 +103,7 @@ class Pose {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return '47802147045815b06859cca542c21d31';
+    return 'fa1b81ed9024769c496d819f689530fc';
   }
 
   static messageDefinition() {
@@ -88,7 +112,8 @@ class Pose {
     float32 x
     float32 y
     float32 yaw
-    
+    int32 status
+    string status_msg
     `;
   }
 
@@ -117,6 +142,20 @@ class Pose {
     }
     else {
       resolved.yaw = 0.0
+    }
+
+    if (msg.status !== undefined) {
+      resolved.status = msg.status;
+    }
+    else {
+      resolved.status = 0
+    }
+
+    if (msg.status_msg !== undefined) {
+      resolved.status_msg = msg.status_msg;
+    }
+    else {
+      resolved.status_msg = ''
     }
 
     return resolved;

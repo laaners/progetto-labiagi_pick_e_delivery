@@ -14,7 +14,7 @@
 
 (defclass pick_e_delivery::NewGoal
   :super ros::object
-  :slots (_x _y _theta ))
+  :slots (_x _y _theta _status ))
 
 (defmethod pick_e_delivery::NewGoal
   (:init
@@ -22,11 +22,13 @@
     ((:x __x) 0.0)
     ((:y __y) 0.0)
     ((:theta __theta) 0.0)
+    ((:status __status) 0)
     )
    (send-super :init)
    (setq _x (float __x))
    (setq _y (float __y))
    (setq _theta (float __theta))
+   (setq _status (round __status))
    self)
   (:x
    (&optional __x)
@@ -37,6 +39,9 @@
   (:theta
    (&optional __theta)
    (if __theta (setq _theta __theta)) _theta)
+  (:status
+   (&optional __status)
+   (if __status (setq _status __status)) _status)
   (:serialization-length
    ()
    (+
@@ -45,6 +50,8 @@
     ;; float32 _y
     4
     ;; float32 _theta
+    4
+    ;; int32 _status
     4
     ))
   (:serialize
@@ -57,6 +64,8 @@
        (sys::poke _y (send s :buffer) (send s :count) :float) (incf (stream-count s) 4)
      ;; float32 _theta
        (sys::poke _theta (send s :buffer) (send s :count) :float) (incf (stream-count s) 4)
+     ;; int32 _status
+       (write-long _status s)
      ;;
      (if (null strm) (get-output-stream-string s))))
   (:deserialize
@@ -67,20 +76,23 @@
      (setq _y (sys::peek buf ptr- :float)) (incf ptr- 4)
    ;; float32 _theta
      (setq _theta (sys::peek buf ptr- :float)) (incf ptr- 4)
+   ;; int32 _status
+     (setq _status (sys::peek buf ptr- :integer)) (incf ptr- 4)
    ;;
    self)
   )
 
-(setf (get pick_e_delivery::NewGoal :md5sum-) "a130bc60ee6513855dc62ea83fcc5b20")
+(setf (get pick_e_delivery::NewGoal :md5sum-) "79af765d251f55a6fa90d1dce04ea1a9")
 (setf (get pick_e_delivery::NewGoal :datatype-) "pick_e_delivery/NewGoal")
 (setf (get pick_e_delivery::NewGoal :definition-)
       "float32 x
 float32 y
 float32 theta
+int32 status
 ")
 
 
 
-(provide :pick_e_delivery/NewGoal "a130bc60ee6513855dc62ea83fcc5b20")
+(provide :pick_e_delivery/NewGoal "79af765d251f55a6fa90d1dce04ea1a9")
 
 

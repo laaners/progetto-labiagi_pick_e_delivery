@@ -5,4 +5,6 @@
           Y
           THETA-VAL
           THETA
+          STATUS-VAL
+          STATUS
 ))

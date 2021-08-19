@@ -11,95 +11,71 @@ const port = 3000;
 
 const rosnodejs = require('rosnodejs');
 const std_msgs = rosnodejs.require('std_msgs').msg;
-const tf = require('tf-rosnodejs');
 
+rosnodejs.initNode('/talker_node', {onTheFly: true}).then((rosNode) => {
+    let tosend = {"position": null, "goal": null};
 
-function talker() {
-    rosnodejs.initNode('/talker_node').then((rosNode) => {
-        let pub = rosNode.advertise('New_Goal','pick_e_delivery/NewGoal');
-        let count = 0;
-        let msg = new std_msgs.String();
-
-
-      //msg = JSON.parse('{"x": 8.0, "y": 22.0, "theta": 0.0}');
-      //console.log(msg);
-      //pub.publish(msg);
-      
-        let published = false;
-        setInterval(() => {
-            if(!published) {
-                msg = JSON.parse('{"x": 8.0, "y": 22.0, "theta": 0.0}');
-                //msg = JSON.parse('{"x": 9.0, "y": 7.0, "theta": 0.0}');
-                console.log(msg);
-                pub.publish(msg);
-                published = true;
-            }
-            // Log through stdout and /rosout
-            console.log(count);
-            ++count;
-        }, 1000);
-      
-    });
-}
-
-//talker();
-
-let x = () => rosnodejs.initNode('/talker_node', {onTheFly: true}).then((rosNode) => {
-
-    /*
-    let cmd_vel = rosNode.advertise('/turtle1/cmd_vel','geometry_msgs/Twist', {
-        queueSize: 1,
-        latching: true,
-        throttleMs: 9
-    });
-    
-    const Twist = rosnodejs.require('geometry_msgs').msg.Twist;
-    const msgTwist = new Twist({
-        linear: { x: 1, y: 0, z: 0 },
-        angular: { x: 0, y: 0, z: 1 }
-    });
-    cmd_vel.publish(msgTwist);
-    */
-
-    let cmd_vel = rosNode.advertise('/New_Goal','pick_e_delivery/NewGoal', {
-        queueSize: 1,
-        latching: true,
-        throttleMs: 9
-    });
-    
-    const Twist = rosnodejs.require('pick_e_delivery').msg.NewGoal;
-    //cmd_vel.publish({x: 9.0, y: 7.0, theta: 0.0});
-    cmd_vel.publish({x: 8.0, y: 22.0, theta: 0.0});
-});
-
-let y = () => rosnodejs.initNode('/listener_node').then((rosNode) => {
-    //let sub = rosNode.subscribe('/chatter', std_msgs.String,
-    let sub = rosNode.subscribe('/odom', 'nav_msgs/Odometry',
-        (data) => { // define callback execution
-            rosnodejs.log.info('I heard: [' + JSON.stringify(data.pose.pose.position) + ']');
-            sendAll(JSON.stringify(data.pose.pose.position));
-        }
-    );
-});
-
-let position = () => rosnodejs.initNode('/listener_node').then((rosNode) => {
-    //let sub = rosNode.subscribe('/chatter', std_msgs.String,
-    let sub = rosNode.subscribe('/pick_e_delivery/Pose', 'pick_e_delivery/Pose',
+    let sub_pos = rosNode.subscribe('/pick_e_delivery/Pose', 'pick_e_delivery/Pose',
         (data) => { // define callback execution            
-            //if( (data.transforms[0].header.frame_id == "map" && data.transforms[0].child_frame_id == "odom") ||
-            //data.transforms[0].header.frame_id == "odom" && data.transforms[0].child_frame_id == "base_link")
-            rosnodejs.log.info('I heard: [' + JSON.stringify(data) + ']');
-            sendAll(data);
+            //rosnodejs.log.info('I heard: [' + JSON.stringify(data) + ']');
+            tosend.position = data;
+            rosnodejs.log.info(JSON.stringify(tosend));
+            sendAll(tosend);
         }
     );
+
+    let sub_goal = rosNode.subscribe('/move_base_simple/goal','geometry_msgs/PoseStamped',
+        (data) => {
+            rosnodejs.log.info('I heard: [' + JSON.stringify({"goal": data}) + ']');
+            console.log(JSON.parse(JSON.stringify({"goal": data})));
+            tosend.goal = data;
+            sendAll(tosend);
+        }
+    );
+    console.log(tosend);
+    //sendAll(tosend);
+
 });
 
-
-//y();
-position();
-//x();
 app.get('/', function(req,res) {
     res.sendFile("index.html",{root: __dirname});
+});
+
+app.get('/pick', function(req,res) {
+    rosnodejs.initNode('/talker_node', {onTheFly: true}).then((rosNode) => {
+        let pub_goal = rosNode.advertise('/New_Goal','pick_e_delivery/NewGoal', {
+            queueSize: 1,
+            latching: true,
+            throttleMs: 9
+        });
+        pub_goal.publish({x: 8.0, y: 22.0, theta: 0.0, status: 1});
+    });
+    res.send("pick");
+});
+
+app.get('/delivery', function(req,res) {
+    rosnodejs.initNode('/talker_node').then((rosNode) => {
+        let pub_goal = rosNode.advertise('/New_Goal','pick_e_delivery/NewGoal', {
+            queueSize: 1,
+            latching: true,
+            throttleMs: 9
+        });
+        pub_goal.publish({x: 9.0, y: 19.0, theta: 0.0, status: 2});
+    });
+    res.send("delivery");
+});
+
+app.get('/pick_pack', function(req,res) {
+    rosnodejs.initNode('/talker_node').then((rosNode) => {
+        let pub_goal = rosNode.advertise('/New_Goal','pick_e_delivery/NewGoal', {
+            queueSize: 1,
+            latching: true,
+            throttleMs: 9
+        });
+        //pub_goal.publish({x: 9.0, y: 19.0, theta: 0.0, status: 0});
+        pub_goal.publish({x: -1.0, y: -1.0, theta: 0.0, status: 0});
+    });
+    res.send("delivery");
 });
 
 app.get('/map', function(req,res) {

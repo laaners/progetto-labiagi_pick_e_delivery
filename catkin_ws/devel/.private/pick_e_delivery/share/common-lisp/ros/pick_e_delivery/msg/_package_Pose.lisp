@@ -5,4 +5,8 @@
           Y
           YAW-VAL
           YAW
+          STATUS-VAL
+          STATUS
+          STATUS_MSG-VAL
+          STATUS_MSG
 ))

@@ -8,14 +8,15 @@ import struct
 
 
 class NewGoal(genpy.Message):
-  _md5sum = "a130bc60ee6513855dc62ea83fcc5b20"
+  _md5sum = "79af765d251f55a6fa90d1dce04ea1a9"
   _type = "pick_e_delivery/NewGoal"
   _has_header = False  # flag to mark the presence of a Header object
   _full_text = """float32 x
 float32 y
-float32 theta"""
-  __slots__ = ['x','y','theta']
-  _slot_types = ['float32','float32','float32']
+float32 theta
+int32 status"""
+  __slots__ = ['x','y','theta','status']
+  _slot_types = ['float32','float32','float32','int32']
 
   def __init__(self, *args, **kwds):
     """
@@ -25,7 +26,7 @@ float32 theta"""
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       x,y,theta
+       x,y,theta,status
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -40,10 +41,13 @@ float32 theta"""
         self.y = 0.
       if self.theta is None:
         self.theta = 0.
+      if self.status is None:
+        self.status = 0
     else:
       self.x = 0.
       self.y = 0.
       self.theta = 0.
+      self.status = 0
 
   def _get_types(self):
     """
@@ -58,7 +62,7 @@ float32 theta"""
     """
     try:
       _x = self
-      buff.write(_get_struct_3f().pack(_x.x, _x.y, _x.theta))
+      buff.write(_get_struct_3fi().pack(_x.x, _x.y, _x.theta, _x.status))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -73,8 +77,8 @@ float32 theta"""
       end = 0
       _x = self
       start = end
-      end += 12
-      (_x.x, _x.y, _x.theta,) = _get_struct_3f().unpack(str[start:end])
+      end += 16
+      (_x.x, _x.y, _x.theta, _x.status,) = _get_struct_3fi().unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -88,7 +92,7 @@ float32 theta"""
     """
     try:
       _x = self
-      buff.write(_get_struct_3f().pack(_x.x, _x.y, _x.theta))
+      buff.write(_get_struct_3fi().pack(_x.x, _x.y, _x.theta, _x.status))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -104,8 +108,8 @@ float32 theta"""
       end = 0
       _x = self
       start = end
-      end += 12
-      (_x.x, _x.y, _x.theta,) = _get_struct_3f().unpack(str[start:end])
+      end += 16
+      (_x.x, _x.y, _x.theta, _x.status,) = _get_struct_3fi().unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -114,9 +118,9 @@ _struct_I = genpy.struct_I
 def _get_struct_I():
     global _struct_I
     return _struct_I
-_struct_3f = None
-def _get_struct_3f():
-    global _struct_3f
-    if _struct_3f is None:
-        _struct_3f = struct.Struct("<3f")
-    return _struct_3f
+_struct_3fi = None
+def _get_struct_3fi():
+    global _struct_3fi
+    if _struct_3fi is None:
+        _struct_3fi = struct.Struct("<3fi")
+    return _struct_3fi

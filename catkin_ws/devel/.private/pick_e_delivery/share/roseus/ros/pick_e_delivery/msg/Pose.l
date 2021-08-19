@@ -14,7 +14,7 @@
 
 (defclass pick_e_delivery::Pose
   :super ros::object
-  :slots (_x _y _yaw ))
+  :slots (_x _y _yaw _status _status_msg ))
 
 (defmethod pick_e_delivery::Pose
   (:init
@@ -22,11 +22,15 @@
     ((:x __x) 0.0)
     ((:y __y) 0.0)
     ((:yaw __yaw) 0.0)
+    ((:status __status) 0)
+    ((:status_msg __status_msg) "")
     )
    (send-super :init)
    (setq _x (float __x))
    (setq _y (float __y))
    (setq _yaw (float __yaw))
+   (setq _status (round __status))
+   (setq _status_msg (string __status_msg))
    self)
   (:x
    (&optional __x)
@@ -37,6 +41,12 @@
   (:yaw
    (&optional __yaw)
    (if __yaw (setq _yaw __yaw)) _yaw)
+  (:status
+   (&optional __status)
+   (if __status (setq _status __status)) _status)
+  (:status_msg
+   (&optional __status_msg)
+   (if __status_msg (setq _status_msg __status_msg)) _status_msg)
   (:serialization-length
    ()
    (+
@@ -46,6 +56,10 @@
     4
     ;; float32 _yaw
     4
+    ;; int32 _status
+    4
+    ;; string _status_msg
+    4 (length _status_msg)
     ))
   (:serialize
    (&optional strm)
@@ -57,6 +71,10 @@
        (sys::poke _y (send s :buffer) (send s :count) :float) (incf (stream-count s) 4)
      ;; float32 _yaw
        (sys::poke _yaw (send s :buffer) (send s :count) :float) (incf (stream-count s) 4)
+     ;; int32 _status
+       (write-long _status s)
+     ;; string _status_msg
+       (write-long (length _status_msg) s) (princ _status_msg s)
      ;;
      (if (null strm) (get-output-stream-string s))))
   (:deserialize
@@ -67,21 +85,26 @@
      (setq _y (sys::peek buf ptr- :float)) (incf ptr- 4)
    ;; float32 _yaw
      (setq _yaw (sys::peek buf ptr- :float)) (incf ptr- 4)
+   ;; int32 _status
+     (setq _status (sys::peek buf ptr- :integer)) (incf ptr- 4)
+   ;; string _status_msg
+     (let (n) (setq n (sys::peek buf ptr- :integer)) (incf ptr- 4) (setq _status_msg (subseq buf ptr- (+ ptr- n))) (incf ptr- n))
    ;;
    self)
   )
 
-(setf (get pick_e_delivery::Pose :md5sum-) "47802147045815b06859cca542c21d31")
+(setf (get pick_e_delivery::Pose :md5sum-) "fa1b81ed9024769c496d819f689530fc")
 (setf (get pick_e_delivery::Pose :datatype-) "pick_e_delivery/Pose")
 (setf (get pick_e_delivery::Pose :definition-)
       "float32 x
 float32 y
 float32 yaw
-
+int32 status
+string status_msg
 ")
 
 
 
-(provide :pick_e_delivery/Pose "47802147045815b06859cca542c21d31")
+(provide :pick_e_delivery/Pose "fa1b81ed9024769c496d819f689530fc")
 
 

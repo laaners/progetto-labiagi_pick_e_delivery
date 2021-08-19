@@ -1,0 +1,6 @@
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp:30:10:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+ ros::init[01;31m[K([m[Kargc, argv, "SetGoalNode");
+          [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/SetGoal.dir/src/SetGoal.cpp.o] Error 1
+make[1]: *** [CMakeFiles/SetGoal.dir/all] Error 2
+make: *** [all] Error 2

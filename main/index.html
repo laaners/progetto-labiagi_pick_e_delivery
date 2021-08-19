@@ -1,62 +1,123 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>test</title>
 
-    <!--JQUERY-->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <!--JQUERY-->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
-    <!--BOOSTRAP-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  </head>
+        <!--BOOSTRAP-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
 
-  <body>
-    <h1>Simple Map Example</h1>
+    <body>
+        <h1>Simple Map Example</h1>
 
-    <canvas id="myCanvas" width=421 height=574>
-      Your browser does not support the canvas element.
-    </canvas>
+        <canvas id="myCanvas" width=421 height=574>
+            Your browser does not support the canvas element.
+        </canvas>
 
-    <button>cliccami</button>
+        <p></p>
 
-    <script type="text/javascript" type="text/javascript">
-      var ws = new WebSocket("ws://localhost:3000/");
-      var canvas = document.getElementById("myCanvas");
-      var ctx = canvas.getContext("2d");
-      var base_image = new Image();
-      base_image.src = 'http://localhost:3000/map';
+        <button id="pick">PICK</button>
+        <button id="delivery">DELIVERY</button>
+        <button id="pick_pack">PRENDI IL PACCO</button>
+
+        <script type="text/javascript" type="text/javascript">
+            var ws = new WebSocket("ws://localhost:3000/");
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+            var base_image = new Image();
+            base_image.src = 'http://localhost:3000/map';
+
+            $("#pick").click(function() {
+                $.ajax({
+                    type: "GET",
+                    url: "http://localhost:3000/pick",
+                    success: function(data) {
+                        console.log(data);
+                    },
+                    error: function() {
+                        alert("Errore");
+                    }
+                });
+            });
+
+            $("#delivery").click(function() {
+                $.ajax({
+                    type: "GET",
+                    url: "http://localhost:3000/delivery",
+                    success: function(data) {
+                        console.log(data);
+                    },
+                    error: function() {
+                        alert("Errore");
+                    }
+                });
+            });
+
+            $("#pick_pack").click(function() {
+                $.ajax({
+                    type: "GET",
+                    url: "http://localhost:3000/pick_pack",
+                    success: function(data) {
+                        console.log(data);
+                    },
+                    error: function() {
+                        alert("Errore");
+                    }
+                });
+            });
 
 
-      window.onload = function() {
-        base_image.onload = function(){
-          ctx.drawImage(base_image, 0, 0);
-        }
-      }
+            window.onload = function() {
+                base_image.onload = function(){
+                    ctx.drawImage(base_image, 0, 0);
+                }
+            }
 
-      $("button").click(function() {
-        ws.send("ciaooo");
-      });
-      
-      ws.onmessage = function(event) {
-        ctx.fillStyle = "#FF0000";
+            $("button").click(function() {
+                ws.send("ciaooo");
+            });
 
-        let x = JSON.parse(event.data).x/0.05-3.5;
-        let y = 574-3.5-JSON.parse(event.data).y/0.05;
+            ws.onmessage = function(event) {
+                let data = JSON.parse(event.data);
+                $("p").text(JSON.stringify(data));
 
-        //x/0.05, y/0.05, inizia a disegnare in alto a sinistra
-        /*
-        'april_tag.png': 281x547
-        'april_tag_scale.png': 421x574
-        */
+                ctx.fillStyle = "#FF0000";
+                let x = data.position.x/0.05-3.5;
+                let y = 574-3.5-data.position.y/0.05;
 
-        ctx.drawImage(base_image, 0, 0);
-        ctx.fillRect(x,y,7,7);
+                //x/0.05, y/0.05, inizia a disegnare in alto a sinistra
+                /*
+                'april_tag.png': 281x547
+                'april_tag_scale.png': 421x574
+                */
 
-      }
-    </script>
-  </body>
+                ctx.drawImage(base_image, 0, 0);
+                ctx.fillRect(x,y,7,7);
+                $("p").text(data.position.status_msg);
+
+                if(data.position.status != 0) {
+                    ctx.fillStyle = "#FFFF00";
+                    x = data.goal.pose.position.x/0.05-3.5;
+                    y = 574-3.5-data.goal.pose.position.y/0.05;
+                    //ctx.fillRect(x,y,7,7);
+
+                    ctx.beginPath();
+
+                    ctx.moveTo(x - 10, y - 10);
+                    ctx.lineTo(x + 10, y + 10);
+
+                    ctx.moveTo(x + 10, y - 10);
+                    ctx.lineTo(x - 10, y + 10);
+                    ctx.stroke()
+                }
+            }
+        </script>
+    </body>
 </html>

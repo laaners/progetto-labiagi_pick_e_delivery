@@ -26,12 +26,14 @@ struct NewGoal_
   NewGoal_()
     : x(0.0)
     , y(0.0)
-    , theta(0.0)  {
+    , theta(0.0)
+    , status(0)  {
     }
   NewGoal_(const ContainerAllocator& _alloc)
     : x(0.0)
     , y(0.0)
-    , theta(0.0)  {
+    , theta(0.0)
+    , status(0)  {
   (void)_alloc;
     }
 
@@ -45,6 +47,9 @@ struct NewGoal_
 
    typedef float _theta_type;
   _theta_type theta;
+
+   typedef int32_t _status_type;
+  _status_type status;
 
 
 
@@ -77,7 +82,8 @@ bool operator==(const ::pick_e_delivery::NewGoal_<ContainerAllocator1> & lhs, co
 {
   return lhs.x == rhs.x &&
     lhs.y == rhs.y &&
-    lhs.theta == rhs.theta;
+    lhs.theta == rhs.theta &&
+    lhs.status == rhs.status;
 }
 
 template<typename ContainerAllocator1, typename ContainerAllocator2>
@@ -134,12 +140,12 @@ struct MD5Sum< ::pick_e_delivery::NewGoal_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "a130bc60ee6513855dc62ea83fcc5b20";
+    return "79af765d251f55a6fa90d1dce04ea1a9";
   }
 
   static const char* value(const ::pick_e_delivery::NewGoal_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xa130bc60ee651385ULL;
-  static const uint64_t static_value2 = 0x5dc62ea83fcc5b20ULL;
+  static const uint64_t static_value1 = 0x79af765d251f55a6ULL;
+  static const uint64_t static_value2 = 0xfa90d1dce04ea1a9ULL;
 };
 
 template<class ContainerAllocator>
@@ -161,6 +167,7 @@ struct Definition< ::pick_e_delivery::NewGoal_<ContainerAllocator> >
     return "float32 x\n"
 "float32 y\n"
 "float32 theta\n"
+"int32 status\n"
 ;
   }
 
@@ -182,6 +189,7 @@ namespace serialization
       stream.next(m.x);
       stream.next(m.y);
       stream.next(m.theta);
+      stream.next(m.status);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -206,6 +214,8 @@ struct Printer< ::pick_e_delivery::NewGoal_<ContainerAllocator> >
     Printer<float>::stream(s, indent + "  ", v.y);
     s << indent << "theta: ";
     Printer<float>::stream(s, indent + "  ", v.theta);
+    s << indent << "status: ";
+    Printer<int32_t>::stream(s, indent + "  ", v.status);
   }
 };
 

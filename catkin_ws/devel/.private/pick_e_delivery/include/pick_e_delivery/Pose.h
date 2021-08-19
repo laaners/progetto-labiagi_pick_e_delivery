@@ -26,12 +26,16 @@ struct Pose_
   Pose_()
     : x(0.0)
     , y(0.0)
-    , yaw(0.0)  {
+    , yaw(0.0)
+    , status(0)
+    , status_msg()  {
     }
   Pose_(const ContainerAllocator& _alloc)
     : x(0.0)
     , y(0.0)
-    , yaw(0.0)  {
+    , yaw(0.0)
+    , status(0)
+    , status_msg(_alloc)  {
   (void)_alloc;
     }
 
@@ -45,6 +49,12 @@ struct Pose_
 
    typedef float _yaw_type;
   _yaw_type yaw;
+
+   typedef int32_t _status_type;
+  _status_type status;
+
+   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _status_msg_type;
+  _status_msg_type status_msg;
 
 
 
@@ -77,7 +87,9 @@ bool operator==(const ::pick_e_delivery::Pose_<ContainerAllocator1> & lhs, const
 {
   return lhs.x == rhs.x &&
     lhs.y == rhs.y &&
-    lhs.yaw == rhs.yaw;
+    lhs.yaw == rhs.yaw &&
+    lhs.status == rhs.status &&
+    lhs.status_msg == rhs.status_msg;
 }
 
 template<typename ContainerAllocator1, typename ContainerAllocator2>
@@ -100,12 +112,12 @@ namespace message_traits
 
 template <class ContainerAllocator>
 struct IsFixedSize< ::pick_e_delivery::Pose_<ContainerAllocator> >
-  : TrueType
+  : FalseType
   { };
 
 template <class ContainerAllocator>
 struct IsFixedSize< ::pick_e_delivery::Pose_<ContainerAllocator> const>
-  : TrueType
+  : FalseType
   { };
 
 template <class ContainerAllocator>
@@ -134,12 +146,12 @@ struct MD5Sum< ::pick_e_delivery::Pose_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "47802147045815b06859cca542c21d31";
+    return "fa1b81ed9024769c496d819f689530fc";
   }
 
   static const char* value(const ::pick_e_delivery::Pose_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x47802147045815b0ULL;
-  static const uint64_t static_value2 = 0x6859cca542c21d31ULL;
+  static const uint64_t static_value1 = 0xfa1b81ed9024769cULL;
+  static const uint64_t static_value2 = 0x496d819f689530fcULL;
 };
 
 template<class ContainerAllocator>
@@ -161,6 +173,8 @@ struct Definition< ::pick_e_delivery::Pose_<ContainerAllocator> >
     return "float32 x\n"
 "float32 y\n"
 "float32 yaw\n"
+"int32 status\n"
+"string status_msg\n"
 ;
   }
 
@@ -182,6 +196,8 @@ namespace serialization
       stream.next(m.x);
       stream.next(m.y);
       stream.next(m.yaw);
+      stream.next(m.status);
+      stream.next(m.status_msg);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -206,6 +222,10 @@ struct Printer< ::pick_e_delivery::Pose_<ContainerAllocator> >
     Printer<float>::stream(s, indent + "  ", v.y);
     s << indent << "yaw: ";
     Printer<float>::stream(s, indent + "  ", v.yaw);
+    s << indent << "status: ";
+    Printer<int32_t>::stream(s, indent + "  ", v.status);
+    s << indent << "status_msg: ";
+    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.status_msg);
   }
 };
 

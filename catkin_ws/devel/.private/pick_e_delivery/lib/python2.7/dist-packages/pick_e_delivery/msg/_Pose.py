@@ -8,15 +8,16 @@ import struct
 
 
 class Pose(genpy.Message):
-  _md5sum = "47802147045815b06859cca542c21d31"
+  _md5sum = "fa1b81ed9024769c496d819f689530fc"
   _type = "pick_e_delivery/Pose"
   _has_header = False  # flag to mark the presence of a Header object
   _full_text = """float32 x
 float32 y
 float32 yaw
-"""
-  __slots__ = ['x','y','yaw']
-  _slot_types = ['float32','float32','float32']
+int32 status
+string status_msg"""
+  __slots__ = ['x','y','yaw','status','status_msg']
+  _slot_types = ['float32','float32','float32','int32','string']
 
   def __init__(self, *args, **kwds):
     """
@@ -26,7 +27,7 @@ float32 yaw
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       x,y,yaw
+       x,y,yaw,status,status_msg
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -41,10 +42,16 @@ float32 yaw
         self.y = 0.
       if self.yaw is None:
         self.yaw = 0.
+      if self.status is None:
+        self.status = 0
+      if self.status_msg is None:
+        self.status_msg = ''
     else:
       self.x = 0.
       self.y = 0.
       self.yaw = 0.
+      self.status = 0
+      self.status_msg = ''
 
   def _get_types(self):
     """
@@ -59,7 +66,13 @@ float32 yaw
     """
     try:
       _x = self
-      buff.write(_get_struct_3f().pack(_x.x, _x.y, _x.yaw))
+      buff.write(_get_struct_3fi().pack(_x.x, _x.y, _x.yaw, _x.status))
+      _x = self.status_msg
+      length = len(_x)
+      if python3 or type(_x) == unicode:
+        _x = _x.encode('utf-8')
+        length = len(_x)
+      buff.write(struct.Struct('<I%ss'%length).pack(length, _x))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -74,8 +87,17 @@ float32 yaw
       end = 0
       _x = self
       start = end
-      end += 12
-      (_x.x, _x.y, _x.yaw,) = _get_struct_3f().unpack(str[start:end])
+      end += 16
+      (_x.x, _x.y, _x.yaw, _x.status,) = _get_struct_3fi().unpack(str[start:end])
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      start = end
+      end += length
+      if python3:
+        self.status_msg = str[start:end].decode('utf-8', 'rosmsg')
+      else:
+        self.status_msg = str[start:end]
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -89,7 +111,13 @@ float32 yaw
     """
     try:
       _x = self
-      buff.write(_get_struct_3f().pack(_x.x, _x.y, _x.yaw))
+      buff.write(_get_struct_3fi().pack(_x.x, _x.y, _x.yaw, _x.status))
+      _x = self.status_msg
+      length = len(_x)
+      if python3 or type(_x) == unicode:
+        _x = _x.encode('utf-8')
+        length = len(_x)
+      buff.write(struct.Struct('<I%ss'%length).pack(length, _x))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -105,8 +133,17 @@ float32 yaw
       end = 0
       _x = self
       start = end
-      end += 12
-      (_x.x, _x.y, _x.yaw,) = _get_struct_3f().unpack(str[start:end])
+      end += 16
+      (_x.x, _x.y, _x.yaw, _x.status,) = _get_struct_3fi().unpack(str[start:end])
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      start = end
+      end += length
+      if python3:
+        self.status_msg = str[start:end].decode('utf-8', 'rosmsg')
+      else:
+        self.status_msg = str[start:end]
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -115,9 +152,9 @@ _struct_I = genpy.struct_I
 def _get_struct_I():
     global _struct_I
     return _struct_I
-_struct_3f = None
-def _get_struct_3f():
-    global _struct_3f
-    if _struct_3f is None:
-        _struct_3f = struct.Struct("<3f")
-    return _struct_3f
+_struct_3fi = None
+def _get_struct_3fi():
+    global _struct_3fi
+    if _struct_3fi is None:
+        _struct_3fi = struct.Struct("<3fi")
+    return _struct_3fi
