@@ -220,6 +220,19 @@ pick_e_delivery_generate_messages_lisp/fast:
 .PHONY : pick_e_delivery_generate_messages_lisp/fast
 
 #=============================================================================
+# Target rules for targets named MainNode
+
+# Build rule for target.
+MainNode: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MainNode
+.PHONY : MainNode
+
+# fast build rule for target.
+MainNode/fast:
+	$(MAKE) -f CMakeFiles/MainNode.dir/build.make CMakeFiles/MainNode.dir/build
+.PHONY : MainNode/fast
+
+#=============================================================================
 # Target rules for targets named pick_e_delivery_generate_messages_eus
 
 # Build rule for target.
@@ -947,6 +960,33 @@ gtest/fast:
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
+src/MainNode.o: src/MainNode.cpp.o
+
+.PHONY : src/MainNode.o
+
+# target to build an object file
+src/MainNode.cpp.o:
+	$(MAKE) -f CMakeFiles/MainNode.dir/build.make CMakeFiles/MainNode.dir/src/MainNode.cpp.o
+.PHONY : src/MainNode.cpp.o
+
+src/MainNode.i: src/MainNode.cpp.i
+
+.PHONY : src/MainNode.i
+
+# target to preprocess a source file
+src/MainNode.cpp.i:
+	$(MAKE) -f CMakeFiles/MainNode.dir/build.make CMakeFiles/MainNode.dir/src/MainNode.cpp.i
+.PHONY : src/MainNode.cpp.i
+
+src/MainNode.s: src/MainNode.cpp.s
+
+.PHONY : src/MainNode.s
+
+# target to generate assembly for a file
+src/MainNode.cpp.s:
+	$(MAKE) -f CMakeFiles/MainNode.dir/build.make CMakeFiles/MainNode.dir/src/MainNode.cpp.s
+.PHONY : src/MainNode.cpp.s
+
 src/Position.o: src/Position.cpp.o
 
 .PHONY : src/Position.o
@@ -1013,6 +1053,7 @@ help:
 	@echo "... pick_e_delivery_gennodejs"
 	@echo "... pick_e_delivery_generate_messages_nodejs"
 	@echo "... pick_e_delivery_generate_messages_lisp"
+	@echo "... MainNode"
 	@echo "... pick_e_delivery_generate_messages_eus"
 	@echo "... pick_e_delivery_gencpp"
 	@echo "... install"
@@ -1074,6 +1115,9 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... src/MainNode.o"
+	@echo "... src/MainNode.i"
+	@echo "... src/MainNode.s"
 	@echo "... src/Position.o"
 	@echo "... src/Position.i"
 	@echo "... src/Position.s"

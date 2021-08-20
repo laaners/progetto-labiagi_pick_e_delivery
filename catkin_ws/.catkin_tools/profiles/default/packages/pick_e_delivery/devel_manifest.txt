@@ -7,6 +7,7 @@ pick_e_delivery
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/pkgconfig/pick_e_delivery.pc /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/lib/pkgconfig/pick_e_delivery.pc
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/pick_e_delivery/Position /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/lib/pick_e_delivery/Position
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/pick_e_delivery/SetGoal /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/lib/pick_e_delivery/SetGoal
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/pick_e_delivery/MainNode /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/lib/pick_e_delivery/MainNode
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/roseus/ros/pick_e_delivery/manifest.l /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/share/roseus/ros/pick_e_delivery/manifest.l
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/roseus/ros/pick_e_delivery/msg/Pose.l /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/share/roseus/ros/pick_e_delivery/msg/Pose.l
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/roseus/ros/pick_e_delivery/msg/NewGoal.l /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/share/roseus/ros/pick_e_delivery/msg/NewGoal.l

@@ -4,6 +4,7 @@
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles/pick_e_delivery_gennodejs.dir
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles/pick_e_delivery_generate_messages_nodejs.dir
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles/pick_e_delivery_generate_messages_lisp.dir
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles/MainNode.dir
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles/pick_e_delivery_generate_messages_eus.dir
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles/pick_e_delivery_gencpp.dir
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles/install.dir
