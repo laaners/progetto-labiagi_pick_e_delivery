@@ -1,0 +1,16 @@
+[  0%] Built target _pick_e_delivery_generate_messages_check_deps_Pose
+[  0%] Built target _pick_e_delivery_generate_messages_check_deps_NewGoal
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_eus
+[ 11%] Built target pick_e_delivery_generate_messages_cpp
+[ 27%] Built target pick_e_delivery_generate_messages_py
+[ 38%] Built target pick_e_delivery_generate_messages_nodejs
+[ 50%] Built target pick_e_delivery_generate_messages_lisp
+[ 66%] Built target pick_e_delivery_generate_messages_eus
+[ 83%] Built target MainNode
+[ 88%] Built target SetGoal
+[ 88%] Built target pick_e_delivery_generate_messages
+[100%] Built target Position

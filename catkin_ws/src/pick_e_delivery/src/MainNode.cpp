@@ -144,7 +144,7 @@ void positionCallBack(const tf2_msgs::TFMessage& tf) {
         current_position[1] = transformStamped.transform.translation.y;
 
         double yaw = 2*acos(transformStamped.transform.rotation.w);
-        ROS_INFO("x: %f, y: %f, yaw: %f, status: %d, status_msg: %s", transformStamped.transform.translation.x, transformStamped.transform.translation.y, yaw, status, status_msg);
+        //ROS_INFO("x: %f, y: %f, yaw: %f, status: %d, status_msg: %s", transformStamped.transform.translation.x, transformStamped.transform.translation.y, yaw, status, status_msg);
         //ROS_INFO("x: %f, y: %f", tooLongT, waitPackT);
         pick_e_delivery::Pose msg;
         msg.x = transformStamped.transform.translation.x;
@@ -165,7 +165,7 @@ void waitPackCallBack(const ros::TimerEvent& event) {
             break;
         }
         default: {
-            ROS_INFO("ERRORE, stato non riconosciuto");
+            ROS_INFO("ERRORE, stato non riconosciuto 168");
             break;
         }
     }
@@ -185,14 +185,15 @@ void check1_CallBack(const ros::TimerEvent& event) {
             ROS_INFO("Sono arrivato a destinazione");
             sprintf(status_msg,"Sono arrivato a destinazione!");
             cruising = 0;
-
             switch(status) {
                 case PICK: {
+                    tooLongTimer.stop();
                     status = AT_SRC;
                     waitPackTimer.start();
                     break;
                 }
                 case DELIVERY: {
+                    tooLongTimer.stop();
                     status = AT_DST;
                     sprintf(status_msg,"Sono arrivato a destinazione, attendo che mi qualcuno prenda il pacco!");
                     break;
@@ -203,7 +204,7 @@ void check1_CallBack(const ros::TimerEvent& event) {
                     break;
                 }
                 default: {
-                    ROS_INFO("ERRORE, stato non riconosciuto");
+                    ROS_INFO("ERRORE, stato non riconosciuto 206");
                     break;
                 }
             }
@@ -233,7 +234,7 @@ void check2_CallBack(const ros::TimerEvent& event) {
                     break;
                 }
                 default: {
-                    ROS_INFO("ERRORE, stato non riconosciuto");
+                    ROS_INFO("ERRORE, stato non riconosciuto 236");
                     break;
                 }
             }
