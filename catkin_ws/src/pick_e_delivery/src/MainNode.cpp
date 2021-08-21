@@ -13,7 +13,6 @@
 #include "pick_e_delivery/Pose.h"
 
 std::vector<float> target_position(2,0);
-std::vector<float> old_position(2,0);
 std::vector<float> current_position(2,0);
 std::vector<float> caller_position(3,0);
 
@@ -136,12 +135,6 @@ void setGoalCallBack(const pick_e_delivery::NewGoal& new_goal) {
 }
 
 void positionCallBack(const tf2_msgs::TFMessage& tf) {
-    //check if FREE, then reset sender and receiver
-    if(status == FREE) {
-        sender = "none";
-        receiver = "none";
-    }
-
     //check if transform odom->laser_frame possible
     int transform_ok;
     transform_ok = tfBuffer.canTransform("map", "base_link", ros::Time(0));
@@ -149,15 +142,11 @@ void positionCallBack(const tf2_msgs::TFMessage& tf) {
         geometry_msgs::TransformStamped transformStamped;
         transformStamped = tfBuffer.lookupTransform("map", "base_link", ros::Time(0));
 
-        //old_position[0] = current_position[0];
-        //old_position[1] = current_position[1];
-
         current_position[0] = transformStamped.transform.translation.x;
         current_position[1] = transformStamped.transform.translation.y;
 
         double yaw = 2*acos(transformStamped.transform.rotation.w);
         //ROS_INFO("x: %f, y: %f, yaw: %f, status: %d, status_msg: %s", transformStamped.transform.translation.x, transformStamped.transform.translation.y, yaw, status, status_msg);
-        //ROS_INFO("x: %f, y: %f", tooLongT, waitPackT);
         pick_e_delivery::Pose msg;
         msg.x = transformStamped.transform.translation.x;
         msg.y = transformStamped.transform.translation.y;  
@@ -186,13 +175,15 @@ void waitPackCallBack(const ros::TimerEvent& event) {
 }
 
 void check1_CallBack(const ros::TimerEvent& event) {
+    //check if FREE, then reset sender and receiver
+    if(status == FREE) {
+        sender = "none";
+        receiver = "none";
+    }
+
     if(cruising != 0) {
         ROS_INFO("Controllo se il robot sta navigando");
         float distance;
-        distance = sqrt(pow(current_position[0]-old_position[0],2)+pow(current_position[1]-old_position[1],2));
-        if(distance < 0.8) {
-            ROS_INFO("Sono bloccato");
-        }
         distance = sqrt(pow(current_position[0]-target_position[0],2)+pow(current_position[1]-target_position[1],2));
         if(distance < 1.0) {
             ROS_INFO("Sono arrivato a destinazione");

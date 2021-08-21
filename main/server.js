@@ -6,18 +6,30 @@ const cors = require('cors');
 const WebSocket = require('ws');
 const request = require('request');
 const session = require('express-session');
+const cookie = require('cookie');
+const cookieParser = require('cookie-parser')
 const rosnodejs = require('rosnodejs');
 const std_msgs = rosnodejs.require('std_msgs').msg;
 
 var app = express();
 app.use(cors());
+const sessionOpts = {
+	secret: 'LABIAGI',
+	resave: false,
+	saveUninitialized: true,
+};
+const sess = session(sessionOpts);
+app.use(sess);
+/*
 app.use(session({ //SESSION
 	secret: 'LABIAGI',
 	resave: true,
-	/*Forza la sessione a essere risalvata nel session store, anche se mai modificata nei request*/
+	//Forza la sessione a essere risalvata nel session store, anche se mai modificata nei request
 	saveUninitialized: false,
-	/*Forza una sessione non inizializzata a essere salvata. Se false aiuta con le race conditions*/
+	//Forza una sessione non inizializzata a essere salvata. Se false aiuta con le race conditions
 }));
+*/
+
 
 const port = 3000;
 const FREE = 0, PICK = 1, AT_SRC = 2, DELIVERY = 3, AT_DST = 4, GOBACK = 5;
@@ -411,14 +423,24 @@ app.get('/map', function(req,res) {
     res.sendFile("april_tag_scale.png",{root: __dirname});
 });
 
+app.get('/addio', function(req,res) {
+	console.log(ONLINE);
+	res.send("ciao");
+});
+
 const httpServer = http.createServer(app);
 const ws = new WebSocket.Server({server: httpServer});
 
 var CLIENTS = [];
+var ONLINE = [];
 
-ws.on('connection', function(conn) {
+ws.on('connection', function(conn,req) {
     CLIENTS.push(conn);
-    console.log("Connessione aperta");
+	sess(req, {}, () => {
+		console.log('Session is parsed!');
+		ONLINE.push(req.session.user.id);
+		console.log(ONLINE);
+	});
 
     conn.on('message', function(message) {
         console.log("Ricevuto: "+message);
@@ -428,6 +450,11 @@ ws.on('connection', function(conn) {
     conn.on('close', function() {
         console.log("Connessione chiusa");
         CLIENTS.splice(CLIENTS.indexOf(conn),1);
+		sess(req, {}, () => {
+			console.log('Session is parsed!');
+			ONLINE.splice(ONLINE.indexOf(req.session.user.id),1);
+			console.log(ONLINE);
+		});
     });
 });
 
