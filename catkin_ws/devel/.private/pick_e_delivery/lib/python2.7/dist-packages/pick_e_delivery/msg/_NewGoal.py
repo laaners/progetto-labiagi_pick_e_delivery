@@ -8,15 +8,16 @@ import struct
 
 
 class NewGoal(genpy.Message):
-  _md5sum = "79af765d251f55a6fa90d1dce04ea1a9"
+  _md5sum = "50266fd61bf27a3712274104f794648f"
   _type = "pick_e_delivery/NewGoal"
   _has_header = False  # flag to mark the presence of a Header object
   _full_text = """float32 x
 float32 y
 float32 theta
-int32 status"""
-  __slots__ = ['x','y','theta','status']
-  _slot_types = ['float32','float32','float32','int32']
+int32 command
+string user"""
+  __slots__ = ['x','y','theta','command','user']
+  _slot_types = ['float32','float32','float32','int32','string']
 
   def __init__(self, *args, **kwds):
     """
@@ -26,7 +27,7 @@ int32 status"""
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       x,y,theta,status
+       x,y,theta,command,user
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -41,13 +42,16 @@ int32 status"""
         self.y = 0.
       if self.theta is None:
         self.theta = 0.
-      if self.status is None:
-        self.status = 0
+      if self.command is None:
+        self.command = 0
+      if self.user is None:
+        self.user = ''
     else:
       self.x = 0.
       self.y = 0.
       self.theta = 0.
-      self.status = 0
+      self.command = 0
+      self.user = ''
 
   def _get_types(self):
     """
@@ -62,7 +66,13 @@ int32 status"""
     """
     try:
       _x = self
-      buff.write(_get_struct_3fi().pack(_x.x, _x.y, _x.theta, _x.status))
+      buff.write(_get_struct_3fi().pack(_x.x, _x.y, _x.theta, _x.command))
+      _x = self.user
+      length = len(_x)
+      if python3 or type(_x) == unicode:
+        _x = _x.encode('utf-8')
+        length = len(_x)
+      buff.write(struct.Struct('<I%ss'%length).pack(length, _x))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -78,7 +88,16 @@ int32 status"""
       _x = self
       start = end
       end += 16
-      (_x.x, _x.y, _x.theta, _x.status,) = _get_struct_3fi().unpack(str[start:end])
+      (_x.x, _x.y, _x.theta, _x.command,) = _get_struct_3fi().unpack(str[start:end])
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      start = end
+      end += length
+      if python3:
+        self.user = str[start:end].decode('utf-8', 'rosmsg')
+      else:
+        self.user = str[start:end]
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -92,7 +111,13 @@ int32 status"""
     """
     try:
       _x = self
-      buff.write(_get_struct_3fi().pack(_x.x, _x.y, _x.theta, _x.status))
+      buff.write(_get_struct_3fi().pack(_x.x, _x.y, _x.theta, _x.command))
+      _x = self.user
+      length = len(_x)
+      if python3 or type(_x) == unicode:
+        _x = _x.encode('utf-8')
+        length = len(_x)
+      buff.write(struct.Struct('<I%ss'%length).pack(length, _x))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -109,7 +134,16 @@ int32 status"""
       _x = self
       start = end
       end += 16
-      (_x.x, _x.y, _x.theta, _x.status,) = _get_struct_3fi().unpack(str[start:end])
+      (_x.x, _x.y, _x.theta, _x.command,) = _get_struct_3fi().unpack(str[start:end])
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      start = end
+      end += length
+      if python3:
+        self.user = str[start:end].decode('utf-8', 'rosmsg')
+      else:
+        self.user = str[start:end]
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill

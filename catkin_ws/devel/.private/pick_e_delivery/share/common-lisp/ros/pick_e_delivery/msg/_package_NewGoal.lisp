@@ -5,6 +5,8 @@
           Y
           THETA-VAL
           THETA
-          STATUS-VAL
-          STATUS
+          COMMAND-VAL
+          COMMAND
+          USER-VAL
+          USER
 ))

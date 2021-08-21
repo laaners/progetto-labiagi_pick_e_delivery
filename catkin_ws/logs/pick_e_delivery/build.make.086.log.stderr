@@ -1,0 +1,7 @@
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/MainNode.cpp:[m[K In function ‘[01m[Kvoid setGoalCallBack(const NewGoal&)[m[K’:
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/MainNode.cpp:82:37:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst _user_type {aka const std::__cxx11::basic_string<char>}[m[K’ to ‘[01m[Kconst char*[m[K’ for argument ‘[01m[K2[m[K’ to ‘[01m[Kint sprintf(char*, const char*, ...)[m[K’
+         sprintf(sender,new_goal.user[01;31m[K)[m[K
+                                     [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/MainNode.dir/src/MainNode.cpp.o] Error 1
+make[1]: *** [CMakeFiles/MainNode.dir/all] Error 2
+make: *** [all] Error 2

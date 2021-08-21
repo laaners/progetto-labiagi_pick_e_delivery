@@ -28,14 +28,18 @@ struct Pose_
     , y(0.0)
     , yaw(0.0)
     , status(0)
-    , status_msg()  {
+    , status_msg()
+    , sender()
+    , receiver()  {
     }
   Pose_(const ContainerAllocator& _alloc)
     : x(0.0)
     , y(0.0)
     , yaw(0.0)
     , status(0)
-    , status_msg(_alloc)  {
+    , status_msg(_alloc)
+    , sender(_alloc)
+    , receiver(_alloc)  {
   (void)_alloc;
     }
 
@@ -55,6 +59,12 @@ struct Pose_
 
    typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _status_msg_type;
   _status_msg_type status_msg;
+
+   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _sender_type;
+  _sender_type sender;
+
+   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _receiver_type;
+  _receiver_type receiver;
 
 
 
@@ -89,7 +99,9 @@ bool operator==(const ::pick_e_delivery::Pose_<ContainerAllocator1> & lhs, const
     lhs.y == rhs.y &&
     lhs.yaw == rhs.yaw &&
     lhs.status == rhs.status &&
-    lhs.status_msg == rhs.status_msg;
+    lhs.status_msg == rhs.status_msg &&
+    lhs.sender == rhs.sender &&
+    lhs.receiver == rhs.receiver;
 }
 
 template<typename ContainerAllocator1, typename ContainerAllocator2>
@@ -146,12 +158,12 @@ struct MD5Sum< ::pick_e_delivery::Pose_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "fa1b81ed9024769c496d819f689530fc";
+    return "0281e339f76520d24da4f5c9c77c5df7";
   }
 
   static const char* value(const ::pick_e_delivery::Pose_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xfa1b81ed9024769cULL;
-  static const uint64_t static_value2 = 0x496d819f689530fcULL;
+  static const uint64_t static_value1 = 0x0281e339f76520d2ULL;
+  static const uint64_t static_value2 = 0x4da4f5c9c77c5df7ULL;
 };
 
 template<class ContainerAllocator>
@@ -175,6 +187,8 @@ struct Definition< ::pick_e_delivery::Pose_<ContainerAllocator> >
 "float32 yaw\n"
 "int32 status\n"
 "string status_msg\n"
+"string sender\n"
+"string receiver\n"
 ;
   }
 
@@ -198,6 +212,8 @@ namespace serialization
       stream.next(m.yaw);
       stream.next(m.status);
       stream.next(m.status_msg);
+      stream.next(m.sender);
+      stream.next(m.receiver);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -226,6 +242,10 @@ struct Printer< ::pick_e_delivery::Pose_<ContainerAllocator> >
     Printer<int32_t>::stream(s, indent + "  ", v.status);
     s << indent << "status_msg: ";
     Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.status_msg);
+    s << indent << "sender: ";
+    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.sender);
+    s << indent << "receiver: ";
+    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.receiver);
   }
 };
 

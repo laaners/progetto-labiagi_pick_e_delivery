@@ -31,6 +31,16 @@
     :reader status_msg
     :initarg :status_msg
     :type cl:string
+    :initform "")
+   (sender
+    :reader sender
+    :initarg :sender
+    :type cl:string
+    :initform "")
+   (receiver
+    :reader receiver
+    :initarg :receiver
+    :type cl:string
     :initform ""))
 )
 
@@ -66,6 +76,16 @@
 (cl:defmethod status_msg-val ((m <Pose>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader pick_e_delivery-msg:status_msg-val is deprecated.  Use pick_e_delivery-msg:status_msg instead.")
   (status_msg m))
+
+(cl:ensure-generic-function 'sender-val :lambda-list '(m))
+(cl:defmethod sender-val ((m <Pose>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader pick_e_delivery-msg:sender-val is deprecated.  Use pick_e_delivery-msg:sender instead.")
+  (sender m))
+
+(cl:ensure-generic-function 'receiver-val :lambda-list '(m))
+(cl:defmethod receiver-val ((m <Pose>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader pick_e_delivery-msg:receiver-val is deprecated.  Use pick_e_delivery-msg:receiver instead.")
+  (receiver m))
 (cl:defmethod roslisp-msg-protocol:serialize ((msg <Pose>) ostream)
   "Serializes a message object of type '<Pose>"
   (cl:let ((bits (roslisp-utils:encode-single-float-bits (cl:slot-value msg 'x))))
@@ -95,6 +115,18 @@
     (cl:write-byte (cl:ldb (cl:byte 8 16) __ros_str_len) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 24) __ros_str_len) ostream))
   (cl:map cl:nil #'(cl:lambda (c) (cl:write-byte (cl:char-code c) ostream)) (cl:slot-value msg 'status_msg))
+  (cl:let ((__ros_str_len (cl:length (cl:slot-value msg 'sender))))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) __ros_str_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) __ros_str_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) __ros_str_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) __ros_str_len) ostream))
+  (cl:map cl:nil #'(cl:lambda (c) (cl:write-byte (cl:char-code c) ostream)) (cl:slot-value msg 'sender))
+  (cl:let ((__ros_str_len (cl:length (cl:slot-value msg 'receiver))))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) __ros_str_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) __ros_str_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) __ros_str_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) __ros_str_len) ostream))
+  (cl:map cl:nil #'(cl:lambda (c) (cl:write-byte (cl:char-code c) ostream)) (cl:slot-value msg 'receiver))
 )
 (cl:defmethod roslisp-msg-protocol:deserialize ((msg <Pose>) istream)
   "Deserializes a message object of type '<Pose>"
@@ -130,6 +162,22 @@
       (cl:setf (cl:slot-value msg 'status_msg) (cl:make-string __ros_str_len))
       (cl:dotimes (__ros_str_idx __ros_str_len msg)
         (cl:setf (cl:char (cl:slot-value msg 'status_msg) __ros_str_idx) (cl:code-char (cl:read-byte istream)))))
+    (cl:let ((__ros_str_len 0))
+      (cl:setf (cl:ldb (cl:byte 8 0) __ros_str_len) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 8) __ros_str_len) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 16) __ros_str_len) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 24) __ros_str_len) (cl:read-byte istream))
+      (cl:setf (cl:slot-value msg 'sender) (cl:make-string __ros_str_len))
+      (cl:dotimes (__ros_str_idx __ros_str_len msg)
+        (cl:setf (cl:char (cl:slot-value msg 'sender) __ros_str_idx) (cl:code-char (cl:read-byte istream)))))
+    (cl:let ((__ros_str_len 0))
+      (cl:setf (cl:ldb (cl:byte 8 0) __ros_str_len) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 8) __ros_str_len) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 16) __ros_str_len) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 24) __ros_str_len) (cl:read-byte istream))
+      (cl:setf (cl:slot-value msg 'receiver) (cl:make-string __ros_str_len))
+      (cl:dotimes (__ros_str_idx __ros_str_len msg)
+        (cl:setf (cl:char (cl:slot-value msg 'receiver) __ros_str_idx) (cl:code-char (cl:read-byte istream)))))
   msg
 )
 (cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql '<Pose>)))
@@ -140,16 +188,16 @@
   "pick_e_delivery/Pose")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<Pose>)))
   "Returns md5sum for a message object of type '<Pose>"
-  "fa1b81ed9024769c496d819f689530fc")
+  "0281e339f76520d24da4f5c9c77c5df7")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'Pose)))
   "Returns md5sum for a message object of type 'Pose"
-  "fa1b81ed9024769c496d819f689530fc")
+  "0281e339f76520d24da4f5c9c77c5df7")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<Pose>)))
   "Returns full string definition for message of type '<Pose>"
-  (cl:format cl:nil "float32 x~%float32 y~%float32 yaw~%int32 status~%string status_msg~%~%"))
+  (cl:format cl:nil "float32 x~%float32 y~%float32 yaw~%int32 status~%string status_msg~%string sender~%string receiver~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'Pose)))
   "Returns full string definition for message of type 'Pose"
-  (cl:format cl:nil "float32 x~%float32 y~%float32 yaw~%int32 status~%string status_msg~%~%"))
+  (cl:format cl:nil "float32 x~%float32 y~%float32 yaw~%int32 status~%string status_msg~%string sender~%string receiver~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <Pose>))
   (cl:+ 0
      4
@@ -157,6 +205,8 @@
      4
      4
      4 (cl:length (cl:slot-value msg 'status_msg))
+     4 (cl:length (cl:slot-value msg 'sender))
+     4 (cl:length (cl:slot-value msg 'receiver))
 ))
 (cl:defmethod roslisp-msg-protocol:ros-message-to-list ((msg <Pose>))
   "Converts a ROS message object to a list"
@@ -166,4 +216,6 @@
     (cl:cons ':yaw (yaw msg))
     (cl:cons ':status (status msg))
     (cl:cons ':status_msg (status_msg msg))
+    (cl:cons ':sender (sender msg))
+    (cl:cons ':receiver (receiver msg))
 ))

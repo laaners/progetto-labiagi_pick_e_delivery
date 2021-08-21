@@ -272,19 +272,6 @@ _pick_e_delivery_generate_messages_check_deps_NewGoal/fast:
 .PHONY : _pick_e_delivery_generate_messages_check_deps_NewGoal/fast
 
 #=============================================================================
-# Target rules for targets named Position
-
-# Build rule for target.
-Position: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Position
-.PHONY : Position
-
-# fast build rule for target.
-Position/fast:
-	$(MAKE) -f CMakeFiles/Position.dir/build.make CMakeFiles/Position.dir/build
-.PHONY : Position/fast
-
-#=============================================================================
 # Target rules for targets named pick_e_delivery_geneus
 
 # Build rule for target.
@@ -439,19 +426,6 @@ actionlib_msgs_generate_messages_cpp: cmake_check_build_system
 actionlib_msgs_generate_messages_cpp/fast:
 	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
 .PHONY : actionlib_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named SetGoal
-
-# Build rule for target.
-SetGoal: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 SetGoal
-.PHONY : SetGoal
-
-# fast build rule for target.
-SetGoal/fast:
-	$(MAKE) -f CMakeFiles/SetGoal.dir/build.make CMakeFiles/SetGoal.dir/build
-.PHONY : SetGoal/fast
 
 #=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_cpp
@@ -987,60 +961,6 @@ src/MainNode.cpp.s:
 	$(MAKE) -f CMakeFiles/MainNode.dir/build.make CMakeFiles/MainNode.dir/src/MainNode.cpp.s
 .PHONY : src/MainNode.cpp.s
 
-src/Position.o: src/Position.cpp.o
-
-.PHONY : src/Position.o
-
-# target to build an object file
-src/Position.cpp.o:
-	$(MAKE) -f CMakeFiles/Position.dir/build.make CMakeFiles/Position.dir/src/Position.cpp.o
-.PHONY : src/Position.cpp.o
-
-src/Position.i: src/Position.cpp.i
-
-.PHONY : src/Position.i
-
-# target to preprocess a source file
-src/Position.cpp.i:
-	$(MAKE) -f CMakeFiles/Position.dir/build.make CMakeFiles/Position.dir/src/Position.cpp.i
-.PHONY : src/Position.cpp.i
-
-src/Position.s: src/Position.cpp.s
-
-.PHONY : src/Position.s
-
-# target to generate assembly for a file
-src/Position.cpp.s:
-	$(MAKE) -f CMakeFiles/Position.dir/build.make CMakeFiles/Position.dir/src/Position.cpp.s
-.PHONY : src/Position.cpp.s
-
-src/SetGoal.o: src/SetGoal.cpp.o
-
-.PHONY : src/SetGoal.o
-
-# target to build an object file
-src/SetGoal.cpp.o:
-	$(MAKE) -f CMakeFiles/SetGoal.dir/build.make CMakeFiles/SetGoal.dir/src/SetGoal.cpp.o
-.PHONY : src/SetGoal.cpp.o
-
-src/SetGoal.i: src/SetGoal.cpp.i
-
-.PHONY : src/SetGoal.i
-
-# target to preprocess a source file
-src/SetGoal.cpp.i:
-	$(MAKE) -f CMakeFiles/SetGoal.dir/build.make CMakeFiles/SetGoal.dir/src/SetGoal.cpp.i
-.PHONY : src/SetGoal.cpp.i
-
-src/SetGoal.s: src/SetGoal.cpp.s
-
-.PHONY : src/SetGoal.s
-
-# target to generate assembly for a file
-src/SetGoal.cpp.s:
-	$(MAKE) -f CMakeFiles/SetGoal.dir/build.make CMakeFiles/SetGoal.dir/src/SetGoal.cpp.s
-.PHONY : src/SetGoal.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1058,7 +978,6 @@ help:
 	@echo "... pick_e_delivery_gencpp"
 	@echo "... install"
 	@echo "... _pick_e_delivery_generate_messages_check_deps_NewGoal"
-	@echo "... Position"
 	@echo "... pick_e_delivery_geneus"
 	@echo "... pick_e_delivery_generate_messages"
 	@echo "... actionlib_generate_messages_py"
@@ -1072,7 +991,6 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... actionlib_msgs_generate_messages_cpp"
-	@echo "... SetGoal"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... _catkin_empty_exported_target"
 	@echo "... roscpp_generate_messages_py"
@@ -1118,12 +1036,6 @@ help:
 	@echo "... src/MainNode.o"
 	@echo "... src/MainNode.i"
 	@echo "... src/MainNode.s"
-	@echo "... src/Position.o"
-	@echo "... src/Position.i"
-	@echo "... src/Position.s"
-	@echo "... src/SetGoal.o"
-	@echo "... src/SetGoal.i"
-	@echo "... src/SetGoal.s"
 .PHONY : help
 
 

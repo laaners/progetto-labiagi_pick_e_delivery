@@ -8,16 +8,18 @@ import struct
 
 
 class Pose(genpy.Message):
-  _md5sum = "fa1b81ed9024769c496d819f689530fc"
+  _md5sum = "0281e339f76520d24da4f5c9c77c5df7"
   _type = "pick_e_delivery/Pose"
   _has_header = False  # flag to mark the presence of a Header object
   _full_text = """float32 x
 float32 y
 float32 yaw
 int32 status
-string status_msg"""
-  __slots__ = ['x','y','yaw','status','status_msg']
-  _slot_types = ['float32','float32','float32','int32','string']
+string status_msg
+string sender
+string receiver"""
+  __slots__ = ['x','y','yaw','status','status_msg','sender','receiver']
+  _slot_types = ['float32','float32','float32','int32','string','string','string']
 
   def __init__(self, *args, **kwds):
     """
@@ -27,7 +29,7 @@ string status_msg"""
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       x,y,yaw,status,status_msg
+       x,y,yaw,status,status_msg,sender,receiver
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -46,12 +48,18 @@ string status_msg"""
         self.status = 0
       if self.status_msg is None:
         self.status_msg = ''
+      if self.sender is None:
+        self.sender = ''
+      if self.receiver is None:
+        self.receiver = ''
     else:
       self.x = 0.
       self.y = 0.
       self.yaw = 0.
       self.status = 0
       self.status_msg = ''
+      self.sender = ''
+      self.receiver = ''
 
   def _get_types(self):
     """
@@ -68,6 +76,18 @@ string status_msg"""
       _x = self
       buff.write(_get_struct_3fi().pack(_x.x, _x.y, _x.yaw, _x.status))
       _x = self.status_msg
+      length = len(_x)
+      if python3 or type(_x) == unicode:
+        _x = _x.encode('utf-8')
+        length = len(_x)
+      buff.write(struct.Struct('<I%ss'%length).pack(length, _x))
+      _x = self.sender
+      length = len(_x)
+      if python3 or type(_x) == unicode:
+        _x = _x.encode('utf-8')
+        length = len(_x)
+      buff.write(struct.Struct('<I%ss'%length).pack(length, _x))
+      _x = self.receiver
       length = len(_x)
       if python3 or type(_x) == unicode:
         _x = _x.encode('utf-8')
@@ -98,6 +118,24 @@ string status_msg"""
         self.status_msg = str[start:end].decode('utf-8', 'rosmsg')
       else:
         self.status_msg = str[start:end]
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      start = end
+      end += length
+      if python3:
+        self.sender = str[start:end].decode('utf-8', 'rosmsg')
+      else:
+        self.sender = str[start:end]
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      start = end
+      end += length
+      if python3:
+        self.receiver = str[start:end].decode('utf-8', 'rosmsg')
+      else:
+        self.receiver = str[start:end]
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -113,6 +151,18 @@ string status_msg"""
       _x = self
       buff.write(_get_struct_3fi().pack(_x.x, _x.y, _x.yaw, _x.status))
       _x = self.status_msg
+      length = len(_x)
+      if python3 or type(_x) == unicode:
+        _x = _x.encode('utf-8')
+        length = len(_x)
+      buff.write(struct.Struct('<I%ss'%length).pack(length, _x))
+      _x = self.sender
+      length = len(_x)
+      if python3 or type(_x) == unicode:
+        _x = _x.encode('utf-8')
+        length = len(_x)
+      buff.write(struct.Struct('<I%ss'%length).pack(length, _x))
+      _x = self.receiver
       length = len(_x)
       if python3 or type(_x) == unicode:
         _x = _x.encode('utf-8')
@@ -144,6 +194,24 @@ string status_msg"""
         self.status_msg = str[start:end].decode('utf-8', 'rosmsg')
       else:
         self.status_msg = str[start:end]
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      start = end
+      end += length
+      if python3:
+        self.sender = str[start:end].decode('utf-8', 'rosmsg')
+      else:
+        self.sender = str[start:end]
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      start = end
+      end += length
+      if python3:
+        self.receiver = str[start:end].decode('utf-8', 'rosmsg')
+      else:
+        self.receiver = str[start:end]
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill

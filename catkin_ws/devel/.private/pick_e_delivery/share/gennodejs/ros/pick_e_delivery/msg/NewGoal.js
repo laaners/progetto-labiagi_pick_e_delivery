@@ -21,7 +21,8 @@ class NewGoal {
       this.x = null;
       this.y = null;
       this.theta = null;
-      this.status = null;
+      this.command = null;
+      this.user = null;
     }
     else {
       if (initObj.hasOwnProperty('x')) {
@@ -42,11 +43,17 @@ class NewGoal {
       else {
         this.theta = 0.0;
       }
-      if (initObj.hasOwnProperty('status')) {
-        this.status = initObj.status
+      if (initObj.hasOwnProperty('command')) {
+        this.command = initObj.command
       }
       else {
-        this.status = 0;
+        this.command = 0;
+      }
+      if (initObj.hasOwnProperty('user')) {
+        this.user = initObj.user
+      }
+      else {
+        this.user = '';
       }
     }
   }
@@ -59,8 +66,10 @@ class NewGoal {
     bufferOffset = _serializer.float32(obj.y, buffer, bufferOffset);
     // Serialize message field [theta]
     bufferOffset = _serializer.float32(obj.theta, buffer, bufferOffset);
-    // Serialize message field [status]
-    bufferOffset = _serializer.int32(obj.status, buffer, bufferOffset);
+    // Serialize message field [command]
+    bufferOffset = _serializer.int32(obj.command, buffer, bufferOffset);
+    // Serialize message field [user]
+    bufferOffset = _serializer.string(obj.user, buffer, bufferOffset);
     return bufferOffset;
   }
 
@@ -74,13 +83,17 @@ class NewGoal {
     data.y = _deserializer.float32(buffer, bufferOffset);
     // Deserialize message field [theta]
     data.theta = _deserializer.float32(buffer, bufferOffset);
-    // Deserialize message field [status]
-    data.status = _deserializer.int32(buffer, bufferOffset);
+    // Deserialize message field [command]
+    data.command = _deserializer.int32(buffer, bufferOffset);
+    // Deserialize message field [user]
+    data.user = _deserializer.string(buffer, bufferOffset);
     return data;
   }
 
   static getMessageSize(object) {
-    return 16;
+    let length = 0;
+    length += object.user.length;
+    return length + 20;
   }
 
   static datatype() {
@@ -90,7 +103,7 @@ class NewGoal {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return '79af765d251f55a6fa90d1dce04ea1a9';
+    return '50266fd61bf27a3712274104f794648f';
   }
 
   static messageDefinition() {
@@ -99,7 +112,8 @@ class NewGoal {
     float32 x
     float32 y
     float32 theta
-    int32 status
+    int32 command
+    string user
     `;
   }
 
@@ -130,11 +144,18 @@ class NewGoal {
       resolved.theta = 0.0
     }
 
-    if (msg.status !== undefined) {
-      resolved.status = msg.status;
+    if (msg.command !== undefined) {
+      resolved.command = msg.command;
     }
     else {
-      resolved.status = 0
+      resolved.command = 0
+    }
+
+    if (msg.user !== undefined) {
+      resolved.user = msg.user;
+    }
+    else {
+      resolved.user = ''
     }
 
     return resolved;

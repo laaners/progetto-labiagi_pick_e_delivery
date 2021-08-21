@@ -27,13 +27,15 @@ struct NewGoal_
     : x(0.0)
     , y(0.0)
     , theta(0.0)
-    , status(0)  {
+    , command(0)
+    , user()  {
     }
   NewGoal_(const ContainerAllocator& _alloc)
     : x(0.0)
     , y(0.0)
     , theta(0.0)
-    , status(0)  {
+    , command(0)
+    , user(_alloc)  {
   (void)_alloc;
     }
 
@@ -48,8 +50,11 @@ struct NewGoal_
    typedef float _theta_type;
   _theta_type theta;
 
-   typedef int32_t _status_type;
-  _status_type status;
+   typedef int32_t _command_type;
+  _command_type command;
+
+   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _user_type;
+  _user_type user;
 
 
 
@@ -83,7 +88,8 @@ bool operator==(const ::pick_e_delivery::NewGoal_<ContainerAllocator1> & lhs, co
   return lhs.x == rhs.x &&
     lhs.y == rhs.y &&
     lhs.theta == rhs.theta &&
-    lhs.status == rhs.status;
+    lhs.command == rhs.command &&
+    lhs.user == rhs.user;
 }
 
 template<typename ContainerAllocator1, typename ContainerAllocator2>
@@ -106,12 +112,12 @@ namespace message_traits
 
 template <class ContainerAllocator>
 struct IsFixedSize< ::pick_e_delivery::NewGoal_<ContainerAllocator> >
-  : TrueType
+  : FalseType
   { };
 
 template <class ContainerAllocator>
 struct IsFixedSize< ::pick_e_delivery::NewGoal_<ContainerAllocator> const>
-  : TrueType
+  : FalseType
   { };
 
 template <class ContainerAllocator>
@@ -140,12 +146,12 @@ struct MD5Sum< ::pick_e_delivery::NewGoal_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "79af765d251f55a6fa90d1dce04ea1a9";
+    return "50266fd61bf27a3712274104f794648f";
   }
 
   static const char* value(const ::pick_e_delivery::NewGoal_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x79af765d251f55a6ULL;
-  static const uint64_t static_value2 = 0xfa90d1dce04ea1a9ULL;
+  static const uint64_t static_value1 = 0x50266fd61bf27a37ULL;
+  static const uint64_t static_value2 = 0x12274104f794648fULL;
 };
 
 template<class ContainerAllocator>
@@ -167,7 +173,8 @@ struct Definition< ::pick_e_delivery::NewGoal_<ContainerAllocator> >
     return "float32 x\n"
 "float32 y\n"
 "float32 theta\n"
-"int32 status\n"
+"int32 command\n"
+"string user\n"
 ;
   }
 
@@ -189,7 +196,8 @@ namespace serialization
       stream.next(m.x);
       stream.next(m.y);
       stream.next(m.theta);
-      stream.next(m.status);
+      stream.next(m.command);
+      stream.next(m.user);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -214,8 +222,10 @@ struct Printer< ::pick_e_delivery::NewGoal_<ContainerAllocator> >
     Printer<float>::stream(s, indent + "  ", v.y);
     s << indent << "theta: ";
     Printer<float>::stream(s, indent + "  ", v.theta);
-    s << indent << "status: ";
-    Printer<int32_t>::stream(s, indent + "  ", v.status);
+    s << indent << "command: ";
+    Printer<int32_t>::stream(s, indent + "  ", v.command);
+    s << indent << "user: ";
+    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.user);
   }
 };
 

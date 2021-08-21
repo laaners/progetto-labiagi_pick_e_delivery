@@ -32,13 +32,13 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-add_executable(SetGoal src/SetGoal.cpp)
-target_link_libraries(SetGoal ${catkin_LIBRARIES})
-add_dependencies(SetGoal pick_e_delivery_generate_messages_cpp)
-
-add_executable(Position src/Position.cpp)
-target_link_libraries(Position ${catkin_LIBRARIES})
-add_dependencies(Position pick_e_delivery_generate_messages_cpp)
+#add_executable(SetGoal src/SetGoal.cpp)
+#target_link_libraries(SetGoal ${catkin_LIBRARIES})
+#add_dependencies(SetGoal pick_e_delivery_generate_messages_cpp)
+#
+#add_executable(Position src/Position.cpp)
+#target_link_libraries(Position ${catkin_LIBRARIES})
+#add_dependencies(Position pick_e_delivery_generate_messages_cpp)
 
 add_executable(MainNode src/MainNode.cpp)
 target_link_libraries(MainNode ${catkin_LIBRARIES})

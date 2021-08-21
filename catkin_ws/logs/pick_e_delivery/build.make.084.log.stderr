@@ -1,0 +1,4 @@
+make[2]: *** No rule to make target '/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp', needed by 'CMakeFiles/SetGoal.dir/src/SetGoal.cpp.o'.  Stop.
+make[1]: *** [CMakeFiles/SetGoal.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [all] Error 2

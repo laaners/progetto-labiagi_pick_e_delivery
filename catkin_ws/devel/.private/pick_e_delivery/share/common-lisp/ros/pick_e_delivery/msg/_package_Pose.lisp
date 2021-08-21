@@ -9,4 +9,8 @@
           STATUS
           STATUS_MSG-VAL
           STATUS_MSG
+          SENDER-VAL
+          SENDER
+          RECEIVER-VAL
+          RECEIVER
 ))

@@ -23,6 +23,8 @@ class Pose {
       this.yaw = null;
       this.status = null;
       this.status_msg = null;
+      this.sender = null;
+      this.receiver = null;
     }
     else {
       if (initObj.hasOwnProperty('x')) {
@@ -55,6 +57,18 @@ class Pose {
       else {
         this.status_msg = '';
       }
+      if (initObj.hasOwnProperty('sender')) {
+        this.sender = initObj.sender
+      }
+      else {
+        this.sender = '';
+      }
+      if (initObj.hasOwnProperty('receiver')) {
+        this.receiver = initObj.receiver
+      }
+      else {
+        this.receiver = '';
+      }
     }
   }
 
@@ -70,6 +84,10 @@ class Pose {
     bufferOffset = _serializer.int32(obj.status, buffer, bufferOffset);
     // Serialize message field [status_msg]
     bufferOffset = _serializer.string(obj.status_msg, buffer, bufferOffset);
+    // Serialize message field [sender]
+    bufferOffset = _serializer.string(obj.sender, buffer, bufferOffset);
+    // Serialize message field [receiver]
+    bufferOffset = _serializer.string(obj.receiver, buffer, bufferOffset);
     return bufferOffset;
   }
 
@@ -87,13 +105,19 @@ class Pose {
     data.status = _deserializer.int32(buffer, bufferOffset);
     // Deserialize message field [status_msg]
     data.status_msg = _deserializer.string(buffer, bufferOffset);
+    // Deserialize message field [sender]
+    data.sender = _deserializer.string(buffer, bufferOffset);
+    // Deserialize message field [receiver]
+    data.receiver = _deserializer.string(buffer, bufferOffset);
     return data;
   }
 
   static getMessageSize(object) {
     let length = 0;
     length += object.status_msg.length;
-    return length + 20;
+    length += object.sender.length;
+    length += object.receiver.length;
+    return length + 28;
   }
 
   static datatype() {
@@ -103,7 +127,7 @@ class Pose {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return 'fa1b81ed9024769c496d819f689530fc';
+    return '0281e339f76520d24da4f5c9c77c5df7';
   }
 
   static messageDefinition() {
@@ -114,6 +138,8 @@ class Pose {
     float32 yaw
     int32 status
     string status_msg
+    string sender
+    string receiver
     `;
   }
 
@@ -156,6 +182,20 @@ class Pose {
     }
     else {
       resolved.status_msg = ''
+    }
+
+    if (msg.sender !== undefined) {
+      resolved.sender = msg.sender;
+    }
+    else {
+      resolved.sender = ''
+    }
+
+    if (msg.receiver !== undefined) {
+      resolved.receiver = msg.receiver;
+    }
+    else {
+      resolved.receiver = ''
     }
 
     return resolved;

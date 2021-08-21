@@ -26,7 +26,10 @@ size_t n = 10;
 int message_published = 0;
 int cruising = 0;
 int status = FREE;
-char status_msg[1024];
+//char status_msg[1024];
+std::string status_msg;
+std::string sender;
+std::string receiver;
 
 float waitPackT = 30;
 float tooLongT = 50;
@@ -71,57 +74,61 @@ void pubNewGoal(float x, float y, float theta) {
 void setGoalCallBack(const pick_e_delivery::NewGoal& new_goal) {
     //ricevo dall'utente le coordinate di un nuovo goal, ma che azione devo fare?
 //FREE
-    if(status == FREE && new_goal.status == PICK) {
+    if(status == FREE && new_goal.command == PICK) {
         //Il robot ha ricevuto un comando per prelevare il pacco ed è libero: inizia a muoversi
         caller_position[0] = new_goal.x;
         caller_position[1] = new_goal.y;
         caller_position[2] = new_goal.theta;
         status = PICK;
+        sender = new_goal.user;    
         pubNewGoal(new_goal.x,new_goal.y,new_goal.theta);
         tooLongTimer.start();
-        sprintf(status_msg,"Il robot si sta dirigendo verso il mittente per prelevare il pacco");
+        status_msg = "Il robot si sta dirigendo verso il mittente per prelevare il pacco";
     }
 //PICK
-    else if(status == PICK && new_goal.status == FREE) {
+    else if(status == PICK && new_goal.command == FREE) {
         //L'utente vuole liberare il robot, è in PICK quindi non ha nessun pacco
         status = FREE;
         pubNewGoal(current_position[0],current_position[1],caller_position[2]);
-        sprintf(status_msg,"Il mittente ha liberato il robot");
+        status_msg = "Il mittente ha liberato il robot";
     }
 //DELIVERY
-    else if(status == DELIVERY && new_goal.status == FREE) {
+    else if(status == DELIVERY && new_goal.command == FREE) {
         //L'utente vuole liberare il robot, il robot dovrà tornare indietro
         status = GOBACK;
         pubNewGoal(caller_position[0],caller_position[1],caller_position[2]);
-        sprintf(status_msg,"Il mittente rivuole il pacco indietro");
+        status_msg = "Il mittente rivuole il pacco indietro";
     }
 //AT_DST
-    else if(status == AT_DST && new_goal.status == FREE) {
+    else if(status == AT_DST && new_goal.command == FREE) {
         //Il destinatario ci ha comunicato che ha prelevato il pacco, il robot quindi è ora libero
         status = FREE;
-        sprintf(status_msg,"Il robot è pronto a ricevere un nuovo ordine!");
+        status_msg = "Il robot è pronto a ricevere un nuovo ordine!";
     }
-    else if(status == AT_DST && new_goal.status == GOBACK) {
+    else if(status == AT_DST && new_goal.command == GOBACK) {
         //L'utente vuole liberare il robot, il robot dovrà tornare indietro
         status = GOBACK;
         pubNewGoal(caller_position[0],caller_position[1],caller_position[2]);
-        sprintf(status_msg,"Il mittente rivuole il pacco indietro");
+        status_msg = "Il mittente rivuole il pacco indietro";
     }
 //AT_SRC
-    else if(status == AT_SRC && new_goal.status == DELIVERY) {
+    else if(status == AT_SRC && new_goal.command == DELIVERY) {
         //L'utente ha comunicato al robot che ha caricato il pacco e ora si dirigerà verso la destinazione
         status = DELIVERY;
+        receiver = new_goal.user;
         pubNewGoal(new_goal.x,new_goal.y,new_goal.theta);
         tooLongTimer.start();
-        sprintf(status_msg,"Il robot si sta dirigendo verso il destinatario per consegnare il pacco");
+        waitPackTimer.stop();
+        status_msg = "Il robot si sta dirigendo verso il destinatario per consegnare il pacco";
     }
-    else if(status == AT_SRC && new_goal.status == FREE) {
+    else if(status == AT_SRC && new_goal.command == FREE) {
         //Il client ci ha comunicato che si è ripreso il pacco
         status = FREE;
-        sprintf(status_msg,"Il robot è pronto a ricevere un nuovo ordine!");
+        waitPackTimer.stop();
+        status_msg = "Il robot è pronto a ricevere un nuovo ordine!";
     }
 //Comandi non validi dall'utente
-    else if(status != FREE && new_goal.status == PICK) {
+    else if(status != FREE && new_goal.command == PICK) {
         //Qualcuno ha dato un nuovo incarico al robot, ma è ancora in missione
         ROS_INFO("Il robot è ancora in missione");
     }
@@ -129,10 +136,15 @@ void setGoalCallBack(const pick_e_delivery::NewGoal& new_goal) {
 }
 
 void positionCallBack(const tf2_msgs::TFMessage& tf) {
+    //check if FREE, then reset sender and receiver
+    if(status == FREE) {
+        sender = "none";
+        receiver = "none";
+    }
+
     //check if transform odom->laser_frame possible
     int transform_ok;
     transform_ok = tfBuffer.canTransform("map", "base_link", ros::Time(0));
-
     if(transform_ok != 0) {
         geometry_msgs::TransformStamped transformStamped;
         transformStamped = tfBuffer.lookupTransform("map", "base_link", ros::Time(0));
@@ -152,8 +164,9 @@ void positionCallBack(const tf2_msgs::TFMessage& tf) {
         msg.yaw = yaw;
         msg.status = status;
         msg.status_msg = status_msg;
+        msg.sender = sender;
+        msg.receiver = receiver;
         pub_pos.publish(msg);
-
     }
 }
 
@@ -161,7 +174,7 @@ void waitPackCallBack(const ros::TimerEvent& event) {
     switch(status) {
         case AT_SRC: {
             status = FREE;
-            sprintf(status_msg,"Il robot non ha ricevuto nessun pacco, ora è in FREE");
+            status_msg = "Il robot non ha ricevuto nessun pacco, ora è in FREE";
             break;
         }
         default: {
@@ -183,7 +196,7 @@ void check1_CallBack(const ros::TimerEvent& event) {
         distance = sqrt(pow(current_position[0]-target_position[0],2)+pow(current_position[1]-target_position[1],2));
         if(distance < 1.0) {
             ROS_INFO("Sono arrivato a destinazione");
-            sprintf(status_msg,"Sono arrivato a destinazione!");
+            status_msg = "Sono arrivato a destinazione!";
             cruising = 0;
             switch(status) {
                 case PICK: {
@@ -195,12 +208,12 @@ void check1_CallBack(const ros::TimerEvent& event) {
                 case DELIVERY: {
                     tooLongTimer.stop();
                     status = AT_DST;
-                    sprintf(status_msg,"Sono arrivato a destinazione, attendo che mi qualcuno prenda il pacco!");
+                    status_msg = "Sono arrivato a destinazione, attendo che mi qualcuno prenda il pacco!";
                     break;
                 }
                 case GOBACK: {
                     status = AT_SRC;
-                    sprintf(status_msg,"Sono da chi mi aveva originariamente chiamato, nessuno è venuto a prelevare il suo pacco, liberami!");
+                    status_msg = "Sono da chi mi aveva originariamente chiamato, nessuno è venuto a prelevare il suo pacco, liberami!";
                     break;
                 }
                 default: {
@@ -223,13 +236,13 @@ void check2_CallBack(const ros::TimerEvent& event) {
             switch(status) {
                 case PICK: {
                     status = FREE;
-                    sprintf(status_msg,"Non riesco a raggiungere chi mi ha chiamato, mi dispiace");
+                    status_msg = "Non riesco a raggiungere chi mi ha chiamato, mi dispiace";
                     pubNewGoal(current_position[0],current_position[1],caller_position[2]);
                     break;
                 }
                 case DELIVERY: {
                     status = GOBACK;
-                    sprintf(status_msg,"Non riesco a raggiungere il goal, torno indietro");
+                    status_msg = "Non riesco a raggiungere il goal, torno indietro";
                     pubNewGoal(caller_position[0],caller_position[1],caller_position[2]);
                     break;
                 }
@@ -247,6 +260,8 @@ int main(int argc, char* argv[]) {
         waitPackT = atof(argv[1]);
         tooLongT = atof(argv[2]);
     }
+    sender = "none";
+    receiver = "none";
 
     ros::init(argc, argv, "MainNode");
     ros::NodeHandle n;
@@ -270,20 +285,10 @@ int main(int argc, char* argv[]) {
     waitPackTimer = n.createTimer(ros::Duration(waitPackT), waitPackCallBack);
     waitPackTimer.stop();
 
-    sprintf(status_msg,"Il robot è pronto a ricevere un nuovo ordine!");
+    status_msg = "Il robot è pronto a ricevere un nuovo ordine!";
 
     int count = 0;
     while(ros::ok()) {
-        /*
-        if(message_published != 0) {
-            ROS_INFO("Pubblico nuovo messaggio");
-            status = PICK;
-            pub_goal.publish(new_goal_msg);
-            message_published = 0;
-        }
-        */
-
-
         ros::spinOnce();
         loop_rate.sleep();
         ++count;

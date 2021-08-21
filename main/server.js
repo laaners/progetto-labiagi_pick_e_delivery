@@ -19,45 +19,34 @@ app.use(session({ //SESSION
 	/*Forza una sessione non inizializzata a essere salvata. Se false aiuta con le race conditions*/
 }));
 
-var userdb = 'http://admin:admin@localhost:5984/users/';
-
 const port = 3000;
 const FREE = 0, PICK = 1, AT_SRC = 2, DELIVERY = 3, AT_DST = 4, GOBACK = 5;
 
-rosnodejs.initNode('/talker_node', {onTheFly: true}).then((rosNode) => {
-    let tosend = {"position": null, "goal": null};
+var usersdb = 'http://admin:admin@localhost:5984/users/';
+var roomsdb = 'http://admin:admin@localhost:5984/rooms/';
 
-    let sub_pos = rosNode.subscribe('/pick_e_delivery/Pose', 'pick_e_delivery/Pose',
-        (data) => { // define callback execution            
-            //rosnodejs.log.info('I heard: [' + JSON.stringify(data) + ']');
-            tosend.position = data;
-            rosnodejs.log.info(JSON.stringify(tosend));
-            sendAll(tosend);
-        }
-    );
-
-    let sub_goal = rosNode.subscribe('/move_base_simple/goal','geometry_msgs/PoseStamped',
-        (data) => {
-            rosnodejs.log.info('I heard: [' + JSON.stringify({"goal": data}) + ']');
-            console.log(JSON.parse(JSON.stringify({"goal": data})));
-            tosend.goal = data;
-            sendAll(tosend);
-        }
-    );
-    console.log(tosend);
-    //sendAll(tosend);
-});
-
-function publish(_x,_y,_theta,_status) {
-    rosnodejs.initNode('/talker_node', {onTheFly: true}).then((rosNode) => {
-        let pub_goal = rosNode.advertise('/New_Goal','pick_e_delivery/NewGoal', {
-            queueSize: 1,
-            latching: true,
-            throttleMs: 9
-        });
-        pub_goal.publish({x: _x, y: _y, theta: _theta, status: _status});
-    });
+/*
+USER: {
+	"id": "",
+	"name": "",
+	"surname": "",
+	"room": "",
+	"password": ""
 }
+curl -X GET http://admin:admin@127.0.0.1:5984/users/_all_docs?include_docs=true
+
+ROOM: {
+	"id": "",
+	"x": "",
+	"y": "",
+	"users": []
+}
+curl -X GET http://admin:admin@127.0.0.1:5984/rooms/_all_docs?include_docs=true
+*/
+
+var status = FREE;
+var sender = "none";
+var receiver = "none";
 
 /*FUNZIONI CRUD---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -172,6 +161,102 @@ function deleteCRUD(db,obj) {
 	});
 }
 
+function publish(_x,_y,_theta,_command,_user) {
+    rosnodejs.initNode('/talker_node', {onTheFly: true}).then((rosNode) => {
+        let pub_goal = rosNode.advertise('/New_Goal','pick_e_delivery/NewGoal', {
+            queueSize: 1,
+            latching: true,
+            throttleMs: 9
+        });
+        pub_goal.publish({x: _x, y: _y, theta: _theta, command: _command, user: _user});
+    });
+}
+
+function int2Status(n) {
+	switch(n) {
+		case 0: return "FREE"; break;
+		case 1: return "PICK"; break;
+		case 2: return "AT_SRC"; break;
+		case 3: return "DELIVERY"; break;
+		case 4: return "AT_DST"; break;
+		case 5: return "GOBACK"; break;
+		default: return "STATO NON RICONOSCIUTO"; break;
+	}
+}
+
+rosnodejs.initNode('/talker_node', {onTheFly: true}).then((rosNode) => {
+    let tosend = {"position": null, "goal": null};
+
+    let sub_pos = rosNode.subscribe('/pick_e_delivery/Pose', 'pick_e_delivery/Pose',
+        (data) => { // define callback execution            
+            tosend.position = data;
+			status = data.status
+            rosnodejs.log.info(JSON.stringify(tosend.position));
+			rosnodejs.log.info(int2Status(status));
+            sendAll(tosend);
+        }
+    );
+
+    let sub_goal = rosNode.subscribe('/move_base_simple/goal','geometry_msgs/PoseStamped',
+        (data) => {
+            rosnodejs.log.info('I heard: [' + JSON.stringify({"goal": data}) + ']');
+            console.log(JSON.parse(JSON.stringify({"goal": data})));
+            tosend.goal = data;
+            sendAll(tosend);
+        }
+    );
+    console.log(tosend);
+    //sendAll(tosend);
+/*
+	let pub_initial = rosNode.advertise('/initialpose','geometry_msgs/PoseWithCovarianceStamped', {
+		queueSize: 1,
+		latching: true,
+		throttleMs: 9
+	});
+
+header: geometry_msgs/PoseWithCovarianceStamped
+  seq: 1
+  stamp: 
+    secs: 580
+    nsecs: 300000000
+  frame_id: "map"
+pose: 
+  pose: 
+    position: 
+      x: 9.15195560455
+      y: 7.18089485168
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.999834855086
+      w: 0.0181731272704
+  covariance: [0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.06853892326654787]
+ 
+  let cmd_vel = rosNode.advertise('/turtle1/cmd_vel','geometry_msgs/Twist', {
+    queueSize: 1,
+    latching: true,
+    throttleMs: 9
+  });
+
+	const initialpose = rosnodejs.require('geometry_msgs').msg.PoseWithCovarianceStamped;
+	const msgTwist = new initialpose({
+		linear: { x: 1, y: 0, z: 0 },
+		angular: { x: 0, y: 0, z: 1 }
+	});
+	pub_initial.publish(
+		{
+			header: {
+				seq: 1,
+				stamp: {
+
+				}
+			}
+			x: _x, y: _y, theta: _theta, command: _command, user: _user
+		});
+		*/
+});
+
 app.get('/', function(req,res) {
 	if(typeof(req.session.user) != "undefined") {
 		res.sendFile("index.html",{root:__dirname});
@@ -194,18 +279,19 @@ app.get('/logout', function(req, res){
 });
 
 app.get('/login_action', function(req,res) {
-    readCRUD(userdb, {"id": req.query.email}).then(function(res_read) {
-        console.log("Utente è presente");
-        if(req.query.password != res_read.password) {
+    readCRUD(usersdb, {"id": req.query.email}).then(function(res_readu) {
+        console.log("DONE /login_action l'utente è presente");
+        if(req.query.password != res_readu.password) {
             res.redirect("http://localhost:3000/login?err=Password%20errata!");
         }
         else {
-            req.session.user = {"id": req.query.email, "name": res_read.name, "surname": res_read.surname, "room": res_read.room};
+            req.session.user = {"id": req.query.email, "name": res_readu.name, "surname": res_readu.surname, "room": res_readu.room};
             //res.sendFile("index.html",{root:__dirname});
+			console.log(req.session.user);
             res.redirect("/");
         }
-    }).catch(function(err_read) { //non è presente, email errata
-        console.log("Utente non presente");
+    }).catch(function(err_readu) { //non è presente, email errata
+        console.log("ERROR /login_action utente non presente: "+err_readu);
         res.redirect("http://localhost:3000/login?err=Email%20errata%20o%20utente%20inesistente!");
     });
 });
@@ -219,28 +305,96 @@ app.get('/register', function(req,res) {
 });
 
 app.get('/register_action', function(req,res) {
-    readCRUD(userdb, {"id": req.query.email}).then(function(res_read) { //verifico se l'utente già presente nel db
+    readCRUD(usersdb, {"id": req.query.email}).then(function(res_readu) { //verifico se l'utente già presente nel db
         //era già presente
-        console.log("Utente già presente");
+        console.log("DONE /action_register utente già presente");
         res.redirect("http://localhost:3000/register?err=Utente%20già%20registrato!");
         //res.sendFile("register.html",{root:__dirname});	
-    }).catch(function(err_read) { //non è presente
-        console.log("Utente non presente");
-        createCRUD(userdb, {"id": req.query.email, "name": req.query.name, "surname": req.query.surname, "room": req.query.room, "password": req.query.password}).then(function(res_create) {
+    }).catch(function(err_readu) { //non è presente
+        console.log("ERROR /register_action utente non presente: "+err_readu);
+        createCRUD(usersdb, {"id": req.query.email, "name": req.query.name, "surname": req.query.surname, "room": req.query.room, "password": req.query.password}).then(function(res_createu) {
             req.session.user = {"id": req.query.email, "name": req.query.name, "surname": req.query.surname, "room": req.query.room};
-            console.log("DONE /home ho create un nuovo user: "+response.id);
-            //res.sendFile("index.html",{root:__dirname});
-            res.redirect("/");
-        }).catch(function(err_create) {
-            console.log("ERROR /home create user: "+err_create);
+            console.log("DONE /register_action ho creato un nuovo user: "+req.query.id);
+			readCRUD(roomsdb, {"id": req.query.room}).then(function(res_readr) { //La room esiste in DB
+				let new_users = res_readr.users;
+				new_users.push(req.query.email);
+				let obj = {
+					"id": res_readr._id,
+					"x": res_readr.x,
+					"y": res_readr.y,
+					"users": new_users
+				};
+				updateCRUD(roomsdb, obj).then(function(res_updater) { //...QUINDI AGGIORNO QUELL'ITINERARIO IN DB (userN+1)...
+					console.log("DONE /register_action update rooms: "+obj.id);
+					res.redirect("/");
+				}).catch(function(err_updater) { console.log("ERROR /register_action update room: "+err_updater); res.redirect("/"); });
+			}).catch(function(err_readr) { //Se la room non esiste in DB, errore
+				console.log("ERROR /register_action read rooms: "+err_readr);
+				res.redirect("/");
+			});
+        }).catch(function(err_createu) {
+            console.log("ERROR /register_action create user: "+err_createu);
             res.redirect("/");
         });
     });
 });
 
+app.get('/user_data', function(req, res) {
+	readCRUD(usersdb, {"id": req.session.user.id}).then(function(res_readu) {
+		req.session.user = {"id": res_readu._id, "name": res_readu.name, "surname": res_readu.surname, "room": res_readu.room};
+		console.log("DONE /user_data ho fatto la read e sto mandando: "); 
+		console.log(req.session.user);
+		res.send(req.session.user);
+	}).catch(function(err_readu) {
+		console.log("ERROR /user_data: "+err_readu);
+		res.send("ERROR /user_data: "+err_readu);
+	});
+});
+
+app.get('/move_robot', function(req,res) {
+	let ACTION = PICK;
+	if(req.query.action == "PICK" && status == FREE) {
+		sender = req.query.user;
+		ACTION = PICK;
+	}
+	if(req.query.action == "DELIVERY" && status == AT_SRC) {
+		receiver = req.query.user;
+		ACTION = DELIVERY;
+	}
+	//console.log("\nSender: "+sender+"\nReceiver: "+receiver);
+	readCRUD(usersdb,{"id": req.query.user}).then(function(res_readu) {
+		console.log("DONE /move_robot readu");
+		let room = res_readu.room;
+		readCRUD(roomsdb,{"id": room}).then(function(res_readr) {
+			console.log("DONE /move_robot readr");
+			publish(res_readr.x,res_readr.y,0.0,ACTION,req.query.user);
+			res.send("pick");		
+		}).catch(function(err_readr) {
+			console.log("ERROR /move_robot readr: "+err_readr);
+			res.send("useless data");
+		})
+	}).catch(function(err_readu) {
+		console.log("ERROR /move_robot readu: "+err_readu);
+		res.send("useless data");
+	});
+});
+
 app.get('/pick', function(req,res) {
-    publish(8.0,22.0,0.0,PICK);
-    res.send("pick");
+	readCRUD(usersdb,{"id": req.query.user}).then(function(res_readu) {
+		console.log("DONE /pick readu");
+		let room = res_readu.room;
+		readCRUD(roomsdb,{"id": room}).then(function(res_readr) {
+			console.log("DONE /pick readr");
+			publish(res_readr.x,res_readr.y,0.0,PICK,"ciao");
+			res.send("pick");		
+		}).catch(function(err_readr) {
+			console.log("ERROR /pick readr: "+err_readr);
+			res.send("useless data");
+		})
+	}).catch(function(err_readu) {
+		console.log("ERROR /pick readu: "+err_readu);
+		res.send("useless data");
+	});
 });
 
 app.get('/delivery', function(req,res) {
@@ -249,7 +403,7 @@ app.get('/delivery', function(req,res) {
 });
 
 app.get('/pick_pack', function(req,res) {
-    publish(-1.0,-1.0,0.0,FREE);
+    publish(-1.0,-1.0,0.0,FREE,"ciaoo");
     res.send("delivery");
 });
 

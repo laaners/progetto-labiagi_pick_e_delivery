@@ -14,7 +14,7 @@
 
 (defclass pick_e_delivery::NewGoal
   :super ros::object
-  :slots (_x _y _theta _status ))
+  :slots (_x _y _theta _command _user ))
 
 (defmethod pick_e_delivery::NewGoal
   (:init
@@ -22,13 +22,15 @@
     ((:x __x) 0.0)
     ((:y __y) 0.0)
     ((:theta __theta) 0.0)
-    ((:status __status) 0)
+    ((:command __command) 0)
+    ((:user __user) "")
     )
    (send-super :init)
    (setq _x (float __x))
    (setq _y (float __y))
    (setq _theta (float __theta))
-   (setq _status (round __status))
+   (setq _command (round __command))
+   (setq _user (string __user))
    self)
   (:x
    (&optional __x)
@@ -39,9 +41,12 @@
   (:theta
    (&optional __theta)
    (if __theta (setq _theta __theta)) _theta)
-  (:status
-   (&optional __status)
-   (if __status (setq _status __status)) _status)
+  (:command
+   (&optional __command)
+   (if __command (setq _command __command)) _command)
+  (:user
+   (&optional __user)
+   (if __user (setq _user __user)) _user)
   (:serialization-length
    ()
    (+
@@ -51,8 +56,10 @@
     4
     ;; float32 _theta
     4
-    ;; int32 _status
+    ;; int32 _command
     4
+    ;; string _user
+    4 (length _user)
     ))
   (:serialize
    (&optional strm)
@@ -64,8 +71,10 @@
        (sys::poke _y (send s :buffer) (send s :count) :float) (incf (stream-count s) 4)
      ;; float32 _theta
        (sys::poke _theta (send s :buffer) (send s :count) :float) (incf (stream-count s) 4)
-     ;; int32 _status
-       (write-long _status s)
+     ;; int32 _command
+       (write-long _command s)
+     ;; string _user
+       (write-long (length _user) s) (princ _user s)
      ;;
      (if (null strm) (get-output-stream-string s))))
   (:deserialize
@@ -76,23 +85,26 @@
      (setq _y (sys::peek buf ptr- :float)) (incf ptr- 4)
    ;; float32 _theta
      (setq _theta (sys::peek buf ptr- :float)) (incf ptr- 4)
-   ;; int32 _status
-     (setq _status (sys::peek buf ptr- :integer)) (incf ptr- 4)
+   ;; int32 _command
+     (setq _command (sys::peek buf ptr- :integer)) (incf ptr- 4)
+   ;; string _user
+     (let (n) (setq n (sys::peek buf ptr- :integer)) (incf ptr- 4) (setq _user (subseq buf ptr- (+ ptr- n))) (incf ptr- n))
    ;;
    self)
   )
 
-(setf (get pick_e_delivery::NewGoal :md5sum-) "79af765d251f55a6fa90d1dce04ea1a9")
+(setf (get pick_e_delivery::NewGoal :md5sum-) "50266fd61bf27a3712274104f794648f")
 (setf (get pick_e_delivery::NewGoal :datatype-) "pick_e_delivery/NewGoal")
 (setf (get pick_e_delivery::NewGoal :definition-)
       "float32 x
 float32 y
 float32 theta
-int32 status
+int32 command
+string user
 ")
 
 
 
-(provide :pick_e_delivery/NewGoal "79af765d251f55a6fa90d1dce04ea1a9")
+(provide :pick_e_delivery/NewGoal "50266fd61bf27a3712274104f794648f")
 
 

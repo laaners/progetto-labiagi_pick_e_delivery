@@ -1,0 +1,31 @@
+[  0%] Built target _pick_e_delivery_generate_messages_check_deps_Pose
+[  0%] Built target _pick_e_delivery_generate_messages_check_deps_NewGoal
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_eus
+[  7%] [34m[1mGenerating C++ code from pick_e_delivery/NewGoal.msg[0m
+[ 14%] [34m[1mGenerating Python from MSG pick_e_delivery/NewGoal[0m
+[ 21%] Built target pick_e_delivery_generate_messages_cpp
+[ 28%] [34m[1mGenerating Javascript code from pick_e_delivery/NewGoal.msg[0m
+[ 35%] [34m[1mGenerating Python msg __init__.py for pick_e_delivery[0m
+[ 42%] Built target pick_e_delivery_generate_messages_nodejs
+[ 57%] [34m[1mGenerating Lisp code from pick_e_delivery/NewGoal.msg[0m
+[ 57%] Built target pick_e_delivery_generate_messages_py
+[ 64%] Built target pick_e_delivery_generate_messages_lisp
+[ 71%] [34m[1mGenerating EusLisp code from pick_e_delivery/NewGoal.msg[0m
+[35m[1mScanning dependencies of target MainNode[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/MainNode.dir/src/MainNode.cpp.o[0m
+[ 92%] Built target pick_e_delivery_generate_messages_eus
+[ 92%] Built target pick_e_delivery_generate_messages
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/MainNode.cpp:[m[K In function ‘[01m[Kvoid setGoalCallBack(const NewGoal&)[m[K’:
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/MainNode.cpp:82:37:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst _user_type {aka const std::__cxx11::basic_string<char>}[m[K’ to ‘[01m[Kconst char*[m[K’ for argument ‘[01m[K2[m[K’ to ‘[01m[Kint sprintf(char*, const char*, ...)[m[K’
+         sprintf(sender,new_goal.user[01;31m[K)[m[K
+                                     [01;31m[K^[m[K
+CMakeFiles/MainNode.dir/build.make:62: recipe for target 'CMakeFiles/MainNode.dir/src/MainNode.cpp.o' failed
+make[2]: *** [CMakeFiles/MainNode.dir/src/MainNode.cpp.o] Error 1
+make[1]: *** [CMakeFiles/MainNode.dir/all] Error 2
+CMakeFiles/Makefile2:201: recipe for target 'CMakeFiles/MainNode.dir/all' failed
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2
