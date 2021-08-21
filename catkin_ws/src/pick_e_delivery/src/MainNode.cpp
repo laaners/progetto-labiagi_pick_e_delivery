@@ -93,7 +93,7 @@ void setGoalCallBack(const pick_e_delivery::NewGoal& new_goal) {
         status_msg = "Il mittente ha liberato il robot";
     }
 //DELIVERY
-    else if(status == DELIVERY && new_goal.command == FREE) {
+    else if(status == DELIVERY && new_goal.command == GOBACK) {
         //L'utente vuole liberare il robot, il robot dovrà tornare indietro
         status = GOBACK;
         pubNewGoal(caller_position[0],caller_position[1],caller_position[2]);
