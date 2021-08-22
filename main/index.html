@@ -15,18 +15,20 @@
     </head>
 
     <body>
-        <h1>Simple Map Example</h1>
+        <div class="text-center">
+            <h1>PICK E DELIVERY</h1>
+            <canvas id="myCanvas" width=421 height=574>
+                Your browser does not support the canvas element.
+            </canvas>
 
-        <canvas id="myCanvas" width=421 height=574>
-            Your browser does not support the canvas element.
-        </canvas>
+            <br/>
 
-        <p></p>
-        <div id="user"></div>
-
-        <button id="pick">PICK</button>
-        <button id="delivery">DELIVERY</button>
-        <button id="pick_pack">PRENDI IL PACCO</button>
+            <button class="btn btn-primary" id="pick">ASSEGNA UNA MISSIONE AL ROBOT</button>
+            <button class="btn btn-primary" id="delivery">DELIVERY</button>
+            <button class="btn btn-primary" id="goback">GOBACK</button>
+            <button class="btn btn-primary" id="free">FREE</button>
+            <button class="btn btn-primary" id="disabled" disabled>IL ROBOT &Egrave; IN MISSIONE</button>
+        </div>
 
         <script type="text/javascript" type="text/javascript">
             var ws = new WebSocket("ws://localhost:3000/");
@@ -34,59 +36,38 @@
             var ctx = canvas.getContext("2d");
             var base_image = new Image();
             var user;
+            var packTimeout = false; 
+            var alertPackTimeout = setTimeout(() => { alert("HAI ASPETTATO TROPPO")}, 5000);
             base_image.src = 'http://localhost:3000/map';
+
+            function int2Status(n) {
+                switch(n) {
+                    case 0: return "FREE"; break;
+                    case 1: return "PICK"; break;
+                    case 2: return "AT_SRC"; break;
+                    case 3: return "DELIVERY"; break;
+                    case 4: return "AT_DST"; break;
+                    case 5: return "GOBACK"; break;
+                    default: return "STATO NON RICONOSCIUTO"; break;
+                }
+            }
+
+            function setBtn(btn,view,msg) {
+                if(view == 0) $(btn).hide();
+                else $(btn).show();
+                $(btn).text(msg);
+            }
 
             $.ajax({
                 type: "GET",
                 url: "http://localhost:3000/user_data",
                 success: function(data) {
                     user = data;
-                    $("#user").append(JSON.stringify(data));
                 },
                 error: function() {
                     alert("Errore");
                 }
             });
-
-            $("#pick").click(function() {
-                $.ajax({
-                    type: "GET",
-                    url: "http://localhost:3000/move_robot?action=PICK&user="+user.id,
-                    success: function(data) {
-                        console.log(data);
-                    },
-                    error: function() {
-                        alert("Errore");
-                    }
-                });
-            });
-
-            $("#delivery").click(function() {
-                $.ajax({
-                    type: "GET",
-                    url: "http://localhost:3000/move_robot?action=DELIVERY&user="+"marcorossi@gmail.com",
-                    success: function(data) {
-                        console.log(data);
-                    },
-                    error: function() {
-                        alert("Errore");
-                    }
-                });
-            });
-
-            $("#pick_pack").click(function() {
-                $.ajax({
-                    type: "GET",
-                    url: "http://localhost:3000/pick_pack",
-                    success: function(data) {
-                        console.log(data);
-                    },
-                    error: function() {
-                        alert("Errore");
-                    }
-                });
-            });
-
 
             window.onload = function() {
                 base_image.onload = function(){
@@ -95,16 +76,9 @@
                 }
             }
 
-            $("button").click(function() {
-                ws.send("ciaooo");
-            });
-
             ws.onmessage = function(event) {
                 let data = JSON.parse(event.data);
-                $("p").text(JSON.stringify(data));
-
-                //ctx.rotate(90 * Math.PI / 180);
-
+                //$("p").text(JSON.stringify(data));
 
                 ctx.fillStyle = "#FF0000";
                 let x = data.position.x/0.05-3.5;
@@ -118,7 +92,7 @@
 
                 ctx.drawImage(base_image, 0, 0);
                 ctx.fillRect(x,y,7,7);
-                $("p").text(data.position.status_msg);
+                //$("p").text(data.position.status_msg+"\n"+data.position.sender+"\n"+data.position.receiver+"\n"+JSON.stringify(data.online));
 
                 if(data.position.status != 0) {
                     ctx.fillStyle = "#FFFF00";
@@ -135,7 +109,188 @@
                     ctx.lineTo(x - 10, y + 10);
                     ctx.stroke()
                 }
+
+                //GESTIONE BOTTONI IN BASE STATO DEL ROBOT
+                let sender = data.position.sender;
+                let receiver = data.position.receiver;
+                switch(int2Status(data.position.status)) {
+                    case "FREE": {
+                        packTimeout = false;
+                        //clearTimeout(alertPackTimeout);
+                        setBtn("#pick",1,"HAI UN PACCO DA SPEDIRE? CHIAMA IL NOSTRO ROBOT!");
+                        setBtn("#delivery",0,"");
+                        setBtn("#goback",0,"");
+                        setBtn("#free",0,"");
+                        setBtn("#disabled",0,"");
+                        break;
+                    }
+                    case "PICK": {
+                        if(user.id == sender) {
+                            setBtn("#pick",0,"");
+                            setBtn("#delivery",0,"");
+                            setBtn("#goback",0,"");
+                            setBtn("#free",1,"ANNULLA QUESTA MISSIONE");
+                            setBtn("#disabled",0,"");
+                        }
+                        else {
+                            setBtn("#pick",0,"");
+                            setBtn("#delivery",0,"");
+                            setBtn("#goback",0,"");
+                            setBtn("#free",0,"");
+                            setBtn("#disabled",1,"IL ROBOT È IN MISSIONE");
+                        }
+                        break;
+                    }
+                    case "AT_SRC": {
+                        if(user.id == sender) {
+                            if(!packTimeout) {
+                                packTimeout = true;
+                                alertPackTimeout;
+                            }
+                            setBtn("#pick",0,"");
+                            setBtn("#delivery",1,"CARICA UN PACCO E SCEGLI A CHI MANDARLO!");
+                            setBtn("#goback",0,"");
+                            setBtn("#free",1,"ANNULLA QUESTA MISSIONE");
+                            setBtn("#disabled",0,"");
+                        }
+                        else {
+                            setBtn("#pick",0,"");
+                            setBtn("#delivery",0,"");
+                            setBtn("#goback",0,"");
+                            setBtn("#free",0,"");
+                            setBtn("#disabled",1,"IL ROBOT È IN MISSIONE");
+                        }
+                        break;
+                    }
+                    case "DELIVERY": {
+                        if(user.id == sender) {
+                            setBtn("#pick",0,"");
+                            setBtn("#delivery",0,"");
+                            setBtn("#goback",1,"HAI CAMBIATO IDEA? RICHIAMA IL ROBOT!");
+                            setBtn("#free",0,"");
+                            setBtn("#disabled",0,"");
+                        }
+                        else if(user.id == receiver) {
+                            setBtn("#pick",0,"");
+                            setBtn("#delivery",0,"");
+                            setBtn("#goback",0,"");
+                            setBtn("#free",0,"");
+                            setBtn("#disabled",1,"QUALCUNO HA UN PACCO PER TE!");
+                        }
+                        else {
+                            setBtn("#pick",0,"");
+                            setBtn("#delivery",0,"");
+                            setBtn("#goback",0,"");
+                            setBtn("#free",0,"");
+                            setBtn("#disabled",1,"IL ROBOT È IN MISSIONE");
+                        }
+                        break;
+                    }
+                    case "AT_DST": {
+                        if(user.id == sender) {
+                            setBtn("#pick",0,"");
+                            setBtn("#delivery",0,"");
+                            setBtn("#goback",1,"HAI CAMBIATO IDEA? RICHIAMA IL ROBOT!");
+                            setBtn("#free",0,"");
+                            setBtn("#disabled",0,"");
+                        }
+                        else if(user.id == receiver) {
+                            setBtn("#pick",0,"");
+                            setBtn("#delivery",0,"");
+                            setBtn("#goback",0,"");
+                            setBtn("#free",1,"HO PRESO IL PACCO!");
+                            setBtn("#disabled",0,"");
+                        }
+                        else {
+                            setBtn("#pick",0,"");
+                            setBtn("#delivery",0,"");
+                            setBtn("#goback",0,"");
+                            setBtn("#free",0,"");
+                            setBtn("#disabled",1,"IL ROBOT È IN MISSIONE");
+                        }
+                        break;
+                    }
+                    case "GOBACK": {
+                        if(user.id == sender) {
+                            setBtn("#pick",0,"");
+                            setBtn("#delivery",0,"");
+                            setBtn("#goback",0,"0");
+                            setBtn("#free",0,"");
+                            setBtn("#disabled",1,"HAI ANNULLATO QUESTA MISSIONE, IL ROBOT STA TORNANDO INDIETRO");
+                        }
+                        else {
+                            setBtn("#pick",0,"");
+                            setBtn("#delivery",0,"");
+                            setBtn("#goback",0,"");
+                            setBtn("#free",0,"");
+                            setBtn("#disabled",1,"IL ROBOT È IN MISSIONE");
+                        }
+                        break;
+                    }
+                    default: {
+                        setBtn("#pick",0,"");
+                        setBtn("#delivery",0,"");
+                        setBtn("#goback",0,"");
+                        setBtn("#free",0,"");
+                        setBtn("#disabled",0,"");
+                        break;
+                    }
+                }
             }
+
+
+            $("#pick").click(function() {
+                $.ajax({
+                    type: "GET",
+                    url: "http://localhost:3000/move_robot?action=PICK&user="+user.id+"&password="+user.password+"&goal="+user.id,
+                    success: function(data) {
+                        console.log(data);
+                    },
+                    error: function() {
+                        alert("Errore");
+                    }
+                });
+            });
+
+            $("#delivery").click(function() {
+                $.ajax({
+                    type: "GET",
+                    url: "http://localhost:3000/move_robot?action=DELIVERY&user="+user.id+"&password="+user.password+"&goal="+"marcorossi@gmail.com",
+                    success: function(data) {
+                        console.log(data);
+                    },
+                    error: function() {
+                        alert("Errore");
+                    }
+                });
+            });
+
+            $("#goback").click(function() {
+                $.ajax({
+                    type: "GET",
+                    url: "http://localhost:3000/move_robot?action=GOBACK&user="+user.id+"&password="+user.password+"&goal="+user.id,
+                    success: function(data) {
+                        console.log(data);
+                    },
+                    error: function() {
+                        alert("Errore");
+                    }
+                });
+            });
+
+            $("#free").click(function() {
+                $.ajax({
+                    type: "GET",
+                    url: "http://localhost:3000/move_robot?action=FREE&user="+user.id+"&password="+user.password+"&goal="+user.id,
+                    success: function(data) {
+                        console.log(data);
+                    },
+                    error: function() {
+                        alert("Errore");
+                    }
+                });
+            });
+
         </script>
     </body>
 </html>

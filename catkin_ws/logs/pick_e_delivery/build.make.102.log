@@ -1,17 +1,17 @@
-[  0%] Built target _pick_e_delivery_generate_messages_check_deps_NewGoal
 [  0%] Built target _pick_e_delivery_generate_messages_check_deps_Pose
+[  0%] Built target _pick_e_delivery_generate_messages_check_deps_NewGoal
 [  0%] Built target std_msgs_generate_messages_cpp
 [  0%] Built target std_msgs_generate_messages_py
 [  0%] Built target std_msgs_generate_messages_nodejs
 [  0%] Built target std_msgs_generate_messages_lisp
 [  0%] Built target std_msgs_generate_messages_eus
 [ 14%] Built target pick_e_delivery_generate_messages_cpp
-[ 35%] Built target pick_e_delivery_generate_messages_py
-[ 50%] Built target pick_e_delivery_generate_messages_nodejs
+[ 28%] Built target pick_e_delivery_generate_messages_nodejs
+[ 50%] Built target pick_e_delivery_generate_messages_py
 [ 64%] Built target pick_e_delivery_generate_messages_lisp
-[ 85%] Built target pick_e_delivery_generate_messages_eus
 [35m[1mScanning dependencies of target MainNode[0m
-[ 92%] [32mBuilding CXX object CMakeFiles/MainNode.dir/src/MainNode.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/MainNode.dir/src/MainNode.cpp.o[0m
+[ 92%] Built target pick_e_delivery_generate_messages_eus
 [ 92%] Built target pick_e_delivery_generate_messages
 [100%] [32m[1mLinking CXX executable /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/pick_e_delivery/MainNode[0m
 [100%] Built target MainNode

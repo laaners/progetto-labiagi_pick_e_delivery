@@ -1,0 +1,7 @@
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/MainNode.cpp:[m[K In function ‘[01m[Kvoid check1_CallBack(const ros::TimerEvent&)[m[K’:
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/MainNode.cpp:195:47:[m[K [01;31m[Kerror: [m[Kassigning to an array from an initializer list
+         stuckv = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0[01;31m[K}[m[K;
+                                               [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/MainNode.dir/src/MainNode.cpp.o] Error 1
+make[1]: *** [CMakeFiles/MainNode.dir/all] Error 2
+make: *** [all] Error 2

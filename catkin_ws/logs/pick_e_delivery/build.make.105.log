@@ -1,0 +1,25 @@
+[  0%] Built target _pick_e_delivery_generate_messages_check_deps_NewGoal
+[  0%] Built target _pick_e_delivery_generate_messages_check_deps_Pose
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_eus
+[ 14%] Built target pick_e_delivery_generate_messages_cpp
+[ 42%] Built target pick_e_delivery_generate_messages_nodejs
+[ 50%] Built target pick_e_delivery_generate_messages_py
+[ 71%] Built target pick_e_delivery_generate_messages_lisp
+[ 85%] Built target pick_e_delivery_generate_messages_eus
+[35m[1mScanning dependencies of target MainNode[0m
+[ 85%] Built target pick_e_delivery_generate_messages
+[ 92%] [32mBuilding CXX object CMakeFiles/MainNode.dir/src/MainNode.cpp.o[0m
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/MainNode.cpp:[m[K In function ‘[01m[Kvoid check1_CallBack(const ros::TimerEvent&)[m[K’:
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/MainNode.cpp:195:47:[m[K [01;31m[Kerror: [m[Kassigning to an array from an initializer list
+         stuckv = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0[01;31m[K}[m[K;
+                                               [01;31m[K^[m[K
+CMakeFiles/MainNode.dir/build.make:62: recipe for target 'CMakeFiles/MainNode.dir/src/MainNode.cpp.o' failed
+CMakeFiles/Makefile2:201: recipe for target 'CMakeFiles/MainNode.dir/all' failed
+make[2]: *** [CMakeFiles/MainNode.dir/src/MainNode.cpp.o] Error 1
+make[1]: *** [CMakeFiles/MainNode.dir/all] Error 2
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

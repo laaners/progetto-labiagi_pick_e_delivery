@@ -14,6 +14,7 @@
 
 std::vector<float> target_position(2,0);
 std::vector<float> current_position(2,0);
+std::vector<float> old_position(2,0);
 std::vector<float> caller_position(3,0);
 
 geometry_msgs::PoseStamped new_goal_msg;
@@ -30,6 +31,8 @@ std::string status_msg;
 std::string sender;
 std::string receiver;
 
+int stuckv[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+int i = 0;
 float waitPackT = 30;
 float tooLongT = 50;
 
@@ -95,6 +98,7 @@ void setGoalCallBack(const pick_e_delivery::NewGoal& new_goal) {
     else if(status == DELIVERY && new_goal.command == GOBACK) {
         //L'utente vuole liberare il robot, il robot dovrà tornare indietro
         status = GOBACK;
+        receiver = "none";
         pubNewGoal(caller_position[0],caller_position[1],caller_position[2]);
         status_msg = "Il mittente rivuole il pacco indietro";
     }
@@ -107,6 +111,7 @@ void setGoalCallBack(const pick_e_delivery::NewGoal& new_goal) {
     else if(status == AT_DST && new_goal.command == GOBACK) {
         //L'utente vuole liberare il robot, il robot dovrà tornare indietro
         status = GOBACK;
+        receiver = "none";
         pubNewGoal(caller_position[0],caller_position[1],caller_position[2]);
         status_msg = "Il mittente rivuole il pacco indietro";
     }
@@ -142,8 +147,15 @@ void positionCallBack(const tf2_msgs::TFMessage& tf) {
         geometry_msgs::TransformStamped transformStamped;
         transformStamped = tfBuffer.lookupTransform("map", "base_link", ros::Time(0));
 
+        old_position[0] = current_position[0];
+        old_position[1] = current_position[1];
+
         current_position[0] = transformStamped.transform.translation.x;
         current_position[1] = transformStamped.transform.translation.y;
+
+        if((old_position == current_position) && status != FREE) stuckv[i] = 1;
+        else stuckv[i] = 0;
+        i = (i+1)%10;
 
         double yaw = 2*acos(transformStamped.transform.rotation.w);
         //ROS_INFO("x: %f, y: %f, yaw: %f, status: %d, status_msg: %s", transformStamped.transform.translation.x, transformStamped.transform.translation.y, yaw, status, status_msg);
@@ -175,7 +187,7 @@ void waitPackCallBack(const ros::TimerEvent& event) {
 }
 
 void check1_CallBack(const ros::TimerEvent& event) {
-    //check if FREE, then reset sender and receiver
+    //check if FREE, then reset sender, receiver and stuckv
     if(status == FREE) {
         sender = "none";
         receiver = "none";
@@ -187,12 +199,12 @@ void check1_CallBack(const ros::TimerEvent& event) {
         distance = sqrt(pow(current_position[0]-target_position[0],2)+pow(current_position[1]-target_position[1],2));
         if(distance < 1.0) {
             ROS_INFO("Sono arrivato a destinazione");
-            status_msg = "Sono arrivato a destinazione!";
             cruising = 0;
             switch(status) {
                 case PICK: {
                     tooLongTimer.stop();
                     status = AT_SRC;
+                    status_msg = "Sono arrivato a destinazione, attendo che qualcuno metta un pacco da consegnare!";
                     waitPackTimer.start();
                     break;
                 }
@@ -212,7 +224,21 @@ void check1_CallBack(const ros::TimerEvent& event) {
                     break;
                 }
             }
-
+        }
+        else {
+            if((status == DELIVERY) || (status == PICK) || (status == GOBACK)) {
+                int stuck = 0, j = 0;
+                for(j = 0; j < 10; j++) {
+                    stuck += stuckv[j];
+                }
+                if(stuck == 10) {
+                    ROS_INFO("Sono bloccato");
+                    status_msg = "Servizio non disponibile";
+                }
+                else {
+                    status_msg = "Il robot sta navigando";
+                }
+            }
         }
     }
 }

@@ -59,6 +59,7 @@ curl -X GET http://admin:admin@127.0.0.1:5984/rooms/_all_docs?include_docs=true
 var status = FREE;
 var sender = "none";
 var receiver = "none";
+var tosend = {"position": null, "goal": null, "online": []};
 
 /*FUNZIONI CRUD---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -196,15 +197,27 @@ function int2Status(n) {
 	}
 }
 
+function string2Command(s) {
+	switch(s) {
+		case "FREE": return FREE; break;
+		case "PICK": return PICK; break;
+		case "DELIVERY": return DELIVERY; break;
+		case "GOBACK": return GOBACK; break;
+		default: return "COMANDO NON RICONOSCIUTO"; break;
+	}
+}
+
 rosnodejs.initNode('/talker_node', {onTheFly: true}).then((rosNode) => {
-    let tosend = {"position": null, "goal": null};
+    //let tosend = {"position": null, "goal": null, "online": []};
 
     let sub_pos = rosNode.subscribe('/pick_e_delivery/Pose', 'pick_e_delivery/Pose',
         (data) => { // define callback execution            
             tosend.position = data;
-			status = data.status
-            rosnodejs.log.info(JSON.stringify(tosend.position));
-			rosnodejs.log.info(int2Status(status));
+			status = data.status;
+			sender = data.sender;
+			receiver = data.receiver;
+            //rosnodejs.log.info(JSON.stringify(tosend.position));
+			//rosnodejs.log.info(int2Status(status));
             sendAll(tosend);
         }
     );
@@ -217,56 +230,7 @@ rosnodejs.initNode('/talker_node', {onTheFly: true}).then((rosNode) => {
             sendAll(tosend);
         }
     );
-    console.log(tosend);
     //sendAll(tosend);
-/*
-	let pub_initial = rosNode.advertise('/initialpose','geometry_msgs/PoseWithCovarianceStamped', {
-		queueSize: 1,
-		latching: true,
-		throttleMs: 9
-	});
-
-header: geometry_msgs/PoseWithCovarianceStamped
-  seq: 1
-  stamp: 
-    secs: 580
-    nsecs: 300000000
-  frame_id: "map"
-pose: 
-  pose: 
-    position: 
-      x: 9.15195560455
-      y: 7.18089485168
-      z: 0.0
-    orientation: 
-      x: 0.0
-      y: 0.0
-      z: -0.999834855086
-      w: 0.0181731272704
-  covariance: [0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.25, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.06853892326654787]
- 
-  let cmd_vel = rosNode.advertise('/turtle1/cmd_vel','geometry_msgs/Twist', {
-    queueSize: 1,
-    latching: true,
-    throttleMs: 9
-  });
-
-	const initialpose = rosnodejs.require('geometry_msgs').msg.PoseWithCovarianceStamped;
-	const msgTwist = new initialpose({
-		linear: { x: 1, y: 0, z: 0 },
-		angular: { x: 0, y: 0, z: 1 }
-	});
-	pub_initial.publish(
-		{
-			header: {
-				seq: 1,
-				stamp: {
-
-				}
-			}
-			x: _x, y: _y, theta: _theta, command: _command, user: _user
-		});
-		*/
 });
 
 app.get('/', function(req,res) {
@@ -297,7 +261,7 @@ app.get('/login_action', function(req,res) {
             res.redirect("http://localhost:3000/login?err=Password%20errata!");
         }
         else {
-            req.session.user = {"id": req.query.email, "name": res_readu.name, "surname": res_readu.surname, "room": res_readu.room};
+            req.session.user = {"id": req.query.email, "name": res_readu.name, "surname": res_readu.surname, "room": res_readu.room, "password": res_readu.password};
             //res.sendFile("index.html",{root:__dirname});
 			console.log(req.session.user);
             res.redirect("/");
@@ -325,7 +289,7 @@ app.get('/register_action', function(req,res) {
     }).catch(function(err_readu) { //non è presente
         console.log("ERROR /register_action utente non presente: "+err_readu);
         createCRUD(usersdb, {"id": req.query.email, "name": req.query.name, "surname": req.query.surname, "room": req.query.room, "password": req.query.password}).then(function(res_createu) {
-            req.session.user = {"id": req.query.email, "name": req.query.name, "surname": req.query.surname, "room": req.query.room};
+            req.session.user = {"id": req.query.email, "name": req.query.name, "surname": req.query.surname, "room": req.query.room, "password": req.query.password};
             console.log("DONE /register_action ho creato un nuovo user: "+req.query.id);
 			readCRUD(roomsdb, {"id": req.query.room}).then(function(res_readr) { //La room esiste in DB
 				let new_users = res_readr.users;
@@ -353,7 +317,7 @@ app.get('/register_action', function(req,res) {
 
 app.get('/user_data', function(req, res) {
 	readCRUD(usersdb, {"id": req.session.user.id}).then(function(res_readu) {
-		req.session.user = {"id": res_readu._id, "name": res_readu.name, "surname": res_readu.surname, "room": res_readu.room};
+		req.session.user = {"id": res_readu._id, "name": res_readu.name, "surname": res_readu.surname, "room": res_readu.room, "password": res_readu.password};
 		console.log("DONE /user_data ho fatto la read e sto mandando: "); 
 		console.log(req.session.user);
 		res.send(req.session.user);
@@ -364,22 +328,28 @@ app.get('/user_data', function(req, res) {
 });
 
 app.get('/move_robot', function(req,res) {
-	let ACTION = PICK;
-	if(req.query.action == "PICK" && status == FREE) {
-		sender = req.query.user;
-		ACTION = PICK;
+	let ACTION = string2Command(req.query.action);
+	if(req.query.user != req.session.user.id && req.query.password != req.session.user.password) {
+		console.log("ERROR /move_robot attacco melevolo")
+		res.send("ERROR /move_robot attacco melevolo");
+		return;
 	}
-	if(req.query.action == "DELIVERY" && status == AT_SRC) {
-		receiver = req.query.user;
-		ACTION = DELIVERY;
+	if(ACTION == FREE) {
+		if((status == AT_SRC) && (req.query.user == sender)) console.log("FREE src valido");
+		else if((status == PICK) && (req.query.user == sender)) console.log("FREE pick src valido");
+		else if(status == AT_DST && req.query.user == receiver) console.log("FREE dst valido");
+		else {
+			console.log("FREE non valido: "+req.query.user);
+			res.send("ERROR /move_robot free non valido");
+			return;
+		}
 	}
-	//console.log("\nSender: "+sender+"\nReceiver: "+receiver);
-	readCRUD(usersdb,{"id": req.query.user}).then(function(res_readu) {
+	readCRUD(usersdb,{"id": req.query.goal}).then(function(res_readu) {
 		console.log("DONE /move_robot readu");
 		let room = res_readu.room;
 		readCRUD(roomsdb,{"id": room}).then(function(res_readr) {
 			console.log("DONE /move_robot readr");
-			publish(res_readr.x,res_readr.y,0.0,ACTION,req.query.user);
+			publish(res_readr.x,res_readr.y,0.0,ACTION,req.query.goal);
 			res.send("pick");		
 		}).catch(function(err_readr) {
 			console.log("ERROR /move_robot readr: "+err_readr);
@@ -389,34 +359,6 @@ app.get('/move_robot', function(req,res) {
 		console.log("ERROR /move_robot readu: "+err_readu);
 		res.send("useless data");
 	});
-});
-
-app.get('/pick', function(req,res) {
-	readCRUD(usersdb,{"id": req.query.user}).then(function(res_readu) {
-		console.log("DONE /pick readu");
-		let room = res_readu.room;
-		readCRUD(roomsdb,{"id": room}).then(function(res_readr) {
-			console.log("DONE /pick readr");
-			publish(res_readr.x,res_readr.y,0.0,PICK,"ciao");
-			res.send("pick");		
-		}).catch(function(err_readr) {
-			console.log("ERROR /pick readr: "+err_readr);
-			res.send("useless data");
-		})
-	}).catch(function(err_readu) {
-		console.log("ERROR /pick readu: "+err_readu);
-		res.send("useless data");
-	});
-});
-
-app.get('/delivery', function(req,res) {
-    publish(9.0,19.0,0.0,DELIVERY);
-    res.send("delivery");
-});
-
-app.get('/pick_pack', function(req,res) {
-    publish(-1.0,-1.0,0.0,FREE,"ciaoo");
-    res.send("delivery");
 });
 
 app.get('/map', function(req,res) {
@@ -432,14 +374,16 @@ const httpServer = http.createServer(app);
 const ws = new WebSocket.Server({server: httpServer});
 
 var CLIENTS = [];
-var ONLINE = [];
+//var ONLINE = [];
 
 ws.on('connection', function(conn,req) {
     CLIENTS.push(conn);
 	sess(req, {}, () => {
 		console.log('Session is parsed!');
-		ONLINE.push(req.session.user.id);
-		console.log(ONLINE);
+		//ONLINE.push(req.session.user.id);
+		//console.log(ONLINE);
+		tosend.online.push(req.session.user.id);
+		console.log(tosend.online);
 	});
 
     conn.on('message', function(message) {
@@ -452,8 +396,10 @@ ws.on('connection', function(conn,req) {
         CLIENTS.splice(CLIENTS.indexOf(conn),1);
 		sess(req, {}, () => {
 			console.log('Session is parsed!');
-			ONLINE.splice(ONLINE.indexOf(req.session.user.id),1);
-			console.log(ONLINE);
+			//ONLINE.splice(ONLINE.indexOf(req.session.user.id),1);
+			//console.log(ONLINE);
+			tosend.online.splice(tosend.online.indexOf(req.session.user.id),1);
+			console.log(tosend.online);
 		});
     });
 });
