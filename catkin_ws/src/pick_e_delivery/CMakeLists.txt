@@ -14,6 +14,7 @@ add_message_files(
   FILES
   NewGoal.msg
   Pose.msg
+  Timeout.msg
 )
 
 generate_messages(

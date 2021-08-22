@@ -59,7 +59,7 @@ curl -X GET http://admin:admin@127.0.0.1:5984/rooms/_all_docs?include_docs=true
 var status = FREE;
 var sender = "none";
 var receiver = "none";
-var tosend = {"position": null, "goal": null, "online": []};
+var tosend = {"position": null, "goal": null, "timeout": {"event": "allRight"}, "online": []};
 
 /*FUNZIONI CRUD---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -176,7 +176,7 @@ function deleteCRUD(db,obj) {
 
 function publish(_x,_y,_theta,_command,_user) {
     rosnodejs.initNode('/talker_node', {onTheFly: true}).then((rosNode) => {
-        let pub_goal = rosNode.advertise('/New_Goal','pick_e_delivery/NewGoal', {
+        let pub_goal = rosNode.advertise('/pick_e_delivery/NewGoal','pick_e_delivery/NewGoal', {
             queueSize: 1,
             latching: true,
             throttleMs: 9
@@ -221,7 +221,7 @@ rosnodejs.initNode('/talker_node', {onTheFly: true}).then((rosNode) => {
             sendAll(tosend);
         }
     );
-
+	
     let sub_goal = rosNode.subscribe('/move_base_simple/goal','geometry_msgs/PoseStamped',
         (data) => {
             rosnodejs.log.info('I heard: [' + JSON.stringify({"goal": data}) + ']');
@@ -230,6 +230,15 @@ rosnodejs.initNode('/talker_node', {onTheFly: true}).then((rosNode) => {
             sendAll(tosend);
         }
     );
+
+	let sub_timeout = rosNode.subscribe('/pick_e_delivery/Timeout','pick_e_delivery/Timeout',
+		(data) => {
+			//rosnodejs.log.info('I heard: [' + JSON.stringify({"timeout": data}) + ']');
+			console.log(JSON.parse(JSON.stringify({"timeout": data})));
+			sendAll(data);
+		}
+	);
+
     //sendAll(tosend);
 });
 

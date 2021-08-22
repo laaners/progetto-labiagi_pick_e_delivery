@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/NewGoal.msg;/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Pose.msg"
+messages_str = "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/NewGoal.msg;/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Pose.msg;/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Timeout.msg"
 services_str = ""
 pkg_name = "pick_e_delivery"
 dependencies_str = "std_msgs"

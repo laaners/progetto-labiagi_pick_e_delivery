@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pick_e_delivery_generate_messages_cpp"
   "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/include/pick_e_delivery/Pose.h"
+  "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/include/pick_e_delivery/Timeout.h"
   "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/include/pick_e_delivery/NewGoal.h"
 )
 

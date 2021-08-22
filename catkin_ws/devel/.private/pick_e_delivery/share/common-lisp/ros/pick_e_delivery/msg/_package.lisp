@@ -5,5 +5,7 @@
    "NEWGOAL"
    "<POSE>"
    "POSE"
+   "<TIMEOUT>"
+   "TIMEOUT"
   ))
 

@@ -4,6 +4,7 @@
 CMakeFiles/MainNode.dir/src/MainNode.cpp.o
  /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/include/pick_e_delivery/NewGoal.h
  /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/include/pick_e_delivery/Pose.h
+ /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/include/pick_e_delivery/Timeout.h
  /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/MainNode.cpp
  /opt/ros/melodic/include/geometry_msgs/Point.h
  /opt/ros/melodic/include/geometry_msgs/Pose.h

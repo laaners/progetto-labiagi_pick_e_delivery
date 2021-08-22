@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e
 include CMakeFiles/pick_e_delivery_generate_messages_py.dir/progress.make
 
 CMakeFiles/pick_e_delivery_generate_messages_py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/_Pose.py
+CMakeFiles/pick_e_delivery_generate_messages_py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/_Timeout.py
 CMakeFiles/pick_e_delivery_generate_messages_py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/_NewGoal.py
 CMakeFiles/pick_e_delivery_generate_messages_py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/__init__.py
 
@@ -63,19 +64,26 @@ CMakeFiles/pick_e_delivery_generate_messages_py: /home/alessio/Desktop/progetto-
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG pick_e_delivery/Pose"
 	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Pose.msg -Ipick_e_delivery:/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p pick_e_delivery -o /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg
 
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/_Timeout.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/_Timeout.py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Timeout.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG pick_e_delivery/Timeout"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Timeout.msg -Ipick_e_delivery:/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p pick_e_delivery -o /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg
+
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/_NewGoal.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/_NewGoal.py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/NewGoal.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG pick_e_delivery/NewGoal"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG pick_e_delivery/NewGoal"
 	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/NewGoal.msg -Ipick_e_delivery:/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p pick_e_delivery -o /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg
 
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/__init__.py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/_Pose.py
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/__init__.py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/_Timeout.py
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/__init__.py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/_NewGoal.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python msg __init__.py for pick_e_delivery"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python msg __init__.py for pick_e_delivery"
 	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg --initpy
 
 pick_e_delivery_generate_messages_py: CMakeFiles/pick_e_delivery_generate_messages_py
 pick_e_delivery_generate_messages_py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/_Pose.py
+pick_e_delivery_generate_messages_py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/_Timeout.py
 pick_e_delivery_generate_messages_py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/_NewGoal.py
 pick_e_delivery_generate_messages_py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/__init__.py
 pick_e_delivery_generate_messages_py: CMakeFiles/pick_e_delivery_generate_messages_py.dir/build.make

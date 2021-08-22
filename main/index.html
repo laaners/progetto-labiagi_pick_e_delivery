@@ -28,8 +28,7 @@
             <button class="btn btn-primary" id="goback">GOBACK</button>
             <button class="btn btn-primary" id="free">FREE</button>
             <button class="btn btn-primary" id="disabled" disabled>IL ROBOT &Egrave; IN MISSIONE</button>
-
-            <div id="countdown"></div>
+            <div id="timeout"></div>
         </div>
 
         <script type="text/javascript" type="text/javascript">
@@ -38,7 +37,9 @@
             var ctx = canvas.getContext("2d");
             var base_image = new Image();
             var user;
-            var packTimeout = true; 
+            var sender = "none";
+            var receiver = "none";
+            var blocked = 0;
             base_image.src = 'http://localhost:3000/map';
 
             function int2Status(n) {
@@ -70,6 +71,12 @@
                 }
             });
 
+            setBtn("#pick",1,"HAI UN PACCO DA SPEDIRE? CHIAMA IL NOSTRO ROBOT!");
+            setBtn("#delivery",0,"");
+            setBtn("#goback",0,"");
+            setBtn("#free",0,"");
+            setBtn("#disabled",0,"");
+
             window.onload = function() {
                 base_image.onload = function(){
                     ctx.drawImage(base_image, 0, 0);
@@ -79,11 +86,51 @@
 
             ws.onmessage = function(event) {
                 let data = JSON.parse(event.data);
-                //$("p").text(JSON.stringify(data));
+                
+                if(typeof(data.event) != "undefined") { 
+                    switch(data.event) {
+                        case "isBlocked": {
+                            setBtn("#pick",0,"");
+                            setBtn("#delivery",0,"");
+                            setBtn("#goback",0,"");
+                            setBtn("#free",0,"");
+                            setBtn("#disabled",1,"IL ROBOT È BLOCCATO, SERVIZIO MOMENTANEAMENTE NON DISPONIBILE");
+                            blocked = 1;
+                            break;
+                        }
+                        case "tooLongPick": {
+                            if(user.id == sender)
+                                alert("IL ROBOT NON È IN GRADO DI RAGGIUNGERTI, CI SCUSIAMO PER IL DISAGIO");
+                            blocked = 0;
+                            break;
+                        }
+                        case "tooLongDelivery": {
+                            if(user.id == sender)
+                                alert("IL ROBOT NON È IN GRADO DI RAGGIUNGERE IL DESTINATARIO, STA ORA TORNANDO INDIETRO, CI SCUSIAMO PER IL DISAGIO");
+                            blocked = 0;
+                            break;
+                        }
+                        case "noPack": {
+                            if(user.id == sender)
+                                alert("L'UTENTE NON HA MESSO NESSUN PACCO SUL ROBOT, LA MISSIONE È STATA ANNULLATA");
+                            blocked = 0;
+                            break;
+                        }
+                        default: {
+                            blocked = 0;
+                            break;
+                        }
+                    }
+                }
 
-                ctx.fillStyle = "#FF0000";
+                if(blocked == 1) return;
+
+                sender = data.position.sender;
+                receiver = data.position.receiver;
                 let x = data.position.x/0.05-3.5;
                 let y = 574-3.5-data.position.y/0.05;
+
+                ctx.fillStyle = "#FF0000";
 
                 //x/0.05, y/0.05, inizia a disegnare in alto a sinistra
                 /*
@@ -99,8 +146,10 @@
                     ctx.fillStyle = "#FFFF00";
                     x = data.goal.pose.position.x/0.05-3.5;
                     y = 574-3.5-data.goal.pose.position.y/0.05;
-                    //ctx.fillRect(x,y,7,7);
 
+                    //x = data.goal.x/0.05-3.5;
+                    //y = 574-3.5-data.goal.y/0.05;
+                    
                     ctx.beginPath();
 
                     ctx.moveTo(x - 10, y - 10);
@@ -112,14 +161,8 @@
                 }
 
                 //GESTIONE BOTTONI IN BASE STATO DEL ROBOT
-                let sender = data.position.sender;
-                let receiver = data.position.receiver;
                 switch(int2Status(data.position.status)) {
                     case "FREE": {
-                        if(!packTimeout && (data.position.status_msg.includes("Il robot non ha ricevuto nessun pacco, ora è in FREE") || data.position.status_msg.includes("Non riesco a raggiungere"))) {
-                            packTimeout = true;
-                            alert(data.position.status_msg);
-                        }
                         setBtn("#pick",1,"HAI UN PACCO DA SPEDIRE? CHIAMA IL NOSTRO ROBOT!");
                         setBtn("#delivery",0,"");
                         setBtn("#goback",0,"");
@@ -146,7 +189,6 @@
                     }
                     case "AT_SRC": {
                         if(user.id == sender) {
-                            packTimeout = false;
                             setBtn("#pick",0,"");
                             setBtn("#delivery",1,"CARICA UN PACCO E SCEGLI A CHI MANDARLO!");
                             setBtn("#goback",0,"");
@@ -164,7 +206,6 @@
                     }
                     case "DELIVERY": {
                         if(user.id == sender) {
-                            packTimeout = false;
                             setBtn("#pick",0,"");
                             setBtn("#delivery",0,"");
                             setBtn("#goback",1,"HAI CAMBIATO IDEA? RICHIAMA IL ROBOT!");
@@ -213,10 +254,6 @@
                     }
                     case "GOBACK": {
                         if(user.id == sender) {
-                            if(!packTimeout && (data.position.status_msg.includes("Il robot non ha ricevuto nessun pacco, ora è in FREE") || data.position.status_msg.includes("Non riesco a raggiungere"))) {
-                                packTimeout = true;
-                                alert(data.position.status_msg);
-                            }
                             setBtn("#pick",0,"");
                             setBtn("#delivery",0,"");
                             setBtn("#goback",0,"0");

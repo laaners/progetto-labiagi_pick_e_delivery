@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "pick_e_delivery: 2 messages, 0 services")
+message(STATUS "pick_e_delivery: 3 messages, 0 services")
 
 set(MSG_I_FLAGS "-Ipick_e_delivery:/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg")
 
@@ -22,6 +22,11 @@ add_custom_target(_pick_e_delivery_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "pick_e_delivery" "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Pose.msg" ""
 )
 
+get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Timeout.msg" NAME_WE)
+add_custom_target(_pick_e_delivery_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "pick_e_delivery" "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Timeout.msg" ""
+)
+
 get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/NewGoal.msg" NAME_WE)
 add_custom_target(_pick_e_delivery_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "pick_e_delivery" "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/NewGoal.msg" ""
@@ -35,6 +40,12 @@ add_custom_target(_pick_e_delivery_generate_messages_check_deps_${_filename}
 ### Generating Messages
 _generate_msg_cpp(pick_e_delivery
   "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Pose.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/pick_e_delivery
+)
+_generate_msg_cpp(pick_e_delivery
+  "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Timeout.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/pick_e_delivery
@@ -62,6 +73,8 @@ add_dependencies(pick_e_delivery_generate_messages pick_e_delivery_generate_mess
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Pose.msg" NAME_WE)
 add_dependencies(pick_e_delivery_generate_messages_cpp _pick_e_delivery_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Timeout.msg" NAME_WE)
+add_dependencies(pick_e_delivery_generate_messages_cpp _pick_e_delivery_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/NewGoal.msg" NAME_WE)
 add_dependencies(pick_e_delivery_generate_messages_cpp _pick_e_delivery_generate_messages_check_deps_${_filename})
 
@@ -76,6 +89,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS pick_e_delivery_generate_messages_c
 ### Generating Messages
 _generate_msg_eus(pick_e_delivery
   "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Pose.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/pick_e_delivery
+)
+_generate_msg_eus(pick_e_delivery
+  "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Timeout.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/pick_e_delivery
@@ -103,6 +122,8 @@ add_dependencies(pick_e_delivery_generate_messages pick_e_delivery_generate_mess
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Pose.msg" NAME_WE)
 add_dependencies(pick_e_delivery_generate_messages_eus _pick_e_delivery_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Timeout.msg" NAME_WE)
+add_dependencies(pick_e_delivery_generate_messages_eus _pick_e_delivery_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/NewGoal.msg" NAME_WE)
 add_dependencies(pick_e_delivery_generate_messages_eus _pick_e_delivery_generate_messages_check_deps_${_filename})
 
@@ -117,6 +138,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS pick_e_delivery_generate_messages_e
 ### Generating Messages
 _generate_msg_lisp(pick_e_delivery
   "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Pose.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/pick_e_delivery
+)
+_generate_msg_lisp(pick_e_delivery
+  "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Timeout.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/pick_e_delivery
@@ -144,6 +171,8 @@ add_dependencies(pick_e_delivery_generate_messages pick_e_delivery_generate_mess
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Pose.msg" NAME_WE)
 add_dependencies(pick_e_delivery_generate_messages_lisp _pick_e_delivery_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Timeout.msg" NAME_WE)
+add_dependencies(pick_e_delivery_generate_messages_lisp _pick_e_delivery_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/NewGoal.msg" NAME_WE)
 add_dependencies(pick_e_delivery_generate_messages_lisp _pick_e_delivery_generate_messages_check_deps_${_filename})
 
@@ -158,6 +187,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS pick_e_delivery_generate_messages_l
 ### Generating Messages
 _generate_msg_nodejs(pick_e_delivery
   "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Pose.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/pick_e_delivery
+)
+_generate_msg_nodejs(pick_e_delivery
+  "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Timeout.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/pick_e_delivery
@@ -185,6 +220,8 @@ add_dependencies(pick_e_delivery_generate_messages pick_e_delivery_generate_mess
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Pose.msg" NAME_WE)
 add_dependencies(pick_e_delivery_generate_messages_nodejs _pick_e_delivery_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Timeout.msg" NAME_WE)
+add_dependencies(pick_e_delivery_generate_messages_nodejs _pick_e_delivery_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/NewGoal.msg" NAME_WE)
 add_dependencies(pick_e_delivery_generate_messages_nodejs _pick_e_delivery_generate_messages_check_deps_${_filename})
 
@@ -199,6 +236,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS pick_e_delivery_generate_messages_n
 ### Generating Messages
 _generate_msg_py(pick_e_delivery
   "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Pose.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/pick_e_delivery
+)
+_generate_msg_py(pick_e_delivery
+  "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Timeout.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/pick_e_delivery
@@ -225,6 +268,8 @@ add_dependencies(pick_e_delivery_generate_messages pick_e_delivery_generate_mess
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Pose.msg" NAME_WE)
+add_dependencies(pick_e_delivery_generate_messages_py _pick_e_delivery_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Timeout.msg" NAME_WE)
 add_dependencies(pick_e_delivery_generate_messages_py _pick_e_delivery_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/NewGoal.msg" NAME_WE)
 add_dependencies(pick_e_delivery_generate_messages_py _pick_e_delivery_generate_messages_check_deps_${_filename})

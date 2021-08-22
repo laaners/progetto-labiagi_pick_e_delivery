@@ -132,6 +132,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pick_e_delivery/msg" TYPE FILE FILES
     "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/NewGoal.msg"
     "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Pose.msg"
+    "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Timeout.msg"
     )
 endif()
 
