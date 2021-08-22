@@ -374,7 +374,7 @@ const httpServer = http.createServer(app);
 const ws = new WebSocket.Server({server: httpServer});
 
 var CLIENTS = [];
-//var ONLINE = [];
+var ONLINE = [];
 
 ws.on('connection', function(conn,req) {
     CLIENTS.push(conn);

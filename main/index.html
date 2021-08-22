@@ -28,6 +28,8 @@
             <button class="btn btn-primary" id="goback">GOBACK</button>
             <button class="btn btn-primary" id="free">FREE</button>
             <button class="btn btn-primary" id="disabled" disabled>IL ROBOT &Egrave; IN MISSIONE</button>
+
+            <div id="countdown"></div>
         </div>
 
         <script type="text/javascript" type="text/javascript">
@@ -36,8 +38,7 @@
             var ctx = canvas.getContext("2d");
             var base_image = new Image();
             var user;
-            var packTimeout = false; 
-            var alertPackTimeout = setTimeout(() => { alert("HAI ASPETTATO TROPPO")}, 5000);
+            var packTimeout = true; 
             base_image.src = 'http://localhost:3000/map';
 
             function int2Status(n) {
@@ -115,8 +116,10 @@
                 let receiver = data.position.receiver;
                 switch(int2Status(data.position.status)) {
                     case "FREE": {
-                        packTimeout = false;
-                        //clearTimeout(alertPackTimeout);
+                        if(!packTimeout && (data.position.status_msg.includes("Il robot non ha ricevuto nessun pacco, ora è in FREE") || data.position.status_msg.includes("Non riesco a raggiungere"))) {
+                            packTimeout = true;
+                            alert(data.position.status_msg);
+                        }
                         setBtn("#pick",1,"HAI UN PACCO DA SPEDIRE? CHIAMA IL NOSTRO ROBOT!");
                         setBtn("#delivery",0,"");
                         setBtn("#goback",0,"");
@@ -143,10 +146,7 @@
                     }
                     case "AT_SRC": {
                         if(user.id == sender) {
-                            if(!packTimeout) {
-                                packTimeout = true;
-                                alertPackTimeout;
-                            }
+                            packTimeout = false;
                             setBtn("#pick",0,"");
                             setBtn("#delivery",1,"CARICA UN PACCO E SCEGLI A CHI MANDARLO!");
                             setBtn("#goback",0,"");
@@ -164,6 +164,7 @@
                     }
                     case "DELIVERY": {
                         if(user.id == sender) {
+                            packTimeout = false;
                             setBtn("#pick",0,"");
                             setBtn("#delivery",0,"");
                             setBtn("#goback",1,"HAI CAMBIATO IDEA? RICHIAMA IL ROBOT!");
@@ -212,6 +213,10 @@
                     }
                     case "GOBACK": {
                         if(user.id == sender) {
+                            if(!packTimeout && (data.position.status_msg.includes("Il robot non ha ricevuto nessun pacco, ora è in FREE") || data.position.status_msg.includes("Non riesco a raggiungere"))) {
+                                packTimeout = true;
+                                alert(data.position.status_msg);
+                            }
                             setBtn("#pick",0,"");
                             setBtn("#delivery",0,"");
                             setBtn("#goback",0,"0");
