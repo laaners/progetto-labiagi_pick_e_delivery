@@ -1,1 +1,0 @@
-/home/alessio/Desktop/progetto-labiagi/rosnodejs_ws/devel/.private/rosnodejs_examples/lib/pkgconfig/rosnodejs_examples.pc

@@ -1,1 +1,0 @@
-/home/alessio/Desktop/progetto-labiagi/rosnodejs_ws/devel/.private/rosnodejs_examples/share/rosnodejs_examples/cmake/rosnodejs_examplesConfig.cmake
