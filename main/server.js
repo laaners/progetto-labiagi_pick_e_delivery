@@ -6,8 +6,6 @@ const cors = require('cors');
 const WebSocket = require('ws');
 const request = require('request');
 const session = require('express-session');
-const cookie = require('cookie');
-const cookieParser = require('cookie-parser')
 const rosnodejs = require('rosnodejs');
 const std_msgs = rosnodejs.require('std_msgs').msg;
 
@@ -59,7 +57,7 @@ curl -X GET http://admin:admin@127.0.0.1:5984/rooms/_all_docs?include_docs=true
 var status = FREE;
 var sender = "none";
 var receiver = "none";
-var tosend = {"position": null, "goal": null, "timeout": {"event": "allRight"}, "online": []};
+var tosend = {"position": null, "goal": null, "timeout": {"event": "allRight"}};
 
 /*FUNZIONI CRUD---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -374,9 +372,128 @@ app.get('/map', function(req,res) {
     res.sendFile("april_tag_scale.png",{root: __dirname});
 });
 
-app.get('/addio', function(req,res) {
-	console.log(ONLINE);
-	res.send("ciao");
+app.get('/all_users', function(req,res) {
+	request({
+		url: "http://admin:admin@127.0.0.1:5984/users/_all_docs?include_docs=true",
+		method: 'GET',
+	}, function(error, res_read, body){
+		if(error) {
+			console.log("ERROR /all_users readCRUD: "+error);
+			res.send("ERROR readCRUD: "+error);
+		}
+		else if(res.statusCode != 200) {
+			console.log("ERROR /all_users readCRUD: "+JSON.parse(body).error);
+			res.send(JSON.parse(body).error)
+		}
+		else{
+			console.log("DONE /all_users readCRUD");
+			res.send(JSON.parse(body).rows.map(function(x) {
+				let obj = {
+					"id": x.id,
+					"name": x.doc.name,
+					"surname": x.doc.surname,
+					"room": x.doc.room
+				}
+				return obj;
+			}));
+		}
+	});
+});
+
+app.get('/all_rooms', function(req,res) {
+	request({
+		url: "http://admin:admin@127.0.0.1:5984/rooms/_all_docs?include_docs=true",
+		method: 'GET',
+	}, function(error, res_read, body){
+		if(error) {
+			console.log("ERROR /all_rooms readCRUD: "+error);
+			res.send("ERROR readCRUD: "+error);
+		}
+		else if(res.statusCode != 200) {
+			console.log("ERROR /all_rooms readCRUD: "+JSON.parse(body).error);
+			res.send(JSON.parse(body).error)
+		}
+		else{
+			console.log("DONE /all_rooms readCRUD");
+			res.send(JSON.parse(body).rows.map(function(x) {
+				let obj = {
+					"id": x.id,
+					"x": x.doc.x,
+					"y": x.doc.y,
+					"users": x.doc.users
+				}
+				return obj;
+			}));
+		}
+	});
+
+});
+
+app.get('/update_room', function(req,res) {
+	if(req.query.user != req.session.user.id && req.query.password != req.session.user.password) {
+		console.log("ERROR /move_robot attacco melevolo")
+		res.send("ERROR /move_robot attacco melevolo");
+		return;
+	}
+	console.log(req.query);
+	readCRUD(roomsdb, {"id": req.query.room_new}).then(function(res_readr_new) {
+		console.log("DONE /update_room stanza trovata");
+		//UPDATE USER
+		let obj = {
+			"id": req.session.user.id,
+			"name": req.session.user.name,
+			"surname": req.session.user.surname,
+			"room": req.query.room_new,
+			"password": req.session.user.password
+		}
+		updateCRUD(usersdb, obj).then(function(res_updateu) {
+			console.log("DONE /update_room user");
+			//UPDATE NEW ROOM
+			let new_users = res_readr_new.users;
+			new_users.push(req.query.user);
+			obj = {
+				"id": res_readr_new._id,
+				"x": res_readr_new.x,
+				"y": res_readr_new.y,
+				"users": new_users
+			}
+			updateCRUD(roomsdb, obj).then(function(res_updater_new) {
+				console.log("DONE /update_room new room");
+				//READ OLD ROOM
+				readCRUD(roomsdb, {"id": req.query.room_old}).then(function(res_readr_old) {
+					console.log("DONE /update_room read old room");
+					let less_users = res_readr_old.users;
+					if(less_users.includes(req.query.user) && less_users.length <= 1) less_users = [];
+					else less_users.splice(less_users.indexOf(req.query.user),1);
+					obj = {
+						"id": res_readr_old._id,
+						"x": res_readr_old.x,
+						"y": res_readr_old.y,
+						"users": less_users
+					}
+					updateCRUD(roomsdb, obj).then(function(res_updater_old) {
+						console.log("DONE /update_room update old room");
+						res.send("Useless data");
+					}).catch(function(err_updater_old) {
+						console.log("ERROR /update_room update old room: "+err_updater_old);
+						res.send("Useless data");	
+					});
+				}).catch(function(err_readr_old) {
+					console.log("ERROR /update_room read old room: "+err_readr_old);
+					res.send("Useless data");	
+				})
+			}).catch(function(err_updater_new) {
+				console.log("ERROR /update_room new room: "+err_updater_new);
+				res.send("Useless data");
+			});
+		}).catch(function(err_updateu) {
+			console.log("ERROR /update_room update user: "+err_updateu);
+			res.send("Useless data");
+		});
+	}).catch(function(err_readr) {
+		console.log("ERROR /update_room read_user: "+err_readr);
+		res.send("Useless data");
+	});
 });
 
 const httpServer = http.createServer(app);
@@ -389,10 +506,11 @@ ws.on('connection', function(conn,req) {
     CLIENTS.push(conn);
 	sess(req, {}, () => {
 		console.log('Session is parsed!');
-		//ONLINE.push(req.session.user.id);
-		//console.log(ONLINE);
-		tosend.online.push(req.session.user.id);
-		console.log(tosend.online);
+		ONLINE.push(req.session.user.id);
+		console.log(ONLINE);
+		sendAll({"online": ONLINE});
+		//tosend.online.push(req.session.user.id);
+		//console.log(tosend.online);
 	});
 
     conn.on('message', function(message) {
@@ -405,10 +523,11 @@ ws.on('connection', function(conn,req) {
         CLIENTS.splice(CLIENTS.indexOf(conn),1);
 		sess(req, {}, () => {
 			console.log('Session is parsed!');
-			//ONLINE.splice(ONLINE.indexOf(req.session.user.id),1);
-			//console.log(ONLINE);
-			tosend.online.splice(tosend.online.indexOf(req.session.user.id),1);
-			console.log(tosend.online);
+			ONLINE.splice(ONLINE.indexOf(req.session.user.id),1);
+			console.log(ONLINE);
+			sendAll({"online": ONLINE});
+			//tosend.online.splice(tosend.online.indexOf(req.session.user.id),1);
+			//console.log(tosend.online);
 		});
     });
 });
