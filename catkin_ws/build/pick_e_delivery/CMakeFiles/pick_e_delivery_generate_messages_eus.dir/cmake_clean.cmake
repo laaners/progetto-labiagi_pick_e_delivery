@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/roseus/ros/pick_e_delivery/msg/Pose.l"
   "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/roseus/ros/pick_e_delivery/msg/Timeout.l"
   "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/roseus/ros/pick_e_delivery/msg/NewGoal.l"
+  "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/roseus/ros/pick_e_delivery/srv/setWaitPackInterval.l"
+  "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/roseus/ros/pick_e_delivery/srv/setTooLongInterval.l"
   "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/roseus/ros/pick_e_delivery/manifest.l"
 )
 

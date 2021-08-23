@@ -17,6 +17,12 @@ add_message_files(
   Timeout.msg
 )
 
+add_service_files(
+  FILES
+	setTooLongInterval.srv
+	setWaitPackInterval.srv
+)
+
 generate_messages(
   DEPENDENCIES
   std_msgs

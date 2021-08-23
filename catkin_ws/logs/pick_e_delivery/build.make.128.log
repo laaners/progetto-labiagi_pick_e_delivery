@@ -1,0 +1,39 @@
+[  0%] Built target _pick_e_delivery_generate_messages_check_deps_NewGoal
+[  0%] Built target _pick_e_delivery_generate_messages_check_deps_Pose
+[  0%] Built target _pick_e_delivery_generate_messages_check_deps_setTooLongInterval
+[  0%] Built target _pick_e_delivery_generate_messages_check_deps_Timeout
+[35m[1mScanning dependencies of target _pick_e_delivery_generate_messages_check_deps_setWaitPackInterval[0m
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target _pick_e_delivery_generate_messages_check_deps_setWaitPackInterval
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_lisp
+[  3%] [34m[1mGenerating C++ code from pick_e_delivery/setWaitPackInterval.srv[0m
+[  6%] [34m[1mGenerating Python code from SRV pick_e_delivery/setWaitPackInterval[0m
+[ 10%] [34m[1mGenerating Python msg __init__.py for pick_e_delivery[0m
+[ 13%] [34m[1mGenerating Python srv __init__.py for pick_e_delivery[0m
+[ 26%] Built target pick_e_delivery_generate_messages_cpp
+[ 30%] [34m[1mGenerating Javascript code from pick_e_delivery/setWaitPackInterval.srv[0m
+[ 43%] Built target pick_e_delivery_generate_messages_py
+[ 56%] Built target pick_e_delivery_generate_messages_nodejs
+[ 60%] [34m[1mGenerating Lisp code from pick_e_delivery/setWaitPackInterval.srv[0m
+[ 63%] [34m[1mGenerating EusLisp code from pick_e_delivery/setWaitPackInterval.srv[0m
+[ 76%] Built target pick_e_delivery_generate_messages_lisp
+[35m[1mScanning dependencies of target MainNode[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/MainNode.dir/src/MainNode.cpp.o[0m
+[ 96%] Built target pick_e_delivery_generate_messages_eus
+[ 96%] Built target pick_e_delivery_generate_messages
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/MainNode.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/MainNode.cpp:371:24:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kros::ServiceServer srvTooLong[m[K’
+     ros::ServiceServer [01;31m[KsrvTooLong[m[K = n.advertiseService("pick_e_delivery/setWaitPackInterval", setWaitPackInterval);
+                        [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/MainNode.cpp:368:24:[m[K [01;36m[Knote: [m[K‘[01m[Kros::ServiceServer srvTooLong[m[K’ previously declared here
+     ros::ServiceServer [01;36m[KsrvTooLong[m[K = n.advertiseService("pick_e_delivery/setTooLongInterval", setTooLongInterval);
+                        [01;36m[K^~~~~~~~~~[m[K
+CMakeFiles/MainNode.dir/build.make:62: recipe for target 'CMakeFiles/MainNode.dir/src/MainNode.cpp.o' failed
+make[2]: *** [CMakeFiles/MainNode.dir/src/MainNode.cpp.o] Error 1
+CMakeFiles/Makefile2:210: recipe for target 'CMakeFiles/MainNode.dir/all' failed
+make[1]: *** [CMakeFiles/MainNode.dir/all] Error 2
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

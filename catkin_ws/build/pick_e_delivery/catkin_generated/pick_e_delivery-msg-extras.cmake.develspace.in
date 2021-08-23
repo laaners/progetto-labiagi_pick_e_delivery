@@ -1,2 +1,2 @@
 set(pick_e_delivery_MESSAGE_FILES "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/NewGoal.msg;/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Pose.msg;/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/Timeout.msg")
-set(pick_e_delivery_SERVICE_FILES "")
+set(pick_e_delivery_SERVICE_FILES "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/srv/setTooLongInterval.srv;/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/srv/setWaitPackInterval.srv")

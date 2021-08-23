@@ -3,7 +3,10 @@ file(REMOVE_RECURSE
   "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/_Pose.py"
   "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/_Timeout.py"
   "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/_NewGoal.py"
+  "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/srv/_setWaitPackInterval.py"
+  "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/srv/_setTooLongInterval.py"
   "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/__init__.py"
+  "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/srv/__init__.py"
 )
 
 # Per-language clean rules from dependency scanning.

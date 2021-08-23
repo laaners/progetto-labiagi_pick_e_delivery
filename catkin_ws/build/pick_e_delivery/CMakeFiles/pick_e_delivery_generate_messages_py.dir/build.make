@@ -56,7 +56,10 @@ include CMakeFiles/pick_e_delivery_generate_messages_py.dir/progress.make
 CMakeFiles/pick_e_delivery_generate_messages_py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/_Pose.py
 CMakeFiles/pick_e_delivery_generate_messages_py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/_Timeout.py
 CMakeFiles/pick_e_delivery_generate_messages_py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/_NewGoal.py
+CMakeFiles/pick_e_delivery_generate_messages_py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/srv/_setWaitPackInterval.py
+CMakeFiles/pick_e_delivery_generate_messages_py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/srv/_setTooLongInterval.py
 CMakeFiles/pick_e_delivery_generate_messages_py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/__init__.py
+CMakeFiles/pick_e_delivery_generate_messages_py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/srv/__init__.py
 
 
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/_Pose.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
@@ -74,18 +77,42 @@ CMakeFiles/pick_e_delivery_generate_messages_py: /home/alessio/Desktop/progetto-
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG pick_e_delivery/NewGoal"
 	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg/NewGoal.msg -Ipick_e_delivery:/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p pick_e_delivery -o /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg
 
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/srv/_setWaitPackInterval.py: /opt/ros/melodic/lib/genpy/gensrv_py.py
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/srv/_setWaitPackInterval.py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/srv/setWaitPackInterval.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python code from SRV pick_e_delivery/setWaitPackInterval"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/srv/setWaitPackInterval.srv -Ipick_e_delivery:/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p pick_e_delivery -o /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/srv
+
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/srv/_setTooLongInterval.py: /opt/ros/melodic/lib/genpy/gensrv_py.py
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/srv/_setTooLongInterval.py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/srv/setTooLongInterval.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python code from SRV pick_e_delivery/setTooLongInterval"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/srv/setTooLongInterval.srv -Ipick_e_delivery:/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p pick_e_delivery -o /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/srv
+
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/__init__.py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/_Pose.py
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/__init__.py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/_Timeout.py
 /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/__init__.py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/_NewGoal.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python msg __init__.py for pick_e_delivery"
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/__init__.py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/srv/_setWaitPackInterval.py
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/__init__.py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/srv/_setTooLongInterval.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Python msg __init__.py for pick_e_delivery"
 	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg --initpy
+
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/srv/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/srv/__init__.py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/_Pose.py
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/srv/__init__.py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/_Timeout.py
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/srv/__init__.py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/_NewGoal.py
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/srv/__init__.py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/srv/_setWaitPackInterval.py
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/srv/__init__.py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/srv/_setTooLongInterval.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Python srv __init__.py for pick_e_delivery"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/srv --initpy
 
 pick_e_delivery_generate_messages_py: CMakeFiles/pick_e_delivery_generate_messages_py
 pick_e_delivery_generate_messages_py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/_Pose.py
 pick_e_delivery_generate_messages_py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/_Timeout.py
 pick_e_delivery_generate_messages_py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/_NewGoal.py
+pick_e_delivery_generate_messages_py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/srv/_setWaitPackInterval.py
+pick_e_delivery_generate_messages_py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/srv/_setTooLongInterval.py
 pick_e_delivery_generate_messages_py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/msg/__init__.py
+pick_e_delivery_generate_messages_py: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/lib/python2.7/dist-packages/pick_e_delivery/srv/__init__.py
 pick_e_delivery_generate_messages_py: CMakeFiles/pick_e_delivery_generate_messages_py.dir/build.make
 
 .PHONY : pick_e_delivery_generate_messages_py

@@ -74,7 +74,7 @@
             <div class="my_col text-center">
                 <div class="list-group-item text-center left-col">
                     <h4 class="list-group-item-heading" style="font-weight: bold;">
-                        <span style="font-size: large;">GLI UTENTI CHE USANO IL NOSTRO SERVIZIO</span>
+                        <span style="font-size: x-large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">GLI UTENTI CHE USANO IL NOSTRO SERVIZIO</span>
                         <br/>
                         <br/>
                         <div class="container-fluid">
@@ -90,7 +90,7 @@
                 </div>
             </div>
             <div class="my_col text-center">
-                <h4 style="font-weight: bold; font-size: xx-large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">MAPPA PER MONITORARE IL ROBOT</h4>
+                <h4 style="font-weight: bold; font-size: xx-large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-top: -3%;">MAPPA PER MONITORARE IL ROBOT</h4>
                 <canvas id="myCanvas" width=421 height=574 style="border-radius: 1vw; border-style: solid; border-color: lightskyblue;">
                     Your browser does not support the canvas element.
                 </canvas>
@@ -109,16 +109,16 @@
             <div class="my_col text-center">
                 <div class="list-group-item text-center right-col">
                     <h4 class="list-group-item-heading" style="font-weight: bold;">
-                        <span style="font-size: large;">ISTRUZIONI E LEGENDA</span>
+                        <span style="font-size: x-large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">ISTRUZIONI E LEGENDA</span>
                         <br/>
                     </h4>
                     <hr/>
-                    <div class="container-fluid">
+                    <div class="container-fluid" style="overflow: scroll; height: 100%">
                         <div class="row">
                             <div class="col-md-3" style="font-size: xx-large;">
                                 <i class="fa fa-envelope-open" aria-hidden="true"></i>
                             </div>
-                            <div class="col-md-9" style="font-size: large; padding: 0.5vw 0;">
+                            <div class="col-md-9" style="font-size: large; padding: 0.1vw 0;">
                                 POSA DEL ROBOT (SENZA PACCO)
                             </div>
                         </div>
@@ -141,20 +141,28 @@
                             </div>
                         </div>
                         <hr/>
-                        <ul style="text-align: left; font-size: large; padding: 0.5vw 0;">
+                        <ul style="text-align: left; font-size: medium; padding: 0.5vw 0;">
                             <li>
                                 CONTROLLA DOVE STANNO GLI ALTRI UTENTI<br/>
                                 NELLA SCHEDA DI SINISTRA
                             </li><br/>
                             <li>
-                                ASSICURATI CHE IL DESTINATARIO SIA ONLINE<br/>
+                                ASSICURATI CHE IL DESTINATARIO SIA ONLINE
                                 ALTRIMENTI NON POTRAI SPEDIRGLI NULLA
+                            </li><br/>
+                            <li>
+                                ORDINA LE INFORMAZIONI SUGLI UTENTI <br/>
+                                CLICCANDO SUI VARI CAMPI IN CIMA ALLA SCHEDA
+                            </li><br/>
+                            <li>
+                                UNA VOLTA GIUNTO IL ROBOT
+                                AVRAI MASSIMO 30 SECONDI PER METTERE IL PACCO E FARLO PARTIRE
                             </li><br/>
                             <li>
                                 PUOI CAMBIARE STANZA IN ALTO DESTRA!<br/>
                                 DIGITA UN'ALTRA LETTERA E PREMI INVIA
                             </li><br/>
-                            <li></li>
+                            <br/>
                         </ul>
                     </div>
                 </div>
@@ -344,7 +352,6 @@
             setBtn("#free",0,"");
             setBtn("#disabled",0,"");
 
-
             $("#pick").click(function() {
                 $.ajax({
                     type: "GET",
@@ -407,7 +414,6 @@
                 }
             }
 
-            
             ws.onmessage = function(event) {
                 let data = JSON.parse(event.data);
                 

@@ -137,6 +137,13 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pick_e_delivery/srv" TYPE FILE FILES
+    "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/srv/setTooLongInterval.srv"
+    "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/srv/setWaitPackInterval.srv"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pick_e_delivery/cmake" TYPE FILE FILES "/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/pick_e_delivery/catkin_generated/installspace/pick_e_delivery-msg-paths.cmake")
 endif()
 

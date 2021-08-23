@@ -491,7 +491,7 @@ app.get('/update_room', function(req,res) {
 			res.send("Useless data");
 		});
 	}).catch(function(err_readr) {
-		console.log("ERROR /update_room read_user: "+err_readr);
+		console.log("ERROR /update_room read_room: "+err_readr);
 		res.send("Useless data");
 	});
 });

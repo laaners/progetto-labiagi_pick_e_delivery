@@ -1,0 +1,10 @@
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/MainNode.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/MainNode.cpp:371:24:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kros::ServiceServer srvTooLong[m[K’
+     ros::ServiceServer [01;31m[KsrvTooLong[m[K = n.advertiseService("pick_e_delivery/setWaitPackInterval", setWaitPackInterval);
+                        [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/MainNode.cpp:368:24:[m[K [01;36m[Knote: [m[K‘[01m[Kros::ServiceServer srvTooLong[m[K’ previously declared here
+     ros::ServiceServer [01;36m[KsrvTooLong[m[K = n.advertiseService("pick_e_delivery/setTooLongInterval", setTooLongInterval);
+                        [01;36m[K^~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/MainNode.dir/src/MainNode.cpp.o] Error 1
+make[1]: *** [CMakeFiles/MainNode.dir/all] Error 2
+make: *** [all] Error 2

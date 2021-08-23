@@ -1,0 +1,1 @@
+/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/roseus/ros/pick_e_delivery/srv/setTooLongInterval.l

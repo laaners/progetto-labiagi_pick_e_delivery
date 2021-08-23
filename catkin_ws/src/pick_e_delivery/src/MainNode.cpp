@@ -12,6 +12,8 @@
 #include "pick_e_delivery/NewGoal.h"
 #include "pick_e_delivery/Pose.h"
 #include "pick_e_delivery/Timeout.h"
+#include "pick_e_delivery/setTooLongInterval.h"
+#include "pick_e_delivery/setWaitPackInterval.h"
 
 std::vector<float> target_position(2,0);
 std::vector<float> current_position(2,0);
@@ -27,7 +29,6 @@ int message_published = 0;
 int cruising = 0;
 int blocked = 0;
 int status = FREE;
-//char status_msg[1024];
 std::string status_msg;
 std::string sender;
 std::string receiver;
@@ -45,6 +46,8 @@ ros::Publisher pub_timeout;
 
 ros::Timer waitPackTimer;
 ros::Timer tooLongTimer;
+
+//FUNZIONI AUSILIARIE==========================================================================================================================================================
 
 void pubNewGoal(float x, float y, float theta) {
     geometry_msgs::PoseStamped new_goal_msg;
@@ -84,9 +87,11 @@ void pubNewTimeout(std::string event) {
     pub_timeout.publish(new_timeout_msg);
 }
 
+//SUBSCRIBERS CALLBACK==========================================================================================================================================================
+
 void setGoalCallBack(const pick_e_delivery::NewGoal& new_goal) {
     //ricevo dall'utente le coordinate di un nuovo goal, ma che azione devo fare?
-//FREE
+//FREE------------------------------------------------------------------------------------------------------------------------------------
     if(status == FREE && new_goal.command == PICK) {
         //Il robot ha ricevuto un comando per prelevare il pacco ed è libero: inizia a muoversi
         caller_position[0] = new_goal.x;
@@ -98,14 +103,14 @@ void setGoalCallBack(const pick_e_delivery::NewGoal& new_goal) {
         tooLongTimer.start();
         status_msg = "Il robot si sta dirigendo verso il mittente per prelevare il pacco";
     }
-//PICK
+//PICK------------------------------------------------------------------------------------------------------------------------------------
     else if(status == PICK && new_goal.command == FREE) {
         //L'utente vuole liberare il robot, è in PICK quindi non ha nessun pacco
         status = FREE;
         pubNewGoal(current_position[0],current_position[1],caller_position[2]);
         status_msg = "Il mittente ha liberato il robot";
     }
-//DELIVERY
+//DELIVERY------------------------------------------------------------------------------------------------------------------------------------
     else if(status == DELIVERY && new_goal.command == GOBACK) {
         //L'utente vuole liberare il robot, il robot dovrà tornare indietro
         status = GOBACK;
@@ -113,7 +118,7 @@ void setGoalCallBack(const pick_e_delivery::NewGoal& new_goal) {
         pubNewGoal(caller_position[0],caller_position[1],caller_position[2]);
         status_msg = "Il mittente rivuole il pacco indietro";
     }
-//AT_DST
+//AT_DST------------------------------------------------------------------------------------------------------------------------------------
     else if(status == AT_DST && new_goal.command == FREE) {
         //Il destinatario ci ha comunicato che ha prelevato il pacco, il robot quindi è ora libero
         status = FREE;
@@ -126,7 +131,7 @@ void setGoalCallBack(const pick_e_delivery::NewGoal& new_goal) {
         pubNewGoal(caller_position[0],caller_position[1],caller_position[2]);
         status_msg = "Il mittente rivuole il pacco indietro";
     }
-//AT_SRC
+//AT_SRC------------------------------------------------------------------------------------------------------------------------------------
     else if(status == AT_SRC && new_goal.command == DELIVERY) {
         //L'utente ha comunicato al robot che ha caricato il pacco e ora si dirigerà verso la destinazione
         status = DELIVERY;
@@ -142,7 +147,7 @@ void setGoalCallBack(const pick_e_delivery::NewGoal& new_goal) {
         waitPackTimer.stop();
         status_msg = "Il robot è pronto a ricevere un nuovo ordine!";
     }
-//Comandi non validi dall'utente
+//Comandi non validi dall'utente------------------------------------------------------------------------------------------------------------------------------------
     else if(status != FREE && new_goal.command == PICK) {
         //Qualcuno ha dato un nuovo incarico al robot, ma è ancora in missione
         ROS_INFO("Il robot è ancora in missione");
@@ -181,6 +186,8 @@ void positionCallBack(const tf2_msgs::TFMessage& tf) {
         pub_pos.publish(new_pose_msg);
     }
 }
+
+//TIMERS CALLBACK==========================================================================================================================================================
 
 void waitPackCallBack(const ros::TimerEvent& event) {
     switch(status) {
@@ -294,6 +301,32 @@ void tooLongCallBack(const ros::TimerEvent& event) {
     }
 }
 
+//SERVICES CALLBACK==========================================================================================================================================================
+
+bool setTooLongInterval(pick_e_delivery::setTooLongInterval::Request  &req, pick_e_delivery::setTooLongInterval::Response &res) {
+  ROS_INFO("Periodo ricevuto: x=%f", req.period);
+  if((float)req.period > 0.0) {
+    tooLongT = req.period;
+    tooLongTimer.setPeriod(ros::Duration(tooLongT));
+    tooLongTimer.stop();
+    ROS_INFO("Periodo settato");
+  }
+  return true;
+}
+
+bool setWaitPackInterval(pick_e_delivery::setWaitPackInterval::Request  &req, pick_e_delivery::setWaitPackInterval::Response &res) {
+  ROS_INFO("Periodo ricevuto: x=%f", req.period);
+  if((float)req.period > 0.0) {
+    waitPackT = req.period;
+    waitPackTimer.setPeriod(ros::Duration(waitPackT));
+    waitPackTimer.stop();
+    ROS_INFO("Periodo settato");
+  }
+  return true;
+}
+
+//MAIN==========================================================================================================================================================
+
 int main(int argc, char* argv[]) {
     if(argc == 3) {
         waitPackT = atof(argv[1]);
@@ -308,7 +341,7 @@ int main(int argc, char* argv[]) {
 
     ROS_INFO("MainNode partito");
 
-//PUBLISHERS
+//PUBLISHERS------------------------------------------------------------------
     //devo pubblicare un nuovo goal
     pub_goal = n.advertise<geometry_msgs::PoseStamped>("/move_base_simple/goal", 1000);
 
@@ -318,7 +351,7 @@ int main(int argc, char* argv[]) {
     //devo comunicare eventi di timeout
     pub_timeout = n.advertise<pick_e_delivery::Timeout>("/pick_e_delivery/Timeout",1000);
 
-//SUBSCRIBERS
+//SUBSCRIBERS------------------------------------------------------------------
     //devo sapere la posizione del robot nel tempo
     tf2_ros::TransformListener tfListener(tfBuffer);
     ros::Rate rate(10.0);
@@ -327,7 +360,7 @@ int main(int argc, char* argv[]) {
     //aspetto un goal
     ros::Subscriber sub = n.subscribe("/pick_e_delivery/NewGoal", 1000, setGoalCallBack);
 
-//TIMERS
+//TIMERS------------------------------------------------------------------
     //sta navigando?
     ros::Timer isCruising = n.createTimer(ros::Duration(0.5),isCruisingCallBack);
 
@@ -339,7 +372,14 @@ int main(int argc, char* argv[]) {
     waitPackTimer = n.createTimer(ros::Duration(waitPackT), waitPackCallBack);
     waitPackTimer.stop();
 
-//MAIN LOOP
+//SERVICES------------------------------------------------------------------
+    //cambiare periodo di tooLongTimer
+    ros::ServiceServer srvTooLong = n.advertiseService("pick_e_delivery/setTooLongInterval", setTooLongInterval);
+
+    //cambiare periodo di waitPackTimer
+    ros::ServiceServer srvWaitPack = n.advertiseService("pick_e_delivery/setWaitPackInterval", setWaitPackInterval);
+
+//MAIN LOOP------------------------------------------------------------------
     status_msg = "Il robot è pronto a ricevere un nuovo ordine!";
 
     int count = 0;

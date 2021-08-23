@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/gennodejs/ros/pick_e_delivery/msg/Pose.js"
   "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/gennodejs/ros/pick_e_delivery/msg/Timeout.js"
   "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/gennodejs/ros/pick_e_delivery/msg/NewGoal.js"
+  "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/gennodejs/ros/pick_e_delivery/srv/setWaitPackInterval.js"
+  "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/share/gennodejs/ros/pick_e_delivery/srv/setTooLongInterval.js"
 )
 
 # Per-language clean rules from dependency scanning.
