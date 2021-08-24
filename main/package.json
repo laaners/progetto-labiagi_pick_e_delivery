@@ -15,7 +15,9 @@
     "express-session": "^1.17.2",
     "http": "0.0.1-security",
     "request": "^2.88.2",
-    "rosnodejs": "^3.0.2",
     "ws": "^8.2.0"
+  },
+  "devDependencies": {
+    "rosnodejs": "^3.0.2"
   }
 }
