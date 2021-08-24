@@ -1,6 +1,5 @@
-# Progetto-LABIAGI
-
-Progetto LABIAGI: Pick e Delivery
+# PICK E DELIVERY
+## Hu Alessio 1839472 LABIAGI-2021
 
 sudo apt-get install curl software-properties-common
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
