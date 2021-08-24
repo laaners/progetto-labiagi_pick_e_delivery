@@ -19,7 +19,7 @@ Per far partire il servizio (i punti 5-8 sono equivalenti al punto 9):
 2) Fare source della directory catkin_ws e fare build
    <br/><b>IN: <code>progetto-labiagi/catkin_ws</code></b>
    <code>
-   source devel/setup.bash<br/>
+   source devel/setup.bash
    catkin build
    </code>
 3) Installare i package necessari per nodejs nella cartella main
