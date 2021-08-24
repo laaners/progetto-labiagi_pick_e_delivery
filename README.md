@@ -14,6 +14,7 @@ Bisogna innanzitutto aver installato i seguenti programmi:
 Per far partire il servizio (i punti 5-8 sono equivalenti al punto 9):
 1) Fare una copia in locale della cartella git
    <code>
+   <br/>
    >git clone HTTPS https://gitlab.com/hu.1839472/progetto-labiagi.git
    </code>
 2) Fare source della directory catkin_ws e fare build
