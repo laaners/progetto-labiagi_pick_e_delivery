@@ -81,7 +81,7 @@ Per far partire il servizio (i punti 5-8 sono equivalenti al punto 9):
 
     Connettersi in localhost:9001 e iniziare i processi necessari allo stack di navigazione elencati nel punto 6 poi guardando su stageros, dare la posa del robot su rviz.<br/>
     Premere poi un qualsiasi tasto sul terminale per continuare
-<br/><h2><b>Il servizio è ora disponibile sulla porta 3000!</b><h2>
+<br/><h2><b>Il servizio è ora disponibile sulla porta 3000!</b></h2>
 ### 4. NOTE SUL NODO ROS:
 Il nodo MainNode controlla gli stati del robot e i vari eventi di timeout.<br/>
 Pubblica sui seguenti topic:
