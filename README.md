@@ -13,18 +13,18 @@ Bisogna innanzitutto aver installato i seguenti programmi:
 
 Per far partire il servizio (i punti 5-8 sono equivalenti al punto 9):
 1) Fare una copia in locale della cartella git
-   <br/><code>
+   <code>
    git clone HTTPS https://gitlab.com/hu.1839472/progetto-labiagi.git
    </code>
 2) Fare source della directory catkin_ws e fare build
    <br/><b>IN: <code>progetto-labiagi/catkin_ws</code></b>
-   <br/><code>
+   <code>
    source devel/setup.bash<br/>
    catkin build
    </code>
 3) Installare i package necessari per nodejs nella cartella main
    <br/><b>IN: <code>progetto-labiagi/main</code></b>
-   <br/><code>
+   <code>
    npm install
    </code>
 4) Fare il make di proc_webctl
