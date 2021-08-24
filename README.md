@@ -1,6 +1,6 @@
 # PICK E DELIVERY
 ## Hu Alessio 1839472 LABIAGI-2021
-
+### 1.SCOPO DEL PROGETTO:
 sudo apt-get install curl software-properties-common
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt-get install nodejs
