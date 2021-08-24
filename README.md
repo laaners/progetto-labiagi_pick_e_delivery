@@ -37,7 +37,7 @@ Per far partire il servizio (i punti 5-8 sono equivalenti al punto 9):
    docker run -d --name pick_e_delivery_couchdb -p 5984:5984 -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=admin couchdb
    curl -X PUT http://admin:admin@127.0.0.1:5984/users
    curl -X PUT http://admin:admin@127.0.0.1:5984/rooms
-   </code><br/>
+   </code>
    
    Popolare quindi il database delle stanza, nella cartella main eseguire
    <br/><b>IN: <code>progetto-labiagi/main</code></b>
@@ -62,7 +62,7 @@ Per far partire il servizio (i punti 5-8 sono equivalenti al punto 9):
     <li>06_planner</li>
     <li>07a_follower(static)</li>
    </ul>
-   Guardando su stageros, dare la posa del robot su rviz
+   Guardando su stageros, dare la posa del robot su rviz<br/>
 7) Far partire il nodo ros principale
    <code>
    rosrun pick_e_delivery MainNode
