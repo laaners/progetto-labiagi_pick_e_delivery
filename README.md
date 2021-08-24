@@ -29,19 +29,19 @@ Per far partire il servizio (i punti 5-8 sono equivalenti al punto 9):
    </code>
 4) Fare il make di proc_webctl
    <br/><b>IN: <code>progetto-labiagi/webctl</code></b>
-   <br/><code>
+   <code>
    make
    </code>
 5) Creare un immagine di couchdb, farlo partire e creare i due database di users e room
-   <br/><code>
-   docker run -d --name pick_e_delivery_couchdb -p 5984:5984 -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=admin couchdb<br/>
-   curl -X PUT http://admin:admin@127.0.0.1:5984/users<br/>
+   <code>
+   docker run -d --name pick_e_delivery_couchdb -p 5984:5984 -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=admin couchdb
+   curl -X PUT http://admin:admin@127.0.0.1:5984/users
    curl -X PUT http://admin:admin@127.0.0.1:5984/rooms
    </code><br/>
    
    Popolare quindi il database delle stanza, nella cartella main eseguire
    <br/><b>IN: <code>progetto-labiagi/main</code></b>
-   <br/><code>
+   <code>
    node populate_rooms.js
    </code>
    
@@ -49,7 +49,7 @@ Per far partire il servizio (i punti 5-8 sono equivalenti al punto 9):
 6) Far partire lo stack di navigazione
    <br/><b>IN: <code>progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/april_tag</code></b>
    <code>
-   >../../../../webctl/proc_webctl run_navigation.webctl
+   ../../../../webctl/proc_webctl run_navigation.webctl
    </code>
 
    Fare lo start quindi di:
@@ -65,17 +65,17 @@ Per far partire il servizio (i punti 5-8 sono equivalenti al punto 9):
    Guardando su stageros, dare la posa del robot su rviz
 7) Far partire il nodo ros principale
    <code>
-   >rosrun pick_e_delivery MainNode
+   rosrun pick_e_delivery MainNode
    </code>
 8) Far partire il server
    <br/><b>IN: <code>progetto-labiagi/main</code></b>
    <code>
-   >node server.js
+   node server.js
    </code>
 9) Alternativamente, eseguire il bash nella cartella principale che fa partire lo stack di navigazione, il nodo principale e il server
     <br/><b>IN: <code>progetto-labiagi</code></b>
    <code>
-   >sudo chmod 777 zzstartserver.sh<br/>
+   sudo chmod 777 zzstartserver.sh<br/>
    ./zzstartserver.sh
    </code>
 
