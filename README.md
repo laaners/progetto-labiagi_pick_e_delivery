@@ -13,27 +13,27 @@ Bisogna innanzitutto aver installato i seguenti programmi:
 
 Per far partire il servizio (i punti 5-8 sono equivalenti al punto 9):
 1) Fare una copia in locale della cartella git
-   <code>
-   >git clone HTTPS https://gitlab.com/hu.1839472/progetto-labiagi.git
+   <br/><code>
+   git clone HTTPS https://gitlab.com/hu.1839472/progetto-labiagi.git
    </code>
 2) Fare source della directory catkin_ws e fare build
    <br/><b>IN: <code>progetto-labiagi/catkin_ws</code></b>
-   <code>
-   >source devel/setup.bash<br/>
+   <br/><code>
+   source devel/setup.bash<br/>
    catkin build
    </code>
 3) Installare i package necessari per nodejs nella cartella main
    <br/><b>IN: <code>progetto-labiagi/main</code></b>
-   <code>
-   >npm install
+   <br/><code>
+   npm install
    </code>
 4) Fare il make di proc_webctl
    <br/><b>IN: <code>progetto-labiagi/webctl</code></b>
-   <code>
-   >make
+   <br/><code>
+   make
    </code>
 5) Creare un immagine di couchdb, farlo partire e creare i due database di users e room
-   <code>
+   <br/><code>
    docker run -d --name pick_e_delivery_couchdb -p 5984:5984 -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=admin couchdb<br/>
    curl -X PUT http://admin:admin@127.0.0.1:5984/users<br/>
    curl -X PUT http://admin:admin@127.0.0.1:5984/rooms
@@ -42,7 +42,7 @@ Per far partire il servizio (i punti 5-8 sono equivalenti al punto 9):
    Popolare quindi il database delle stanza, nella cartella main eseguire
    <br/><b>IN: <code>progetto-labiagi/main</code></b>
    <br/><code>
-   >node populate_rooms.js
+   node populate_rooms.js
    </code>
    
    Su http://localhost:5984/_utils è possibile monitorare il database, username e password sono entrambi "admin"
