@@ -34,7 +34,7 @@ Per far partire il servizio (i punti 5-8 sono equivalenti al punto 9):
    </code>
 5) Creare un immagine di couchdb, farlo partire e creare i due database di users e room
    <code>
-   >docker run -d --name pick_e_delivery_couchdb -p 5984:5984 -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=admin couchdb<br/>
+   docker run -d --name pick_e_delivery_couchdb -p 5984:5984 -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=admin couchdb<br/>
    curl -X PUT http://admin:admin@127.0.0.1:5984/users<br/>
    curl -X PUT http://admin:admin@127.0.0.1:5984/rooms
    </code><br/>
