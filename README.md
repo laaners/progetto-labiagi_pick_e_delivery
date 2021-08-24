@@ -75,7 +75,7 @@ Per far partire il servizio (i punti 5-8 sono equivalenti al punto 9):
 9) Alternativamente, eseguire il bash nella cartella principale che fa partire lo stack di navigazione, il nodo principale e il server
     <br/><b>IN: <code>progetto-labiagi</code></b>
    <code>
-   sudo chmod 777 zzstartserver.sh<br/>
+   sudo chmod 777 zzstartserver.sh
    ./zzstartserver.sh
    </code>
 
