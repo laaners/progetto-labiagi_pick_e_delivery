@@ -13,27 +13,27 @@ Bisogna innanzitutto aver installato i seguenti programmi:
 
 Per far partire il servizio (i punti 5-8 sono equivalenti al punto 9):
 1) Fare una copia in locale della cartella git
-   <br/><code>
+   <code>
    >git clone HTTPS https://gitlab.com/hu.1839472/progetto-labiagi.git
    </code>
 2) Fare source della directory catkin_ws e fare build
    <br/><b>IN: <code>progetto-labiagi/catkin_ws</code></b>
-   <br/><code>
+   <code>
    >source devel/setup.bash<br/>
    catkin build
    </code>
 3) Installare i package necessari per nodejs nella cartella main
    <br/><b>IN: <code>progetto-labiagi/main</code></b>
-   <br/><code>
+   <code>
    >npm install
    </code>
 4) Fare il make di proc_webctl
    <br/><b>IN: <code>progetto-labiagi/webctl</code></b>
-   <br/><code>
+   <code>
    >make
    </code>
 5) Creare un immagine di couchdb, farlo partire e creare i due database di users e room
-   <br/><code>
+   <code>
    >docker run -d --name pick_e_delivery_couchdb -p 5984:5984 -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=admin couchdb<br/>
    curl -X PUT http://admin:admin@127.0.0.1:5984/users<br/>
    curl -X PUT http://admin:admin@127.0.0.1:5984/rooms
@@ -48,7 +48,7 @@ Per far partire il servizio (i punti 5-8 sono equivalenti al punto 9):
    Su http://localhost:5984/_utils è possibile monitorare il database, username e password sono entrambi "admin"
 6) Far partire lo stack di navigazione
    <br/><b>IN: <code>progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/april_tag</code></b>
-   <br/><code>
+   <code>
    >../../../../webctl/proc_webctl run_navigation.webctl
    </code>
 
@@ -64,17 +64,17 @@ Per far partire il servizio (i punti 5-8 sono equivalenti al punto 9):
    </ul>
    Guardando su stageros, dare la posa del robot su rviz
 7) Far partire il nodo ros principale
-   <br/><code>
+   <code>
    >rosrun pick_e_delivery MainNode
    </code>
 8) Far partire il server
    <br/><b>IN: <code>progetto-labiagi/main</code></b>
-   <br/><code>
+   <code>
    >node server.js
    </code>
 9) Alternativamente, eseguire il bash nella cartella principale che fa partire lo stack di navigazione, il nodo principale e il server
     <br/><b>IN: <code>progetto-labiagi</code></b>
-   <br/><code>
+   <code>
    >sudo chmod 777 zzstartserver.sh<br/>
    ./zzstartserver.sh
    </code>
