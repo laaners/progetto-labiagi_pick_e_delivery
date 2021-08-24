@@ -16,7 +16,7 @@ curl -X PUT http://admin:admin@127.0.0.1:5984/users
 curl -X PUT http://admin:admin@127.0.0.1:5984/rooms
 echo Creato database users e rooms se non esistevano
 
-noder main/populate_rooms.js
+node main/populate_rooms.js
 echo Popolato il database dei rooms
 
 gnome-terminal --tab -- node main/server.js
