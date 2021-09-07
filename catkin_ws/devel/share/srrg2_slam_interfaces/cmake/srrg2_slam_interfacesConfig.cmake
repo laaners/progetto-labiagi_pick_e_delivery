@@ -1,0 +1,1 @@
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_slam_interfaces/share/srrg2_slam_interfaces/cmake/srrg2_slam_interfacesConfig.cmake

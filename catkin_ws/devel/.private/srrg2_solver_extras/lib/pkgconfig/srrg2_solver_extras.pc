@@ -1,0 +1,8 @@
+prefix=/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver_extras
+
+Name: srrg2_solver_extras
+Description: Description of srrg2_solver_extras
+Version: 0.0.0
+Cflags: -I/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_solver/srrg2_solver_extras/src
+Libs: -L${prefix}/lib -lsrrg2_solver_extras_types2d_library -lsrrg2_solver_extras_types3d_library
+Requires: 

@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d
-# Build directory: /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg2_navigation_2d
+# Source directory: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d
+# Build directory: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_navigation_2d
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

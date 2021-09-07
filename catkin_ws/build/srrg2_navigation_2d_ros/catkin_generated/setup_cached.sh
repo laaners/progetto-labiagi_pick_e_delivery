@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros:$CMAKE_PREFIX_PATH"
-export PWD='/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg2_navigation_2d_ros'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros:$CMAKE_PREFIX_PATH"
+export PWD='/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_navigation_2d_ros'
+export ROSLISP_PACKAGE_DIRECTORIES="/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros:$ROS_PACKAGE_PATH"

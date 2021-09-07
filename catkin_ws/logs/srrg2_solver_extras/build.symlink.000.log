@@ -1,0 +1,5 @@
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/share/srrg2_solver_extras/cmake/srrg2_solver_extrasConfig-version.cmake
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/share/srrg2_solver_extras/cmake/srrg2_solver_extrasConfig.cmake
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/lib/libsrrg2_solver_extras_types3d_library.so
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/lib/libsrrg2_solver_extras_types2d_library.so
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/lib/pkgconfig/srrg2_solver_extras.pc

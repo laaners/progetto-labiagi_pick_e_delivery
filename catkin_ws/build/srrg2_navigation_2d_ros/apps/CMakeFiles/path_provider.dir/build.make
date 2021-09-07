@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros
+CMAKE_SOURCE_DIR = /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg2_navigation_2d_ros
+CMAKE_BINARY_DIR = /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_navigation_2d_ros
 
 # Include any dependencies generated for this target.
 include apps/CMakeFiles/path_provider.dir/depend.make
@@ -58,17 +58,17 @@ include apps/CMakeFiles/path_provider.dir/progress.make
 include apps/CMakeFiles/path_provider.dir/flags.make
 
 apps/CMakeFiles/path_provider.dir/path_provider.cpp.o: apps/CMakeFiles/path_provider.dir/flags.make
-apps/CMakeFiles/path_provider.dir/path_provider.cpp.o: /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/apps/path_provider.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg2_navigation_2d_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object apps/CMakeFiles/path_provider.dir/path_provider.cpp.o"
-	cd /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg2_navigation_2d_ros/apps && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/path_provider.dir/path_provider.cpp.o -c /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/apps/path_provider.cpp
+apps/CMakeFiles/path_provider.dir/path_provider.cpp.o: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/apps/path_provider.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_navigation_2d_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object apps/CMakeFiles/path_provider.dir/path_provider.cpp.o"
+	cd /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_navigation_2d_ros/apps && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/path_provider.dir/path_provider.cpp.o -c /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/apps/path_provider.cpp
 
 apps/CMakeFiles/path_provider.dir/path_provider.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/path_provider.dir/path_provider.cpp.i"
-	cd /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg2_navigation_2d_ros/apps && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/apps/path_provider.cpp > CMakeFiles/path_provider.dir/path_provider.cpp.i
+	cd /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_navigation_2d_ros/apps && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/apps/path_provider.cpp > CMakeFiles/path_provider.dir/path_provider.cpp.i
 
 apps/CMakeFiles/path_provider.dir/path_provider.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/path_provider.dir/path_provider.cpp.s"
-	cd /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg2_navigation_2d_ros/apps && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/apps/path_provider.cpp -o CMakeFiles/path_provider.dir/path_provider.cpp.s
+	cd /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_navigation_2d_ros/apps && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/apps/path_provider.cpp -o CMakeFiles/path_provider.dir/path_provider.cpp.s
 
 apps/CMakeFiles/path_provider.dir/path_provider.cpp.o.requires:
 
@@ -88,129 +88,129 @@ path_provider_OBJECTS = \
 # External object files for target path_provider
 path_provider_EXTERNAL_OBJECTS =
 
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: apps/CMakeFiles/path_provider.dir/path_provider.cpp.o
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: apps/CMakeFiles/path_provider.dir/build.make
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/libtf_helpers.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d/lib/libsrrg2_navigation_2d_library.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/libsrrg2_laser_slam_2d_library.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/libsrrg2_laser_slam_2d_registration_library.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/libsrrg2_laser_slam_2d_sensor_processing_library.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/libsrrg2_laser_slam_2d_mapping_library.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/libsrrg2_slam_interfaces_library.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/libsrrg2_converters_library.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/libsrrg2_messages_ros_library.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/libsrrg2_viewer_core_ros_library.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/libsrrg2_viewer_ros_library.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/libcv_bridge.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/librosbag.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/libtopic_tools.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/librosbag_storage.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/libroslz4.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/liblz4.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/libsrrg2_solver_core_library.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/libsrrg2_solver_types2d_library.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/libsrrg2_solver_types3d_library.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/libsrrg2_solver_calib_library.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/libsrrg2_solver_projective_library.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/libsrrg2_solver_factor_graph_utils_library.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/libsrrg2_solver_linear_solvers_library.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/libsrrg2_solver_sparse_block_matrix_library.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/libsrrg2_qgl_viewport_library.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libQGLViewer-qt5.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libglut.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libXmu.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libXi.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/libsrrg2_boss_library.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/libsrrg2_property_library.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/libsrrg2_config_library.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/libsrrg2_point_cloud_library.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/libsrrg2_matchable_library.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/libsrrg2_image_library.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/libsrrg2_messages_library.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/libsrrg2_configurable_shell_library.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/libsrrg2_data_structures_library.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/libsrrg2_system_utils_library.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/libsrrg2_viewer_core_library.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib/libsrrg2_viewer_library.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_shape.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_video.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_viz.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_face.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_plot.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_reg.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_text.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.3.2.0
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/libtf.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/libtf2_ros.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/libactionlib.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/libtf2.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/libimage_transport.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/libmessage_filters.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/libclass_loader.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/libPocoFoundation.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libdl.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/libroscpp.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/librosconsole.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/librosconsole_log4cxx.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/librosconsole_backend_interface.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/libxmlrpcpp.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/libroslib.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/librospack.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libpython2.7.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/librostime.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/libcpp_common.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: apps/CMakeFiles/path_provider.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg2_navigation_2d_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider"
-	cd /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg2_navigation_2d_ros/apps && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/path_provider.dir/link.txt --verbose=$(VERBOSE)
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: apps/CMakeFiles/path_provider.dir/path_provider.cpp.o
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: apps/CMakeFiles/path_provider.dir/build.make
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/libtf_helpers.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d/lib/libsrrg2_navigation_2d_library.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_laser_slam_2d/lib/libsrrg2_laser_slam_2d_library.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_laser_slam_2d/lib/libsrrg2_laser_slam_2d_registration_library.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_laser_slam_2d/lib/libsrrg2_laser_slam_2d_sensor_processing_library.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_laser_slam_2d/lib/libsrrg2_laser_slam_2d_mapping_library.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_slam_interfaces/lib/libsrrg2_slam_interfaces_library.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core_ros/lib/libsrrg2_converters_library.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core_ros/lib/libsrrg2_messages_ros_library.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core_ros/lib/libsrrg2_viewer_core_ros_library.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core_ros/lib/libsrrg2_viewer_ros_library.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/libcv_bridge.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/librosbag.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/libtopic_tools.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/librosbag_storage.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/libroslz4.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/liblz4.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver/lib/libsrrg2_solver_core_library.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver/lib/libsrrg2_solver_types2d_library.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver/lib/libsrrg2_solver_types3d_library.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver/lib/libsrrg2_solver_calib_library.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver/lib/libsrrg2_solver_projective_library.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver/lib/libsrrg2_solver_factor_graph_utils_library.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver/lib/libsrrg2_solver_linear_solvers_library.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver/lib/libsrrg2_solver_sparse_block_matrix_library.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_qgl_viewport/lib/libsrrg2_qgl_viewport_library.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libQGLViewer-qt5.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libglut.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libXmu.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libXi.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/libsrrg2_boss_library.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/libsrrg2_property_library.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/libsrrg2_config_library.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/libsrrg2_point_cloud_library.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/libsrrg2_matchable_library.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/libsrrg2_image_library.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/libsrrg2_messages_library.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/libsrrg2_configurable_shell_library.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/libsrrg2_data_structures_library.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/libsrrg2_system_utils_library.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/libsrrg2_viewer_core_library.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/libsrrg2_viewer_library.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_shape.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_video.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_viz.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_face.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_plot.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_reg.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_text.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.3.2.0
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/libtf.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/libtf2_ros.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/libactionlib.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/libtf2.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/libimage_transport.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/libmessage_filters.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/libclass_loader.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/libPocoFoundation.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libdl.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/libroscpp.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/librosconsole.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/libroslib.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/librospack.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libpython2.7.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/librostime.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /opt/ros/melodic/lib/libcpp_common.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider: apps/CMakeFiles/path_provider.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_navigation_2d_ros/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider"
+	cd /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_navigation_2d_ros/apps && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/path_provider.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-apps/CMakeFiles/path_provider.dir/build: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider
+apps/CMakeFiles/path_provider.dir/build: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider
 
 .PHONY : apps/CMakeFiles/path_provider.dir/build
 
@@ -219,10 +219,10 @@ apps/CMakeFiles/path_provider.dir/requires: apps/CMakeFiles/path_provider.dir/pa
 .PHONY : apps/CMakeFiles/path_provider.dir/requires
 
 apps/CMakeFiles/path_provider.dir/clean:
-	cd /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg2_navigation_2d_ros/apps && $(CMAKE_COMMAND) -P CMakeFiles/path_provider.dir/cmake_clean.cmake
+	cd /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_navigation_2d_ros/apps && $(CMAKE_COMMAND) -P CMakeFiles/path_provider.dir/cmake_clean.cmake
 .PHONY : apps/CMakeFiles/path_provider.dir/clean
 
 apps/CMakeFiles/path_provider.dir/depend:
-	cd /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg2_navigation_2d_ros && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/apps /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg2_navigation_2d_ros /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg2_navigation_2d_ros/apps /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg2_navigation_2d_ros/apps/CMakeFiles/path_provider.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_navigation_2d_ros && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/apps /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_navigation_2d_ros /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_navigation_2d_ros/apps /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_navigation_2d_ros/apps/CMakeFiles/path_provider.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : apps/CMakeFiles/path_provider.dir/depend
 

@@ -1,0 +1,1 @@
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_qgl_viewport/share/srrg2_qgl_viewport/cmake/srrg2_qgl_viewportConfig-version.cmake

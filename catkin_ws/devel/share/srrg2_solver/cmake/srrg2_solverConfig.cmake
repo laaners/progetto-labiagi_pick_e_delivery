@@ -1,0 +1,1 @@
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver/share/srrg2_solver/cmake/srrg2_solverConfig.cmake

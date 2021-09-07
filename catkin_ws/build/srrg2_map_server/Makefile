@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_map_server
+CMAKE_SOURCE_DIR = /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_map_server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server
+CMAKE_BINARY_DIR = /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ install/local/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/CMakeFiles /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/CMakeFiles /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

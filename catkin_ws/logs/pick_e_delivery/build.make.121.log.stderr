@@ -1,7 +1,0 @@
-[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/MainNode.cpp:15:10:[m[K [01;31m[Kfatal error: [m[Kpick_e_delivery/setTooLongInterva.h: No such file or directory
- #include [01;31m[K"pick_e_delivery/setTooLongInterva.h"[m[K
-          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-make[2]: *** [CMakeFiles/MainNode.dir/src/MainNode.cpp.o] Error 1
-make[1]: *** [CMakeFiles/MainNode.dir/all] Error 2
-make: *** [all] Error 2

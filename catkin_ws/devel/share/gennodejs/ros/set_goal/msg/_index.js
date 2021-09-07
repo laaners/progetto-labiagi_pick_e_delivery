@@ -1,1 +1,0 @@
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/set_goal/share/gennodejs/ros/set_goal/msg/_index.js

@@ -1,0 +1,8 @@
+prefix=/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/install
+
+Name: srrg2_solver_extras
+Description: Description of srrg2_solver_extras
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lsrrg2_solver_extras_types2d_library -lsrrg2_solver_extras_types3d_library
+Requires: 

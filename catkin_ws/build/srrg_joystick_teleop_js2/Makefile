@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg_joystick_teleop_js2
+CMAKE_SOURCE_DIR = /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg_joystick_teleop_js2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg_joystick_teleop_js2
+CMAKE_BINARY_DIR = /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg_joystick_teleop_js2
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ install/local/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg_joystick_teleop_js2/CMakeFiles /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg_joystick_teleop_js2/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg_joystick_teleop_js2/CMakeFiles /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg_joystick_teleop_js2/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg_joystick_teleop_js2/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg_joystick_teleop_js2/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

@@ -1,0 +1,233 @@
+[  4%] Built target srrg2_system_utils_library
+[  5%] [32mBuilding CXX object src/srrg_geometry/CMakeFiles/srrg2_geometry_library.dir/epipolar.cpp.o[0m
+[  5%] [32mBuilding CXX object src/srrg_boss/CMakeFiles/srrg2_boss_library.dir/json_recursive_object_parser.cpp.o[0m
+[  5%] [32mBuilding CXX object src/srrg_boss/CMakeFiles/srrg2_boss_library.dir/object_data.cpp.o[0m
+[  6%] [32mBuilding CXX object src/srrg_boss/CMakeFiles/srrg2_boss_library.dir/serializable.cpp.o[0m
+[  7%] [32mBuilding CXX object src/srrg_boss/CMakeFiles/srrg2_boss_library.dir/serialization_context.cpp.o[0m
+[  7%] [32mBuilding CXX object src/srrg_boss/CMakeFiles/srrg2_boss_library.dir/serializer.cpp.o[0m
+[01m[K/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_geometry/epipolar.cpp:[m[K In function ‘[01m[Kfloat srrg2_core::epipolar::estimateTransformFromDirections(srrg2_core::epipolar::Isometry3f&, const Vector3fVector&, const Vector3fVector&)[m[K’:
+[01m[K/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_geometry/epipolar.cpp:157:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klambda[m[K’ [[01;35m[K-Wunused-variable[m[K]
+       float [01;35m[Klambda[m[K=eightPointEstimate(E, dirs1, dirs2);
+             [01;35m[K^~~~~~[m[K
+[  8%] Built target field_pack_example
+[  9%] [32mBuilding CXX object src/srrg_boss/CMakeFiles/srrg2_boss_library.dir/stream.cpp.o[0m
+[ 10%] [32mBuilding CXX object src/examples/CMakeFiles/kdtree_example.dir/kdtree_example.cpp.o[0m
+[ 11%] [32mBuilding CXX object src/examples/CMakeFiles/matrix_example.dir/matrix_example.cpp.o[0m
+[ 12%] Built target container_pack_example
+[35m[1mScanning dependencies of target shell_colors_example[0m
+[ 12%] [32mBuilding CXX object src/examples/CMakeFiles/shell_colors_example.dir/shell_colors_example.cpp.o[0m
+[35m[1mScanning dependencies of target timestamp_filter_example[0m
+[ 13%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/srrg2_core/shell_colors_example[0m
+[ 14%] [32mBuilding CXX object src/examples/CMakeFiles/timestamp_filter_example.dir/timestamp_filter_example.cpp.o[0m
+[ 14%] Built target shell_colors_example
+[ 15%] Built target command_line_example
+[ 15%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/srrg2_core/matrix_example[0m
+[ 15%] Built target matrix_example
+[ 15%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/srrg2_core/kdtree_example[0m
+[ 15%] Built target kdtree_example
+[ 17%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/srrg2_core/timestamp_filter_example[0m
+[ 17%] Built target timestamp_filter_example
+[ 17%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/libsrrg2_boss_library.so[0m
+[ 22%] Built target srrg2_boss_library
+[35m[1mScanning dependencies of target boss_shared_example[0m
+[35m[1mScanning dependencies of target boss_example[0m
+[35m[1mScanning dependencies of target srrg2_property_library[0m
+[35m[1mScanning dependencies of target srrg2_image_library[0m
+[ 22%] [32mBuilding CXX object src/examples/CMakeFiles/boss_shared_example.dir/boss_shared_example.cpp.o[0m
+[ 22%] [32mBuilding CXX object src/examples/CMakeFiles/boss_example.dir/boss_example.cpp.o[0m
+[ 23%] [32mBuilding CXX object src/srrg_property/CMakeFiles/srrg2_property_library.dir/property_eigen.cpp.o[0m
+[ 23%] [32mBuilding CXX object src/srrg_property/CMakeFiles/srrg2_property_library.dir/property.cpp.o[0m
+[ 23%] [32mBuilding CXX object src/srrg_image/CMakeFiles/srrg2_image_library.dir/image.cpp.o[0m
+[ 24%] [32mBuilding CXX object src/srrg_image/CMakeFiles/srrg2_image_library.dir/image_data.cpp.o[0m
+[ 25%] [32mBuilding CXX object src/srrg_property/CMakeFiles/srrg2_property_library.dir/property_identifiable.cpp.o[0m
+[ 26%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/srrg2_core/boss_shared_example[0m
+[ 26%] Built target boss_shared_example
+[ 26%] [32mBuilding CXX object src/srrg_property/CMakeFiles/srrg2_property_library.dir/property_container.cpp.o[0m
+[ 27%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/srrg2_core/boss_example[0m
+[ 27%] Built target boss_example
+[ 28%] [32mBuilding CXX object src/srrg_property/CMakeFiles/srrg2_property_library.dir/property_container_manager.cpp.o[0m
+[ 28%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/libsrrg2_property_library.so[0m
+[ 28%] Built target srrg2_property_library
+[35m[1mScanning dependencies of target srrg2_config_library[0m
+[35m[1mScanning dependencies of target boss_property_example[0m
+[ 29%] [32mBuilding CXX object src/srrg_config/CMakeFiles/srrg2_config_library.dir/preemptible.cpp.o[0m
+[ 29%] [32mBuilding CXX object src/examples/CMakeFiles/boss_property_example.dir/boss_property_example.cpp.o[0m
+[ 29%] [32mBuilding CXX object src/srrg_config/CMakeFiles/srrg2_config_library.dir/configurable.cpp.o[0m
+[ 30%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/libsrrg2_geometry_library.so[0m
+[ 30%] Built target srrg2_geometry_library
+[ 30%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/libsrrg2_image_library.so[0m
+[ 30%] Built target srrg2_image_library
+[35m[1mScanning dependencies of target srrg2_data_structures_library[0m
+[35m[1mScanning dependencies of target image_loading[0m
+[ 31%] [32mBuilding CXX object src/examples/CMakeFiles/image_loading.dir/image_loading.cpp.o[0m
+[ 32%] [32mBuilding CXX object src/srrg_data_structures/CMakeFiles/srrg2_data_structures_library.dir/graph.cpp.o[0m
+[ 34%] [32mBuilding CXX object src/srrg_data_structures/CMakeFiles/srrg2_data_structures_library.dir/path_matrix.cpp.o[0m
+[ 34%] [32mBuilding CXX object src/srrg_data_structures/CMakeFiles/srrg2_data_structures_library.dir/path_matrix_distance_search.cpp.o[0m
+[ 34%] [32mBuilding CXX object src/srrg_data_structures/CMakeFiles/srrg2_data_structures_library.dir/path_matrix_dijkstra_search.cpp.o[0m
+[ 35%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/srrg2_core/boss_property_example[0m
+[ 35%] Built target boss_property_example
+[ 36%] [32mBuilding CXX object src/srrg_data_structures/CMakeFiles/srrg2_data_structures_library.dir/path_matrix_clusterer_search.cpp.o[0m
+[ 36%] [32mBuilding CXX object src/srrg_data_structures/CMakeFiles/srrg2_data_structures_library.dir/link.cpp.o[0m
+[ 37%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/libsrrg2_config_library.so[0m
+[ 37%] Built target srrg2_config_library
+[ 38%] [32mBuilding CXX object src/srrg_data_structures/CMakeFiles/srrg2_data_structures_library.dir/platform.cpp.o[0m
+[ 38%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/srrg2_core/image_loading[0m
+[35m[1mScanning dependencies of target srrg2_point_cloud_library[0m
+[ 38%] [32mBuilding CXX object src/srrg_pcl/CMakeFiles/srrg2_point_cloud_library.dir/lidar_3d_utils/spacing.cpp.o[0m
+[ 38%] Built target image_loading
+[ 39%] [32mBuilding CXX object src/srrg_pcl/CMakeFiles/srrg2_point_cloud_library.dir/point_descriptor_field.cpp.o[0m
+[ 39%] [32mBuilding CXX object src/srrg_data_structures/CMakeFiles/srrg2_data_structures_library.dir/grid_map_2d.cpp.o[0m
+[35m[1mScanning dependencies of target app_test_point_matrix_processor[0m
+[ 40%] [32mBuilding CXX object src/misc_tests/CMakeFiles/app_test_point_matrix_processor.dir/test_point_matrix_processor.cpp.o[0m
+[ 40%] [32mBuilding CXX object src/srrg_pcl/CMakeFiles/srrg2_point_cloud_library.dir/instances.cpp.o[0m
+[ 41%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/libsrrg2_data_structures_library.so[0m
+[ 41%] Built target srrg2_data_structures_library
+[35m[1mScanning dependencies of target app_test_normal_computation[0m
+[35m[1mScanning dependencies of target app_test_cloud_intensity[0m
+[ 41%] [32mBuilding CXX object src/misc_tests/CMakeFiles/app_test_cloud_intensity.dir/test_cloud_intensity.cpp.o[0m
+[ 41%] [32mBuilding CXX object src/misc_tests/CMakeFiles/app_test_normal_computation.dir/test_normal_computation.cpp.o[0m
+[ 41%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/srrg2_core/app_test_point_matrix_processor[0m
+[ 41%] Built target app_test_point_matrix_processor
+[ 42%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/srrg2_core/app_test_cloud_intensity[0m
+[ 42%] Built target app_test_cloud_intensity
+[ 43%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/srrg2_core/app_test_normal_computation[0m
+[ 43%] Built target app_test_normal_computation
+[ 44%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/libsrrg2_point_cloud_library.so[0m
+[ 44%] Built target srrg2_point_cloud_library
+[35m[1mScanning dependencies of target app_test_point_cloud_pinhole[0m
+[35m[1mScanning dependencies of target app_test_point_cloud_polar[0m
+[35m[1mScanning dependencies of target srrg2_matchable_library[0m
+[35m[1mScanning dependencies of target point_cloud_example[0m
+[35m[1mScanning dependencies of target app_test_point_ops[0m
+[35m[1mScanning dependencies of target app_test_distance_map[0m
+[ 44%] [32mBuilding CXX object src/misc_tests/CMakeFiles/app_test_point_cloud_pinhole.dir/test_point_cloud_pinhole.cpp.o[0m
+[ 44%] [32mBuilding CXX object src/misc_tests/CMakeFiles/app_test_point_cloud_polar.dir/test_point_cloud_polar.cpp.o[0m
+[ 44%] [32mBuilding CXX object src/examples/CMakeFiles/point_cloud_example.dir/point_cloud_example.cpp.o[0m
+[ 46%] [32mBuilding CXX object src/srrg_matchable/CMakeFiles/srrg2_matchable_library.dir/instances.cpp.o[0m
+[ 46%] [32mBuilding CXX object src/misc_tests/CMakeFiles/app_test_point_ops.dir/test_point_ops.cpp.o[0m
+[ 46%] [32mBuilding CXX object src/misc_tests/CMakeFiles/app_test_distance_map.dir/test_distance_map.cpp.o[0m
+[ 47%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/srrg2_core/point_cloud_example[0m
+[ 47%] Built target point_cloud_example
+[ 47%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/libsrrg2_matchable_library.so[0m
+[ 47%] Built target srrg2_matchable_library
+[35m[1mScanning dependencies of target srrg2_viewer_core_library[0m
+[ 47%] [32mBuilding CXX object src/srrg_viewer/viewer_core/CMakeFiles/srrg2_viewer_core_library.dir/semaphore.cpp.o[0m
+[ 48%] [32mBuilding CXX object src/srrg_viewer/viewer_core/CMakeFiles/srrg2_viewer_core_library.dir/buffer_memory.cpp.o[0m
+[ 50%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/srrg2_core/app_test_distance_map[0m
+[ 50%] [32mBuilding CXX object src/srrg_viewer/viewer_core/CMakeFiles/srrg2_viewer_core_library.dir/buffer_manager.cpp.o[0m
+[ 50%] Built target app_test_distance_map
+[ 51%] [32mBuilding CXX object src/srrg_viewer/viewer_core/CMakeFiles/srrg2_viewer_core_library.dir/packet_serializer.cpp.o[0m
+[ 51%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/srrg2_core/app_test_point_ops[0m
+[ 51%] Built target app_test_point_ops
+[ 51%] [32mBuilding CXX object src/srrg_viewer/viewer_core/CMakeFiles/srrg2_viewer_core_library.dir/packet_deserializer.cpp.o[0m
+[ 52%] [32mBuilding CXX object src/srrg_viewer/viewer_core/CMakeFiles/srrg2_viewer_core_library.dir/viewport.cpp.o[0m
+[ 53%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/srrg2_core/app_test_point_cloud_pinhole[0m
+[ 53%] Built target app_test_point_cloud_pinhole
+[ 53%] [32mBuilding CXX object src/srrg_viewer/viewer_core/CMakeFiles/srrg2_viewer_core_library.dir/buffer_sink_shared.cpp.o[0m
+[ 54%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/srrg2_core/app_test_point_cloud_polar[0m
+[ 54%] Built target app_test_point_cloud_polar
+[ 55%] [32mBuilding CXX object src/srrg_viewer/viewer_core/CMakeFiles/srrg2_viewer_core_library.dir/buffer_source_shared.cpp.o[0m
+[ 55%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/libsrrg2_viewer_core_library.so[0m
+[ 55%] Built target srrg2_viewer_core_library
+[35m[1mScanning dependencies of target app_test_viewer_buffer_manager[0m
+[35m[1mScanning dependencies of target app_test_viewer_shared_memory[0m
+[35m[1mScanning dependencies of target app_test_viewer_packets_serialization[0m
+[35m[1mScanning dependencies of target app_test_viewer_packets_factory[0m
+[35m[1mScanning dependencies of target srrg2_viewer_library[0m
+[ 56%] [32mBuilding CXX object src/misc_tests/CMakeFiles/app_test_viewer_buffer_manager.dir/test_viewer_buffer_manager.cpp.o[0m
+[ 57%] [32mBuilding CXX object src/misc_tests/CMakeFiles/app_test_viewer_shared_memory.dir/test_viewer_shared_memory.cpp.o[0m
+[ 59%] [32mBuilding CXX object src/misc_tests/CMakeFiles/app_test_viewer_packets_factory.dir/test_viewer_packets_factory.cpp.o[0m
+[ 59%] [32mBuilding CXX object src/misc_tests/CMakeFiles/app_test_viewer_packets_serialization.dir/test_viewer_packets_serialization.cpp.o[0m
+[ 60%] [32mBuilding CXX object src/srrg_viewer/CMakeFiles/srrg2_viewer_library.dir/viewer_core_base.cpp.o[0m
+[ 61%] [32mBuilding CXX object src/srrg_viewer/CMakeFiles/srrg2_viewer_library.dir/drawable_base.cpp.o[0m
+[ 61%] [32mBuilding CXX object src/srrg_viewer/CMakeFiles/srrg2_viewer_library.dir/active_drawable.cpp.o[0m
+[ 62%] [32mBuilding CXX object src/srrg_viewer/CMakeFiles/srrg2_viewer_library.dir/viewer_canvas.cpp.o[0m
+[ 62%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/srrg2_core/app_test_viewer_buffer_manager[0m
+[ 62%] Built target app_test_viewer_buffer_manager
+[ 62%] [32mBuilding CXX object src/srrg_viewer/CMakeFiles/srrg2_viewer_library.dir/viewer_context_base.cpp.o[0m
+[ 62%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/srrg2_core/app_test_viewer_packets_serialization[0m
+[ 62%] Built target app_test_viewer_packets_serialization
+[ 63%] [32mBuilding CXX object src/srrg_viewer/CMakeFiles/srrg2_viewer_library.dir/viewer_context_shared.cpp.o[0m
+[ 63%] [32mBuilding CXX object src/srrg_viewer/CMakeFiles/srrg2_viewer_library.dir/viewer_manager_base.cpp.o[0m
+[ 64%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/srrg2_core/app_test_viewer_shared_memory[0m
+[ 64%] Built target app_test_viewer_shared_memory
+[ 65%] [32mBuilding CXX object src/srrg_viewer/CMakeFiles/srrg2_viewer_library.dir/viewer_manager_shared.cpp.o[0m
+[ 65%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/srrg2_core/app_test_viewer_packets_factory[0m
+[ 65%] Built target app_test_viewer_packets_factory
+[ 65%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/libsrrg2_viewer_library.so[0m
+[ 65%] Built target srrg2_viewer_library
+[35m[1mScanning dependencies of target srrg2_messages_library[0m
+[ 67%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/messages/laser_message.cpp.o[0m
+[ 69%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/messages/camera_info_message.cpp.o[0m
+[ 69%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/messages/base_sensor_message.cpp.o[0m
+[ 69%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/messages/image_message.cpp.o[0m
+[ 70%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/messages/imu_message.cpp.o[0m
+[ 70%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/messages/range_message.cpp.o[0m
+[ 70%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/messages/odometry_message.cpp.o[0m
+[ 71%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/messages/point_stamped_message.cpp.o[0m
+[ 71%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/messages/ticks_message.cpp.o[0m
+[ 72%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/messages/transform_events_message.cpp.o[0m
+[ 72%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/messages/twist_stamped_message.cpp.o[0m
+[ 73%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/messages/point_field.cpp.o[0m
+[ 73%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/messages/point_cloud2_message.cpp.o[0m
+[ 74%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/messages/navsat_fix_message.cpp.o[0m
+[ 75%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/messages/pose_message.cpp.o[0m
+[ 75%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/messages/pose_array_message.cpp.o[0m
+[ 76%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/messages/pose_stamped_message.cpp.o[0m
+[ 76%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/messages/pose_with_covariance_stamped_message.cpp.o[0m
+[ 77%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/messages/path_message.cpp.o[0m
+[ 77%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/messages/cmd_vel_message.cpp.o[0m
+[ 78%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/messages/grid_map_message.cpp.o[0m
+[ 78%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/messages/planner_status_message.cpp.o[0m
+[ 79%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/message_handlers/message_pack.cpp.o[0m
+[ 79%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/message_handlers/message_sink_base.cpp.o[0m
+[ 80%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/message_handlers/message_source_base.cpp.o[0m
+[ 81%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/message_handlers/message_filter_base.cpp.o[0m
+[ 81%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/message_handlers/message_selector_sink.cpp.o[0m
+[ 82%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/message_handlers/message_file_sink.cpp.o[0m
+[ 82%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/message_handlers/message_file_sink_base.cpp.o[0m
+[ 84%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/message_handlers/message_file_source_base.cpp.o[0m
+[ 84%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/message_handlers/message_file_source.cpp.o[0m
+[ 85%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/message_handlers/message_sorted_source.cpp.o[0m
+[ 85%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/message_handlers/message_synchronized_source.cpp.o[0m
+[ 86%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/message_handlers/message_source_platform.cpp.o[0m
+[ 86%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/message_handlers/message_odom_subsampler_source.cpp.o[0m
+[ 87%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/message_handlers/message_sorted_sink.cpp.o[0m
+[ 88%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/message_handlers/message_synchronized_sink.cpp.o[0m
+[ 88%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/message_handlers/message_odom_subsampler_sink.cpp.o[0m
+[ 89%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/message_handlers/message_platform_listener_sink.cpp.o[0m
+[ 89%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/message_handlers/image_message_viewer.cpp.o[0m
+[ 90%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/instances.cpp.o[0m
+[ 90%] [32mBuilding CXX object src/srrg_messages/CMakeFiles/srrg2_messages_library.dir/messages/joints_message.cpp.o[0m
+[ 91%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/libsrrg2_messages_library.so[0m
+[ 91%] Built target srrg2_messages_library
+[35m[1mScanning dependencies of target message_synchronizer_example[0m
+[35m[1mScanning dependencies of target messages_write_example[0m
+[35m[1mScanning dependencies of target messages_read_example[0m
+[35m[1mScanning dependencies of target message_sorter_example[0m
+[35m[1mScanning dependencies of target srrg2_configurable_shell_library[0m
+[ 92%] [32mBuilding CXX object src/examples/CMakeFiles/message_synchronizer_example.dir/message_synchronizer_example.cpp.o[0m
+[ 92%] [32mBuilding CXX object src/examples/CMakeFiles/messages_write_example.dir/messages_write_example.cpp.o[0m
+[ 93%] [32mBuilding CXX object src/examples/CMakeFiles/message_sorter_example.dir/message_sorter_example.cpp.o[0m
+[ 93%] [32mBuilding CXX object src/examples/CMakeFiles/messages_read_example.dir/messages_read_example.cpp.o[0m
+[ 93%] [32mBuilding CXX object src/srrg_config/CMakeFiles/srrg2_configurable_shell_library.dir/pipeline_runner.cpp.o[0m
+[ 94%] [32mBuilding CXX object src/srrg_config/CMakeFiles/srrg2_configurable_shell_library.dir/configurable_shell.cpp.o[0m
+[01m[K/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/examples/messages_write_example.cpp:131:2:[m[K [01;35m[Kwarning: [m[K#warning is a GCC extension
+ #[01;35m[Kwarning[m[K "TODO: Check for missing messages to Serialize"
+  [01;35m[K^~~~~~~[m[K
+[01m[K/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/examples/messages_write_example.cpp:131:2:[m[K [01;35m[Kwarning: [m[K#warning "TODO: Check for missing messages to Serialize" [[01;35m[K-Wcpp[m[K]
+[ 95%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/srrg2_core/messages_read_example[0m
+[ 95%] Built target messages_read_example
+[ 95%] [32mBuilding C object src/srrg_config/CMakeFiles/srrg2_configurable_shell_library.dir/linenoise.c.o[0m
+[ 95%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/srrg2_core/message_sorter_example[0m
+[ 95%] Built target message_sorter_example
+[ 96%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/srrg2_core/message_synchronizer_example[0m
+[ 96%] Built target message_synchronizer_example
+[ 97%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/srrg2_core/messages_write_example[0m
+[ 97%] Built target messages_write_example
+[ 98%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/libsrrg2_configurable_shell_library.so[0m
+[ 98%] Built target srrg2_configurable_shell_library
+[35m[1mScanning dependencies of target preemptible_example[0m
+[ 98%] [32mBuilding CXX object src/srrg_config/CMakeFiles/preemptible_example.dir/preemptible_example.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/srrg2_core/preemptible_example[0m
+[100%] Built target preemptible_example

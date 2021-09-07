@@ -1,12 +1,12 @@
 
 "use strict";
 
-let NewGoal = require('./NewGoal.js');
-let Timeout = require('./Timeout.js');
 let Pose = require('./Pose.js');
+let Timeout = require('./Timeout.js');
+let NewGoal = require('./NewGoal.js');
 
 module.exports = {
-  NewGoal: NewGoal,
-  Timeout: Timeout,
   Pose: Pose,
+  Timeout: Timeout,
+  NewGoal: NewGoal,
 };

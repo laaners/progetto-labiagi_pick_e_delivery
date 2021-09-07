@@ -1,0 +1,6 @@
+srrg2_solver/srrg2_solver_calib_addons
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver_calib_addons/cmake.lock /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/./cmake.lock
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver_calib_addons/share/srrg2_solver_calib_addons/cmake/srrg2_solver_calib_addonsConfig-version.cmake /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/share/srrg2_solver_calib_addons/cmake/srrg2_solver_calib_addonsConfig-version.cmake
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver_calib_addons/share/srrg2_solver_calib_addons/cmake/srrg2_solver_calib_addonsConfig.cmake /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/share/srrg2_solver_calib_addons/cmake/srrg2_solver_calib_addonsConfig.cmake
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver_calib_addons/lib/libsrrg2_solver_calib_utils_library.so /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/lib/libsrrg2_solver_calib_utils_library.so
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver_calib_addons/lib/pkgconfig/srrg2_solver_calib_addons.pc /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/lib/pkgconfig/srrg2_solver_calib_addons.pc

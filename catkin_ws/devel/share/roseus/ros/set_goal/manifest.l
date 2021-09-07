@@ -1,1 +1,0 @@
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/set_goal/share/roseus/ros/set_goal/manifest.l

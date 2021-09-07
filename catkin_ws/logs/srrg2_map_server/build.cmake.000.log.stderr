@@ -1,7 +1,15 @@
-srrg2_map_server|good you have a fresh compiler, using std=c++17 flag
-srrg2_map_server|build type: Release
-srrg2_map_server|cxx_standard: 17
-srrg2_map_server|common cxx flags:  -fPIC -Wall -Ofast -DNDEBUG -march=native
-srrg2_map_server|compiling with these CXX flags:  -fPIC -Wall -Ofast -DNDEBUG -march=native -Werror=pedantic
-srrg2_map_server|OpenCV version 3.2.0 found in (/usr/share/OpenCV)
-srrg2_map_server|OpenCV_INCLUDE_DIRS: /usr/include;/usr/include/opencv
+[31m[1mCMake Error[0m at /opt/ros/melodic/share/catkin/cmake/catkinConfig.cmake:83 (find_package):
+  Could not find a package configuration file provided by
+  "srrg_cmake_modules" with any of the following names:
+
+    srrg_cmake_modulesConfig.cmake
+    srrg_cmake_modules-config.cmake
+
+  Add the installation prefix of "srrg_cmake_modules" to CMAKE_PREFIX_PATH or
+  set "srrg_cmake_modules_DIR" to a directory containing one of the above
+  files.  If "srrg_cmake_modules" provides a separate development package or
+  SDK, be sure it has been installed.
+[36mCall Stack (most recent call first):[0m
+  CMakeLists.txt:4 (find_package)
+
+

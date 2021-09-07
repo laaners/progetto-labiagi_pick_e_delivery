@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg_joystick_teleop_js2
+CMAKE_SOURCE_DIR = /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg_joystick_teleop_js2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg_joystick_teleop_js2
+CMAKE_BINARY_DIR = /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg_joystick_teleop_js2
 
 # Include any dependencies generated for this target.
 include CMakeFiles/joy_event_scanner.dir/depend.make
@@ -58,17 +58,17 @@ include CMakeFiles/joy_event_scanner.dir/progress.make
 include CMakeFiles/joy_event_scanner.dir/flags.make
 
 CMakeFiles/joy_event_scanner.dir/src/joy_event_scanner.cpp.o: CMakeFiles/joy_event_scanner.dir/flags.make
-CMakeFiles/joy_event_scanner.dir/src/joy_event_scanner.cpp.o: /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg_joystick_teleop_js2/src/joy_event_scanner.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg_joystick_teleop_js2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/joy_event_scanner.dir/src/joy_event_scanner.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/joy_event_scanner.dir/src/joy_event_scanner.cpp.o -c /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg_joystick_teleop_js2/src/joy_event_scanner.cpp
+CMakeFiles/joy_event_scanner.dir/src/joy_event_scanner.cpp.o: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg_joystick_teleop_js2/src/joy_event_scanner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg_joystick_teleop_js2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/joy_event_scanner.dir/src/joy_event_scanner.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/joy_event_scanner.dir/src/joy_event_scanner.cpp.o -c /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg_joystick_teleop_js2/src/joy_event_scanner.cpp
 
 CMakeFiles/joy_event_scanner.dir/src/joy_event_scanner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/joy_event_scanner.dir/src/joy_event_scanner.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg_joystick_teleop_js2/src/joy_event_scanner.cpp > CMakeFiles/joy_event_scanner.dir/src/joy_event_scanner.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg_joystick_teleop_js2/src/joy_event_scanner.cpp > CMakeFiles/joy_event_scanner.dir/src/joy_event_scanner.cpp.i
 
 CMakeFiles/joy_event_scanner.dir/src/joy_event_scanner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/joy_event_scanner.dir/src/joy_event_scanner.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg_joystick_teleop_js2/src/joy_event_scanner.cpp -o CMakeFiles/joy_event_scanner.dir/src/joy_event_scanner.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg_joystick_teleop_js2/src/joy_event_scanner.cpp -o CMakeFiles/joy_event_scanner.dir/src/joy_event_scanner.cpp.s
 
 CMakeFiles/joy_event_scanner.dir/src/joy_event_scanner.cpp.o.requires:
 
@@ -88,14 +88,14 @@ joy_event_scanner_OBJECTS = \
 # External object files for target joy_event_scanner
 joy_event_scanner_EXTERNAL_OBJECTS =
 
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg_joystick_teleop_js2/lib/srrg_joystick_teleop_js2/joy_event_scanner: CMakeFiles/joy_event_scanner.dir/src/joy_event_scanner.cpp.o
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg_joystick_teleop_js2/lib/srrg_joystick_teleop_js2/joy_event_scanner: CMakeFiles/joy_event_scanner.dir/build.make
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg_joystick_teleop_js2/lib/srrg_joystick_teleop_js2/joy_event_scanner: CMakeFiles/joy_event_scanner.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg_joystick_teleop_js2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg_joystick_teleop_js2/lib/srrg_joystick_teleop_js2/joy_event_scanner"
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg_joystick_teleop_js2/lib/srrg_joystick_teleop_js2/joy_event_scanner: CMakeFiles/joy_event_scanner.dir/src/joy_event_scanner.cpp.o
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg_joystick_teleop_js2/lib/srrg_joystick_teleop_js2/joy_event_scanner: CMakeFiles/joy_event_scanner.dir/build.make
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg_joystick_teleop_js2/lib/srrg_joystick_teleop_js2/joy_event_scanner: CMakeFiles/joy_event_scanner.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg_joystick_teleop_js2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg_joystick_teleop_js2/lib/srrg_joystick_teleop_js2/joy_event_scanner"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/joy_event_scanner.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/joy_event_scanner.dir/build: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg_joystick_teleop_js2/lib/srrg_joystick_teleop_js2/joy_event_scanner
+CMakeFiles/joy_event_scanner.dir/build: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg_joystick_teleop_js2/lib/srrg_joystick_teleop_js2/joy_event_scanner
 
 .PHONY : CMakeFiles/joy_event_scanner.dir/build
 
@@ -108,6 +108,6 @@ CMakeFiles/joy_event_scanner.dir/clean:
 .PHONY : CMakeFiles/joy_event_scanner.dir/clean
 
 CMakeFiles/joy_event_scanner.dir/depend:
-	cd /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg_joystick_teleop_js2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg_joystick_teleop_js2 /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg_joystick_teleop_js2 /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg_joystick_teleop_js2 /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg_joystick_teleop_js2 /home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg_joystick_teleop_js2/CMakeFiles/joy_event_scanner.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg_joystick_teleop_js2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg_joystick_teleop_js2 /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg_joystick_teleop_js2 /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg_joystick_teleop_js2 /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg_joystick_teleop_js2 /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg_joystick_teleop_js2/CMakeFiles/joy_event_scanner.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/joy_event_scanner.dir/depend
 

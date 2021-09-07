@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/map_server.dir/src/main.cpp.o"
-  "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_map_server/lib/srrg2_map_server/map_server.pdb"
-  "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_map_server/lib/srrg2_map_server/map_server"
+  "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_map_server/lib/srrg2_map_server/map_server.pdb"
+  "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_map_server/lib/srrg2_map_server/map_server"
 )
 
 # Per-language clean rules from dependency scanning.

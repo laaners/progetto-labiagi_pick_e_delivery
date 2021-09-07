@@ -6,5 +6,5 @@ CXX_FLAGS =  -fPIC -Wall -Ofast -DNDEBUG -march=native -Werror -pedantic -O3 -DN
 
 CXX_DEFINES = -DROS_BUILD_SHARED_LIBS=1 -Dsrrg2_navigation_2d_library_EXPORTS
 
-CXX_INCLUDES = -I/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src -isystem /usr/include/eigen3 -isystem /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg_cmake_modules/cmake_modules -isystem /home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src -isystem /usr/include/opencv 
+CXX_INCLUDES = -I/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src -isystem /usr/include/eigen3 -isystem /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg_cmake_modules/cmake_modules -isystem /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src -isystem /usr/include/opencv 
 

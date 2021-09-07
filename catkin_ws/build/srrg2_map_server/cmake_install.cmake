@@ -1,8 +1,8 @@
-# Install script for directory: /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_map_server
+# Install script for directory: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_map_server
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/alessio/Desktop/progetto-labiagi/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,98 +49,98 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/alessio/Desktop/progetto-labiagi/catkin_ws/install/_setup_util.py")
+   "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/alessio/Desktop/progetto-labiagi/catkin_ws/install" TYPE PROGRAM FILES "/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/install" TYPE PROGRAM FILES "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/alessio/Desktop/progetto-labiagi/catkin_ws/install/env.sh")
+   "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/alessio/Desktop/progetto-labiagi/catkin_ws/install" TYPE PROGRAM FILES "/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/install" TYPE PROGRAM FILES "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/alessio/Desktop/progetto-labiagi/catkin_ws/install/setup.bash;/home/alessio/Desktop/progetto-labiagi/catkin_ws/install/local_setup.bash")
+   "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/install/setup.bash;/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/alessio/Desktop/progetto-labiagi/catkin_ws/install" TYPE FILE FILES
-    "/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/catkin_generated/installspace/setup.bash"
-    "/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/install" TYPE FILE FILES
+    "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/catkin_generated/installspace/setup.bash"
+    "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/alessio/Desktop/progetto-labiagi/catkin_ws/install/setup.sh;/home/alessio/Desktop/progetto-labiagi/catkin_ws/install/local_setup.sh")
+   "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/install/setup.sh;/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/alessio/Desktop/progetto-labiagi/catkin_ws/install" TYPE FILE FILES
-    "/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/catkin_generated/installspace/setup.sh"
-    "/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/install" TYPE FILE FILES
+    "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/catkin_generated/installspace/setup.sh"
+    "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/alessio/Desktop/progetto-labiagi/catkin_ws/install/setup.zsh;/home/alessio/Desktop/progetto-labiagi/catkin_ws/install/local_setup.zsh")
+   "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/install/setup.zsh;/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/alessio/Desktop/progetto-labiagi/catkin_ws/install" TYPE FILE FILES
-    "/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/catkin_generated/installspace/setup.zsh"
-    "/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/install" TYPE FILE FILES
+    "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/catkin_generated/installspace/setup.zsh"
+    "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/alessio/Desktop/progetto-labiagi/catkin_ws/install/.rosinstall")
+   "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/alessio/Desktop/progetto-labiagi/catkin_ws/install" TYPE FILE FILES "/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/install" TYPE FILE FILES "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/catkin_generated/installspace/.rosinstall")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/catkin_generated/installspace/srrg2_map_server.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/catkin_generated/installspace/srrg2_map_server.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/srrg2_map_server/cmake" TYPE FILE FILES
-    "/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/catkin_generated/installspace/srrg2_map_serverConfig.cmake"
-    "/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/catkin_generated/installspace/srrg2_map_serverConfig-version.cmake"
+    "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/catkin_generated/installspace/srrg2_map_serverConfig.cmake"
+    "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/catkin_generated/installspace/srrg2_map_serverConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/srrg2_map_server" TYPE FILE FILES "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_map_server/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/srrg2_map_server" TYPE FILE FILES "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_map_server/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -150,12 +150,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmap_server_image_loader.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_map_server/lib/libmap_server_image_loader.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_map_server/lib/libmap_server_image_loader.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmap_server_image_loader.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmap_server_image_loader.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmap_server_image_loader.so"
-         OLD_RPATH "/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib:/opt/ros/melodic/lib:"
+         OLD_RPATH "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib:/opt/ros/melodic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmap_server_image_loader.so")
@@ -164,16 +164,16 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/srrg2_map_server" TYPE DIRECTORY FILES "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_map_server/include/srrg2_map_server/" FILES_MATCHING REGEX "/[^/]*\\.h$" REGEX "/\\.svn$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/srrg2_map_server" TYPE DIRECTORY FILES "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_map_server/include/srrg2_map_server/" FILES_MATCHING REGEX "/[^/]*\\.h$" REGEX "/\\.svn$" EXCLUDE)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/srrg2_map_server" TYPE PROGRAM FILES "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_map_server/scripts/crop_map")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/srrg2_map_server" TYPE PROGRAM FILES "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_map_server/scripts/crop_map")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/gtest/cmake_install.cmake")
+  include("/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/gtest/cmake_install.cmake")
 
 endif()
 
@@ -185,5 +185,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/alessio/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_map_server/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

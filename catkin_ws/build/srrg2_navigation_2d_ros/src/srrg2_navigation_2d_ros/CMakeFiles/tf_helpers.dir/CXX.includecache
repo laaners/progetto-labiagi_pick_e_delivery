@@ -6,27 +6,27 @@
 
 #IncludeRegexTransform: 
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_geometry/ad.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_geometry/ad.h
 cmath
 -
 Eigen/Geometry
 -
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_geometry/geometry2d.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_geometry/geometry2d.h
 geometry_defs.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_geometry/geometry_defs.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_geometry/geometry_defs.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_geometry/geometry3d.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_geometry/geometry3d.h
 ad.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_geometry/ad.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_geometry/ad.h
 geometry2d.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_geometry/geometry2d.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_geometry/geometry2d.h
 geometry_defs.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_geometry/geometry_defs.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_geometry/geometry_defs.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_geometry/geometry_defs.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_geometry/geometry_defs.h
 similiarity.hpp
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_geometry/similiarity.hpp
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_geometry/similiarity.hpp
 Eigen/Geometry
 -
 deque
@@ -40,21 +40,21 @@ stdexcept
 vector
 -
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_geometry/similiarity.hpp
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_geometry/similiarity.hpp
 Eigen/Core
 -
 iostream
 -
 
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/src/srrg2_navigation_2d_ros/tf_helpers.cpp
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/src/srrg2_navigation_2d_ros/tf_helpers.cpp
 tf_helpers.h
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/src/srrg2_navigation_2d_ros/tf_helpers.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/src/srrg2_navigation_2d_ros/tf_helpers.h
 srrg_geometry/geometry2d.h
 -
 srrg_geometry/geometry3d.h
 -
 
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/src/srrg2_navigation_2d_ros/tf_helpers.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/src/srrg2_navigation_2d_ros/tf_helpers.h
 Eigen/Geometry
 -
 geometry_msgs/Pose.h

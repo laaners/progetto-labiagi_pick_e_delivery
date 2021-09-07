@@ -1,8 +1,8 @@
-# Install script for directory: /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/src/srrg2_navigation_2d_ros
+# Install script for directory: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/src/srrg2_navigation_2d_ros
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/alessio/Desktop/progetto-labiagi/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

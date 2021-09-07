@@ -1,0 +1,4 @@
+srrg_joystick_teleop_js2|good you have a fresh compiler, using std=c++17 flag
+srrg_joystick_teleop_js2|build type: Release
+srrg_joystick_teleop_js2|cxx_standard: 17
+srrg_joystick_teleop_js2|common cxx flags:  -fPIC -Wall -Ofast -DNDEBUG -march=native

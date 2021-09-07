@@ -1,8 +1,0 @@
-prefix=/home/alessio/Desktop/progetto-labiagi/catkin_ws/install
-
-Name: set_goal
-Description: Description of set_goal
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib -lset_goal
-Requires: roscpp tf2 tf2_ros

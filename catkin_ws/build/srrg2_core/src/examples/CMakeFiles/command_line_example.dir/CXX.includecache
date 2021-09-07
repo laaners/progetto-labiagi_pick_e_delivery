@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/examples/command_line_example.cpp
+srrg_system_utils/parse_command_line.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/examples/srrg_system_utils/parse_command_line.h
+iostream
+-
+
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_system_utils/parse_command_line.h
+string
+-
+sstream
+-
+iostream
+-
+map
+-
+vector
+-
+

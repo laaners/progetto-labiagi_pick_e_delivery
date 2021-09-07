@@ -1,7 +1,0 @@
-[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp:[m[K In function ‘[01m[Kvoid check1_CallBack(const ros::TimerEvent&)[m[K’:
-[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp:136:117:[m[K [01;31m[Kerror: [m[Kcannot call member function ‘[01m[Kros::Timer ros::NodeHandle::createTimer(ros::Duration, const TimerCallback&, bool, bool) const[m[K’ without object
-                     ros::Timer waitPackTimer = ros::NodeHandle::createTimer(ros::Duration(5), waitPackCallBack, true[01;31m[K)[m[K;
-                                                                                                                     [01;31m[K^[m[K
-make[2]: *** [CMakeFiles/SetGoal.dir/src/SetGoal.cpp.o] Error 1
-make[1]: *** [CMakeFiles/SetGoal.dir/all] Error 2
-make: *** [all] Error 2

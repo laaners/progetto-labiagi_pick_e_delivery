@@ -1,12 +1,12 @@
-[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/src/srrg2_navigation_2d_ros/path_follower.cpp:[m[K In member function ‘[01m[Kvoid srrg2_navigation_2d_ros::PathFollower::compute(srrg2_core::GridMap2D&, const Isometry2f&, const Point2fVectorCloud&, const Isometry2fList&, geometry_msgs::Twist&)[m[K’:
-[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/src/srrg2_navigation_2d_ros/path_follower.cpp:67:27:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kglobal_distance_map[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[01m[K/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/src/srrg2_navigation_2d_ros/path_follower.cpp:[m[K In member function ‘[01m[Kvoid srrg2_navigation_2d_ros::PathFollower::compute(srrg2_core::GridMap2D&, const Isometry2f&, const Point2fVectorCloud&, const Isometry2fList&, geometry_msgs::Twist&)[m[K’:
+[01m[K/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/src/srrg2_navigation_2d_ros/path_follower.cpp:67:27:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kglobal_distance_map[m[K’ [[01;35m[K-Wunused-variable[m[K]
      const Matrix_<float>& [01;35m[Kglobal_distance_map[m[K =
                            [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
-[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/apps/path_follower_app.cpp:[m[K In function ‘[01m[Kvoid pathCallback(const Path&)[m[K’:
-[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/apps/path_follower_app.cpp:89:12:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Krobot_pose_2d[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+[01m[K/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/apps/path_follower_app.cpp:[m[K In function ‘[01m[Kvoid pathCallback(const Path&)[m[K’:
+[01m[K/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/apps/path_follower_app.cpp:89:12:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Krobot_pose_2d[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
    Vector3f [01;35m[Krobot_pose_2d[m[K = geometry2d::t2v(robot_pose);
             [01;35m[K^~~~~~~~~~~~~[m[K
-[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/apps/path_follower_app.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
-[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/apps/path_follower_app.cpp:139:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kelapsed_path_percentage[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[01m[K/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/apps/path_follower_app.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/apps/path_follower_app.cpp:139:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kelapsed_path_percentage[m[K’ [[01;35m[K-Wunused-variable[m[K]
        int [01;35m[Kelapsed_path_percentage[m[K =
            [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K

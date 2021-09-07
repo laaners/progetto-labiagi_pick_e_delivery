@@ -1,0 +1,21 @@
+[  4%] [32mBuilding CXX object src/srrg_solver_star/CMakeFiles/srrg2_solver_star_library.dir/star_labeler.cpp.o[0m
+[  9%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver_star/lib/libsrrg2_solver_star_library.so[0m
+[ 52%] Built target srrg2_solver_star_library
+[35m[1mScanning dependencies of target solver_app_graph_splitter[0m
+[35m[1mScanning dependencies of target solver_app_star_solver_batch[0m
+[35m[1mScanning dependencies of target solver_app_star_solver_gui[0m
+[35m[1mScanning dependencies of target solver_app_star_solver[0m
+[ 57%] [32mBuilding CXX object app/CMakeFiles/solver_app_star_solver_batch.dir/solver_app_star_solver_batch.cpp.o[0m
+[ 61%] [32mBuilding CXX object app/CMakeFiles/solver_app_graph_splitter.dir/solver_app_graph_splitter.cpp.o[0m
+[ 66%] [32mBuilding CXX object app/CMakeFiles/solver_app_star_solver_gui.dir/solver_app_star_solver_gui.cpp.o[0m
+[ 71%] [32mBuilding CXX object app/CMakeFiles/solver_app_star_solver_gui.dir/app_common.cpp.o[0m
+[ 76%] [32mBuilding CXX object app/CMakeFiles/solver_app_star_solver.dir/solver_app_star_solver.cpp.o[0m
+[ 80%] [32mBuilding CXX object app/CMakeFiles/solver_app_star_solver.dir/app_common.cpp.o[0m
+[ 85%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver_star/lib/srrg2_solver_star/solver_app_star_solver_batch[0m
+[ 85%] Built target solver_app_star_solver_batch
+[ 90%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver_star/lib/srrg2_solver_star/solver_app_star_solver_gui[0m
+[ 90%] Built target solver_app_star_solver_gui
+[ 95%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver_star/lib/srrg2_solver_star/solver_app_graph_splitter[0m
+[ 95%] Built target solver_app_graph_splitter
+[100%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver_star/lib/srrg2_solver_star/solver_app_star_solver[0m
+[100%] Built target solver_app_star_solver

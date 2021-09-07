@@ -1,0 +1,1 @@
+/usr/bin/c++   -fPIC -Wall -Ofast -DNDEBUG -march=native -Werror=pedantic -O3 -DNDEBUG  -rdynamic CMakeFiles/container_pack_example.dir/container_pack_example.cpp.o  -o /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/srrg2_core/container_pack_example 

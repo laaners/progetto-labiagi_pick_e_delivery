@@ -67,14 +67,14 @@ set(srrg2_navigation_2d_ros_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(srrg2_navigation_2d_ros_SOURCE_PREFIX /home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros)
-  set(srrg2_navigation_2d_ros_DEVEL_PREFIX /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros)
+  set(srrg2_navigation_2d_ros_SOURCE_PREFIX /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros)
+  set(srrg2_navigation_2d_ros_DEVEL_PREFIX /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros)
   set(srrg2_navigation_2d_ros_INSTALL_PREFIX "")
   set(srrg2_navigation_2d_ros_PREFIX ${srrg2_navigation_2d_ros_DEVEL_PREFIX})
 else()
   set(srrg2_navigation_2d_ros_SOURCE_PREFIX "")
   set(srrg2_navigation_2d_ros_DEVEL_PREFIX "")
-  set(srrg2_navigation_2d_ros_INSTALL_PREFIX /home/alessio/Desktop/progetto-labiagi/catkin_ws/install)
+  set(srrg2_navigation_2d_ros_INSTALL_PREFIX /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/install)
   set(srrg2_navigation_2d_ros_PREFIX ${srrg2_navigation_2d_ros_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(srrg2_navigation_2d_ros_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/src;/usr/include/QGLViewer " STREQUAL " ")
+if(NOT "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/src;/usr/include/QGLViewer " STREQUAL " ")
   set(srrg2_navigation_2d_ros_INCLUDE_DIRS "")
-  set(_include_dirs "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/src;/usr/include/QGLViewer")
+  set(_include_dirs "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/src;/usr/include/QGLViewer")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d
         message(FATAL_ERROR "Project 'srrg2_navigation_2d_ros' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'srrg2_navigation_2d_ros' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'srrg2_navigation_2d_ros' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/${idir}'.  ${_report}")
     endif()
     _list_append_unique(srrg2_navigation_2d_ros_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib;/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/lib;/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/catkin_tools_prebuild/lib;/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel/lib;/opt/ros/melodic/lib;/home/alessio/catkin_ws/devel/lib)
+    foreach(path /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib;/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

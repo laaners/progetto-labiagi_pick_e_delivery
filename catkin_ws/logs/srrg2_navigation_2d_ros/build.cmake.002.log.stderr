@@ -1,0 +1,5 @@
+srrg2_navigation_2d_ros|good you have a fresh compiler, using std=c++17 flag
+srrg2_navigation_2d_ros|build type: Release
+srrg2_navigation_2d_ros|cxx_standard: 17
+srrg2_navigation_2d_ros|common cxx flags:  -fPIC -Wall -Ofast -DNDEBUG -march=native
+srrg2_navigation_2d_ros|compiling with these CXX flags:  -fPIC -Wall -Ofast -DNDEBUG -march=native -Wall

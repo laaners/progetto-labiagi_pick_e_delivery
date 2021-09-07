@@ -1,0 +1,8 @@
+prefix=/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg_hbst
+
+Name: srrg_hbst
+Description: Description of srrg_hbst
+Version: 1.0.0
+Cflags: -I/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg_hbst/.
+Libs: -L${prefix}/lib 
+Requires: 

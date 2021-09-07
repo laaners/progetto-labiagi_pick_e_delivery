@@ -1,0 +1,7 @@
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/share/srrg2_laser_slam_2d/cmake/srrg2_laser_slam_2dConfig.cmake
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/share/srrg2_laser_slam_2d/cmake/srrg2_laser_slam_2dConfig-version.cmake
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/lib/libsrrg2_laser_slam_2d_mapping_library.so
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/lib/libsrrg2_laser_slam_2d_sensor_processing_library.so
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/lib/libsrrg2_laser_slam_2d_registration_library.so
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/lib/libsrrg2_laser_slam_2d_library.so
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/lib/pkgconfig/srrg2_laser_slam_2d.pc

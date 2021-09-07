@@ -1,7 +1,0 @@
-[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/MainNode.cpp:[m[K In function ‘[01m[Kbool setTooLongInterval(pick_e_delivery::setTooLongInterval::Request&, pick_e_delivery::setTooLongInterval::Response&)[m[K’:
-[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/MainNode.cpp:304:28:[m[K [01;31m[Kerror: [m[K‘[01m[KmyDuration[m[K’ was not declared in this scope
-     tooLongTimer.setPeriod([01;31m[KmyDuration[m[K);
-                            [01;31m[K^~~~~~~~~~[m[K
-make[2]: *** [CMakeFiles/MainNode.dir/src/MainNode.cpp.o] Error 1
-make[1]: *** [CMakeFiles/MainNode.dir/all] Error 2
-make: *** [all] Error 2

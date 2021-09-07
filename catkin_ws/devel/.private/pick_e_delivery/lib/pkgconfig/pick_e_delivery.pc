@@ -1,8 +1,8 @@
-prefix=/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery
+prefix=/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery
 
 Name: pick_e_delivery
 Description: Description of pick_e_delivery
 Version: 0.0.0
-Cflags: -I/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/include
+Cflags: -I/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/include
 Libs: -L${prefix}/lib 
 Requires: 

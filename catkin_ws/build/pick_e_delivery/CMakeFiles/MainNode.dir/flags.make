@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"pick_e_delivery\"
 
-CXX_INCLUDES = -I/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/pick_e_delivery/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 

@@ -2,7 +2,7 @@
 
 message(STATUS "srrg2_navigation_2d_msgs: 3 messages, 0 services")
 
-set(MSG_I_FLAGS "-Isrrg2_navigation_2d_msgs:/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Isrrg2_navigation_2d_msgs:/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,19 +17,19 @@ add_custom_target(srrg2_navigation_2d_msgs_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/PathFollowerStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/LocalPathPlannerStatus.msg" NAME_WE)
 add_custom_target(_srrg2_navigation_2d_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "srrg2_navigation_2d_msgs" "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/PathFollowerStatus.msg" "geometry_msgs/Vector3:geometry_msgs/Twist:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "srrg2_navigation_2d_msgs" "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/LocalPathPlannerStatus.msg" "geometry_msgs/Vector3:geometry_msgs/Twist:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/CollisionAvoiderStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/CollisionAvoiderStatus.msg" NAME_WE)
 add_custom_target(_srrg2_navigation_2d_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "srrg2_navigation_2d_msgs" "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/CollisionAvoiderStatus.msg" "geometry_msgs/Vector3:geometry_msgs/Twist:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "srrg2_navigation_2d_msgs" "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/CollisionAvoiderStatus.msg" "geometry_msgs/Vector3:geometry_msgs/Twist:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/LocalPathPlannerStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/PathFollowerStatus.msg" NAME_WE)
 add_custom_target(_srrg2_navigation_2d_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "srrg2_navigation_2d_msgs" "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/LocalPathPlannerStatus.msg" "geometry_msgs/Vector3:geometry_msgs/Twist:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "srrg2_navigation_2d_msgs" "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/PathFollowerStatus.msg" "geometry_msgs/Vector3:geometry_msgs/Twist:std_msgs/Header"
 )
 
 #
@@ -39,19 +39,19 @@ add_custom_target(_srrg2_navigation_2d_msgs_generate_messages_check_deps_${_file
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(srrg2_navigation_2d_msgs
-  "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/PathFollowerStatus.msg"
+  "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/LocalPathPlannerStatus.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/srrg2_navigation_2d_msgs
 )
 _generate_msg_cpp(srrg2_navigation_2d_msgs
-  "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/CollisionAvoiderStatus.msg"
+  "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/CollisionAvoiderStatus.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/srrg2_navigation_2d_msgs
 )
 _generate_msg_cpp(srrg2_navigation_2d_msgs
-  "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/LocalPathPlannerStatus.msg"
+  "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/PathFollowerStatus.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/srrg2_navigation_2d_msgs
@@ -71,11 +71,11 @@ add_custom_target(srrg2_navigation_2d_msgs_generate_messages_cpp
 add_dependencies(srrg2_navigation_2d_msgs_generate_messages srrg2_navigation_2d_msgs_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/PathFollowerStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/LocalPathPlannerStatus.msg" NAME_WE)
 add_dependencies(srrg2_navigation_2d_msgs_generate_messages_cpp _srrg2_navigation_2d_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/CollisionAvoiderStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/CollisionAvoiderStatus.msg" NAME_WE)
 add_dependencies(srrg2_navigation_2d_msgs_generate_messages_cpp _srrg2_navigation_2d_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/LocalPathPlannerStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/PathFollowerStatus.msg" NAME_WE)
 add_dependencies(srrg2_navigation_2d_msgs_generate_messages_cpp _srrg2_navigation_2d_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -88,19 +88,19 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS srrg2_navigation_2d_msgs_generate_m
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(srrg2_navigation_2d_msgs
-  "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/PathFollowerStatus.msg"
+  "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/LocalPathPlannerStatus.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/srrg2_navigation_2d_msgs
 )
 _generate_msg_eus(srrg2_navigation_2d_msgs
-  "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/CollisionAvoiderStatus.msg"
+  "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/CollisionAvoiderStatus.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/srrg2_navigation_2d_msgs
 )
 _generate_msg_eus(srrg2_navigation_2d_msgs
-  "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/LocalPathPlannerStatus.msg"
+  "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/PathFollowerStatus.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/srrg2_navigation_2d_msgs
@@ -120,11 +120,11 @@ add_custom_target(srrg2_navigation_2d_msgs_generate_messages_eus
 add_dependencies(srrg2_navigation_2d_msgs_generate_messages srrg2_navigation_2d_msgs_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/PathFollowerStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/LocalPathPlannerStatus.msg" NAME_WE)
 add_dependencies(srrg2_navigation_2d_msgs_generate_messages_eus _srrg2_navigation_2d_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/CollisionAvoiderStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/CollisionAvoiderStatus.msg" NAME_WE)
 add_dependencies(srrg2_navigation_2d_msgs_generate_messages_eus _srrg2_navigation_2d_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/LocalPathPlannerStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/PathFollowerStatus.msg" NAME_WE)
 add_dependencies(srrg2_navigation_2d_msgs_generate_messages_eus _srrg2_navigation_2d_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -137,19 +137,19 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS srrg2_navigation_2d_msgs_generate_m
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(srrg2_navigation_2d_msgs
-  "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/PathFollowerStatus.msg"
+  "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/LocalPathPlannerStatus.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/srrg2_navigation_2d_msgs
 )
 _generate_msg_lisp(srrg2_navigation_2d_msgs
-  "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/CollisionAvoiderStatus.msg"
+  "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/CollisionAvoiderStatus.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/srrg2_navigation_2d_msgs
 )
 _generate_msg_lisp(srrg2_navigation_2d_msgs
-  "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/LocalPathPlannerStatus.msg"
+  "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/PathFollowerStatus.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/srrg2_navigation_2d_msgs
@@ -169,11 +169,11 @@ add_custom_target(srrg2_navigation_2d_msgs_generate_messages_lisp
 add_dependencies(srrg2_navigation_2d_msgs_generate_messages srrg2_navigation_2d_msgs_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/PathFollowerStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/LocalPathPlannerStatus.msg" NAME_WE)
 add_dependencies(srrg2_navigation_2d_msgs_generate_messages_lisp _srrg2_navigation_2d_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/CollisionAvoiderStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/CollisionAvoiderStatus.msg" NAME_WE)
 add_dependencies(srrg2_navigation_2d_msgs_generate_messages_lisp _srrg2_navigation_2d_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/LocalPathPlannerStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/PathFollowerStatus.msg" NAME_WE)
 add_dependencies(srrg2_navigation_2d_msgs_generate_messages_lisp _srrg2_navigation_2d_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -186,19 +186,19 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS srrg2_navigation_2d_msgs_generate_m
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(srrg2_navigation_2d_msgs
-  "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/PathFollowerStatus.msg"
+  "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/LocalPathPlannerStatus.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/srrg2_navigation_2d_msgs
 )
 _generate_msg_nodejs(srrg2_navigation_2d_msgs
-  "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/CollisionAvoiderStatus.msg"
+  "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/CollisionAvoiderStatus.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/srrg2_navigation_2d_msgs
 )
 _generate_msg_nodejs(srrg2_navigation_2d_msgs
-  "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/LocalPathPlannerStatus.msg"
+  "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/PathFollowerStatus.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/srrg2_navigation_2d_msgs
@@ -218,11 +218,11 @@ add_custom_target(srrg2_navigation_2d_msgs_generate_messages_nodejs
 add_dependencies(srrg2_navigation_2d_msgs_generate_messages srrg2_navigation_2d_msgs_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/PathFollowerStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/LocalPathPlannerStatus.msg" NAME_WE)
 add_dependencies(srrg2_navigation_2d_msgs_generate_messages_nodejs _srrg2_navigation_2d_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/CollisionAvoiderStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/CollisionAvoiderStatus.msg" NAME_WE)
 add_dependencies(srrg2_navigation_2d_msgs_generate_messages_nodejs _srrg2_navigation_2d_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/LocalPathPlannerStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/PathFollowerStatus.msg" NAME_WE)
 add_dependencies(srrg2_navigation_2d_msgs_generate_messages_nodejs _srrg2_navigation_2d_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -235,19 +235,19 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS srrg2_navigation_2d_msgs_generate_m
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(srrg2_navigation_2d_msgs
-  "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/PathFollowerStatus.msg"
+  "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/LocalPathPlannerStatus.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/srrg2_navigation_2d_msgs
 )
 _generate_msg_py(srrg2_navigation_2d_msgs
-  "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/CollisionAvoiderStatus.msg"
+  "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/CollisionAvoiderStatus.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/srrg2_navigation_2d_msgs
 )
 _generate_msg_py(srrg2_navigation_2d_msgs
-  "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/LocalPathPlannerStatus.msg"
+  "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/PathFollowerStatus.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/srrg2_navigation_2d_msgs
@@ -267,11 +267,11 @@ add_custom_target(srrg2_navigation_2d_msgs_generate_messages_py
 add_dependencies(srrg2_navigation_2d_msgs_generate_messages srrg2_navigation_2d_msgs_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/PathFollowerStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/LocalPathPlannerStatus.msg" NAME_WE)
 add_dependencies(srrg2_navigation_2d_msgs_generate_messages_py _srrg2_navigation_2d_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/CollisionAvoiderStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/CollisionAvoiderStatus.msg" NAME_WE)
 add_dependencies(srrg2_navigation_2d_msgs_generate_messages_py _srrg2_navigation_2d_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/LocalPathPlannerStatus.msg" NAME_WE)
+get_filename_component(_filename "/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_msgs/msg/PathFollowerStatus.msg" NAME_WE)
 add_dependencies(srrg2_navigation_2d_msgs_generate_messages_py _srrg2_navigation_2d_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

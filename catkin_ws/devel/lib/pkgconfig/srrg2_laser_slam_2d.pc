@@ -1,0 +1,1 @@
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_laser_slam_2d/lib/pkgconfig/srrg2_laser_slam_2d.pc

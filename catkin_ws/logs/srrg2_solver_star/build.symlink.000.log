@@ -1,0 +1,8 @@
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/share/srrg2_solver_star/cmake/srrg2_solver_starConfig.cmake
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/share/srrg2_solver_star/cmake/srrg2_solver_starConfig-version.cmake
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/lib/libsrrg2_solver_star_library.so
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/lib/srrg2_solver_star/solver_app_graph_splitter
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/lib/srrg2_solver_star/solver_app_star_solver_gui
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/lib/srrg2_solver_star/solver_app_star_solver
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/lib/srrg2_solver_star/solver_app_star_solver_batch
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/lib/pkgconfig/srrg2_solver_star.pc

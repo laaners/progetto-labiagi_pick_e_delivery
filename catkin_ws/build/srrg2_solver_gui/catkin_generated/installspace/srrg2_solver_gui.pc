@@ -1,0 +1,8 @@
+prefix=/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/install
+
+Name: srrg2_solver_gui
+Description: Description of srrg2_solver_gui
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

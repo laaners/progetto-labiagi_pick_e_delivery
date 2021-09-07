@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/blob.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/blob.h
 string
 -
 iostream
@@ -18,31 +18,31 @@ memory
 Eigen/Core
 -
 identifiable.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/identifiable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/identifiable.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/id_context.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/id_context.h
 serialization_context.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/serialization_context.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/serialization_context.h
 map
 -
 mutex
 -
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/id_placeholder.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/id_placeholder.h
 vector
 -
 memory
 -
 identifiable.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/identifiable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/identifiable.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/identifiable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/identifiable.h
 memory
 -
 serializable.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/serializable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/serializable.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/object_data.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/object_data.h
 string
 -
 vector
@@ -54,11 +54,11 @@ limits
 stdexcept
 -
 id_placeholder.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/id_placeholder.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/id_placeholder.h
 Eigen/Core
 -
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/serializable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/serializable.h
 map
 -
 memory
@@ -72,69 +72,69 @@ iostream
 typeinfo
 -
 trusted_loaders.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/trusted_loaders.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/trusted_loaders.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/serialization_context.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/serialization_context.h
 string
 -
 iostream
 -
 blob.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/blob.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/blob.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/serializer.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/serializer.h
 string
 -
 serialization_context.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/serialization_context.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/serialization_context.h
 id_context.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/id_context.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/id_context.h
 blob.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/blob.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/blob.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/trusted_loaders.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/trusted_loaders.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_config/configurable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_config/configurable.h
 srrg_property/property_container.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_config/srrg_property/property_container.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_config/srrg_property/property_container.h
 param_macros.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_config/param_macros.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_config/param_macros.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_config/configurable_command.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_config/configurable_command.h
 configurable.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_config/configurable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_config/configurable.h
 srrg_data_structures/generic_class_method_caller.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_config/srrg_data_structures/generic_class_method_caller.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_config/srrg_data_structures/generic_class_method_caller.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_config/param_macros.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_config/param_macros.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_config/property_configurable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_config/property_configurable.h
 configurable.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_config/configurable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_config/configurable.h
 srrg_property/property_identifiable.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_config/srrg_property/property_identifiable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_config/srrg_property/property_identifiable.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_config/property_configurable_vector.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_config/property_configurable_vector.h
 property_configurable.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_config/property_configurable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_config/property_configurable.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/events.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/events.h
 srrg_geometry/geometry_defs.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_geometry/geometry_defs.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_geometry/geometry_defs.h
 srrg_property/property_container.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_property/property_container.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_property/property_container.h
 srrg_property/property_eigen.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_property/property_eigen.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_property/property_eigen.h
 srrg_property/property_serializable.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_property/property_serializable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_property/property_serializable.h
 srrg_property/property_vector.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_property/property_vector.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_property/property_vector.h
 list
 -
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/field_pack.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/field_pack.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/generic_class_method_caller.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/generic_class_method_caller.h
 sstream
 -
 string
@@ -142,63 +142,63 @@ string
 vector
 -
 field_pack.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/field_pack.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/field_pack.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/grid_map_2d.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/grid_map_2d.h
 srrg_boss/serializable.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_boss/serializable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_boss/serializable.h
 srrg_data_structures/matrix.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_data_structures/matrix.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_data_structures/matrix.h
 srrg_geometry/geometry2d.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_geometry/geometry2d.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_geometry/geometry2d.h
 srrg_property/property_container.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_property/property_container.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_property/property_container.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/link.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/link.h
 srrg_system_utils/shell_colors.h
 -
 events.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/events.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/events.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/matrix.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/matrix.h
 srrg_geometry/geometry_defs.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_geometry/geometry_defs.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_geometry/geometry_defs.h
 vector
 -
 matrix.hpp
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/matrix.hpp
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/matrix.hpp
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/matrix.hpp
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/matrix.hpp
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/path_matrix.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/path_matrix.h
 srrg_image/image.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_image/image.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_image/image.h
 limits
 -
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/path_matrix_dijkstra_search.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/path_matrix_dijkstra_search.h
 path_matrix_search_base.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/path_matrix_search_base.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/path_matrix_search_base.h
 srrg_pcl/point_types.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_pcl/point_types.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_pcl/point_types.h
 srrg_property/property.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_property/property.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_property/property.h
 srrg_property/property_vector.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_property/property_vector.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_property/property_vector.h
 stdexcept
 -
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/path_matrix_distance_search.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/path_matrix_distance_search.h
 path_matrix_search_base.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/path_matrix_search_base.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/path_matrix_search_base.h
 srrg_pcl/point_types.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_pcl/point_types.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_pcl/point_types.h
 srrg_property/property.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_property/property.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_property/property.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/path_matrix_search_base.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/path_matrix_search_base.h
 path_matrix.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/path_matrix.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/path_matrix.h
 deque
 -
 queue
@@ -206,37 +206,37 @@ queue
 srrg_config/configurable.h
 -
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/platform.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/platform.h
 link.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/link.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/link.h
 srrg_geometry/geometry3d.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_geometry/geometry3d.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/srrg_geometry/geometry3d.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_data_structures/pointer_traits.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_data_structures/pointer_traits.h
 memory
 -
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_geometry/ad.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_geometry/ad.h
 cmath
 -
 Eigen/Geometry
 -
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_geometry/geometry2d.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_geometry/geometry2d.h
 geometry_defs.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_geometry/geometry_defs.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_geometry/geometry_defs.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_geometry/geometry3d.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_geometry/geometry3d.h
 ad.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_geometry/ad.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_geometry/ad.h
 geometry2d.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_geometry/geometry2d.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_geometry/geometry2d.h
 geometry_defs.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_geometry/geometry_defs.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_geometry/geometry_defs.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_geometry/geometry_defs.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_geometry/geometry_defs.h
 similiarity.hpp
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_geometry/similiarity.hpp
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_geometry/similiarity.hpp
 Eigen/Geometry
 -
 deque
@@ -250,15 +250,15 @@ stdexcept
 vector
 -
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_geometry/similiarity.hpp
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_geometry/similiarity.hpp
 Eigen/Core
 -
 iostream
 -
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_image/image.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_image/image.h
 srrg_data_structures/matrix.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_image/srrg_data_structures/matrix.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_image/srrg_data_structures/matrix.h
 Eigen/Core
 -
 cstdint
@@ -272,19 +272,19 @@ opencv2/imgcodecs/legacy/constants_c.h
 opencv2/imgproc/types_c.h
 -
 image.hpp
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_image/image.hpp
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_image/image.hpp
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_image/image.hpp
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_image/image.hpp
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_image/image_data.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_image/image_data.h
 image.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_image/image.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_image/image.h
 srrg_boss/blob.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_image/srrg_boss/blob.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_image/srrg_boss/blob.h
 memory
 -
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_matchable/descriptor_owner.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_matchable/descriptor_owner.h
 algorithm
 -
 array
@@ -296,37 +296,37 @@ numeric
 opencv2/opencv.hpp
 -
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_matchable/matchable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_matchable/matchable.h
 set
 -
 vector
 -
 srrg_geometry/geometry3d.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_matchable/srrg_geometry/geometry3d.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_matchable/srrg_geometry/geometry3d.h
 matchable.hpp
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_matchable/matchable.hpp
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_matchable/matchable.hpp
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_matchable/matchable.hpp
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_matchable/matchable.hpp
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_matchable/visual_matchable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_matchable/visual_matchable.h
 srrg_matchable/descriptor_owner.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_matchable/srrg_matchable/descriptor_owner.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_matchable/srrg_matchable/descriptor_owner.h
 srrg_matchable/matchable.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_matchable/srrg_matchable/matchable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_matchable/srrg_matchable/matchable.h
 srrg_pcl/point_normal_curvature_color.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_matchable/srrg_pcl/point_normal_curvature_color.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_matchable/srrg_pcl/point_normal_curvature_color.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/message_handlers/message_sink_base.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/message_handlers/message_sink_base.h
 srrg_boss/serializer.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/message_handlers/srrg_boss/serializer.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/message_handlers/srrg_boss/serializer.h
 srrg_config/property_configurable_vector.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/message_handlers/srrg_config/property_configurable_vector.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/message_handlers/srrg_config/property_configurable_vector.h
 srrg_data_structures/platform.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/message_handlers/srrg_data_structures/platform.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/message_handlers/srrg_data_structures/platform.h
 srrg_messages/messages/base_sensor_message.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/message_handlers/srrg_messages/messages/base_sensor_message.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/message_handlers/srrg_messages/messages/base_sensor_message.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/base_sensor_message.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/base_sensor_message.h
 string
 -
 iostream
@@ -334,173 +334,173 @@ iostream
 memory
 -
 srrg_property/property_container.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_property/property_container.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_property/property_container.h
 srrg_geometry/geometry_defs.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_geometry/geometry_defs.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_geometry/geometry_defs.h
 srrg_geometry/geometry3d.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_geometry/geometry3d.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_geometry/geometry3d.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/grid_map_message.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/grid_map_message.h
 base_sensor_message.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/base_sensor_message.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/base_sensor_message.h
 srrg_data_structures/grid_map_2d.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_data_structures/grid_map_2d.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_data_structures/grid_map_2d.h
 srrg_property/property_serializable.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_property/property_serializable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_property/property_serializable.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/image_message.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/image_message.h
 base_sensor_message.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/base_sensor_message.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/base_sensor_message.h
 srrg_image/image_data.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_image/image_data.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_image/image_data.h
 srrg_property/property_eigen.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_property/property_eigen.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_property/property_eigen.h
 srrg_property/property_serializable.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_property/property_serializable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_property/property_serializable.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/laser_message.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/laser_message.h
 srrg_property/property_vector.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_property/property_vector.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_property/property_vector.h
 base_sensor_message.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/base_sensor_message.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/base_sensor_message.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/odometry_message.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/odometry_message.h
 base_sensor_message.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/base_sensor_message.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/base_sensor_message.h
 srrg_property/property_eigen.h
 -
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/path_message.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/path_message.h
 base_sensor_message.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/base_sensor_message.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/base_sensor_message.h
 pose_stamped_message.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/pose_stamped_message.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/pose_stamped_message.h
 srrg_geometry/geometry_defs.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_geometry/geometry_defs.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_geometry/geometry_defs.h
 srrg_property/property_serializable.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_property/property_serializable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_property/property_serializable.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/planner_status_message.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/planner_status_message.h
 base_sensor_message.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/base_sensor_message.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/base_sensor_message.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/point_cloud2_message.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/point_cloud2_message.h
 base_sensor_message.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/base_sensor_message.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/base_sensor_message.h
 point_field.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/point_field.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/point_field.h
 srrg_property/property_serializable.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_property/property_serializable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_property/property_serializable.h
 srrg_property/property_vector.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_property/property_vector.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_property/property_vector.h
 srrg_pcl/point_types.h
 -
 srrg_property/vector_data.h
 -
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/point_field.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/point_field.h
 srrg_property/property_container.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_property/property_container.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_property/property_container.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/pose_array_message.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/pose_array_message.h
 base_sensor_message.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/base_sensor_message.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/base_sensor_message.h
 pose_message.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/pose_message.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/pose_message.h
 srrg_property/property_serializable.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_property/property_serializable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_property/property_serializable.h
 srrg_geometry/geometry_defs.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_geometry/geometry_defs.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_geometry/geometry_defs.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/pose_message.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/pose_message.h
 srrg_property/property_container.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_property/property_container.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_property/property_container.h
 srrg_property/property_eigen.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_property/property_eigen.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_property/property_eigen.h
 srrg_geometry/geometry_defs.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_geometry/geometry_defs.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_geometry/geometry_defs.h
 srrg_geometry/geometry3d.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_geometry/geometry3d.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_geometry/geometry3d.h
 srrg_geometry/geometry2d.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_geometry/geometry2d.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_geometry/geometry2d.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/pose_stamped_message.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/pose_stamped_message.h
 base_sensor_message.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/base_sensor_message.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/base_sensor_message.h
 pose_message.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/pose_message.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/pose_message.h
 srrg_property/property_serializable.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_property/property_serializable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_property/property_serializable.h
 srrg_geometry/geometry_defs.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_geometry/geometry_defs.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_geometry/geometry_defs.h
 srrg_property/property_eigen.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_property/property_eigen.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_property/property_eigen.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/pose_with_covariance_stamped_message.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/pose_with_covariance_stamped_message.h
 pose_stamped_message.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/pose_stamped_message.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/pose_stamped_message.h
 srrg_geometry/geometry_defs.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_geometry/geometry_defs.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_geometry/geometry_defs.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/transform_events_message.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/transform_events_message.h
 srrg_property/property_eigen.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_property/property_eigen.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_property/property_eigen.h
 base_sensor_message.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/base_sensor_message.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/base_sensor_message.h
 srrg_data_structures/events.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_data_structures/events.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_messages/messages/srrg_data_structures/events.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/camera_matrix_owner.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/camera_matrix_owner.h
 srrg_property/property.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/srrg_property/property.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/srrg_property/property.h
 srrg_config/configurable.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/srrg_config/configurable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/srrg_config/configurable.h
 srrg_geometry/geometry_defs.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/srrg_geometry/geometry_defs.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/srrg_geometry/geometry_defs.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point.h
 point_cloud.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_cloud.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_cloud.h
 srrg_geometry/geometry_defs.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/srrg_geometry/geometry_defs.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/srrg_geometry/geometry_defs.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_base.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_base.h
 srrg_data_structures/field_pack.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/srrg_data_structures/field_pack.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/srrg_data_structures/field_pack.h
 point_fields.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_fields.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_fields.h
 point_ops.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_ops.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_ops.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_cloud.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_cloud.h
 point_base.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_base.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_base.h
 srrg_data_structures/matrix.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/srrg_data_structures/matrix.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/srrg_data_structures/matrix.h
 vector
 -
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_color.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_color.h
 point_cloud.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_cloud.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_cloud.h
 srrg_geometry/geometry_defs.h
 -
 point_derived.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_derived.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_derived.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_default_field.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_default_field.h
 iostream
 -
 point_defs.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_defs.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_defs.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_defs.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_defs.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_derived.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_derived.h
 point_base.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_base.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_base.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_descriptor_field.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_descriptor_field.h
 array
 -
 bitset
@@ -510,73 +510,73 @@ numeric
 opencv2/core.hpp
 -
 point_default_field.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_default_field.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_default_field.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_fields.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_fields.h
 point_default_field.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_default_field.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_default_field.h
 point_descriptor_field.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_descriptor_field.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_descriptor_field.h
 point_scalar_field.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_scalar_field.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_scalar_field.h
 point_statistics_field.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_statistics_field.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_statistics_field.h
 point_vector_field.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_vector_field.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_vector_field.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_intensity.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_intensity.h
 point.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point.h
 point_derived.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_derived.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_derived.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_intensity_descriptor.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_intensity_descriptor.h
 point.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point.h
 point_cloud.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_cloud.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_cloud.h
 point_derived.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_derived.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_derived.h
 point_descriptor_field.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_descriptor_field.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_descriptor_field.h
 point_statistics_field.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_statistics_field.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_statistics_field.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_matrix_processor.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_matrix_processor.h
 point_cloud.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_cloud.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_cloud.h
 srrg_data_structures/matrix.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/srrg_data_structures/matrix.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/srrg_data_structures/matrix.h
 point_matrix_processor.hpp
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_matrix_processor.hpp
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_matrix_processor.hpp
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_matrix_processor.hpp
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_matrix_processor.hpp
 srrg_system_utils/shell_colors.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/srrg_system_utils/shell_colors.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/srrg_system_utils/shell_colors.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_normal.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_normal.h
 point.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point.h
 point_cloud.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_cloud.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_cloud.h
 point_derived.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_derived.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_derived.h
 point_ops.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_ops.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_ops.h
 srrg_geometry/geometry_defs.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/srrg_geometry/geometry_defs.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/srrg_geometry/geometry_defs.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_normal_color.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_normal_color.h
 srrg_geometry/geometry_defs.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/srrg_geometry/geometry_defs.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/srrg_geometry/geometry_defs.h
 point_normal.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_normal.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_normal.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_normal_curvature.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_normal_curvature.h
 point_normal.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_normal.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_normal.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_normal_curvature_color.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_normal_curvature_color.h
 srrg_data_structures/matrix.h
 -
 srrg_property/vector_data.h
@@ -586,77 +586,77 @@ srrg_pcl/point_base.h
 srrg_pcl/point_cloud.h
 -
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_normal_intensity.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_normal_intensity.h
 point_normal.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_normal.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_normal.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_ops.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_ops.h
 iostream
 -
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_scalar_field.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_scalar_field.h
 point_default_field.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_default_field.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_default_field.h
 point_defs.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_defs.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_defs.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_statistics_field.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_statistics_field.h
 memory
 -
 point_default_field.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_default_field.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_default_field.h
 srrg_geometry/geometry_defs.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/srrg_geometry/geometry_defs.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/srrg_geometry/geometry_defs.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_types.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_types.h
 point.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point.h
 point_color.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_color.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_color.h
 point_intensity.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_intensity.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_intensity.h
 point_intensity_descriptor.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_intensity_descriptor.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_intensity_descriptor.h
 point_normal.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_normal.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_normal.h
 point_normal_color.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_normal_color.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_normal_color.h
 point_normal_curvature.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_normal_curvature.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_normal_curvature.h
 point_normal_curvature_color.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_normal_curvature_color.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_normal_curvature_color.h
 point_normal_intensity.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_normal_intensity.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_normal_intensity.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_unprojector.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_unprojector.h
 limits
 -
 camera_matrix_owner.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/camera_matrix_owner.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/camera_matrix_owner.h
 point_cloud.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_cloud.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_cloud.h
 point_matrix_processor.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_matrix_processor.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_matrix_processor.h
 srrg_data_structures/matrix.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/srrg_data_structures/matrix.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/srrg_data_structures/matrix.h
 srrg_system_utils/profiler.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/srrg_system_utils/profiler.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/srrg_system_utils/profiler.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_unprojector_types.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_unprojector_types.h
 point_types.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_types.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_types.h
 point_unprojector.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_unprojector.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_unprojector.h
 memory
 -
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_vector_field.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_vector_field.h
 point_defs.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/point_defs.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/point_defs.h
 srrg_geometry/geometry_defs.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_pcl/srrg_geometry/geometry_defs.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_pcl/srrg_geometry/geometry_defs.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_property/property.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_property/property.h
 cassert
 -
 memory
@@ -666,53 +666,53 @@ set
 Eigen/Core
 -
 property_macros.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_property/property_macros.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_property/property_macros.h
 srrg_boss/object_data.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_property/srrg_boss/object_data.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_property/srrg_boss/object_data.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_property/property_container.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_property/property_container.h
 property.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_property/property.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_property/property.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_property/property_eigen.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_property/property_eigen.h
 Eigen/Core
 -
 property.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_property/property.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_property/property.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_property/property_identifiable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_property/property_identifiable.h
 srrg_data_structures/pointer_traits.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_property/srrg_data_structures/pointer_traits.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_property/srrg_data_structures/pointer_traits.h
 property.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_property/property.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_property/property.h
 property_container.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_property/property_container.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_property/property_container.h
 property_vector.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_property/property_vector.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_property/property_vector.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_property/property_macros.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_property/property_macros.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_property/property_serializable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_property/property_serializable.h
 Eigen/Core
 -
 property.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_property/property.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_property/property.h
 srrg_boss/id_context.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_property/srrg_boss/id_context.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_property/srrg_boss/id_context.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_property/property_vector.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_property/property_vector.h
 sstream
 -
 property.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_property/property.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_property/property.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_property/vector_data.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_property/vector_data.h
 Eigen/Core
 -
 srrg_boss/blob.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_property/srrg_boss/blob.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_property/srrg_boss/blob.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_system_utils/chrono.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_system_utils/chrono.h
 list
 -
 string
@@ -720,7 +720,7 @@ string
 map
 -
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_system_utils/profiler.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_system_utils/profiler.h
 assert.h
 -
 iostream
@@ -732,13 +732,13 @@ unordered_map
 vector
 -
 srrg_geometry/geometry_defs.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_system_utils/srrg_geometry/geometry_defs.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_system_utils/srrg_geometry/geometry_defs.h
 system_utils.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_system_utils/system_utils.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_system_utils/system_utils.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_system_utils/shell_colors.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_system_utils/shell_colors.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_system_utils/system_utils.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_system_utils/system_utils.h
 string
 -
 sys/resource.h
@@ -746,43 +746,43 @@ sys/resource.h
 sys/time.h
 -
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_viewer/active_drawable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_viewer/active_drawable.h
 drawable_base.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_viewer/drawable_base.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_viewer/drawable_base.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_viewer/drawable_base.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_viewer/drawable_base.h
 viewer_canvas.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_canvas.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_canvas.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_canvas.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_canvas.h
 srrg_pcl/point_types.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_viewer/srrg_pcl/point_types.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_viewer/srrg_pcl/point_types.h
 viewer_core/buffer_manager.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/buffer_manager.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/buffer_manager.h
 viewer_core/buffer_sink.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/buffer_sink.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/buffer_sink.h
 viewer_core/packet_serializer.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/packet_serializer.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/packet_serializer.h
 srrg_matchable/visual_matchable.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_viewer/srrg_matchable/visual_matchable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_viewer/srrg_matchable/visual_matchable.h
 srrg_pcl/point_types.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_viewer/srrg_pcl/point_types.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_viewer/srrg_pcl/point_types.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/buffer_deque.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/buffer_deque.h
 semaphore.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/semaphore.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/semaphore.h
 buffer_memory.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/buffer_memory.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/buffer_memory.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/buffer_manager.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/buffer_manager.h
 srrg_config/property_configurable.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/srrg_config/property_configurable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/srrg_config/property_configurable.h
 buffer_deque.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/buffer_deque.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/buffer_deque.h
 buffer_memory.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/buffer_memory.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/buffer_memory.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/buffer_memory.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/buffer_memory.h
 set
 -
 deque
@@ -790,31 +790,31 @@ deque
 vector
 -
 srrg_geometry/geometry_defs.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/srrg_geometry/geometry_defs.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/srrg_geometry/geometry_defs.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/buffer_sink.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/buffer_sink.h
 atomic
 -
 srrg_config/property_configurable.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/srrg_config/property_configurable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/srrg_config/property_configurable.h
 buffer_memory.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/buffer_memory.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/buffer_memory.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/color_palette.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/color_palette.h
 srrg_geometry/geometry_defs.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/srrg_geometry/geometry_defs.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/srrg_geometry/geometry_defs.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/packet_serializer.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/packet_serializer.h
 buffer_memory.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/buffer_memory.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/buffer_memory.h
 packets/packet_base.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/packets/packet_base.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/packets/packet_base.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/packets/packet_base.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/packets/packet_base.h
 srrg_viewer/viewer_core/color_palette.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/packets/srrg_viewer/viewer_core/color_palette.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/packets/srrg_viewer/viewer_core/color_palette.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/semaphore.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_viewer/viewer_core/semaphore.h
 atomic
 -
 deque
@@ -826,21 +826,21 @@ chrono
 condition_variable
 -
 
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/instances.cpp
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/instances.cpp
 instances.h
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/instances.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/instances.h
 local_path_planner.h
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/local_path_planner.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/local_path_planner.h
 localizer_2d.h
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/localizer_2d.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/localizer_2d.h
 planner_2d.h
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/planner_2d.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/planner_2d.h
 
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/instances.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/instances.h
 
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/local_path_planner.cpp
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/local_path_planner.cpp
 local_path_planner.h
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/local_path_planner.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/local_path_planner.h
 opencv2/core/eigen.hpp
 -
 srrg_data_structures/grid_map_2d.h
@@ -852,9 +852,9 @@ srrg_messages/messages/pose_stamped_message.h
 srrg_system_utils/system_utils.h
 -
 
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/local_path_planner.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/local_path_planner.h
 obstacle_avoidance_base.h
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/obstacle_avoidance_base.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/obstacle_avoidance_base.h
 algorithm
 -
 srrg_pcl/point.h
@@ -864,9 +864,9 @@ srrg_system_utils/chrono.h
 srrg_viewer/drawable_base.h
 -
 
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/localizer_2d.cpp
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/localizer_2d.cpp
 localizer_2d.h
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/localizer_2d.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/localizer_2d.h
 cmath
 -
 iostream
@@ -898,19 +898,19 @@ srrg_pcl/point.h
 unistd.h
 -
 
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/localizer_2d.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/localizer_2d.h
 srrg_property/property_eigen.h
 -
 tr1/random
 -
 navigation_2d_base.h
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/navigation_2d_base.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/navigation_2d_base.h
 srrg_pcl/point_unprojector_types.h
 -
 
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/navigation_2d_base.cpp
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/navigation_2d_base.cpp
 navigation_2d_base.h
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/navigation_2d_base.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/navigation_2d_base.h
 srrg_config/configurable_command.h
 -
 srrg_data_structures/path_matrix_distance_search.h
@@ -920,7 +920,7 @@ unistd.h
 iomanip
 -
 
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/navigation_2d_base.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/navigation_2d_base.h
 srrg_config/configurable.h
 -
 srrg_data_structures/grid_map_2d.h
@@ -936,11 +936,11 @@ srrg_messages/messages/laser_message.h
 srrg_pcl/point.h
 -
 
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/obstacle_avoidance_base.cpp
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/obstacle_avoidance_base.cpp
 obstacle_avoidance_base.h
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/obstacle_avoidance_base.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/obstacle_avoidance_base.h
 
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/obstacle_avoidance_base.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/obstacle_avoidance_base.h
 srrg_data_structures/grid_map_2d.h
 -
 srrg_data_structures/path_matrix_dijkstra_search.h
@@ -950,7 +950,7 @@ srrg_data_structures/path_matrix_distance_search.h
 srrg_messages/message_handlers/message_sink_base.h
 -
 
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/planner_2d.cpp
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/planner_2d.cpp
 cmath
 -
 iostream
@@ -978,13 +978,13 @@ srrg_viewer/drawable_base.h
 unistd.h
 -
 planner_2d_helpers.h
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/planner_2d_helpers.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/planner_2d_helpers.h
 planner_2d.h
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/planner_2d.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/planner_2d.h
 
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/planner_2d.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/planner_2d.h
 navigation_2d_base.h
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/navigation_2d_base.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/navigation_2d_base.h
 srrg_data_structures/path_matrix_dijkstra_search.h
 -
 srrg_property/property_eigen.h
@@ -992,9 +992,9 @@ srrg_property/property_eigen.h
 srrg_viewer/active_drawable.h
 -
 
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/planner_2d_dmap.cpp
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/planner_2d_dmap.cpp
 planner_2d.h
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/planner_2d.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/planner_2d.h
 cmath
 -
 iostream
@@ -1020,15 +1020,15 @@ srrg_system_utils/chrono.h
 unistd.h
 -
 planner_2d_helpers.h
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/planner_2d_helpers.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/planner_2d_helpers.h
 
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/planner_2d_helpers.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/planner_2d_helpers.h
 planner_2d.h
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/planner_2d.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/planner_2d.h
 
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/planner_2d_path.cpp
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/planner_2d_path.cpp
 planner_2d.h
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/planner_2d.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/planner_2d.h
 cmath
 -
 iostream
@@ -1054,9 +1054,9 @@ srrg_system_utils/chrono.h
 unistd.h
 -
 
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/planner_2d_search.cpp
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/planner_2d_search.cpp
 planner_2d.h
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/planner_2d.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/planner_2d.h
 cmath
 -
 iostream
@@ -1076,9 +1076,9 @@ srrg_viewer/drawable_base.h
 unistd.h
 -
 
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/planner_2d_utils.cpp
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/planner_2d_utils.cpp
 planner_2d.h
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/planner_2d.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d/src/srrg2_navigation_2d/planner_2d.h
 cmath
 -
 iostream

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/blob.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/blob.h
 string
 -
 iostream
@@ -18,31 +18,31 @@ memory
 Eigen/Core
 -
 identifiable.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/identifiable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/identifiable.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/id_context.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/id_context.h
 serialization_context.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/serialization_context.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/serialization_context.h
 map
 -
 mutex
 -
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/id_placeholder.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/id_placeholder.h
 vector
 -
 memory
 -
 identifiable.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/identifiable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/identifiable.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/identifiable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/identifiable.h
 memory
 -
 serializable.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/serializable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/serializable.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/object_data.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/object_data.h
 string
 -
 vector
@@ -54,11 +54,11 @@ limits
 stdexcept
 -
 id_placeholder.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/id_placeholder.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/id_placeholder.h
 Eigen/Core
 -
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/serializable.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/serializable.h
 map
 -
 memory
@@ -72,33 +72,33 @@ iostream
 typeinfo
 -
 trusted_loaders.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/trusted_loaders.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/trusted_loaders.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/serialization_context.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/serialization_context.h
 string
 -
 iostream
 -
 blob.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/blob.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/blob.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/serializer.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/serializer.h
 string
 -
 serialization_context.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/serialization_context.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/serialization_context.h
 id_context.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/id_context.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/id_context.h
 blob.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/blob.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/blob.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_boss/trusted_loaders.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_boss/trusted_loaders.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_config/configurable_manager.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_config/configurable_manager.h
 srrg_property/property_container_manager.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_config/srrg_property/property_container_manager.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_config/srrg_property/property_container_manager.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_property/property.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_property/property.h
 cassert
 -
 memory
@@ -108,29 +108,29 @@ set
 Eigen/Core
 -
 property_macros.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_property/property_macros.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_property/property_macros.h
 srrg_boss/object_data.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_property/srrg_boss/object_data.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_property/srrg_boss/object_data.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_property/property_container.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_property/property_container.h
 property.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_property/property.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_property/property.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_property/property_container_manager.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_property/property_container_manager.h
 property_container.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_property/property_container.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_property/property_container.h
 property_vector.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_property/property_vector.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_property/property_vector.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_property/property_macros.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_property/property_macros.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_property/property_vector.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_property/property_vector.h
 sstream
 -
 property.h
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_property/property.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_property/property.h
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_system_utils/parse_command_line.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_system_utils/parse_command_line.h
 string
 -
 sstream
@@ -142,7 +142,7 @@ map
 vector
 -
 
-/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/src/srrg2_core/srrg2_core/src/srrg_system_utils/system_utils.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_core/srrg2_core/src/srrg_system_utils/system_utils.h
 string
 -
 sys/resource.h
@@ -150,7 +150,7 @@ sys/resource.h
 sys/time.h
 -
 
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_executor/srrg2_executor/src/apps/auto_dl_finder.cpp
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_executor/srrg2_executor/src/apps/auto_dl_finder.cpp
 cstdio
 -
 cstdlib

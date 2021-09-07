@@ -1,6 +1,6 @@
-devel_space: /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel
+devel_space: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel
 install: false
-install_space: /home/alessio/Desktop/progetto-labiagi/catkin_ws/install
+install_space: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/install
 profile: default
-source_space: /home/alessio/Desktop/progetto-labiagi/catkin_ws/src
-workspace: /home/alessio/Desktop/progetto-labiagi/catkin_ws
+source_space: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src
+workspace: /home/alessiohu/Desktop/progetto-labiagi/catkin_ws

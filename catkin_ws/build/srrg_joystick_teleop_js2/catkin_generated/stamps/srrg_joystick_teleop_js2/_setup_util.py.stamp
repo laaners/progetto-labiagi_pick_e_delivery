@@ -268,7 +268,7 @@ if __name__ == '__main__':
 
         if not args.local:
             # environment at generation time
-            CMAKE_PREFIX_PATH = r'/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel;/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/catkin_tools_prebuild;/home/alessio/Desktop/labiagi/workspaces/srrg2_labiagi/devel;/opt/ros/melodic;/home/alessio/catkin_ws/devel'.split(';')
+            CMAKE_PREFIX_PATH = r'/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel;/opt/ros/melodic'.split(';')
         else:
             # don't consider any other prefix path than this one
             CMAKE_PREFIX_PATH = []

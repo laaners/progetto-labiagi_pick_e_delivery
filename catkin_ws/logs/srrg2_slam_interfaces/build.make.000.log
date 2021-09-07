@@ -1,0 +1,15 @@
+[35m[1mScanning dependencies of target srrg2_slam_interfaces_library[0m
+[  9%] [32mBuilding CXX object src/srrg2_slam_interfaces/CMakeFiles/srrg2_slam_interfaces_library.dir/registration/aligners/aligner_slice_odometry_prior.cpp.o[0m
+[ 18%] [32mBuilding CXX object src/srrg2_slam_interfaces/CMakeFiles/srrg2_slam_interfaces_library.dir/raw_data_preprocessors/raw_data_preprocessor_odom.cpp.o[0m
+[ 27%] [32mBuilding CXX object src/srrg2_slam_interfaces/CMakeFiles/srrg2_slam_interfaces_library.dir/trackers/tracker_report.cpp.o[0m
+[ 36%] [32mBuilding CXX object src/srrg2_slam_interfaces/CMakeFiles/srrg2_slam_interfaces_library.dir/trackers/tracker.cpp.o[0m
+[ 45%] [32mBuilding CXX object src/srrg2_slam_interfaces/CMakeFiles/srrg2_slam_interfaces_library.dir/mapping/local_map.cpp.o[0m
+[ 54%] [32mBuilding CXX object src/srrg2_slam_interfaces/CMakeFiles/srrg2_slam_interfaces_library.dir/system/multi_graph_slam_messages.cpp.o[0m
+[ 63%] [32mBuilding CXX object src/srrg2_slam_interfaces/CMakeFiles/srrg2_slam_interfaces_library.dir/system/map_listener.cpp.o[0m
+[ 72%] [32mBuilding CXX object src/srrg2_slam_interfaces/CMakeFiles/srrg2_slam_interfaces_library.dir/instances.cpp.o[0m
+[ 81%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_slam_interfaces/lib/libsrrg2_slam_interfaces_library.so[0m
+[ 81%] Built target srrg2_slam_interfaces_library
+[35m[1mScanning dependencies of target app_benchmark[0m
+[ 90%] [32mBuilding CXX object apps/CMakeFiles/app_benchmark.dir/app_benchmark.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_slam_interfaces/lib/srrg2_slam_interfaces/app_benchmark[0m
+[100%] Built target app_benchmark

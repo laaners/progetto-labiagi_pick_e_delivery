@@ -1,4 +1,4 @@
-prefix=/home/alessio/Desktop/progetto-labiagi/catkin_ws/install
+prefix=/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/install
 
 Name: srrg2_navigation_2d_ros
 Description: Description of srrg2_navigation_2d_ros

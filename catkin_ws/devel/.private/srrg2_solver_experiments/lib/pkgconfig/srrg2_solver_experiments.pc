@@ -1,0 +1,8 @@
+prefix=/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver_experiments
+
+Name: srrg2_solver_experiments
+Description: Description of srrg2_solver_experiments
+Version: 0.1.0
+Cflags: -I/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_solver/srrg2_solver_experiments/src
+Libs: -L${prefix}/lib 
+Requires: srrg2_core srrg2_solver srrg2_solver_extras srrg_cmake_modules

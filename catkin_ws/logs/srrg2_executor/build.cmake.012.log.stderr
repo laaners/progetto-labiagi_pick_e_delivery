@@ -1,0 +1,4 @@
+srrg2_executor|good you have a fresh compiler, using std=c++17 flag
+srrg2_executor|build type: Release
+srrg2_executor|cxx_standard: 17
+srrg2_executor|common cxx flags:  -fPIC -Wall -Ofast -DNDEBUG -march=native

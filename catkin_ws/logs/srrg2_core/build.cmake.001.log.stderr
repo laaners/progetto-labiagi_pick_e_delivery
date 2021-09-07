@@ -1,0 +1,7 @@
+srrg2_core|good you have a fresh compiler, using std=c++17 flag
+srrg2_core|build type: Release
+srrg2_core|cxx_standard: 17
+srrg2_core|common cxx flags:  -fPIC -Wall -Ofast -DNDEBUG -march=native
+srrg2_core|compiling with these CXX flags:  -fPIC -Wall -Ofast -DNDEBUG -march=native -Werror=pedantic
+srrg2_core|OpenCV version 3.2.0 found in (/usr/share/OpenCV)
+srrg2_core|OpenCV_INCLUDE_DIRS: /usr/include;/usr/include/opencv

@@ -1,7 +1,0 @@
-[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp:[m[K In function ‘[01m[Kvoid check1_CallBack(const ros::TimerEvent&)[m[K’:
-[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/SetGoal.cpp:136:113:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kbool[m[K’
-                     ros::Timer waitPackTimer = ros::NodeHandle::createTimer(ros::Duration(5), waitPackCallBack, [01;31m[Kbool[m[K oneshot = true);
-                                                                                                                 [01;31m[K^~~~[m[K
-make[2]: *** [CMakeFiles/SetGoal.dir/src/SetGoal.cpp.o] Error 1
-make[1]: *** [CMakeFiles/SetGoal.dir/all] Error 2
-make: *** [all] Error 2

@@ -1,0 +1,527 @@
+-*- mode: compilation; default-directory: "~/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/" -*-
+Compilation started at Sat Feb  6 10:18:13
+
+make -C ~/workspaces/srrg2/build/srrg2_solver -j
+make: Entering directory '/home/giorgio/workspaces/srrg2/build/srrg2_solver'
+make[1]: Entering directory '/home/giorgio/workspaces/srrg2/build/srrg2_solver'
+make[2]: Entering directory '/home/giorgio/workspaces/srrg2/build/srrg2_solver'
+make[2]: Leaving directory '/home/giorgio/workspaces/srrg2/build/srrg2_solver'
+[  2%] Built target srrg2_solver_sparse_block_matrix_library
+make[2]: Entering directory '/home/giorgio/workspaces/srrg2/build/srrg2_solver'
+make[2]: Leaving directory '/home/giorgio/workspaces/srrg2/build/srrg2_solver'
+[  9%] Built target srrg2_solver_linear_solvers_library
+make[2]: Entering directory '/home/giorgio/workspaces/srrg2/build/srrg2_solver'
+make[2]: Leaving directory '/home/giorgio/workspaces/srrg2/build/srrg2_solver'
+[ 22%] Built target srrg2_solver_core_library
+make[2]: Entering directory '/home/giorgio/workspaces/srrg2/build/srrg2_solver'
+make[2]: Entering directory '/home/giorgio/workspaces/srrg2/build/srrg2_solver'
+make[2]: Entering directory '/home/giorgio/workspaces/srrg2/build/srrg2_solver'
+Scanning dependencies of target srrg2_solver_calib_library
+make[2]: Leaving directory '/home/giorgio/workspaces/srrg2/build/srrg2_solver'
+Scanning dependencies of target srrg2_solver_types3d_library
+make[2]: Entering directory '/home/giorgio/workspaces/srrg2/build/srrg2_solver'
+[ 22%] Building CXX object src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/se2_prior_error_factor.cpp.o
+[ 23%] Building CXX object src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/se2_point2point_error_factor.cpp.o
+[ 23%] Building CXX object src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/se2_plane2plane_error_factor.cpp.o
+[ 25%] Building CXX object src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/se2_pose_pose_chordal_error_factor.cpp.o
+[ 26%] Building CXX object src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/se2_pose_pose_geodesic_error_factor.cpp.o
+[ 27%] Building CXX object src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/se2_pose_point_bearing_error_factor.cpp.o
+[ 27%] Building CXX object src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/se2_pose_point_error_factor.cpp.o
+[ 27%] Building CXX object src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/instances.cpp.o
+make[2]: Leaving directory '/home/giorgio/workspaces/srrg2/build/srrg2_solver'
+make[2]: Entering directory '/home/giorgio/workspaces/srrg2/build/srrg2_solver'
+make[2]: Leaving directory '/home/giorgio/workspaces/srrg2/build/srrg2_solver'
+[ 30%] Building CXX object src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/sensor3d_pose_time_delay_error_factor_ad.cpp.o
+[ 30%] Building CXX object src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/sensor3d_extrinsic_pose_motion_calib_ad.cpp.o
+[ 30%] Building CXX object src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/differential_drive_odom_error_factor_ad.cpp.o
+[ 31%] Building CXX object src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/instances.cpp.o
+[ 33%] Building CXX object src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/differential_drive_odom_sensor2d_error_factor_ad.cpp.o
+[ 33%] Building CXX object src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/sensor2d_extrinsic_pose_motion_calib_ad.cpp.o
+[ 33%] Building CXX object src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/differential_drive_odom_sensor3d_error_factor_ad.cpp.o
+[ 34%] Building CXX object src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/differential_drive_odom_time_delay_sensor2d_error_factor_ad.cpp.o
+make[2]: Entering directory '/home/giorgio/workspaces/srrg2/build/srrg2_solver'
+[ 34%] Building CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_pose_pose_chordal_hessian_factor.cpp.o
+[ 36%] Building CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/variable_point3.cpp.o
+[ 37%] Building CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_pose_pose_chordal_error_factor.cpp.o
+[ 38%] Building CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_pose_point_offset_error_factor.cpp.o
+[ 38%] Building CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/variable_se3_ad.cpp.o
+[ 40%] Building CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/variable_se3.cpp.o
+[ 41%] Building CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_prior_offset_error_factor_ad.cpp.o
+[ 43%] Building CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_pose_matchable_error_factor.cpp.o
+[ 43%] Building CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/instances.cpp.o
+[ 43%] Building CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_prior_error_factor_ad.cpp.o
+[ 45%] Building CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_matchable2matchable_error_factor.cpp.o
+[ 45%] Building CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_pose_point_error_factor.cpp.o
+[ 45%] Building CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_point2point_error_factor.cpp.o
+[ 45%] Building CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_pose_pose_geodesic_error_factor.cpp.o
+[ 47%] Building CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_plane2plane_error_factor.cpp.o
+In file included from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor_base.h:4:0,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_2d/se2_prior_error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_2d/se2_prior_error_factor.cpp:1:
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V>::updated() const [with V = srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2>]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_2d/se2_prior_error_factor.cpp:37:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:258:32: error: void value not ignored as it ought to be
+       return variable->updated();
+                                ^
+In file included from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor_base.h:4:0,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_2d/se2_pose_point_error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_2d/se2_pose_point_error_factor.cpp:1:
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V, VRest>::updated() const [with V = srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2>; VRest = {srrg2_solver::VariablePoint2}]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2>, srrg2_solver::VariablePoint2>]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_2d/se2_pose_point_error_factor.cpp:32:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:158:59: error: 'tainted' is not a member of 'srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2>, srrg2_solver::VariablePoint2>::RestTupleType {aka srrg2_solver::VariablePtrTuple_<srrg2_solver::VariablePoint2>}'
+       return variable->updated() || RestTupleType::tainted();
+                                     ~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor_base.h:4:0,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/ad_error_factor.h:3,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_2d/se2_plane2plane_error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_2d/all_types.h:3,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_2d/instances.cpp:3:
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V>::updated() const [with V = srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2>]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_2d/instances.cpp:28:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:258:32: error: void value not ignored as it ought to be
+       return variable->updated();
+                                ^
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V, VRest>::updated() const [with V = srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2>; VRest = {srrg2_solver::VariablePoint2}]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2>, srrg2_solver::VariablePoint2>]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_2d/instances.cpp:28:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:158:59: error: 'tainted' is not a member of 'srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2>, srrg2_solver::VariablePoint2>::RestTupleType {aka srrg2_solver::VariablePtrTuple_<srrg2_solver::VariablePoint2>}'
+       return variable->updated() || RestTupleType::tainted();
+                                     ~~~~~~~~~~~~~~~~~~~~~~^~
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V, VRest>::updated() const [with V = srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2>; VRest = {srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2>}]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2>, srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_2d/instances.cpp:28:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:158:59: error: 'tainted' is not a member of 'srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2>, srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> >::RestTupleType {aka srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> >}'
+In file included from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor_base.h:4:0,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_pose_point_error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_pose_point_error_factor.cpp:1:
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V, VRest>::updated() const [with V = srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2>; VRest = {srrg2_solver::VariablePoint3}]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2>, srrg2_solver::VariablePoint3>]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_pose_point_error_factor.cpp:50:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:158:59: error: 'tainted' is not a member of 'srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2>, srrg2_solver::VariablePoint3>::RestTupleType {aka srrg2_solver::VariablePtrTuple_<srrg2_solver::VariablePoint3>}'
+       return variable->updated() || RestTupleType::tainted();
+                                     ~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor_base.h:4:0,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_2d/se2_pose_point_bearing_error_factor.h:4,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_2d/se2_pose_point_bearing_error_factor.cpp:1:
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V, VRest>::updated() const [with V = srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2>; VRest = {srrg2_solver::VariablePoint2}]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2>, srrg2_solver::VariablePoint2>]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_2d/se2_pose_point_bearing_error_factor.cpp:44:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:158:59: error: 'tainted' is not a member of 'srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2>, srrg2_solver::VariablePoint2>::RestTupleType {aka srrg2_solver::VariablePtrTuple_<srrg2_solver::VariablePoint2>}'
+       return variable->updated() || RestTupleType::tainted();
+                                     ~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor_base.h:4:0,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_2d/se2_pose_pose_chordal_error_factor.h:4,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_2d/se2_pose_pose_chordal_error_factor.cpp:1:
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V, VRest>::updated() const [with V = srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2>; VRest = {srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2>}]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2>, srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_2d/se2_pose_pose_chordal_error_factor.cpp:52:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:158:59: error: 'tainted' is not a member of 'srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2>, srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> >::RestTupleType {aka srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> >}'
+       return variable->updated() || RestTupleType::tainted();
+                                     ~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor_base.h:4:0,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/ad_error_factor.h:3,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_calib/differential_drive_odom_sensor2d_error_factor_ad.h:4,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_calib/differential_drive_odom_sensor2d_error_factor_ad.cpp:1:
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V, VRest>::updated() const [with V = srrg2_solver::VariablePoint3AD; VRest = {srrg2_solver::VariableSE2AD_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> >}]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariablePoint3AD, srrg2_solver::VariableSE2AD_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> > >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_calib/differential_drive_odom_sensor2d_error_factor_ad.cpp:11:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:158:59: error: 'tainted' is not a member of 'srrg2_solver::VariablePtrTuple_<srrg2_solver::VariablePoint3AD, srrg2_solver::VariableSE2AD_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> > >::RestTupleType {aka srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE2AD_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> > >}'
+       return variable->updated() || RestTupleType::tainted();
+                                     ~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor_base.h:4:0,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/ad_error_factor.h:3,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_calib/differential_drive_odom_error_factor_ad.h:4,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_calib/differential_drive_odom_error_factor_ad.cpp:1:
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V>::updated() const [with V = srrg2_solver::VariablePoint3AD]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariablePoint3AD>]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_calib/differential_drive_odom_error_factor_ad.cpp:8:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:258:32: error: void value not ignored as it ought to be
+       return variable->updated();
+                                ^
+In file included from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor_base.h:4:0,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/ad_error_factor.h:3,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_calib/sensor3d_extrinsic_pose_motion_calib_ad.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_calib/sensor3d_extrinsic_pose_motion_calib_ad.cpp:1:
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V>::updated() const [with V = srrg2_solver::VariableSE3AD_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> >]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3AD_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> > >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_calib/sensor3d_extrinsic_pose_motion_calib_ad.cpp:24:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:258:32: error: void value not ignored as it ought to be
+       return variable->updated();
+                                ^
+In file included from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor_base.h:4:0,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/ad_error_factor.h:3,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_calib/sensor2d_extrinsic_pose_motion_calib_ad.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_calib/sensor2d_extrinsic_pose_motion_calib_ad.cpp:1:
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V>::updated() const [with V = srrg2_solver::VariableSE2AD_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> >]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE2AD_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> > >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_calib/sensor2d_extrinsic_pose_motion_calib_ad.cpp:24:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:258:32: error: void value not ignored as it ought to be
+       return variable->updated();
+                                ^
+In file included from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor_base.h:4:0,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/ad_error_factor.h:3,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_prior_error_factor_ad.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_prior_error_factor_ad.cpp:1:
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V>::updated() const [with V = srrg2_solver::VariableSE3AD_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> >]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3AD_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> > >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_prior_error_factor_ad.cpp:8:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:258:32: error: void value not ignored as it ought to be
+       return variable->updated();
+                                ^
+In file included from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor_base.h:4:0,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_2d/se2_pose_pose_geodesic_error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_2d/se2_pose_pose_geodesic_error_factor.cpp:1:
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V, VRest>::updated() const [with V = srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2>; VRest = {srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2>}]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2>, srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_2d/se2_pose_pose_geodesic_error_factor.cpp:87:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:158:59: error: 'tainted' is not a member of 'srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2>, srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> >::RestTupleType {aka srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> >}'
+       return variable->updated() || RestTupleType::tainted();
+                                     ~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor_base.h:4:0,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/ad_error_factor.h:3,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_calib/sensor3d_pose_time_delay_error_factor_ad.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_calib/sensor3d_pose_time_delay_error_factor_ad.cpp:1:
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V, VRest>::updated() const [with V = srrg2_solver::VariableTimeAD; VRest = {srrg2_solver::VariableSE3AD_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> >}]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableTimeAD, srrg2_solver::VariableSE3AD_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> > >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_calib/sensor3d_pose_time_delay_error_factor_ad.cpp:8:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:158:59: error: 'tainted' is not a member of 'srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableTimeAD, srrg2_solver::VariableSE3AD_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> > >::RestTupleType {aka srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3AD_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> > >}'
+       return variable->updated() || RestTupleType::tainted();
+                                     ~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor_base.h:4:0,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/ad_error_factor.h:3,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_2d/se2_point2point_error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_2d/se2_point2point_error_factor.cpp:1:
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V>::updated() const [with V = srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2>]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_2d/se2_point2point_error_factor.cpp:40:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:258:32: error: void value not ignored as it ought to be
+       return variable->updated();
+                                ^
+In file included from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor_base.h:4:0,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/ad_error_factor.h:3,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_calib/differential_drive_odom_time_delay_sensor2d_error_factor_ad.h:4,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_calib/differential_drive_odom_time_delay_sensor2d_error_factor_ad.cpp:1:
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V, VRest>::updated() const [with V = srrg2_solver::VariableTimeAD; VRest = {srrg2_solver::VariablePoint3AD, srrg2_solver::VariableSE2AD_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> >}]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableTimeAD, srrg2_solver::VariablePoint3AD, srrg2_solver::VariableSE2AD_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> > >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_calib/differential_drive_odom_time_delay_sensor2d_error_factor_ad.cpp:11:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:158:59: error: 'tainted' is not a member of 'srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableTimeAD, srrg2_solver::VariablePoint3AD, srrg2_solver::VariableSE2AD_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> > >::RestTupleType {aka srrg2_solver::VariablePtrTuple_<srrg2_solver::VariablePoint3AD, srrg2_solver::VariableSE2AD_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> > >}'
+       return variable->updated() || RestTupleType::tainted();
+                                     ~~~~~~~~~~~~~~~~~~~~~~^~
+src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/build.make:302: recipe for target 'src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/instances.cpp.o' failed
+make[2]: *** [src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/instances.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor_base.h:4:0,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/ad_error_factor.h:3,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_point2point_error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_point2point_error_factor.cpp:1:
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V>::updated() const [with V = srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2>]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_point2point_error_factor.cpp:41:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:258:32: error: void value not ignored as it ought to be
+       return variable->updated();
+                                ^
+In file included from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor_base.h:4:0,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_matchable2matchable_error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_matchable2matchable_error_factor.cpp:1:
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V>::updated() const [with V = srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)1>]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)1> >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_matchable2matchable_error_factor.cpp:104:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:258:32: error: void value not ignored as it ought to be
+       return variable->updated();
+                                ^
+In file included from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor_base.h:4:0,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_pose_point_offset_error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_pose_point_offset_error_factor.cpp:1:
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V, VRest>::updated() const [with V = srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2>; VRest = {srrg2_solver::VariablePoint3, srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2>}]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2>, srrg2_solver::VariablePoint3, srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_pose_point_offset_error_factor.cpp:69:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:158:59: error: 'tainted' is not a member of 'srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2>, srrg2_solver::VariablePoint3, srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> >::RestTupleType {aka srrg2_solver::VariablePtrTuple_<srrg2_solver::VariablePoint3, srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> >}'
+       return variable->updated() || RestTupleType::tainted();
+                                     ~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor_base.h:4:0,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/ad_error_factor.h:3,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_2d/se2_plane2plane_error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_2d/se2_plane2plane_error_factor.cpp:1:
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V>::updated() const [with V = srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2>]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_2d/se2_plane2plane_error_factor.cpp:56:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:258:32: error: void value not ignored as it ought to be
+       return variable->updated();
+                                ^
+src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/build.make:134: recipe for target 'src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/se2_prior_error_factor.cpp.o' failed
+make[2]: *** [src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/se2_prior_error_factor.cpp.o] Error 1
+In file included from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor_base.h:4:0,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/ad_error_factor.h:3,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_prior_offset_error_factor_ad.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_prior_offset_error_factor_ad.cpp:1:
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V>::updated() const [with V = srrg2_solver::VariableSE3AD_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> >]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3AD_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> > >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_prior_offset_error_factor_ad.cpp:16:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:258:32: error: void value not ignored as it ought to be
+       return variable->updated();
+                                ^
+In file included from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor_base.h:4:0,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_pose_pose_chordal_error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_pose_pose_chordal_error_factor.cpp:1:
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V, VRest>::updated() const [with V = srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)1>; VRest = {srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)1>}]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)1>, srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)1> >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_pose_pose_chordal_error_factor.cpp:78:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:158:59: error: 'tainted' is not a member of 'srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)1>, srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)1> >::RestTupleType {aka srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)1> >}'
+       return variable->updated() || RestTupleType::tainted();
+                                     ~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor_base.h:4:0,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_pose_pose_geodesic_error_factor.h:3,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_pose_pose_geodesic_error_factor.cpp:1:
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V, VRest>::updated() const [with V = srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2>; VRest = {srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2>}]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2>, srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_pose_pose_geodesic_error_factor.cpp:66:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:158:59: error: 'tainted' is not a member of 'srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2>, srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> >::RestTupleType {aka srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> >}'
+       return variable->updated() || RestTupleType::tainted();
+                                     ~~~~~~~~~~~~~~~~~~~~~~^~
+src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/build.make:158: recipe for target 'src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/differential_drive_odom_error_factor_ad.cpp.o' failed
+make[2]: *** [src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/differential_drive_odom_error_factor_ad.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/build.make:206: recipe for target 'src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/se2_pose_pose_geodesic_error_factor.cpp.o' failed
+make[2]: *** [src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/se2_pose_pose_geodesic_error_factor.cpp.o] Error 1
+src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/build.make:230: recipe for target 'src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/se2_pose_pose_chordal_error_factor.cpp.o' failed
+make[2]: *** [src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/se2_pose_pose_chordal_error_factor.cpp.o] Error 1
+src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/build.make:182: recipe for target 'src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/differential_drive_odom_sensor2d_error_factor_ad.cpp.o' failed
+make[2]: *** [src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/differential_drive_odom_sensor2d_error_factor_ad.cpp.o] Error 1
+In file included from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor_base.h:4:0,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_pose_matchable_error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_pose_matchable_error_factor.cpp:1:
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V, VRest>::updated() const [with V = srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)1>; VRest = {srrg2_solver::VariableMatchable}]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)1>, srrg2_solver::VariableMatchable>]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_pose_matchable_error_factor.cpp:153:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:158:59: error: 'tainted' is not a member of 'srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)1>, srrg2_solver::VariableMatchable>::RestTupleType {aka srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableMatchable>}'
+       return variable->updated() || RestTupleType::tainted();
+                                     ~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor_base.h:4:0,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/ad_error_factor.h:3,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_plane2plane_error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_plane2plane_error_factor.cpp:1:
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V>::updated() const [with V = srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2>]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_plane2plane_error_factor.cpp:70:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:258:32: error: void value not ignored as it ought to be
+       return variable->updated();
+                                ^
+src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/build.make:254: recipe for target 'src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/sensor2d_extrinsic_pose_motion_calib_ad.cpp.o' failed
+make[2]: *** [src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/sensor2d_extrinsic_pose_motion_calib_ad.cpp.o] Error 1
+In file included from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor_base.h:4:0,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/ad_error_factor.h:3,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_calib/differential_drive_odom_sensor3d_error_factor_ad.h:4,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_calib/differential_drive_odom_sensor3d_error_factor_ad.cpp:1:
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V, VRest>::updated() const [with V = srrg2_solver::VariablePoint3AD; VRest = {srrg2_solver::VariableSE3AD_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)2> >}]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariablePoint3AD, srrg2_solver::VariableSE3AD_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)2> > >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_calib/differential_drive_odom_sensor3d_error_factor_ad.cpp:13:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:158:59: error: 'tainted' is not a member of 'srrg2_solver::VariablePtrTuple_<srrg2_solver::VariablePoint3AD, srrg2_solver::VariableSE3AD_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)2> > >::RestTupleType {aka srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3AD_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)2> > >}'
+       return variable->updated() || RestTupleType::tainted();
+                                     ~~~~~~~~~~~~~~~~~~~~~~^~
+src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/build.make:254: recipe for target 'src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/se2_pose_point_error_factor.cpp.o' failed
+make[2]: *** [src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/se2_pose_point_error_factor.cpp.o] Error 1
+src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/build.make:158: recipe for target 'src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/se2_point2point_error_factor.cpp.o' failed
+make[2]: *** [src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/se2_point2point_error_factor.cpp.o] Error 1
+src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/build.make:278: recipe for target 'src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/sensor3d_extrinsic_pose_motion_calib_ad.cpp.o' failed
+make[2]: *** [src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/sensor3d_extrinsic_pose_motion_calib_ad.cpp.o] Error 1
+src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/build.make:278: recipe for target 'src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/se2_pose_point_bearing_error_factor.cpp.o' failed
+make[2]: *** [src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/se2_pose_point_bearing_error_factor.cpp.o] Error 1
+src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/build.make:326: recipe for target 'src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_prior_error_factor_ad.cpp.o' failed
+make[2]: *** [src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_prior_error_factor_ad.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/build.make:230: recipe for target 'src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_matchable2matchable_error_factor.cpp.o' failed
+make[2]: *** [src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_matchable2matchable_error_factor.cpp.o] Error 1
+src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/build.make:182: recipe for target 'src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/se2_plane2plane_error_factor.cpp.o' failed
+make[2]: *** [src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/se2_plane2plane_error_factor.cpp.o] Error 1
+src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/build.make:206: recipe for target 'src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_point2point_error_factor.cpp.o' failed
+make[2]: *** [src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_point2point_error_factor.cpp.o] Error 1
+make[2]: Leaving directory '/home/giorgio/workspaces/srrg2/build/srrg2_solver'
+CMakeFiles/Makefile2:741: recipe for target 'src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/all' failed
+make[1]: *** [src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/build.make:302: recipe for target 'src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_pose_point_error_factor.cpp.o' failed
+make[2]: *** [src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_pose_point_error_factor.cpp.o] Error 1
+src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/build.make:182: recipe for target 'src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_plane2plane_error_factor.cpp.o' failed
+make[2]: *** [src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_plane2plane_error_factor.cpp.o] Error 1
+src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/build.make:230: recipe for target 'src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/sensor3d_pose_time_delay_error_factor_ad.cpp.o' failed
+make[2]: *** [src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/sensor3d_pose_time_delay_error_factor_ad.cpp.o] Error 1
+In file included from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor_base.h:4:0,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_matchable2matchable_error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/all_types.h:9,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/instances.cpp:3:
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V>::updated() const [with V = srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2>]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/instances.cpp:51:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:258:32: error: void value not ignored as it ought to be
+       return variable->updated();
+                                ^
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V>::updated() const [with V = srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)1>]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)1> >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/instances.cpp:51:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:258:32: error: void value not ignored as it ought to be
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V>::updated() const [with V = srrg2_solver::VariableSE3AD_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> >]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3AD_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> > >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/instances.cpp:51:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:258:32: error: void value not ignored as it ought to be
+src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/build.make:134: recipe for target 'src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/differential_drive_odom_time_delay_sensor2d_error_factor_ad.cpp.o' failed
+make[2]: *** [src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/differential_drive_odom_time_delay_sensor2d_error_factor_ad.cpp.o] Error 1
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V, VRest>::updated() const [with V = srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2>; VRest = {srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2>}]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2>, srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/instances.cpp:51:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:158:59: error: 'tainted' is not a member of 'srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2>, srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> >::RestTupleType {aka srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> >}'
+       return variable->updated() || RestTupleType::tainted();
+                                     ~~~~~~~~~~~~~~~~~~~~~~^~
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V, VRest>::updated() const [with V = srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)1>; VRest = {srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)1>}]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)1>, srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)1> >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/instances.cpp:51:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:158:59: error: 'tainted' is not a member of 'srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)1>, srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)1> >::RestTupleType {aka srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)1> >}'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V, VRest>::updated() const [with V = srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2>; VRest = {srrg2_solver::VariablePoint3, srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2>}]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2>, srrg2_solver::VariablePoint3, srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/instances.cpp:51:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:158:59: error: 'tainted' is not a member of 'srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2>, srrg2_solver::VariablePoint3, srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> >::RestTupleType {aka srrg2_solver::VariablePtrTuple_<srrg2_solver::VariablePoint3, srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> >}'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V, VRest>::updated() const [with V = srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2>; VRest = {srrg2_solver::VariablePoint3}]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2>, srrg2_solver::VariablePoint3>]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/instances.cpp:51:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:158:59: error: 'tainted' is not a member of 'srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2>, srrg2_solver::VariablePoint3>::RestTupleType {aka srrg2_solver::VariablePtrTuple_<srrg2_solver::VariablePoint3>}'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V, VRest>::updated() const [with V = srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)1>; VRest = {srrg2_solver::VariableMatchable}]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)1>, srrg2_solver::VariableMatchable>]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/instances.cpp:51:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:158:59: error: 'tainted' is not a member of 'srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)1>, srrg2_solver::VariableMatchable>::RestTupleType {aka srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableMatchable>}'
+src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/build.make:350: recipe for target 'src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_prior_offset_error_factor_ad.cpp.o' failed
+make[2]: *** [src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_prior_offset_error_factor_ad.cpp.o] Error 1
+src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/build.make:278: recipe for target 'src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_pose_point_offset_error_factor.cpp.o' failed
+make[2]: *** [src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_pose_point_offset_error_factor.cpp.o] Error 1
+src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/build.make:374: recipe for target 'src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_pose_pose_geodesic_error_factor.cpp.o' failed
+make[2]: *** [src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_pose_pose_geodesic_error_factor.cpp.o] Error 1
+src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/build.make:398: recipe for target 'src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_pose_pose_chordal_error_factor.cpp.o' failed
+make[2]: *** [src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_pose_pose_chordal_error_factor.cpp.o] Error 1
+In file included from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor_base.h:4:0,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/error_factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/ad_error_factor.h:3,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_calib/differential_drive_odom_error_factor_ad.h:4,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_calib/all_types.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_calib/instances.cpp:2:
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V, VRest>::updated() const [with V = srrg2_solver::VariableTimeAD; VRest = {srrg2_solver::VariableSE3AD_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> >}]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableTimeAD, srrg2_solver::VariableSE3AD_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> > >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_calib/instances.cpp:20:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:158:59: error: 'tainted' is not a member of 'srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableTimeAD, srrg2_solver::VariableSE3AD_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> > >::RestTupleType {aka srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3AD_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> > >}'
+       return variable->updated() || RestTupleType::tainted();
+                                     ~~~~~~~~~~~~~~~~~~~~~~^~
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V>::updated() const [with V = srrg2_solver::VariableSE3AD_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> >]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3AD_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)1, (srrg2_solver::VariableSE3Base::PerturbationSide)2> > >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_calib/instances.cpp:20:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:258:32: error: void value not ignored as it ought to be
+       return variable->updated();
+                                ^
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V>::updated() const [with V = srrg2_solver::VariableSE2AD_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> >]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE2AD_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> > >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_calib/instances.cpp:20:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:258:32: error: void value not ignored as it ought to be
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V, VRest>::updated() const [with V = srrg2_solver::VariableTimeAD; VRest = {srrg2_solver::VariablePoint3AD, srrg2_solver::VariableSE2AD_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> >}]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableTimeAD, srrg2_solver::VariablePoint3AD, srrg2_solver::VariableSE2AD_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> > >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_calib/instances.cpp:20:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:158:59: error: 'tainted' is not a member of 'srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableTimeAD, srrg2_solver::VariablePoint3AD, srrg2_solver::VariableSE2AD_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> > >::RestTupleType {aka srrg2_solver::VariablePtrTuple_<srrg2_solver::VariablePoint3AD, srrg2_solver::VariableSE2AD_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> > >}'
+       return variable->updated() || RestTupleType::tainted();
+                                     ~~~~~~~~~~~~~~~~~~~~~~^~
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V, VRest>::updated() const [with V = srrg2_solver::VariablePoint3AD; VRest = {srrg2_solver::VariableSE3AD_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)2> >}]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariablePoint3AD, srrg2_solver::VariableSE3AD_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)2> > >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_calib/instances.cpp:20:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:158:59: error: 'tainted' is not a member of 'srrg2_solver::VariablePtrTuple_<srrg2_solver::VariablePoint3AD, srrg2_solver::VariableSE3AD_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)2> > >::RestTupleType {aka srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3AD_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)2> > >}'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V, VRest>::updated() const [with V = srrg2_solver::VariablePoint3AD; VRest = {srrg2_solver::VariableSE2AD_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> >}]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariablePoint3AD, srrg2_solver::VariableSE2AD_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> > >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_calib/instances.cpp:20:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:158:59: error: 'tainted' is not a member of 'srrg2_solver::VariablePtrTuple_<srrg2_solver::VariablePoint3AD, srrg2_solver::VariableSE2AD_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> > >::RestTupleType {aka srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE2AD_<srrg2_solver::VariableSE2_<(srrg2_solver::VariableSE2Base::PerturbationSide)2> > >}'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V>::updated() const [with V = srrg2_solver::VariablePoint3AD]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariablePoint3AD>]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_calib/instances.cpp:20:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:258:32: error: void value not ignored as it ought to be
+       return variable->updated();
+                                ^
+src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/build.make:254: recipe for target 'src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_pose_matchable_error_factor.cpp.o' failed
+make[2]: *** [src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_pose_matchable_error_factor.cpp.o] Error 1
+src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/build.make:206: recipe for target 'src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/differential_drive_odom_sensor3d_error_factor_ad.cpp.o' failed
+make[2]: *** [src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/differential_drive_odom_sensor3d_error_factor_ad.cpp.o] Error 1
+src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/build.make:302: recipe for target 'src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/instances.cpp.o' failed
+make[2]: *** [src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/instances.cpp.o] Error 1
+make[2]: Leaving directory '/home/giorgio/workspaces/srrg2/build/srrg2_solver'
+CMakeFiles/Makefile2:913: recipe for target 'src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/all' failed
+make[1]: *** [src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/all] Error 2
+src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/build.make:446: recipe for target 'src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/instances.cpp.o' failed
+make[2]: *** [src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/instances.cpp.o] Error 1
+In file included from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor_base.h:4:0,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:2,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_pose_pose_chordal_hessian_factor.h:3,
+                 from /home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_pose_pose_chordal_hessian_factor.cpp:1:
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h: In instantiation of 'bool srrg2_solver::VariablePtrTuple_<V, VRest>::updated() const [with V = srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)1>; VRest = {srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)1>}]':
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/factor.h:118:33:   required from 'bool srrg2_solver::Factor_<VariableTupleType_>::variablesUpdated() const [with VariableTupleType_ = srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)1>, srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)1> >]'
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/variables_and_factors/types_3d/se3_pose_pose_chordal_hessian_factor.cpp:169:1:   required from here
+/home/giorgio/workspaces/srrg2/src/srrg2_solver/srrg2_solver/src/srrg_solver/solver_core/variable_ptr_tuple.h:158:59: error: 'tainted' is not a member of 'srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)1>, srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)1> >::RestTupleType {aka srrg2_solver::VariablePtrTuple_<srrg2_solver::VariableSE3_<(srrg2_solver::VariableSE3Base::PerturbationType)2, (srrg2_solver::VariableSE3Base::PerturbationSide)1> >}'
+       return variable->updated() || RestTupleType::tainted();
+                                     ~~~~~~~~~~~~~~~~~~~~~~^~
+src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/build.make:422: recipe for target 'src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_pose_pose_chordal_hessian_factor.cpp.o' failed
+make[2]: *** [src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_pose_pose_chordal_hessian_factor.cpp.o] Error 1
+make[2]: Leaving directory '/home/giorgio/workspaces/srrg2/build/srrg2_solver'
+CMakeFiles/Makefile2:798: recipe for target 'src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/all' failed
+make[1]: *** [src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/all] Error 2
+make[1]: Leaving directory '/home/giorgio/workspaces/srrg2/build/srrg2_solver'
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2
+make: Leaving directory '/home/giorgio/workspaces/srrg2/build/srrg2_solver'
+
+Compilation exited abnormally with code 2 at Sat Feb  6 10:18:46

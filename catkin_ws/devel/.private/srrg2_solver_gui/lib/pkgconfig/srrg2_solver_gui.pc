@@ -1,0 +1,8 @@
+prefix=/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver_gui
+
+Name: srrg2_solver_gui
+Description: Description of srrg2_solver_gui
+Version: 0.0.0
+Cflags: -I/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_solver/srrg2_solver_gui/src
+Libs: -L${prefix}/lib 
+Requires: 

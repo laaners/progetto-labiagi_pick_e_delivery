@@ -1,0 +1,21 @@
+[35m[1mScanning dependencies of target srrg2_laser_slam_2d_sensor_processing_library[0m
+[35m[1mScanning dependencies of target srrg2_laser_slam_2d_registration_library[0m
+[  7%] [32mBuilding CXX object src/srrg2_laser_slam_2d/sensor_processing/CMakeFiles/srrg2_laser_slam_2d_sensor_processing_library.dir/raw_data_preprocessor_projective_2d.cpp.o[0m
+[ 15%] [32mBuilding CXX object src/srrg2_laser_slam_2d/registration/CMakeFiles/srrg2_laser_slam_2d_registration_library.dir/correspondence_finder_projective_2d.cpp.o[0m
+[ 23%] [32mBuilding CXX object src/srrg2_laser_slam_2d/registration/CMakeFiles/srrg2_laser_slam_2d_registration_library.dir/correspondence_finder_nn_2d.cpp.o[0m
+[ 30%] [32mBuilding CXX object src/srrg2_laser_slam_2d/registration/CMakeFiles/srrg2_laser_slam_2d_registration_library.dir/correspondence_finder_kd_tree_2d.cpp.o[0m
+[ 38%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_laser_slam_2d/lib/libsrrg2_laser_slam_2d_sensor_processing_library.so[0m
+[ 38%] Built target srrg2_laser_slam_2d_sensor_processing_library
+[35m[1mScanning dependencies of target srrg2_laser_slam_2d_mapping_library[0m
+[ 46%] [32mBuilding CXX object src/srrg2_laser_slam_2d/mapping/CMakeFiles/srrg2_laser_slam_2d_mapping_library.dir/merger_projective_2d.cpp.o[0m
+[ 69%] [32mBuilding CXX object src/srrg2_laser_slam_2d/mapping/CMakeFiles/srrg2_laser_slam_2d_mapping_library.dir/scene_clipper_ball_2d.cpp.o[0m
+[ 69%] [32mBuilding CXX object src/srrg2_laser_slam_2d/mapping/CMakeFiles/srrg2_laser_slam_2d_mapping_library.dir/grid_mapper_2d.cpp.o[0m
+[ 69%] [32mBuilding CXX object src/srrg2_laser_slam_2d/mapping/CMakeFiles/srrg2_laser_slam_2d_mapping_library.dir/scene_clipper_projective_2d.cpp.o[0m
+[ 76%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_laser_slam_2d/lib/libsrrg2_laser_slam_2d_registration_library.so[0m
+[ 76%] Built target srrg2_laser_slam_2d_registration_library
+[ 84%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_laser_slam_2d/lib/libsrrg2_laser_slam_2d_mapping_library.so[0m
+[ 84%] Built target srrg2_laser_slam_2d_mapping_library
+[35m[1mScanning dependencies of target srrg2_laser_slam_2d_library[0m
+[ 92%] [32mBuilding CXX object src/srrg2_laser_slam_2d/CMakeFiles/srrg2_laser_slam_2d_library.dir/instances.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_laser_slam_2d/lib/libsrrg2_laser_slam_2d_library.so[0m
+[100%] Built target srrg2_laser_slam_2d_library

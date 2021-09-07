@@ -1,1 +1,1 @@
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_msgs/share/roseus/ros/srrg2_navigation_2d_msgs/msg/LocalPathPlannerStatus.l
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_msgs/share/roseus/ros/srrg2_navigation_2d_msgs/msg/LocalPathPlannerStatus.l

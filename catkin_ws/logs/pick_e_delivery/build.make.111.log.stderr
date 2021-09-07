@@ -1,7 +1,0 @@
-[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/MainNode.cpp:[m[K In function ‘[01m[Kvoid pubNewTimeout(std::__cxx11::string)[m[K’:
-[01m[K/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/pick_e_delivery/src/MainNode.cpp:82:32:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(ros::Publisher) (pick_e_delivery::Timeout&)[m[K’
-     pub_timeout(new_timeout_msg[01;31m[K)[m[K;
-                                [01;31m[K^[m[K
-make[2]: *** [CMakeFiles/MainNode.dir/src/MainNode.cpp.o] Error 1
-make[1]: *** [CMakeFiles/MainNode.dir/all] Error 2
-make: *** [all] Error 2

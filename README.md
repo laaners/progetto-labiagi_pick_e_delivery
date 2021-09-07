@@ -16,10 +16,10 @@ Per far partire il servizio (i punti 5-8 sono equivalenti al punto 9):
    <code>
    git clone HTTPS https://gitlab.com/hu.1839472/progetto-labiagi.git
    </code>
-2) Fare source della directory catkin_ws e fare build
+2) Aggiungere la directory catkin_ws in ~/.bashrc e fare build
    <br/><b>IN: <code>progetto-labiagi/catkin_ws</code></b>
    <code>
-   source devel/setup.bash
+   echo "source $PWD/devel/setup.bash" >> ~/.bashrc
    catkin build
    </code>
 3) Installare i package necessari per nodejs nella cartella main

@@ -1,4 +1,4 @@
-prefix=/home/alessio/Desktop/progetto-labiagi/catkin_ws/install
+prefix=/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/install
 
 Name: pick_e_delivery
 Description: Description of pick_e_delivery

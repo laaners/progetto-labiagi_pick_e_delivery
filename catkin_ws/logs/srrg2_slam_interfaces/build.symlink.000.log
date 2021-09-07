@@ -1,0 +1,5 @@
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/share/srrg2_slam_interfaces/cmake/srrg2_slam_interfacesConfig-version.cmake
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/share/srrg2_slam_interfaces/cmake/srrg2_slam_interfacesConfig.cmake
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/lib/libsrrg2_slam_interfaces_library.so
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/lib/pkgconfig/srrg2_slam_interfaces.pc
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/lib/srrg2_slam_interfaces/app_benchmark

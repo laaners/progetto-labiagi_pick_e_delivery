@@ -1,0 +1,51 @@
+[CONVERISON]
+1. convert the existing datasets
+$> source scripts/do_convert.sh
+
+[SYNTH GENERATION]
+Generate the scripts for the  datasets (this will make run_gen.sh)
+$> source scripts/do_convert.sh
+
+
+After that you can either
+- run the script sequentially
+$> source run_gen.sh
+or
+- run the script in parallel 
+$> parallel :::: run_gen.sh
+
+this will generate a set of files
+*_ideal.boss (containing the gt)
+*_incremental.boss (containing the poor initial guess)
+
+The *_incremental* files are sorted to simulate a sequential path.
+Providing the optimizer with a non sorted files while attempting an
+incremental optimization will generate an error.
+The sorting occurs on the variable of trajectory type (SE3, SE3, or Sim3),
+assuming the graph_id of the variables follows a temporal order.
+The graph is assumed to start from node 0. 
+Other nodes that are fixed will be treated as parameters.
+
+[RUNNING OPTIMIZATION]
+Generate the scripts for the experiments (this will make run_opt.sh)
+$> source scripts/do_opt.sh
+
+As in the previous case, you can either
+- run the script sequentially
+$> source run_opt.sh
+or
+- run the script in parallel 
+$> parallel :::: run_opt.sh
+
+This will generate, for each input file <x>, and the two strategies
+of optimization <y>={optinc, optbatch}, the following files
+- bbone_<x>_<y>.boss    contains the backbone graph
+- staropt_<x>_<y>.boss  contains the layout of the low level
+- <x>_<y>.log:           contains the log of the optimization
+
+The .boss graphs can be shown with the graph visualizer
+If you want to run an inner optimization of the graph at low level,
+you can either:
+- generate the optimization scripts with the -f argument (finalize)
+  $> source scripts/do_opt.sh -f
+- optimize the sruff manually with the regular solver

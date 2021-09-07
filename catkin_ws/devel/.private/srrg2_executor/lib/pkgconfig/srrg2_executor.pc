@@ -1,4 +1,4 @@
-prefix=/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_executor
+prefix=/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_executor
 
 Name: srrg2_executor
 Description: Description of srrg2_executor

@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_map_server/include/map_server/image_loader.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_map_server/include/map_server/image_loader.h
 nav_msgs/GetMap.h
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_map_server/include/map_server/nav_msgs/GetMap.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_map_server/include/map_server/nav_msgs/GetMap.h
 
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_map_server/src/image_loader.cpp
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_map_server/src/image_loader.cpp
 map_server/image_loader.h
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_map_server/src/map_server/image_loader.h
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_map_server/src/map_server/image_loader.h
 Eigen/Geometry
 -
 cstring

@@ -1,0 +1,9 @@
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/share/srrg2_qgl_viewport/cmake/srrg2_qgl_viewportConfig-version.cmake
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/share/srrg2_qgl_viewport/cmake/srrg2_qgl_viewportConfig.cmake
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/lib/libsrrg2_qgl_viewport_library.so
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/lib/srrg2_qgl_viewport/test_cv_gl_interaction
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/lib/srrg2_qgl_viewport/test_viewport
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/lib/srrg2_qgl_viewport/test_viewer_manager_shared
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/lib/srrg2_qgl_viewport/test_multicanvas
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/lib/srrg2_qgl_viewport/test_viewer_core_multicanvas
+Symlinking /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/lib/pkgconfig/srrg2_qgl_viewport.pc

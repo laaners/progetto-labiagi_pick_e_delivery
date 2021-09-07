@@ -1,0 +1,4 @@
+srrg2_qgl_viewport_ros|good you have a fresh compiler, using std=c++17 flag
+srrg2_qgl_viewport_ros|build type: Release
+srrg2_qgl_viewport_ros|cxx_standard: 17
+srrg2_qgl_viewport_ros|common cxx flags:  -fPIC -Wall -Ofast -DNDEBUG -march=native

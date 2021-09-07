@@ -1,0 +1,28 @@
+[35m[1mScanning dependencies of target srrg2_qgl_viewport_library[0m
+[ 12%] [32mBuilding CXX object src/srrg_qgl_viewport/CMakeFiles/srrg2_qgl_viewport_library.dir/qgl_packet_processor.cpp.o[0m
+[ 12%] [32mBuilding CXX object src/srrg_qgl_viewport/CMakeFiles/srrg2_qgl_viewport_library.dir/gl_helpers.cpp.o[0m
+[ 25%] [32mBuilding CXX object src/srrg_qgl_viewport/CMakeFiles/srrg2_qgl_viewport_library.dir/qgl_viewport.cpp.o[0m
+[ 25%] [32mBuilding CXX object src/srrg_qgl_viewport/CMakeFiles/srrg2_qgl_viewport_library.dir/viewer_core_shared_qgl.cpp.o[0m
+[ 31%] [32mBuilding CXX object src/srrg_qgl_viewport/CMakeFiles/srrg2_qgl_viewport_library.dir/viewer_core_base_qgl.cpp.o[0m
+[ 37%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_qgl_viewport/lib/libsrrg2_qgl_viewport_library.so[0m
+[ 37%] Built target srrg2_qgl_viewport_library
+[35m[1mScanning dependencies of target test_cv_gl_interaction[0m
+[35m[1mScanning dependencies of target test_viewer_manager_shared[0m
+[35m[1mScanning dependencies of target test_viewer_core_multicanvas[0m
+[35m[1mScanning dependencies of target test_multicanvas[0m
+[35m[1mScanning dependencies of target test_viewport[0m
+[ 43%] [32mBuilding CXX object src/tests/CMakeFiles/test_viewer_manager_shared.dir/test_viewer_manager_shared.cpp.o[0m
+[ 50%] [32mBuilding CXX object src/tests/CMakeFiles/test_viewer_core_multicanvas.dir/test_viewer_core_multicanvas.cpp.o[0m
+[ 56%] [32mBuilding CXX object src/tests/CMakeFiles/test_cv_gl_interaction.dir/test_cv_gl_interaction.cpp.o[0m
+[ 62%] [32mBuilding CXX object src/tests/CMakeFiles/test_viewport.dir/test_viewport.cpp.o[0m
+[ 68%] [32mBuilding CXX object src/tests/CMakeFiles/test_multicanvas.dir/test_multicanvas.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_qgl_viewport/lib/srrg2_qgl_viewport/test_viewer_core_multicanvas[0m
+[ 81%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_qgl_viewport/lib/srrg2_qgl_viewport/test_viewer_manager_shared[0m
+[ 87%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_qgl_viewport/lib/srrg2_qgl_viewport/test_viewport[0m
+[ 87%] Built target test_viewer_core_multicanvas
+[ 87%] Built target test_viewer_manager_shared
+[ 87%] Built target test_viewport
+[ 93%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_qgl_viewport/lib/srrg2_qgl_viewport/test_cv_gl_interaction[0m
+[100%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_qgl_viewport/lib/srrg2_qgl_viewport/test_multicanvas[0m
+[100%] Built target test_cv_gl_interaction
+[100%] Built target test_multicanvas

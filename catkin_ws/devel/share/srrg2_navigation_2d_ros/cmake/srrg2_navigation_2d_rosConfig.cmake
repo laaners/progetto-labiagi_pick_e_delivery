@@ -1,1 +1,1 @@
-/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/share/srrg2_navigation_2d_ros/cmake/srrg2_navigation_2d_rosConfig.cmake
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/share/srrg2_navigation_2d_ros/cmake/srrg2_navigation_2d_rosConfig.cmake

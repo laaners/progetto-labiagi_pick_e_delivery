@@ -1,0 +1,5 @@
+srrg_hbst
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg_hbst/cmake.lock /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/./cmake.lock
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg_hbst/share/srrg_hbst/cmake/srrg_hbstConfig.cmake /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/share/srrg_hbst/cmake/srrg_hbstConfig.cmake
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg_hbst/share/srrg_hbst/cmake/srrg_hbstConfig-version.cmake /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/share/srrg_hbst/cmake/srrg_hbstConfig-version.cmake
+/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg_hbst/lib/pkgconfig/srrg_hbst.pc /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/lib/pkgconfig/srrg_hbst.pc

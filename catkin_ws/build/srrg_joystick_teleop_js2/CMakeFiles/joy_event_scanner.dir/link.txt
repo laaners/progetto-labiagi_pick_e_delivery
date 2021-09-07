@@ -1,1 +1,1 @@
-/usr/bin/c++   -fPIC -Wall -Ofast -DNDEBUG -march=native -O3 -DNDEBUG  -rdynamic CMakeFiles/joy_event_scanner.dir/src/joy_event_scanner.cpp.o  -o /home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg_joystick_teleop_js2/lib/srrg_joystick_teleop_js2/joy_event_scanner 
+/usr/bin/c++   -fPIC -Wall -Ofast -DNDEBUG -march=native -O3 -DNDEBUG  -rdynamic CMakeFiles/joy_event_scanner.dir/src/joy_event_scanner.cpp.o  -o /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg_joystick_teleop_js2/lib/srrg_joystick_teleop_js2/joy_event_scanner 

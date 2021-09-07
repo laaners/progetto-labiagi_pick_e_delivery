@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -fPIC -Wall -Ofast -DNDEBUG -march=native -Werror=pedantic -O3 -DNDEBUG  -shared -Wl,-soname,libsrrg2_geometry_library.so -o /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core/lib/libsrrg2_geometry_library.so CMakeFiles/srrg2_geometry_library.dir/epipolar.cpp.o CMakeFiles/srrg2_geometry_library.dir/permutation_sampler.cpp.o 

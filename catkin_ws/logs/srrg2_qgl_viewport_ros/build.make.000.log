@@ -1,0 +1,28 @@
+[35m[1mScanning dependencies of target srrg2_qgl_viewport_ros_library[0m
+[  7%] [32mBuilding CXX object src/srrg_qgl_viewport_ros/CMakeFiles/srrg2_qgl_viewport_ros_library.dir/viewer_core_ros_qgl.cpp.o[0m
+[ 14%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_qgl_viewport_ros/lib/libsrrg2_qgl_viewport_ros_library.so[0m
+[ 14%] Built target srrg2_qgl_viewport_ros_library
+[35m[1mScanning dependencies of target test_viewer_manager_server[0m
+[35m[1mScanning dependencies of target test_viewer_core_server[0m
+[35m[1mScanning dependencies of target test_viewer_core_client[0m
+[35m[1mScanning dependencies of target test_viewer_manager_client[0m
+[35m[1mScanning dependencies of target test_viewer_core_server_multicanvas[0m
+[35m[1mScanning dependencies of target srrg_viewer_ros_client[0m
+[ 21%] [32mBuilding CXX object src/tests/CMakeFiles/test_viewer_manager_server.dir/test_viewer_manager_server.cpp.o[0m
+[ 28%] [32mBuilding CXX object src/tests/CMakeFiles/test_viewer_core_server.dir/test_viewer_core_server.cpp.o[0m
+[ 35%] [32mBuilding CXX object src/tests/CMakeFiles/test_viewer_core_server_multicanvas.dir/test_viewer_core_server_multicanvas.cpp.o[0m
+[ 42%] [32mBuilding CXX object src/tests/CMakeFiles/test_viewer_manager_client.dir/test_viewer_manager_client.cpp.o[0m
+[ 50%] [32mBuilding CXX object src/tests/CMakeFiles/test_viewer_core_client.dir/test_viewer_core_client.cpp.o[0m
+[ 57%] [32mBuilding CXX object src/app/CMakeFiles/srrg_viewer_ros_client.dir/srrg_viewer_ros_client.cpp.o[0m
+[ 64%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_qgl_viewport_ros/lib/srrg2_qgl_viewport_ros/srrg_viewer_ros_client[0m
+[ 64%] Built target srrg_viewer_ros_client
+[ 71%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_qgl_viewport_ros/lib/srrg2_qgl_viewport_ros/test_viewer_manager_server[0m
+[ 71%] Built target test_viewer_manager_server
+[ 78%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_qgl_viewport_ros/lib/srrg2_qgl_viewport_ros/test_viewer_core_server_multicanvas[0m
+[ 85%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_qgl_viewport_ros/lib/srrg2_qgl_viewport_ros/test_viewer_core_client[0m
+[ 92%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_qgl_viewport_ros/lib/srrg2_qgl_viewport_ros/test_viewer_manager_client[0m
+[ 92%] Built target test_viewer_core_server_multicanvas
+[100%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_qgl_viewport_ros/lib/srrg2_qgl_viewport_ros/test_viewer_core_server[0m
+[100%] Built target test_viewer_core_client
+[100%] Built target test_viewer_manager_client
+[100%] Built target test_viewer_core_server

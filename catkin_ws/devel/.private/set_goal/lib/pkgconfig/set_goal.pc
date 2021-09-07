@@ -1,8 +1,0 @@
-prefix=/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/set_goal
-
-Name: set_goal
-Description: Description of set_goal
-Version: 0.0.0
-Cflags: -I/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/set_goal/include -I/home/alessio/Desktop/progetto-labiagi/catkin_ws/src/set_goal/include
-Libs: -L${prefix}/lib -lset_goal
-Requires: roscpp tf2 tf2_ros

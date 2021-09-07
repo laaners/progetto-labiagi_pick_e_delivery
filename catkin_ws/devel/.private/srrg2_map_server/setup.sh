@@ -11,7 +11,7 @@
 
 # since this file is sourced either use the provided _CATKIN_SETUP_DIR
 # or fall back to the destination set at configure time
-: ${_CATKIN_SETUP_DIR:=/home/alessio/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_map_server}
+: ${_CATKIN_SETUP_DIR:=/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_map_server}
 _SETUP_UTIL="$_CATKIN_SETUP_DIR/_setup_util.py"
 unset _CATKIN_SETUP_DIR
 

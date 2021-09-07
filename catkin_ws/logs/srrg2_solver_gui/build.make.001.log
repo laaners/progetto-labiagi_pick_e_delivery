@@ -1,0 +1,3 @@
+[ 33%] Built target test_pgo
+[ 66%] Built target test_graph_viewer
+[100%] Built target srrg_solver_gui_app
