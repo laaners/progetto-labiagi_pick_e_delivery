@@ -8,6 +8,8 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg_cmake_modules:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg_cmake_modules/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg_cmake_modules/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg_cmake_modules'
 export ROSLISP_PACKAGE_DIRECTORIES="/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg_cmake_modules/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg_cmake_modules:$ROS_PACKAGE_PATH"

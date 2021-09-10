@@ -8,6 +8,8 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver_gui:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver_gui/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver_gui/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_solver_gui'
 export ROSLISP_PACKAGE_DIRECTORIES="/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver_gui/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_solver/srrg2_solver_gui:$ROS_PACKAGE_PATH"

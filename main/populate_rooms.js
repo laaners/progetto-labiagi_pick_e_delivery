@@ -9,7 +9,6 @@ const rooms = {"total_rows":8,"offset":0,"rows":[
     {"id":"F","key":"F","value":{"rev":"1-88d3fb4890c0895287c9d04baad4c999"},"doc":{"_id":"F","_rev":"1-88d3fb4890c0895287c9d04baad4c999","x":11.0745296478,"y":16.6982498169,"users":[]}},
     {"id":"G","key":"G","value":{"rev":"1-adefc689d2f0fc05698b809489754e7a"},"doc":{"_id":"G","_rev":"1-adefc689d2f0fc05698b809489754e7a","x":12.1000356674,"y":11.9346723557,"users":[]}},
     {"id":"H","key":"H","value":{"rev":"1-60c1544dff348708af61a14c8ec0353a"},"doc":{"_id":"H","_rev":"1-60c1544dff348708af61a14c8ec0353a","x":12.2105884552,"y":7.4757027626,"users":[]}},
-    {"id":"Z","key":"H","value":{"rev":"1-60c1544dff348708af61a14c8ec0353a"},"doc":{"_id":"H","_rev":"1-60c1544dff348708af61a14c8ec0353a","x":12.2105884552,"y":7.4757027626,"users":[]}}
     ]}    
 
 function createCRUD(db,obj) {

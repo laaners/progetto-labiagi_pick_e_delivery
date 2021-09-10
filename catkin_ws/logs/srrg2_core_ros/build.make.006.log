@@ -1,0 +1,176 @@
+[  0%] Built target _srrg2_core_ros_generate_messages_check_deps_PlannerStatusMessage
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target _srrg2_core_ros_generate_messages_check_deps_ViewerBufferMessage
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+[  0%] Built target actionlib_generate_messages_cpp
+[  0%] Built target roscpp_generate_messages_cpp
+[  0%] Built target rosgraph_msgs_generate_messages_lisp
+[  0%] Built target topic_tools_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target sensor_msgs_generate_messages_py
+[  0%] Built target tf_generate_messages_py
+[  0%] Built target sensor_msgs_generate_messages_eus
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target roscpp_generate_messages_nodejs
+[  0%] Built target nav_msgs_generate_messages_nodejs
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+[  0%] Built target rosgraph_msgs_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target std_srvs_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_lisp
+[  0%] Built target tf_generate_messages_lisp
+[  0%] Built target tf_generate_messages_nodejs
+[  0%] Built target rosgraph_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target actionlib_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target actionlib_generate_messages_lisp
+[  0%] Built target std_srvs_generate_messages_nodejs
+[  0%] Built target tf_generate_messages_cpp
+[  0%] Built target actionlib_generate_messages_nodejs
+[  0%] Built target topic_tools_generate_messages_nodejs
+[  0%] Built target tf_generate_messages_eus
+[  0%] Built target actionlib_msgs_generate_messages_cpp
+[  0%] Built target std_srvs_generate_messages_cpp
+[  0%] Built target roscpp_generate_messages_eus
+[  0%] Built target rosgraph_msgs_generate_messages_py
+[  0%] Built target actionlib_msgs_generate_messages_eus
+[  0%] Built target actionlib_msgs_generate_messages_lisp
+[  0%] Built target actionlib_msgs_generate_messages_py
+[  0%] Built target tf2_msgs_generate_messages_cpp
+[  0%] Built target actionlib_generate_messages_py
+[  0%] Built target tf2_msgs_generate_messages_py
+[  0%] Built target tf2_msgs_generate_messages_nodejs
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[  0%] Built target nav_msgs_generate_messages_cpp
+[  0%] Built target tf2_msgs_generate_messages_eus
+[  0%] Built target nav_msgs_generate_messages_eus
+[  0%] Built target nav_msgs_generate_messages_lisp
+[  0%] Built target tf2_msgs_generate_messages_lisp
+[  0%] Built target nav_msgs_generate_messages_py
+[  0%] Built target _catkin_empty_exported_target
+[  0%] Built target std_srvs_generate_messages_lisp
+[  0%] Built target topic_tools_generate_messages_lisp
+[  0%] Built target std_srvs_generate_messages_py
+[  0%] Built target topic_tools_generate_messages_eus
+[  0%] Built target actionlib_msgs_generate_messages_nodejs
+[  0%] Built target topic_tools_generate_messages_py
+[35m[1mScanning dependencies of target bag_creator_test[0m
+[  1%] [32mBuilding CXX object src/tests/CMakeFiles/bag_creator_test.dir/test_bag_creator.cpp.o[0m
+[  3%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core_ros/lib/srrg2_core_ros/bag_creator_test[0m
+[  3%] Built target bag_creator_test
+[  4%] [34m[1mGenerating Javascript code from srrg2_core_ros/PlannerStatusMessage.msg[0m
+[  6%] [34m[1mGenerating Javascript code from srrg2_core_ros/ViewerBufferMessage.msg[0m
+[  6%] Built target srrg2_core_ros_generate_messages_nodejs
+[  7%] [34m[1mGenerating Python from MSG srrg2_core_ros/PlannerStatusMessage[0m
+[  9%] [34m[1mGenerating Python from MSG srrg2_core_ros/ViewerBufferMessage[0m
+[ 10%] [34m[1mGenerating EusLisp code from srrg2_core_ros/PlannerStatusMessage.msg[0m
+[ 12%] [34m[1mGenerating Python msg __init__.py for srrg2_core_ros[0m
+[ 14%] [34m[1mGenerating EusLisp code from srrg2_core_ros/ViewerBufferMessage.msg[0m
+[ 15%] Built target srrg2_core_ros_generate_messages_eus
+[ 15%] Built target srrg2_core_ros_generate_messages_py
+[ 17%] [34m[1mGenerating Lisp code from srrg2_core_ros/PlannerStatusMessage.msg[0m
+[ 18%] [34m[1mGenerating Lisp code from srrg2_core_ros/ViewerBufferMessage.msg[0m
+[ 18%] Built target srrg2_core_ros_generate_messages_lisp
+[ 20%] [34m[1mGenerating C++ code from srrg2_core_ros/PlannerStatusMessage.msg[0m
+[ 21%] [34m[1mGenerating C++ code from srrg2_core_ros/ViewerBufferMessage.msg[0m
+[ 21%] Built target srrg2_core_ros_generate_messages_cpp
+[ 21%] Built target srrg2_core_ros_generate_messages
+[35m[1mScanning dependencies of target srrg2_converters_library[0m
+[ 23%] [32mBuilding CXX object src/srrg_converters/CMakeFiles/srrg2_converters_library.dir/converter.cpp.o[0m
+[35m[1mScanning dependencies of target srrg2_viewer_core_ros_library[0m
+[ 25%] [32mBuilding CXX object src/srrg_viewer_ros/viewer_core_ros/CMakeFiles/srrg2_viewer_core_ros_library.dir/buffer_publisher.cpp.o[0m
+[ 26%] [32mBuilding CXX object src/srrg_viewer_ros/viewer_core_ros/CMakeFiles/srrg2_viewer_core_ros_library.dir/buffer_subscriber.cpp.o[0m
+[ 28%] [32mBuilding CXX object src/srrg_viewer_ros/viewer_core_ros/CMakeFiles/srrg2_viewer_core_ros_library.dir/buffer_sink_ros.cpp.o[0m
+[ 29%] [32mBuilding CXX object src/srrg_viewer_ros/viewer_core_ros/CMakeFiles/srrg2_viewer_core_ros_library.dir/buffer_source_ros.cpp.o[0m
+[ 31%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core_ros/lib/libsrrg2_converters_library.so[0m
+[ 31%] Built target srrg2_converters_library
+[35m[1mScanning dependencies of target srrg2_messages_ros_library[0m
+[ 32%] [32mBuilding CXX object src/srrg_messages_ros/CMakeFiles/srrg2_messages_ros_library.dir/message_handlers/message_ros_source.cpp.o[0m
+[ 34%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core_ros/lib/libsrrg2_viewer_core_ros_library.so[0m
+[ 34%] Built target srrg2_viewer_core_ros_library
+[ 35%] [32mBuilding CXX object src/srrg_messages_ros/CMakeFiles/srrg2_messages_ros_library.dir/message_handlers/message_rosbag_source.cpp.o[0m
+[ 37%] [32mBuilding CXX object src/srrg_messages_ros/CMakeFiles/srrg2_messages_ros_library.dir/message_handlers/message_rosbag_sink.cpp.o[0m
+[ 39%] [32mBuilding CXX object src/srrg_messages_ros/CMakeFiles/srrg2_messages_ros_library.dir/message_handlers/message_ros_sink.cpp.o[0m
+[35m[1mScanning dependencies of target generic_listener_node_test[0m
+[ 40%] [32mBuilding CXX object src/tests/CMakeFiles/generic_listener_node_test.dir/test_generic_listener_node.cpp.o[0m
+[35m[1mScanning dependencies of target tf_listener_playback_test[0m
+[ 42%] [32mBuilding CXX object src/tests/CMakeFiles/tf_listener_playback_test.dir/test_tf_listener_playback.cpp.o[0m
+[ 43%] [32mBuilding CXX object src/srrg_messages_ros/CMakeFiles/srrg2_messages_ros_library.dir/instances.cpp.o[0m
+[35m[1mScanning dependencies of target buffer_message_test[0m
+[ 45%] [32mBuilding CXX object src/tests/CMakeFiles/buffer_message_test.dir/test_buffer_message.cpp.o[0m
+[ 46%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core_ros/lib/srrg2_core_ros/tf_listener_playback_test[0m
+[ 46%] Built target tf_listener_playback_test
+[35m[1mScanning dependencies of target get_all_topics_test[0m
+[ 48%] [32mBuilding CXX object src/tests/CMakeFiles/get_all_topics_test.dir/test_get_all_topics.cpp.o[0m
+[ 50%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core_ros/lib/srrg2_core_ros/generic_listener_node_test[0m
+[35m[1mScanning dependencies of target tf_listener_node_test[0m
+[ 51%] [32mBuilding CXX object src/tests/CMakeFiles/tf_listener_node_test.dir/test_tf_listener_node.cpp.o[0m
+[ 53%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core_ros/lib/srrg2_core_ros/get_all_topics_test[0m
+[ 53%] Built target generic_listener_node_test
+[35m[1mScanning dependencies of target buffer_source_ros_test[0m
+[ 53%] Built target get_all_topics_test
+[ 54%] [32mBuilding CXX object src/tests/CMakeFiles/buffer_source_ros_test.dir/test_buffer_source_ros.cpp.o[0m
+[35m[1mScanning dependencies of target buffer_sink_ros_test[0m
+[ 56%] [32mBuilding CXX object src/tests/CMakeFiles/buffer_sink_ros_test.dir/test_buffer_sink_ros.cpp.o[0m
+[ 57%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core_ros/lib/srrg2_core_ros/buffer_message_test[0m
+[ 57%] Built target buffer_message_test
+[35m[1mScanning dependencies of target conversion_in_place_test[0m
+[ 59%] [32mBuilding CXX object src/tests/CMakeFiles/conversion_in_place_test.dir/test_conversion_in_place.cpp.o[0m
+[ 60%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core_ros/lib/libsrrg2_messages_ros_library.so[0m
+[ 60%] Built target srrg2_messages_ros_library
+[ 62%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core_ros/lib/srrg2_core_ros/buffer_sink_ros_test[0m
+[ 62%] Built target buffer_sink_ros_test
+[ 64%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core_ros/lib/srrg2_core_ros/tf_listener_node_test[0m
+[ 65%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core_ros/lib/srrg2_core_ros/buffer_source_ros_test[0m
+[ 65%] Built target buffer_source_ros_test
+[ 65%] Built target tf_listener_node_test
+[ 67%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core_ros/lib/srrg2_core_ros/conversion_in_place_test[0m
+[35m[1mScanning dependencies of target srrg_to_rosbag_converter_app[0m
+[ 68%] [32mBuilding CXX object src/app/CMakeFiles/srrg_to_rosbag_converter_app.dir/srrg_to_rosbag_converter_app.cpp.o[0m
+[ 68%] Built target conversion_in_place_test
+[35m[1mScanning dependencies of target rosbag_to_srrg_converter_app[0m
+[ 70%] [32mBuilding CXX object src/app/CMakeFiles/rosbag_to_srrg_converter_app.dir/rosbag_to_srrg_converter_app.cpp.o[0m
+[35m[1mScanning dependencies of target extract_gt_from_ros[0m
+[ 71%] [32mBuilding CXX object src/app/CMakeFiles/extract_gt_from_ros.dir/extract_gt_from_ros.cpp.o[0m
+[ 73%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core_ros/lib/srrg2_core_ros/srrg_to_rosbag_converter_app[0m
+[ 75%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core_ros/lib/srrg2_core_ros/rosbag_to_srrg_converter_app[0m
+[ 75%] Built target srrg_to_rosbag_converter_app
+[ 75%] Built target rosbag_to_srrg_converter_app
+[35m[1mScanning dependencies of target ros_to_srrg_listener_node[0m
+[ 76%] [32mBuilding CXX object src/node/CMakeFiles/ros_to_srrg_listener_node.dir/ros_to_srrg_listener_node.cpp.o[0m
+[ 78%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core_ros/lib/srrg2_core_ros/extract_gt_from_ros[0m
+[ 78%] Built target extract_gt_from_ros
+[35m[1mScanning dependencies of target srrg_to_ros_publisher_node[0m
+[35m[1mScanning dependencies of target srrg2_viewer_ros_library[0m
+[ 79%] [32mBuilding CXX object src/node/CMakeFiles/srrg_to_ros_publisher_node.dir/srrg_to_ros_publisher_node.cpp.o[0m
+[ 81%] [32mBuilding CXX object src/srrg_viewer_ros/CMakeFiles/srrg2_viewer_ros_library.dir/viewer_context_ros.cpp.o[0m
+[ 82%] [32mBuilding CXX object src/srrg_viewer_ros/CMakeFiles/srrg2_viewer_ros_library.dir/viewer_manager_ros.cpp.o[0m
+[ 84%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core_ros/lib/srrg2_core_ros/ros_to_srrg_listener_node[0m
+[ 84%] Built target ros_to_srrg_listener_node
+[ 85%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core_ros/lib/libsrrg2_viewer_ros_library.so[0m
+[ 85%] Built target srrg2_viewer_ros_library
+[ 87%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core_ros/lib/srrg2_core_ros/srrg_to_ros_publisher_node[0m
+[ 87%] Built target srrg_to_ros_publisher_node
+[35m[1mScanning dependencies of target tf_from_source_test[0m
+[ 89%] [32mBuilding CXX object src/tests/CMakeFiles/tf_from_source_test.dir/test_tf_from_source.cpp.o[0m
+[35m[1mScanning dependencies of target tf_publisher_node_test[0m
+[ 90%] [32mBuilding CXX object src/tests/CMakeFiles/tf_publisher_node_test.dir/test_tf_publisher_node.cpp.o[0m
+[35m[1mScanning dependencies of target message_source_platform_test[0m
+[ 92%] [32mBuilding CXX object src/tests/CMakeFiles/message_source_platform_test.dir/test_message_source_platform.cpp.o[0m
+[35m[1mScanning dependencies of target message_source_ros_test[0m
+[ 93%] [32mBuilding CXX object src/tests/CMakeFiles/message_source_ros_test.dir/test_message_source_ros.cpp.o[0m
+[ 95%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core_ros/lib/srrg2_core_ros/tf_from_source_test[0m
+[ 96%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core_ros/lib/srrg2_core_ros/tf_publisher_node_test[0m
+[ 96%] Built target tf_from_source_test
+[ 98%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core_ros/lib/srrg2_core_ros/message_source_platform_test[0m
+[ 98%] Built target tf_publisher_node_test
+[ 98%] Built target message_source_platform_test
+[100%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_core_ros/lib/srrg2_core_ros/message_source_ros_test[0m
+[100%] Built target message_source_ros_test

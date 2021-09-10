@@ -1,0 +1,51 @@
+[35m[1mScanning dependencies of target tf_helpers[0m
+[  4%] [32mBuilding CXX object src/srrg2_navigation_2d_ros/CMakeFiles/tf_helpers.dir/tf_helpers.cpp.o[0m
+[  8%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/libtf_helpers.so[0m
+[  8%] Built target tf_helpers
+[35m[1mScanning dependencies of target cinema_dumper[0m
+[35m[1mScanning dependencies of target path_provider[0m
+[ 13%] [32mBuilding CXX object apps/CMakeFiles/cinema_dumper.dir/cinema_dumper.cpp.o[0m
+[35m[1mScanning dependencies of target srrg2_navigation_2d_ros_library[0m
+[ 17%] [32mBuilding CXX object apps/CMakeFiles/path_provider.dir/path_provider.cpp.o[0m
+[ 26%] [32mBuilding CXX object src/srrg2_navigation_2d_ros/CMakeFiles/srrg2_navigation_2d_ros_library.dir/instances.cpp.o[0m
+[ 26%] [32mBuilding CXX object src/srrg2_navigation_2d_ros/CMakeFiles/srrg2_navigation_2d_ros_library.dir/navigation_2d_map_requestor_ros.cpp.o[0m
+[ 30%] [32mBuilding CXX object src/srrg2_navigation_2d_ros/CMakeFiles/srrg2_navigation_2d_ros_library.dir/motion_controller.cpp.o[0m
+[ 34%] [32mBuilding CXX object src/srrg2_navigation_2d_ros/CMakeFiles/srrg2_navigation_2d_ros_library.dir/scan_handler.cpp.o[0m
+[ 39%] [32mBuilding CXX object src/srrg2_navigation_2d_ros/CMakeFiles/srrg2_navigation_2d_ros_library.dir/path_follower.cpp.o[0m
+[ 43%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_provider[0m
+[ 43%] Built target path_provider
+[ 47%] [32mBuilding CXX object src/srrg2_navigation_2d_ros/CMakeFiles/srrg2_navigation_2d_ros_library.dir/target_planner.cpp.o[0m
+[ 52%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/cinema_dumper[0m
+[ 52%] Built target cinema_dumper
+[ 56%] [32mBuilding CXX object src/srrg2_navigation_2d_ros/CMakeFiles/srrg2_navigation_2d_ros_library.dir/callback_handler.cpp.o[0m
+[01m[K/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/src/srrg2_navigation_2d_ros/path_follower.cpp:[m[K In member function ‘[01m[Kvoid srrg2_navigation_2d_ros::PathFollower::compute(srrg2_core::GridMap2D&, const Isometry2f&, const Point2fVectorCloud&, const Isometry2fList&, geometry_msgs::Twist&)[m[K’:
+[01m[K/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/src/srrg2_navigation_2d_ros/path_follower.cpp:67:27:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kglobal_distance_map[m[K’ [[01;35m[K-Wunused-variable[m[K]
+     const Matrix_<float>& [01;35m[Kglobal_distance_map[m[K =
+                           [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[ 60%] [32mBuilding CXX object src/srrg2_navigation_2d_ros/CMakeFiles/srrg2_navigation_2d_ros_library.dir/controller.cpp.o[0m
+[ 65%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/libsrrg2_navigation_2d_ros_library.so[0m
+[ 65%] Built target srrg2_navigation_2d_ros_library
+[35m[1mScanning dependencies of target collision_avoider[0m
+[35m[1mScanning dependencies of target path_follower_app[0m
+[35m[1mScanning dependencies of target planning_robot[0m
+[35m[1mScanning dependencies of target collision_avoider_class[0m
+[ 69%] [32mBuilding CXX object apps/CMakeFiles/collision_avoider.dir/collision_avoider.cpp.o[0m
+[ 73%] [32mBuilding CXX object apps/CMakeFiles/path_follower_app.dir/path_follower_app.cpp.o[0m
+[ 82%] [32mBuilding CXX object apps/CMakeFiles/collision_avoider_class.dir/collision_avoider_class.cpp.o[0m
+[ 82%] [32mBuilding CXX object apps/CMakeFiles/planning_robot.dir/planning_robot.cpp.o[0m
+[01m[K/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/apps/path_follower_app.cpp:[m[K In function ‘[01m[Kvoid pathCallback(const Path&)[m[K’:
+[01m[K/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/apps/path_follower_app.cpp:89:12:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Krobot_pose_2d[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+   Vector3f [01;35m[Krobot_pose_2d[m[K = geometry2d::t2v(robot_pose);
+            [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/apps/path_follower_app.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_navigation_2d/srrg2_navigation_2d_ros/apps/path_follower_app.cpp:139:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kelapsed_path_percentage[m[K’ [[01;35m[K-Wunused-variable[m[K]
+       int [01;35m[Kelapsed_path_percentage[m[K =
+           [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[ 86%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/path_follower_app[0m
+[ 86%] Built target path_follower_app
+[ 91%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/collision_avoider[0m
+[ 91%] Built target collision_avoider
+[ 95%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/collision_avoider_class[0m
+[100%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_navigation_2d_ros/lib/srrg2_navigation_2d_ros/planning_robot[0m
+[100%] Built target collision_avoider_class
+[100%] Built target planning_robot

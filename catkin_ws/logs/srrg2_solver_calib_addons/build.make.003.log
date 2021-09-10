@@ -1,0 +1,6 @@
+[35m[1mScanning dependencies of target srrg2_solver_calib_utils_library[0m
+[ 25%] [32mBuilding CXX object src/srrg2_solver_calib_utils/CMakeFiles/srrg2_solver_calib_utils_library.dir/calib_graph_2d_assembler.cpp.o[0m
+[ 50%] [32mBuilding CXX object src/srrg2_solver_calib_utils/CMakeFiles/srrg2_solver_calib_utils_library.dir/calib_graph_3d_assembler.cpp.o[0m
+[ 75%] [32mBuilding CXX object src/srrg2_solver_calib_utils/CMakeFiles/srrg2_solver_calib_utils_library.dir/instances.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver_calib_addons/lib/libsrrg2_solver_calib_utils_library.so[0m
+[100%] Built target srrg2_solver_calib_utils_library

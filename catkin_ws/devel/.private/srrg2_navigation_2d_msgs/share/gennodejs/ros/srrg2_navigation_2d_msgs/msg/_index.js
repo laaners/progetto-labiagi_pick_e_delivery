@@ -1,12 +1,12 @@
 
 "use strict";
 
+let LocalPathPlannerStatus = require('./LocalPathPlannerStatus.js');
 let PathFollowerStatus = require('./PathFollowerStatus.js');
 let CollisionAvoiderStatus = require('./CollisionAvoiderStatus.js');
-let LocalPathPlannerStatus = require('./LocalPathPlannerStatus.js');
 
 module.exports = {
+  LocalPathPlannerStatus: LocalPathPlannerStatus,
   PathFollowerStatus: PathFollowerStatus,
   CollisionAvoiderStatus: CollisionAvoiderStatus,
-  LocalPathPlannerStatus: LocalPathPlannerStatus,
 };

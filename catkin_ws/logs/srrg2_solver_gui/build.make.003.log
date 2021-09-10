@@ -1,0 +1,12 @@
+[35m[1mScanning dependencies of target test_pgo[0m
+[35m[1mScanning dependencies of target srrg_solver_gui_app[0m
+[35m[1mScanning dependencies of target test_graph_viewer[0m
+[ 16%] [32mBuilding CXX object src/app/CMakeFiles/srrg_solver_gui_app.dir/srrg_solver_gui_app.cpp.o[0m
+[ 33%] [32mBuilding CXX object src/tests/CMakeFiles/test_graph_viewer.dir/test_graph_viewer.cpp.o[0m
+[ 50%] [32mBuilding CXX object src/tests/CMakeFiles/test_pgo.dir/test_pgo.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver_gui/lib/srrg2_solver_gui/test_graph_viewer[0m
+[ 66%] Built target test_graph_viewer
+[ 83%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver_gui/lib/srrg2_solver_gui/srrg_solver_gui_app[0m
+[ 83%] Built target srrg_solver_gui_app
+[100%] [32m[1mLinking CXX executable /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver_gui/lib/srrg2_solver_gui/test_pgo[0m
+[100%] Built target test_pgo

@@ -95,8 +95,8 @@ clean: CMakeFiles/test_streaming_merging.dir/clean
 # Target rules for target CMakeFiles/_run_tests_srrg_hbst_gtest_test_search_merging.dir
 
 # All Build rule for target.
-CMakeFiles/_run_tests_srrg_hbst_gtest_test_search_merging.dir/all: CMakeFiles/tests.dir/all
 CMakeFiles/_run_tests_srrg_hbst_gtest_test_search_merging.dir/all: CMakeFiles/test_search_merging.dir/all
+CMakeFiles/_run_tests_srrg_hbst_gtest_test_search_merging.dir/all: CMakeFiles/tests.dir/all
 CMakeFiles/_run_tests_srrg_hbst_gtest_test_search_merging.dir/all: CMakeFiles/clean_test_results_srrg_hbst.dir/all
 	$(MAKE) -f CMakeFiles/_run_tests_srrg_hbst_gtest_test_search_merging.dir/build.make CMakeFiles/_run_tests_srrg_hbst_gtest_test_search_merging.dir/depend
 	$(MAKE) -f CMakeFiles/_run_tests_srrg_hbst_gtest_test_search_merging.dir/build.make CMakeFiles/_run_tests_srrg_hbst_gtest_test_search_merging.dir/build
@@ -356,8 +356,8 @@ clean: CMakeFiles/clean_test_results.dir/clean
 
 # All Build rule for target.
 CMakeFiles/tests.dir/all: CMakeFiles/test_streaming_merging.dir/all
-CMakeFiles/tests.dir/all: CMakeFiles/test_search.dir/all
 CMakeFiles/tests.dir/all: CMakeFiles/test_search_merging.dir/all
+CMakeFiles/tests.dir/all: CMakeFiles/test_search.dir/all
 CMakeFiles/tests.dir/all: CMakeFiles/test_streaming.dir/all
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
@@ -614,10 +614,10 @@ clean: CMakeFiles/_run_tests_srrg_hbst.dir/clean
 # Target rules for target CMakeFiles/run_tests_srrg_hbst_gtest.dir
 
 # All Build rule for target.
-CMakeFiles/run_tests_srrg_hbst_gtest.dir/all: CMakeFiles/run_tests_srrg_hbst_gtest_test_search.dir/all
 CMakeFiles/run_tests_srrg_hbst_gtest.dir/all: CMakeFiles/run_tests_srrg_hbst_gtest_test_search_merging.dir/all
 CMakeFiles/run_tests_srrg_hbst_gtest.dir/all: CMakeFiles/run_tests_srrg_hbst_gtest_test_streaming.dir/all
 CMakeFiles/run_tests_srrg_hbst_gtest.dir/all: CMakeFiles/run_tests_srrg_hbst_gtest_test_streaming_merging.dir/all
+CMakeFiles/run_tests_srrg_hbst_gtest.dir/all: CMakeFiles/run_tests_srrg_hbst_gtest_test_search.dir/all
 	$(MAKE) -f CMakeFiles/run_tests_srrg_hbst_gtest.dir/build.make CMakeFiles/run_tests_srrg_hbst_gtest.dir/depend
 	$(MAKE) -f CMakeFiles/run_tests_srrg_hbst_gtest.dir/build.make CMakeFiles/run_tests_srrg_hbst_gtest.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg_hbst/CMakeFiles --progress-num= "Built target run_tests_srrg_hbst_gtest"
@@ -713,8 +713,8 @@ clean: CMakeFiles/run_tests_srrg_hbst.dir/clean
 # Target rules for target CMakeFiles/_run_tests_srrg_hbst_gtest_test_search.dir
 
 # All Build rule for target.
-CMakeFiles/_run_tests_srrg_hbst_gtest_test_search.dir/all: CMakeFiles/test_search.dir/all
 CMakeFiles/_run_tests_srrg_hbst_gtest_test_search.dir/all: CMakeFiles/tests.dir/all
+CMakeFiles/_run_tests_srrg_hbst_gtest_test_search.dir/all: CMakeFiles/test_search.dir/all
 CMakeFiles/_run_tests_srrg_hbst_gtest_test_search.dir/all: CMakeFiles/clean_test_results_srrg_hbst.dir/all
 	$(MAKE) -f CMakeFiles/_run_tests_srrg_hbst_gtest_test_search.dir/build.make CMakeFiles/_run_tests_srrg_hbst_gtest_test_search.dir/depend
 	$(MAKE) -f CMakeFiles/_run_tests_srrg_hbst_gtest_test_search.dir/build.make CMakeFiles/_run_tests_srrg_hbst_gtest_test_search.dir/build

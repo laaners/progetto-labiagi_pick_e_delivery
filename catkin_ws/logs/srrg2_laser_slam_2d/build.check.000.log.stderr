@@ -1,0 +1,4 @@
+srrg2_laser_slam_2d|good you have a fresh compiler, using std=c++17 flag
+srrg2_laser_slam_2d|build type: Release
+srrg2_laser_slam_2d|cxx_standard: 17
+srrg2_laser_slam_2d|common cxx flags:  -Werror -pedantic -fPIC -Wall -Ofast -DNDEBUG -march=native

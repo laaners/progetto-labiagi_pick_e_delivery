@@ -1,10 +1,10 @@
 
 "use strict";
 
-let setTooLongInterval = require('./setTooLongInterval.js')
 let setWaitPackInterval = require('./setWaitPackInterval.js')
+let setTooLongInterval = require('./setTooLongInterval.js')
 
 module.exports = {
-  setTooLongInterval: setTooLongInterval,
   setWaitPackInterval: setWaitPackInterval,
+  setTooLongInterval: setTooLongInterval,
 };

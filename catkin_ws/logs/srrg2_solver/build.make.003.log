@@ -1,0 +1,122 @@
+[35m[1mScanning dependencies of target srrg2_solver_sparse_block_matrix_library[0m
+[  1%] [32mBuilding CXX object src/srrg_solver/solver_core/internals/sparse_block_matrix/CMakeFiles/srrg2_solver_sparse_block_matrix_library.dir/matrix_block.cpp.o[0m
+[  2%] [32mBuilding CXX object src/srrg_solver/solver_core/internals/sparse_block_matrix/CMakeFiles/srrg2_solver_sparse_block_matrix_library.dir/matrix_block_factory.cpp.o[0m
+[  3%] [32mBuilding CXX object src/srrg_solver/solver_core/internals/sparse_block_matrix/CMakeFiles/srrg2_solver_sparse_block_matrix_library.dir/sparse_block_matrix.cpp.o[0m
+[  4%] [32mBuilding CXX object src/srrg_solver/solver_core/internals/sparse_block_matrix/CMakeFiles/srrg2_solver_sparse_block_matrix_library.dir/sparse_block_cholesky.cpp.o[0m
+[  5%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver/lib/libsrrg2_solver_sparse_block_matrix_library.so[0m
+[  5%] Built target srrg2_solver_sparse_block_matrix_library
+[35m[1mScanning dependencies of target srrg2_solver_linear_solvers_library[0m
+[  6%] [32mBuilding CXX object src/srrg_solver/solver_core/internals/linear_solvers/CMakeFiles/srrg2_solver_linear_solvers_library.dir/sparse_block_linear_solver.cpp.o[0m
+[  7%] [32mBuilding CXX object src/srrg_solver/solver_core/internals/linear_solvers/CMakeFiles/srrg2_solver_linear_solvers_library.dir/sparse_block_linear_solver_cholesky.cpp.o[0m
+[  8%] [32mBuilding CXX object src/srrg_solver/solver_core/internals/linear_solvers/CMakeFiles/srrg2_solver_linear_solvers_library.dir/quotient_graph.cpp.o[0m
+[  9%] [32mBuilding CXX object src/srrg_solver/solver_core/internals/linear_solvers/CMakeFiles/srrg2_solver_linear_solvers_library.dir/sparse_block_linear_solver_cholesky_emd.cpp.o[0m
+[  9%] [32mBuilding CXX object src/srrg_solver/solver_core/internals/linear_solvers/CMakeFiles/srrg2_solver_linear_solvers_library.dir/sparse_block_linear_solver_cholesky_csparse.cpp.o[0m
+[ 10%] [32mBuilding CXX object src/srrg_solver/solver_core/internals/linear_solvers/CMakeFiles/srrg2_solver_linear_solvers_library.dir/sparse_block_linear_solver_cholesky_cholmod.cpp.o[0m
+[ 12%] [32mBuilding CXX object src/srrg_solver/solver_core/internals/linear_solvers/CMakeFiles/srrg2_solver_linear_solvers_library.dir/sparse_block_linear_solver_cholmod_full.cpp.o[0m
+[ 13%] [32mBuilding CXX object src/srrg_solver/solver_core/internals/linear_solvers/CMakeFiles/srrg2_solver_linear_solvers_library.dir/sparse_block_linear_solver_qr.cpp.o[0m
+[ 14%] [32mBuilding CXX object src/srrg_solver/solver_core/internals/linear_solvers/CMakeFiles/srrg2_solver_linear_solvers_library.dir/instances.cpp.o[0m
+[ 15%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver/lib/libsrrg2_solver_linear_solvers_library.so[0m
+[ 15%] Built target srrg2_solver_linear_solvers_library
+[35m[1mScanning dependencies of target srrg2_solver_core_library[0m
+[ 15%] [32mBuilding CXX object src/srrg_solver/solver_core/CMakeFiles/srrg2_solver_core_library.dir/solver_action_draw.cpp.o[0m
+[ 16%] [32mBuilding CXX object src/srrg_solver/solver_core/CMakeFiles/srrg2_solver_core_library.dir/solver_stats.cpp.o[0m
+[ 17%] [32mBuilding CXX object src/srrg_solver/solver_core/CMakeFiles/srrg2_solver_core_library.dir/termination_criteria.cpp.o[0m
+[ 18%] [32mBuilding CXX object src/srrg_solver/solver_core/CMakeFiles/srrg2_solver_core_library.dir/iteration_algorithm_base.cpp.o[0m
+[ 19%] [32mBuilding CXX object src/srrg_solver/solver_core/CMakeFiles/srrg2_solver_core_library.dir/iteration_algorithm_gn.cpp.o[0m
+[ 20%] [32mBuilding CXX object src/srrg_solver/solver_core/CMakeFiles/srrg2_solver_core_library.dir/iteration_algorithm_lm.cpp.o[0m
+[ 21%] [32mBuilding CXX object src/srrg_solver/solver_core/CMakeFiles/srrg2_solver_core_library.dir/iteration_algorithm_dl.cpp.o[0m
+[ 21%] [32mBuilding CXX object src/srrg_solver/solver_core/CMakeFiles/srrg2_solver_core_library.dir/iteration_algorithm_ddl.cpp.o[0m
+[ 23%] [32mBuilding CXX object src/srrg_solver/solver_core/CMakeFiles/srrg2_solver_core_library.dir/robustifier.cpp.o[0m
+[ 24%] [32mBuilding CXX object src/srrg_solver/solver_core/CMakeFiles/srrg2_solver_core_library.dir/robustifier_policy.cpp.o[0m
+[ 25%] [32mBuilding CXX object src/srrg_solver/solver_core/CMakeFiles/srrg2_solver_core_library.dir/factor_base.cpp.o[0m
+[ 26%] [32mBuilding CXX object src/srrg_solver/solver_core/CMakeFiles/srrg2_solver_core_library.dir/factor_graph.cpp.o[0m
+[ 27%] [32mBuilding CXX object src/srrg_solver/solver_core/CMakeFiles/srrg2_solver_core_library.dir/factor_graph_interface.cpp.o[0m
+[ 28%] [32mBuilding CXX object src/srrg_solver/solver_core/CMakeFiles/srrg2_solver_core_library.dir/factor_graph_view.cpp.o[0m
+[ 29%] [32mBuilding CXX object src/srrg_solver/solver_core/CMakeFiles/srrg2_solver_core_library.dir/solver.cpp.o[0m
+[ 29%] [32mBuilding CXX object src/srrg_solver/solver_core/CMakeFiles/srrg2_solver_core_library.dir/solver_action_base.cpp.o[0m
+[ 30%] [32mBuilding CXX object src/srrg_solver/solver_core/CMakeFiles/srrg2_solver_core_library.dir/instances.cpp.o[0m
+[ 31%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver/lib/libsrrg2_solver_core_library.so[0m
+[ 31%] Built target srrg2_solver_core_library
+[35m[1mScanning dependencies of target srrg2_solver_types2d_library[0m
+[ 32%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/variable_se2.cpp.o[0m
+[ 34%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/variable_se2_ad.cpp.o[0m
+[35m[1mScanning dependencies of target srrg2_solver_types3d_library[0m
+[ 35%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/variable_matchable.cpp.o[0m
+[ 36%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/variable_se3.cpp.o[0m
+[ 36%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/variable_point2.cpp.o[0m
+[ 37%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/se2_prior_error_factor.cpp.o[0m
+[ 38%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/se2_point2point_error_factor.cpp.o[0m
+[ 39%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/se2_plane2plane_error_factor.cpp.o[0m
+[ 40%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/variable_se3_ad.cpp.o[0m
+[ 41%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/se2_pose_pose_geodesic_error_factor.cpp.o[0m
+[ 42%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/variable_point3.cpp.o[0m
+[ 43%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/se2_pose_pose_chordal_error_factor.cpp.o[0m
+[ 45%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/se2_pose_point_error_factor.cpp.o[0m
+[ 46%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/variable_point3_ad.cpp.o[0m
+[ 46%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_plane2plane_error_factor.cpp.o[0m
+[ 47%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/se2_pose_point_bearing_error_factor.cpp.o[0m
+[ 48%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_point2point_error_factor.cpp.o[0m
+[ 49%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_matchable2matchable_error_factor.cpp.o[0m
+[ 49%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_2d/CMakeFiles/srrg2_solver_types2d_library.dir/instances.cpp.o[0m
+[ 50%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_pose_matchable_error_factor.cpp.o[0m
+[ 51%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver/lib/libsrrg2_solver_types2d_library.so[0m
+[ 51%] Built target srrg2_solver_types2d_library
+[ 52%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_pose_point_offset_error_factor.cpp.o[0m
+[ 53%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_pose_point_error_factor.cpp.o[0m
+[ 54%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_prior_error_factor_ad.cpp.o[0m
+[ 56%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_prior_offset_error_factor_ad.cpp.o[0m
+[ 56%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_pose_pose_geodesic_error_factor.cpp.o[0m
+[ 57%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_pose_pose_chordal_error_factor.cpp.o[0m
+[ 58%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_pose_pose_chordal_hessian_factor.cpp.o[0m
+[ 59%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/se3_pose_pose_right_chordal_error_factor.cpp.o[0m
+[ 60%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/imu_factor.cpp.o[0m
+[ 61%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/gps_factor.cpp.o[0m
+[ 62%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_3d/CMakeFiles/srrg2_solver_types3d_library.dir/instances.cpp.o[0m
+[ 63%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver/lib/libsrrg2_solver_types3d_library.so[0m
+[ 63%] Built target srrg2_solver_types3d_library
+[35m[1mScanning dependencies of target srrg2_solver_projective_library[0m
+[35m[1mScanning dependencies of target srrg2_solver_calib_library[0m
+[ 63%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_projective/CMakeFiles/srrg2_solver_projective_library.dir/se3_projective_depth_error_factor.cpp.o[0m
+[ 64%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_projective/CMakeFiles/srrg2_solver_projective_library.dir/se3_rectified_stereo_projective_error_factor.cpp.o[0m
+[ 65%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_projective/CMakeFiles/srrg2_solver_projective_library.dir/se3_projective_error_factor.cpp.o[0m
+[ 67%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_projective/CMakeFiles/srrg2_solver_projective_library.dir/variable_sim3.cpp.o[0m
+[ 68%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_projective/CMakeFiles/srrg2_solver_projective_library.dir/variable_sim3_ad.cpp.o[0m
+[ 69%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/variable_time.cpp.o[0m
+[ 70%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/variable_time_ad.cpp.o[0m
+[ 71%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_projective/CMakeFiles/srrg2_solver_projective_library.dir/sim3_point2point_error_factor.cpp.o[0m
+[ 72%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/differential_drive_odom_predictor_ad.cpp.o[0m
+[ 73%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/differential_drive_odom_time_delay_sensor2d_error_factor_ad.cpp.o[0m
+[ 74%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_projective/CMakeFiles/srrg2_solver_projective_library.dir/sim3_pose_pose_error_factor_ad.cpp.o[0m
+[ 74%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/differential_drive_odom_error_factor_ad.cpp.o[0m
+[ 75%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/differential_drive_odom_sensor2d_error_factor_ad.cpp.o[0m
+[ 76%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_projective/CMakeFiles/srrg2_solver_projective_library.dir/se3_pose_point_omni_ba_error_factor.cpp.o[0m
+[ 78%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/differential_drive_odom_sensor3d_error_factor_ad.cpp.o[0m
+[ 79%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_projective/CMakeFiles/srrg2_solver_projective_library.dir/instances.cpp.o[0m
+[ 80%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/sensor3d_pose_time_delay_error_factor_ad.cpp.o[0m
+[ 81%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/sensor2d_extrinsic_pose_motion_calib_ad.cpp.o[0m
+[ 82%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/sensor3d_extrinsic_pose_motion_calib_ad.cpp.o[0m
+[ 83%] [32mBuilding CXX object src/srrg_solver/variables_and_factors/types_calib/CMakeFiles/srrg2_solver_calib_library.dir/instances.cpp.o[0m
+[ 83%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver/lib/libsrrg2_solver_projective_library.so[0m
+[ 83%] Built target srrg2_solver_projective_library
+[ 84%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver/lib/libsrrg2_solver_calib_library.so[0m
+[ 84%] Built target srrg2_solver_calib_library
+[35m[1mScanning dependencies of target srrg2_solver_factor_graph_utils_library[0m
+[ 87%] [32mBuilding CXX object src/srrg_solver/utils/CMakeFiles/srrg2_solver_factor_graph_utils_library.dir/factor_graph_initializer_rule.cpp.o[0m
+[ 87%] [32mBuilding CXX object src/srrg_solver/utils/CMakeFiles/srrg2_solver_factor_graph_utils_library.dir/factor_graph_visit_entry.cpp.o[0m
+[ 87%] [32mBuilding CXX object src/srrg_solver/utils/CMakeFiles/srrg2_solver_factor_graph_utils_library.dir/factor_graph_visit_cost.cpp.o[0m
+[ 90%] [32mBuilding CXX object src/srrg_solver/utils/CMakeFiles/srrg2_solver_factor_graph_utils_library.dir/factor_graph_visit_policy.cpp.o[0m
+[ 90%] [32mBuilding CXX object src/srrg_solver/utils/CMakeFiles/srrg2_solver_factor_graph_utils_library.dir/factor_graph_visit.cpp.o[0m
+[ 90%] [32mBuilding CXX object src/srrg_solver/utils/CMakeFiles/srrg2_solver_factor_graph_utils_library.dir/factor_graph_initializer.cpp.o[0m
+[ 91%] [32mBuilding CXX object src/srrg_solver/utils/CMakeFiles/srrg2_solver_factor_graph_utils_library.dir/factor_graph_closure_validator.cpp.o[0m
+[ 92%] [32mBuilding CXX object src/srrg_solver/utils/CMakeFiles/srrg2_solver_factor_graph_utils_library.dir/solver_evaluator.cpp.o[0m
+[ 93%] [32mBuilding CXX object src/srrg_solver/utils/CMakeFiles/srrg2_solver_factor_graph_utils_library.dir/instances.cpp.o[0m
+[ 94%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver/lib/libsrrg2_solver_factor_graph_utils_library.so[0m
+[ 94%] Built target srrg2_solver_factor_graph_utils_library
+[35m[1mScanning dependencies of target srrg2_solver_incremental_library[0m
+[ 96%] [32mBuilding CXX object src/srrg_solver/solver_incremental/CMakeFiles/srrg2_solver_incremental_library.dir/instances.cpp.o[0m
+[ 96%] [32mBuilding CXX object src/srrg_solver/solver_incremental/CMakeFiles/srrg2_solver_incremental_library.dir/solver_incremental_running_environment.cpp.o[0m
+[ 96%] [32mBuilding CXX object src/srrg_solver/solver_incremental/CMakeFiles/srrg2_solver_incremental_library.dir/solver_incremental.cpp.o[0m
+[ 98%] [32mBuilding CXX object src/srrg_solver/solver_incremental/CMakeFiles/srrg2_solver_incremental_library.dir/factor_graph_incremental_sorter.cpp.o[0m
+[ 98%] [32mBuilding CXX object src/srrg_solver/solver_incremental/CMakeFiles/srrg2_solver_incremental_library.dir/solver_incremental_base.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library /home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_solver/lib/libsrrg2_solver_incremental_library.so[0m
+[100%] Built target srrg2_solver_incremental_library

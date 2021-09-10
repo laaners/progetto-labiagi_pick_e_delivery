@@ -8,6 +8,8 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg_joystick_teleop_js2:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg_joystick_teleop_js2/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg_joystick_teleop_js2/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg_joystick_teleop_js2'
 export ROSLISP_PACKAGE_DIRECTORIES="/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg_joystick_teleop_js2/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg_joystick_teleop_js2:$ROS_PACKAGE_PATH"

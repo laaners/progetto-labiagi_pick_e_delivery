@@ -1,0 +1,9 @@
+[  5%] Built target srrg2_solver_sparse_block_matrix_library
+[ 15%] Built target srrg2_solver_linear_solvers_library
+[ 31%] Built target srrg2_solver_core_library
+[ 42%] Built target srrg2_solver_types2d_library
+[ 63%] Built target srrg2_solver_types3d_library
+[ 72%] Built target srrg2_solver_projective_library
+[ 84%] Built target srrg2_solver_calib_library
+[ 94%] Built target srrg2_solver_factor_graph_utils_library
+[100%] Built target srrg2_solver_incremental_library

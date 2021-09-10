@@ -8,6 +8,8 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_laser_slam_2d:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_laser_slam_2d/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_laser_slam_2d/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/build/srrg2_laser_slam_2d'
 export ROSLISP_PACKAGE_DIRECTORIES="/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/devel/.private/srrg2_laser_slam_2d/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/alessiohu/Desktop/progetto-labiagi/catkin_ws/src/srrg2_laser_slam_2d/srrg2_laser_slam_2d:$ROS_PACKAGE_PATH"
