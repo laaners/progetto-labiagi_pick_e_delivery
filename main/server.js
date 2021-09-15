@@ -341,6 +341,7 @@ app.get('/move_robot', function(req,res) {
 		res.send("ERROR /move_robot attacco melevolo");
 		return;
 	}
+	/*
 	if(ACTION == FREE) {
 		if((status == AT_SRC) && (req.query.user == sender)) console.log("FREE src valido");
 		else if((status == PICK) && (req.query.user == sender)) console.log("FREE pick src valido");
@@ -350,7 +351,7 @@ app.get('/move_robot', function(req,res) {
 			res.send("ERROR /move_robot free non valido");
 			return;
 		}
-	}
+	}*/
 	readCRUD(usersdb,{"id": req.query.goal}).then(function(res_readu) {
 		console.log("DONE /move_robot readu");
 		let room = res_readu.room;

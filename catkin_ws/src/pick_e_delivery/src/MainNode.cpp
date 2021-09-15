@@ -91,66 +91,116 @@ void pubNewTimeout(std::string event) {
 
 void setGoalCallBack(const pick_e_delivery::NewGoal& new_goal) {
     //ricevo dall'utente le coordinate di un nuovo goal, ma che azione devo fare?
+    switch(status) {
 //FREE------------------------------------------------------------------------------------------------------------------------------------
-    if(status == FREE && new_goal.command == PICK) {
-        //Il robot ha ricevuto un comando per prelevare il pacco ed è libero: inizia a muoversi
-        caller_position[0] = new_goal.x;
-        caller_position[1] = new_goal.y;
-        caller_position[2] = new_goal.theta;
-        status = PICK;
-        sender = new_goal.user;    
-        pubNewGoal(new_goal.x,new_goal.y,new_goal.theta);
-        tooLongTimer.start();
-        status_msg = "Il robot si sta dirigendo verso il mittente per prelevare il pacco";
-    }
+        case FREE: {
+            if(new_goal.command == PICK) {
+                //Il robot ha ricevuto un comando per prelevare il pacco ed è libero: inizia a muoversi
+                status = PICK;
+                sender = new_goal.user;
+                receiver = "none";
+                caller_position[0] = new_goal.x;
+                caller_position[1] = new_goal.y;
+                caller_position[2] = new_goal.theta;
+                pubNewGoal(new_goal.x,new_goal.y,new_goal.theta);
+                tooLongTimer.start();
+                status_msg = "Il robot si sta dirigendo verso il mittente per prelevare il pacco";
+                break;
+            }
+        }
 //PICK------------------------------------------------------------------------------------------------------------------------------------
-    else if(status == PICK && new_goal.command == FREE) {
-        //L'utente vuole liberare il robot, è in PICK quindi non ha nessun pacco
-        status = FREE;
-        pubNewGoal(current_position[0],current_position[1],caller_position[2]);
-        status_msg = "Il mittente ha liberato il robot";
-    }
-//DELIVERY------------------------------------------------------------------------------------------------------------------------------------
-    else if(status == DELIVERY && new_goal.command == GOBACK) {
-        //L'utente vuole liberare il robot, il robot dovrà tornare indietro
-        status = GOBACK;
-        receiver = "none";
-        pubNewGoal(caller_position[0],caller_position[1],caller_position[2]);
-        status_msg = "Il mittente rivuole il pacco indietro";
-    }
-//AT_DST------------------------------------------------------------------------------------------------------------------------------------
-    else if(status == AT_DST && new_goal.command == FREE) {
-        //Il destinatario ci ha comunicato che ha prelevato il pacco, il robot quindi è ora libero
-        status = FREE;
-        status_msg = "Il robot è pronto a ricevere un nuovo ordine!";
-    }
-    else if(status == AT_DST && new_goal.command == GOBACK) {
-        //L'utente vuole liberare il robot, il robot dovrà tornare indietro
-        status = GOBACK;
-        receiver = "none";
-        pubNewGoal(caller_position[0],caller_position[1],caller_position[2]);
-        status_msg = "Il mittente rivuole il pacco indietro";
-    }
+        case PICK: {
+            if(new_goal.command == FREE) {
+                if (sender == new_goal.user) {
+                    //L'utente vuole liberare il robot, è in PICK quindi non ha nessun pacco
+                    status = FREE;
+                    sender = "none";
+                    receiver = "none";
+                    pubNewGoal(current_position[0],current_position[1],caller_position[2]);
+                    status_msg = "Il mittente ha liberato il robot";
+                }
+            }
+            else if(new_goal.command == PICK) {
+                //Qualcuno ha dato un nuovo incarico al robot, ma è ancora in missione
+                ROS_INFO("Il robot è ancora in missione");
+            }
+            break;
+        }
 //AT_SRC------------------------------------------------------------------------------------------------------------------------------------
-    else if(status == AT_SRC && new_goal.command == DELIVERY) {
-        //L'utente ha comunicato al robot che ha caricato il pacco e ora si dirigerà verso la destinazione
-        status = DELIVERY;
-        receiver = new_goal.user;
-        pubNewGoal(new_goal.x,new_goal.y,new_goal.theta);
-        tooLongTimer.start();
-        waitPackTimer.stop();
-        status_msg = "Il robot si sta dirigendo verso il destinatario per consegnare il pacco";
-    }
-    else if(status == AT_SRC && new_goal.command == FREE) {
-        //Il client ci ha comunicato che si è ripreso il pacco
-        status = FREE;
-        waitPackTimer.stop();
-        status_msg = "Il robot è pronto a ricevere un nuovo ordine!";
-    }
-//Comandi non validi dall'utente------------------------------------------------------------------------------------------------------------------------------------
-    else if(status != FREE && new_goal.command == PICK) {
-        //Qualcuno ha dato un nuovo incarico al robot, ma è ancora in missione
-        ROS_INFO("Il robot è ancora in missione");
+        case AT_SRC: {
+            if(new_goal.command == FREE) {
+                if (sender == new_goal.user) {
+                    //Il client ci ha comunicato che si è ripreso il pacco
+                    status = FREE;
+                    sender = "none";
+                    receiver = "none";
+                    waitPackTimer.stop();
+                    status_msg = "Il robot è pronto a ricevere un nuovo ordine!";
+                }
+            }
+            else if(new_goal.command == DELIVERY) {
+                //L'utente ha comunicato al robot che ha caricato il pacco e ora si dirigerà verso la destinazione
+                status = DELIVERY;
+                receiver = new_goal.user;
+                pubNewGoal(new_goal.x,new_goal.y,new_goal.theta);
+                tooLongTimer.start();
+                waitPackTimer.stop();
+                status_msg = "Il robot si sta dirigendo verso il destinatario per consegnare il pacco";
+            }
+            else if(new_goal.command == PICK) {
+                //Qualcuno ha dato un nuovo incarico al robot, ma è ancora in missione
+                ROS_INFO("Il robot è ancora in missione");
+            }
+            break;
+        }
+//DELIVERY------------------------------------------------------------------------------------------------------------------------------------
+        case DELIVERY: {
+            if(new_goal.command == GOBACK) {
+                if (sender == new_goal.user) {
+                    //L'utente vuole liberare il robot, il robot dovrà tornare indietro
+                    status = GOBACK;
+                    receiver = "none";
+                    pubNewGoal(caller_position[0],caller_position[1],caller_position[2]);
+                    status_msg = "Il mittente rivuole il pacco indietro";
+                }
+            }
+            else if(new_goal.command == PICK) {
+                //Qualcuno ha dato un nuovo incarico al robot, ma è ancora in missione
+                ROS_INFO("Il robot è ancora in missione");
+            }
+            break;
+        }
+//AT_DST------------------------------------------------------------------------------------------------------------------------------------
+        case AT_DST: {
+            if(new_goal.command == FREE) {
+                if (receiver == new_goal.user) {
+                    //Il destinatario ci ha comunicato che ha prelevato il pacco, il robot quindi è ora libero
+                    status = FREE;
+                    sender = "none";
+                    receiver = "none";
+                    status_msg = "Il robot è pronto a ricevere un nuovo ordine!";
+                }
+            }
+            else if(new_goal.command == GOBACK) {
+                if (sender == new_goal.user) {
+                    //L'utente vuole liberare il robot, il robot dovrà tornare indietro
+                    status = GOBACK;
+                    receiver = "none";
+                    pubNewGoal(caller_position[0],caller_position[1],caller_position[2]);
+                    status_msg = "Il mittente rivuole il pacco indietro";
+                }
+            }
+            else if(new_goal.command == PICK) {
+                //Qualcuno ha dato un nuovo incarico al robot, ma è ancora in missione
+                ROS_INFO("Il robot è ancora in missione");
+            }
+            break;
+        }
+//ERROR------------------------------------------------------------------------------------------------------------------------------------
+        default: {
+            ROS_INFO("ERRORE, stato non riconosciuto 201");
+            break;
+        }
     }
     return;
 }
@@ -193,6 +243,8 @@ void waitPackCallBack(const ros::TimerEvent& event) {
     switch(status) {
         case AT_SRC: {
             status = FREE;
+            sender = "none";
+            receiver = "none";
             status_msg = "Il robot non ha ricevuto nessun pacco, ora è in FREE";
             pubNewTimeout("noPack");
             break;
@@ -276,6 +328,8 @@ void tooLongCallBack(const ros::TimerEvent& event) {
             switch(status) {
                 case PICK: {
                     status = FREE;
+                    sender = "none";
+                    receiver = "none";
                     status_msg = "Non riesco a raggiungere chi mi ha chiamato, mi dispiace";
                     pubNewGoal(current_position[0],current_position[1],caller_position[2]);
                     if(!blocked) {
@@ -305,23 +359,25 @@ void tooLongCallBack(const ros::TimerEvent& event) {
 
 bool setTooLongInterval(pick_e_delivery::setTooLongInterval::Request  &req, pick_e_delivery::setTooLongInterval::Response &res) {
   ROS_INFO("Periodo ricevuto: x=%f", req.period);
-  if((float)req.period > 0.0) {
+  if((float)req.period > 0.0 && status == FREE) {
     tooLongT = req.period;
     tooLongTimer.setPeriod(ros::Duration(tooLongT));
     tooLongTimer.stop();
     ROS_INFO("Periodo settato");
   }
+  else ROS_INFO("Robot non in FREE: %d", status);
   return true;
 }
 
 bool setWaitPackInterval(pick_e_delivery::setWaitPackInterval::Request  &req, pick_e_delivery::setWaitPackInterval::Response &res) {
   ROS_INFO("Periodo ricevuto: x=%f", req.period);
-  if((float)req.period > 0.0) {
+  if((float)req.period > 0.0 && status == FREE) {
     waitPackT = req.period;
     waitPackTimer.setPeriod(ros::Duration(waitPackT));
     waitPackTimer.stop();
     ROS_INFO("Periodo settato");
   }
+  else ROS_INFO("Robot non in FREE: %d", status);
   return true;
 }
 
