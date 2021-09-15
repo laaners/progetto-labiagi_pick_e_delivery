@@ -100,5 +100,5 @@ Offre i seguenti servizi:
     <li><b>pick_e_delivery/setTooLongInterval</b> per cambiare il periodo di timeout di tooLong (inizialmente a 50)</li>
     <li><b>pick_e_delivery/setWaitPackInterval</b> per cambiare il periodo di timeout di waitPack (inizialmente a 30)</li>
 </ul>
-Gli stati del robot sono descritti da questo semplice automa creato con JFLAP<br/>
+Gli stati del robot sono descritti da questo diagramma degli stati e delle transizioni creato con Umlet<br/>
 <img src="robot.png">
