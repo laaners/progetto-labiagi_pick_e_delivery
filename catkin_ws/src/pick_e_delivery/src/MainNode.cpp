@@ -359,6 +359,7 @@ void tooLongCallBack(const ros::TimerEvent& event) {
 
 bool setTooLongInterval(pick_e_delivery::setTooLongInterval::Request  &req, pick_e_delivery::setTooLongInterval::Response &res) {
   ROS_INFO("Periodo ricevuto: x=%f", req.period);
+  res.period = tooLongT;
   if((float)req.period > 0.0 && status == FREE) {
     tooLongT = req.period;
     tooLongTimer.setPeriod(ros::Duration(tooLongT));
@@ -371,6 +372,7 @@ bool setTooLongInterval(pick_e_delivery::setTooLongInterval::Request  &req, pick
 
 bool setWaitPackInterval(pick_e_delivery::setWaitPackInterval::Request  &req, pick_e_delivery::setWaitPackInterval::Response &res) {
   ROS_INFO("Periodo ricevuto: x=%f", req.period);
+  res.period = waitPackT;
   if((float)req.period > 0.0 && status == FREE) {
     waitPackT = req.period;
     waitPackTimer.setPeriod(ros::Duration(waitPackT));
