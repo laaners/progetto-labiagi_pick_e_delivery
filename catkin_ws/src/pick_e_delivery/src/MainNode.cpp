@@ -286,6 +286,7 @@ void isCruisingCallBack(const ros::TimerEvent& event) {
                     break;
                 }
                 case GOBACK: {
+                    tooLongTimer.stop();
                     status = AT_SRC;
                     status_msg = "Sono da chi mi aveva originariamente chiamato, nessuno è venuto a prelevare il suo pacco, liberami!";
                     break;
@@ -299,14 +300,13 @@ void isCruisingCallBack(const ros::TimerEvent& event) {
         else {
             if((status == DELIVERY) || (status == PICK) || (status == GOBACK)) {
                 int stuck = 0, j = 0;
-                for(j = 0; j < 10; j++) {
-                    stuck += stuckv[j];
-                }
+                for(j = 0; j < 10; j++) stuck += stuckv[j];
                 if(stuck == 10) {
                     ROS_INFO("Sono bloccato");
                     status_msg = "Servizio non disponibile";
                     pubNewTimeout("isBlocked");
                     blocked = 1;
+                    tooLongTimer.stop();
                 }
                 else {
                     status_msg = "Il robot sta navigando";
@@ -351,6 +351,7 @@ void tooLongCallBack(const ros::TimerEvent& event) {
                     break;
                 }
             }
+            tooLongTimer.stop();
         }
     }
 }
